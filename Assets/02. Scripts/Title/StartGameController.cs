@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class StartGameController : MonoBehaviour
 {
@@ -7,12 +6,12 @@ public class StartGameController : MonoBehaviour
     [SerializeField] private SettingTabController tabs;
     [SerializeField] private SaveFilePanelController saveFiles;
 
-    private bool loading;
+    [SerializeField, Min(0f)] private float fadeDuration = 0.4f;
 
     // 파일 선택 확인 후 게임 시작
     public void StartGame()
     {
-        if (loading) return;
+        if (SceneFadeController.IsTransitioning) return;
         if (!saveFiles.HasSelectedSlot)
         {
             settings.Open();
@@ -21,7 +20,6 @@ public class StartGameController : MonoBehaviour
             return;
         }
 
-        loading = true;
-        SceneManager.LoadSceneAsync("Ingame");
+        SceneFadeController.LoadScene("Ingame", fadeDuration);
     }
 }
