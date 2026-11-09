@@ -9,6 +9,7 @@ public class SettingPanelController : MonoBehaviour
     [SerializeField] private Button settingButton;
     [SerializeField] private GameObject settingPanel;
     [SerializeField] private Canvas titleCanvas;
+    [SerializeField] private SaveFilePanelController saveFilePanel;
 
     private readonly List<Selectable> blockedButtons = new();
 
@@ -23,7 +24,10 @@ public class SettingPanelController : MonoBehaviour
     private void Update()
     {
         if (settingPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (saveFilePanel != null && saveFilePanel.TryCloseConfirmation()) return;
             Close();
+        }
     }
 
     // 패널 열기와 배경 입력 차단
