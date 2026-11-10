@@ -18,7 +18,7 @@ public sealed class TitleScrapController : MonoBehaviour
     [SerializeField] private GameObject settingsPanel;
     [Header("등장과 던지기")]
     [SerializeField, Range(1, 6)] private int spawnCount = 6;
-    [SerializeField, Range(6, 24)] private int maxPieces = 24;
+    [SerializeField, Range(1, 100)] private int maxPieces = 100;
     [SerializeField, Min(0.5f)] private float spawnCooldown = 2f;
     [SerializeField, Min(1f)] private float maxThrowSpeed = 22f;
 
@@ -148,8 +148,15 @@ public sealed class TitleScrapController : MonoBehaviour
     {
         hangul.Clear();
         latin.Clear();
-        if (Time.unscaledTime < nextSpawn || requested) return;
-        nextSpawn = Time.unscaledTime + spawnCooldown;
+
+        if (pieces.Count + pendingCount >= maxPieces)
+            return;
+
+        if (Time.unscaledTime < nextSpawn)
+            return;
+
+        nextSpawn = Time.unscaledTime + 0.15f;
+
         requested = true;
     }
 
@@ -173,8 +180,20 @@ public sealed class TitleScrapController : MonoBehaviour
         if (requested)
         {
             requested = false;
-            pendingCount = Mathf.Min(spawnCount, Mathf.Max(0, maxPieces - pieces.Count));
-            nextPiece = Time.unscaledTime;
+
+            int remaining = Mathf.Max(
+                0,
+                maxPieces - pieces.Count - pendingCount
+            );
+
+            int additional = Mathf.Min(spawnCount, remaining);
+
+            pendingCount += additional;
+
+            if (additional > 0 && pendingCount == additional)
+            {
+                nextPiece = Time.unscaledTime;
+            }
         }
         if (pendingCount > 0 && Time.unscaledTime >= nextPiece)
         {

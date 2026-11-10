@@ -12828,7 +12828,7 @@ MonoBehaviour:
   heavyImpact: {fileID: 8300000, guid: e34561b510a3d63409d69c8652884f89, type: 3}
   settingsPanel: {fileID: 1323909296}
   spawnCount: 6
-  maxPieces: 12
+  maxPieces: 60
   spawnCooldown: 2
   maxThrowSpeed: 22
 --- !u!1660057539 &9223372036854775807
