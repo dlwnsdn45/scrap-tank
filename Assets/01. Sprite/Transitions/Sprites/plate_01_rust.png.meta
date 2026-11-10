@@ -1,0 +1,1341 @@
+fileFormatVersion: 2
+guid: 77c9012776cf9f2489d9871d691b6911
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2688135428449382653
+    second: plate_01_rust_0
+  - first:
+      213: -2162010807677581297
+    second: plate_01_rust_1
+  - first:
+      213: 5381938247921676514
+    second: plate_01_rust_2
+  - first:
+      213: 1423053518202949017
+    second: plate_01_rust_3
+  - first:
+      213: -5084680883999376680
+    second: plate_01_rust_4
+  - first:
+      213: -7948582129996366661
+    second: plate_01_rust_5
+  - first:
+      213: 7793249542933283947
+    second: plate_01_rust_6
+  - first:
+      213: 6594990463451531979
+    second: plate_01_rust_7
+  - first:
+      213: 580992531667635145
+    second: plate_01_rust_8
+  - first:
+      213: -4818044473372860833
+    second: plate_01_rust_9
+  - first:
+      213: 1638022324198063323
+    second: plate_01_rust_10
+  - first:
+      213: 3129427373127598917
+    second: plate_01_rust_11
+  - first:
+      213: -3094575695730282886
+    second: plate_01_rust_12
+  - first:
+      213: 8309983503812730049
+    second: plate_01_rust_13
+  - first:
+      213: -3629094428625276797
+    second: plate_01_rust_14
+  - first:
+      213: 6217518012909262478
+    second: plate_01_rust_15
+  - first:
+      213: -4389511853318218471
+    second: plate_01_rust_16
+  - first:
+      213: -6068645394040979490
+    second: plate_01_rust_17
+  - first:
+      213: -6046124625615813844
+    second: plate_01_rust_18
+  - first:
+      213: 198154081161313231
+    second: plate_01_rust_19
+  - first:
+      213: 7964672530441769441
+    second: plate_01_rust_20
+  - first:
+      213: 3046582790896192435
+    second: plate_01_rust_21
+  - first:
+      213: -7476123735948202900
+    second: plate_01_rust_22
+  - first:
+      213: 6906992402799248528
+    second: plate_01_rust_23
+  - first:
+      213: 7271795215027585281
+    second: plate_01_rust_24
+  - first:
+      213: 954807219983439039
+    second: plate_01_rust_25
+  - first:
+      213: 3684175382528699465
+    second: plate_01_rust_26
+  - first:
+      213: -7838496589617085529
+    second: plate_01_rust_27
+  - first:
+      213: -6787416983624246533
+    second: plate_01_rust_28
+  - first:
+      213: -9087578286260096216
+    second: plate_01_rust_29
+  - first:
+      213: -940298509687219670
+    second: plate_01_rust_30
+  - first:
+      213: -7691279300285835842
+    second: plate_01_rust_31
+  - first:
+      213: 3786939431142659345
+    second: plate_01_rust_32
+  - first:
+      213: 5340655041087452438
+    second: plate_01_rust_33
+  - first:
+      213: -6221439457929551711
+    second: plate_01_rust_34
+  - first:
+      213: -8336767481715076431
+    second: plate_01_rust_35
+  - first:
+      213: -7438385746621243950
+    second: plate_01_rust_36
+  - first:
+      213: -9118747168303699590
+    second: plate_01_rust_37
+  - first:
+      213: -3389352133537647578
+    second: plate_01_rust_38
+  - first:
+      213: -8155428221720984609
+    second: plate_01_rust_39
+  - first:
+      213: 8845966170273511751
+    second: plate_01_rust_40
+  - first:
+      213: -1994472803469657190
+    second: plate_01_rust_41
+  - first:
+      213: -106958957763177250
+    second: plate_01_rust_42
+  - first:
+      213: 5600877401785008848
+    second: plate_01_rust_43
+  - first:
+      213: -6259775129130629001
+    second: plate_01_rust_44
+  - first:
+      213: -3559610006700431973
+    second: plate_01_rust_45
+  - first:
+      213: -1346603165682001378
+    second: plate_01_rust_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plate_01_rust_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 25
+        width: 1527
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df03ed80eec2e4520800000000000000
+      internalID: 2688135428449382653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_1
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 961
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0882df00aefef1e0800000000000000
+      internalID: -2162010807677581297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 932
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0b57e525c70ba40800000000000000
+      internalID: 5381938247921676514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 942
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d4bd892a3bfb310800000000000000
+      internalID: 1423053518202949017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_4
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 943
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da7ff00da59f69b0800000000000000
+      internalID: -5084680883999376680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_5
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 945
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc7c898aa6f0b190800000000000000
+      internalID: -7948582129996366661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 940
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64838c3b2f272c60800000000000000
+      internalID: 7793249542933283947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_7
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 214
+        width: 10
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca0e1f72ec168b50800000000000000
+      internalID: 6594990463451531979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 143
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb443b11a9101800800000000000000
+      internalID: 580992531667635145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_9
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 133
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e939c141ed22db0800000000000000
+      internalID: -4818044473372860833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 109
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc3cff00ac6bb610800000000000000
+      internalID: 1638022324198063323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_11
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 129
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54387ad8d95fd6b20800000000000000
+      internalID: 3129427373127598917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_12
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 119
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e607deccbdd05d0800000000000000
+      internalID: -3094575695730282886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 85
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc1d12f7fdf25370800000000000000
+      internalID: 8309983503812730049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_14
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 95
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380f07d48ddd2adc0800000000000000
+      internalID: -3629094428625276797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_15
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 81
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e869c00e0bf094650800000000000000
+      internalID: 6217518012909262478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_16
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 47
+        width: 69
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91dd99dd9325513c0800000000000000
+      internalID: -4389511853318218471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_17
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 79
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf706cca27d7cba0800000000000000
+      internalID: -6068645394040979490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_18
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 75
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c238d6ecfa9d71ca0800000000000000
+      internalID: -6046124625615813844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_19
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 95
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbf962461cffb200800000000000000
+      internalID: 198154081161313231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_20
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 77
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e11b41c773388e60800000000000000
+      internalID: 7964672530441769441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 70
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb8f2628e2a74a20800000000000000
+      internalID: 3046582790896192435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_22
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 71
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ce0f582197f3890800000000000000
+      internalID: -7476123735948202900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_23
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 79
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094cb2bdef09adf50800000000000000
+      internalID: 6906992402799248528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_24
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 79
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101ca1f683b9ae460800000000000000
+      internalID: 7271795215027585281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_25
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb457189b18204d00800000000000000
+      internalID: 954807219983439039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_26
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 79
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cacd5adf1d02330800000000000000
+      internalID: 3684175382528699465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_27
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 69
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a343c2c1e0183390800000000000000
+      internalID: -7838496589617085529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_28
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 76
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa9f94f6304ec1a0800000000000000
+      internalID: -6787416983624246533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_29
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 71
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823f9ea52bf62e180800000000000000
+      internalID: -9087578286260096216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_30
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 69
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a9343cc7363f2f0800000000000000
+      internalID: -940298509687219670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 39
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5d52ef936134590800000000000000
+      internalID: -7691279300285835842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 53
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1159d2b3959ed8430800000000000000
+      internalID: 3786939431142659345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_33
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 51
+        width: 60
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615baefb671dd1a40800000000000000
+      internalID: 5340655041087452438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_34
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 53
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0a28e86c109a9a0800000000000000
+      internalID: -6221439457929551711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_35
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 65
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2585d352add4c80800000000000000
+      internalID: -8336767481715076431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_36
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 53
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dddf4ed29b85c890800000000000000
+      internalID: -7438385746621243950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_37
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 49
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79a8ac73c3b37180800000000000000
+      internalID: -9118747168303699590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_38
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 45
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624b6cd213a96f0d0800000000000000
+      internalID: -3389352133537647578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_39
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 47
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3002ddd3912de80800000000000000
+      internalID: -8155428221720984609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_40
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749764a2d5f23ca70800000000000000
+      internalID: 8845966170273511751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_41
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 47
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b730b6d853254e0800000000000000
+      internalID: -1994472803469657190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_42
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 32
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4daf40561048ef0800000000000000
+      internalID: -106958957763177250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_43
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 36
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d288eb72505abd40800000000000000
+      internalID: 5600877401785008848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_44
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 35
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778085e8fafc029a0800000000000000
+      internalID: -6259775129130629001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_45
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95e1bbfe89b99ec0800000000000000
+      internalID: -3559610006700431973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_01_rust_46
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 35
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a9b103e87ef4de0800000000000000
+      internalID: -1346603165682001378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plate_01_rust_0: 2688135428449382653
+      plate_01_rust_1: -2162010807677581297
+      plate_01_rust_10: 1638022324198063323
+      plate_01_rust_11: 3129427373127598917
+      plate_01_rust_12: -3094575695730282886
+      plate_01_rust_13: 8309983503812730049
+      plate_01_rust_14: -3629094428625276797
+      plate_01_rust_15: 6217518012909262478
+      plate_01_rust_16: -4389511853318218471
+      plate_01_rust_17: -6068645394040979490
+      plate_01_rust_18: -6046124625615813844
+      plate_01_rust_19: 198154081161313231
+      plate_01_rust_2: 5381938247921676514
+      plate_01_rust_20: 7964672530441769441
+      plate_01_rust_21: 3046582790896192435
+      plate_01_rust_22: -7476123735948202900
+      plate_01_rust_23: 6906992402799248528
+      plate_01_rust_24: 7271795215027585281
+      plate_01_rust_25: 954807219983439039
+      plate_01_rust_26: 3684175382528699465
+      plate_01_rust_27: -7838496589617085529
+      plate_01_rust_28: -6787416983624246533
+      plate_01_rust_29: -9087578286260096216
+      plate_01_rust_3: 1423053518202949017
+      plate_01_rust_30: -940298509687219670
+      plate_01_rust_31: -7691279300285835842
+      plate_01_rust_32: 3786939431142659345
+      plate_01_rust_33: 5340655041087452438
+      plate_01_rust_34: -6221439457929551711
+      plate_01_rust_35: -8336767481715076431
+      plate_01_rust_36: -7438385746621243950
+      plate_01_rust_37: -9118747168303699590
+      plate_01_rust_38: -3389352133537647578
+      plate_01_rust_39: -8155428221720984609
+      plate_01_rust_4: -5084680883999376680
+      plate_01_rust_40: 8845966170273511751
+      plate_01_rust_41: -1994472803469657190
+      plate_01_rust_42: -106958957763177250
+      plate_01_rust_43: 5600877401785008848
+      plate_01_rust_44: -6259775129130629001
+      plate_01_rust_45: -3559610006700431973
+      plate_01_rust_46: -1346603165682001378
+      plate_01_rust_5: -7948582129996366661
+      plate_01_rust_6: 7793249542933283947
+      plate_01_rust_7: 6594990463451531979
+      plate_01_rust_8: 580992531667635145
+      plate_01_rust_9: -4818044473372860833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

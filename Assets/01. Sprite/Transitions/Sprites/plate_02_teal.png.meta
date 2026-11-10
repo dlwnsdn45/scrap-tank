@@ -1,0 +1,2537 @@
+fileFormatVersion: 2
+guid: 795dfd4c5b5a8c043bc43c25c562c490
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3801096073520494218
+    second: plate_02_teal_0
+  - first:
+      213: 2441599574015731339
+    second: plate_02_teal_1
+  - first:
+      213: 4574728317067273255
+    second: plate_02_teal_2
+  - first:
+      213: -2181984780998444599
+    second: plate_02_teal_3
+  - first:
+      213: 3270524477840329629
+    second: plate_02_teal_4
+  - first:
+      213: -3977040459607648264
+    second: plate_02_teal_5
+  - first:
+      213: -3260009748045749946
+    second: plate_02_teal_6
+  - first:
+      213: -2086861305536594482
+    second: plate_02_teal_7
+  - first:
+      213: -5277398901198594860
+    second: plate_02_teal_8
+  - first:
+      213: -4385416516340134972
+    second: plate_02_teal_9
+  - first:
+      213: -2166984578845006708
+    second: plate_02_teal_10
+  - first:
+      213: -4134102011218028620
+    second: plate_02_teal_11
+  - first:
+      213: -1752350717879404746
+    second: plate_02_teal_12
+  - first:
+      213: 2581851889624885374
+    second: plate_02_teal_13
+  - first:
+      213: 5924322334467816218
+    second: plate_02_teal_14
+  - first:
+      213: 2982857685723055082
+    second: plate_02_teal_15
+  - first:
+      213: 7059300567669185476
+    second: plate_02_teal_16
+  - first:
+      213: 441074830729058484
+    second: plate_02_teal_17
+  - first:
+      213: 7329476017882767236
+    second: plate_02_teal_18
+  - first:
+      213: -6059222070650517971
+    second: plate_02_teal_19
+  - first:
+      213: 6406112578591298030
+    second: plate_02_teal_20
+  - first:
+      213: -2548626126756689116
+    second: plate_02_teal_21
+  - first:
+      213: 833234264001424062
+    second: plate_02_teal_22
+  - first:
+      213: -6666432988958104988
+    second: plate_02_teal_23
+  - first:
+      213: -3177284372205238691
+    second: plate_02_teal_24
+  - first:
+      213: -1771138820041792799
+    second: plate_02_teal_25
+  - first:
+      213: 7523331672106184671
+    second: plate_02_teal_26
+  - first:
+      213: 2425304567105437124
+    second: plate_02_teal_27
+  - first:
+      213: -2247962840430264900
+    second: plate_02_teal_28
+  - first:
+      213: 6213317552820838174
+    second: plate_02_teal_29
+  - first:
+      213: -5509427174998336388
+    second: plate_02_teal_30
+  - first:
+      213: 7893959694430727022
+    second: plate_02_teal_31
+  - first:
+      213: -1536806780826129914
+    second: plate_02_teal_32
+  - first:
+      213: -71223718622523824
+    second: plate_02_teal_33
+  - first:
+      213: -3411068563967415337
+    second: plate_02_teal_34
+  - first:
+      213: -7971308109879595967
+    second: plate_02_teal_35
+  - first:
+      213: 10316330787594121
+    second: plate_02_teal_36
+  - first:
+      213: 7717789079021088112
+    second: plate_02_teal_37
+  - first:
+      213: 6743361023763615352
+    second: plate_02_teal_38
+  - first:
+      213: -2632024782910989680
+    second: plate_02_teal_39
+  - first:
+      213: 2828635533542409821
+    second: plate_02_teal_40
+  - first:
+      213: 370018166655137186
+    second: plate_02_teal_41
+  - first:
+      213: 47584296206482048
+    second: plate_02_teal_42
+  - first:
+      213: 6036707062278453124
+    second: plate_02_teal_43
+  - first:
+      213: 7290661331924872664
+    second: plate_02_teal_44
+  - first:
+      213: 3823230849501183401
+    second: plate_02_teal_45
+  - first:
+      213: 5341040352355051423
+    second: plate_02_teal_46
+  - first:
+      213: 7179772869880303577
+    second: plate_02_teal_47
+  - first:
+      213: 1765503659002181439
+    second: plate_02_teal_48
+  - first:
+      213: 802323426518773824
+    second: plate_02_teal_49
+  - first:
+      213: 8468104825843279938
+    second: plate_02_teal_50
+  - first:
+      213: 8088367362103792289
+    second: plate_02_teal_51
+  - first:
+      213: 2156021713550353692
+    second: plate_02_teal_52
+  - first:
+      213: -78116845141502693
+    second: plate_02_teal_53
+  - first:
+      213: -2540755521902306604
+    second: plate_02_teal_54
+  - first:
+      213: 4173446717306546671
+    second: plate_02_teal_55
+  - first:
+      213: 5430027651529538439
+    second: plate_02_teal_56
+  - first:
+      213: -1026679642626877144
+    second: plate_02_teal_57
+  - first:
+      213: 3216937858289704504
+    second: plate_02_teal_58
+  - first:
+      213: -416681086671137515
+    second: plate_02_teal_59
+  - first:
+      213: -2524768229291116187
+    second: plate_02_teal_60
+  - first:
+      213: 5194614539086161444
+    second: plate_02_teal_61
+  - first:
+      213: -5897820767453665722
+    second: plate_02_teal_62
+  - first:
+      213: 9125049534356481404
+    second: plate_02_teal_63
+  - first:
+      213: 7956197091413101138
+    second: plate_02_teal_64
+  - first:
+      213: 782986442043173940
+    second: plate_02_teal_65
+  - first:
+      213: 8004349357678904132
+    second: plate_02_teal_66
+  - first:
+      213: 8823723344135563476
+    second: plate_02_teal_67
+  - first:
+      213: 6465196191092392122
+    second: plate_02_teal_68
+  - first:
+      213: 5918843630370652390
+    second: plate_02_teal_69
+  - first:
+      213: -4337887873182518898
+    second: plate_02_teal_70
+  - first:
+      213: -1143146204329710762
+    second: plate_02_teal_71
+  - first:
+      213: 271730338762146879
+    second: plate_02_teal_72
+  - first:
+      213: -4523142212699355673
+    second: plate_02_teal_73
+  - first:
+      213: -4855083872090020644
+    second: plate_02_teal_74
+  - first:
+      213: -4380811402160787758
+    second: plate_02_teal_75
+  - first:
+      213: 1420502321030721915
+    second: plate_02_teal_76
+  - first:
+      213: -7875889632617046141
+    second: plate_02_teal_77
+  - first:
+      213: -1133433389517649086
+    second: plate_02_teal_78
+  - first:
+      213: -7407810924803632941
+    second: plate_02_teal_79
+  - first:
+      213: 2111806271154165663
+    second: plate_02_teal_80
+  - first:
+      213: -6334393881043796153
+    second: plate_02_teal_81
+  - first:
+      213: -7099907415995255516
+    second: plate_02_teal_82
+  - first:
+      213: -4007862472283982243
+    second: plate_02_teal_83
+  - first:
+      213: -7571740568202550430
+    second: plate_02_teal_84
+  - first:
+      213: 4609236604601281973
+    second: plate_02_teal_85
+  - first:
+      213: -6318381368827459732
+    second: plate_02_teal_86
+  - first:
+      213: 5403684380988131965
+    second: plate_02_teal_87
+  - first:
+      213: -1087298657125835883
+    second: plate_02_teal_88
+  - first:
+      213: 7681039101403994509
+    second: plate_02_teal_89
+  - first:
+      213: 2766543616457910812
+    second: plate_02_teal_90
+  - first:
+      213: -239641135509390015
+    second: plate_02_teal_91
+  - first:
+      213: 1936003109394831129
+    second: plate_02_teal_92
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plate_02_teal_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 929
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8632536db430c430800000000000000
+      internalID: 3801096073520494218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 885
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86e3fc50ed42e120800000000000000
+      internalID: 2441599574015731339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 893
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72427ba9a23bc7f30800000000000000
+      internalID: 4574728317067273255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 831
+        width: 90
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9774ff66808b1e0800000000000000
+      internalID: -2181984780998444599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_4
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 885
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b84e24fac336d20800000000000000
+      internalID: 3270524477840329629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 912
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7dab3f5c6bec8c0800000000000000
+      internalID: -3977040459607648264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_6
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 887
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6412c6b086e12c2d0800000000000000
+      internalID: -3260009748045749946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_7
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 895
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdbbf303baf903e0800000000000000
+      internalID: -2086861305536594482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_8
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 829
+        width: 131
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc550409a9e2c6b0800000000000000
+      internalID: -5277398901198594860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_9
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 865
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb4a6fc9eed323c0800000000000000
+      internalID: -4385416516340134972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_10
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 889
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84a138b1035de1e0800000000000000
+      internalID: -2166984578845006708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_11
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 875
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b71f1ccf18b0a6c0800000000000000
+      internalID: -4134102011218028620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_12
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 927
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637b5e27e466ea7e0800000000000000
+      internalID: -1752350717879404746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_13
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 919
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7823c74d9494d320800000000000000
+      internalID: 2581851889624885374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_14
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 893
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bfdd856cb673250800000000000000
+      internalID: 5924322334467816218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_15
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 925
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae30115e24d356920800000000000000
+      internalID: 2982857685723055082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_16
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 909
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb92aae67ca7f160800000000000000
+      internalID: 7059300567669185476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_17
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 923
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b898fcb8330f1600800000000000000
+      internalID: 441074830729058484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_18
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 909
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f95a3ea9787b560800000000000000
+      internalID: 7329476017882767236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_19
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 911
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d264baf31a159eba0800000000000000
+      internalID: -6059222070650517971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_20
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 865
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1981ef27517e850800000000000000
+      internalID: 6406112578591298030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 913
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b43697a0671acd0800000000000000
+      internalID: -2548626126756689116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 911
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba2d70062e309b00800000000000000
+      internalID: 833234264001424062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_23
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 910
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462e43e44821c73a0800000000000000
+      internalID: -6666432988958104988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_24
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 901
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d568e4c82b408e3d0800000000000000
+      internalID: -3177284372205238691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_25
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 881
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2218780a6ab67e0800000000000000
+      internalID: -1771138820041792799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 897
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfa553ab4e386860800000000000000
+      internalID: 7523331672106184671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_27
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 883
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdb37a67a968a120800000000000000
+      internalID: 2425304567105437124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_28
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 863
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd30e3f4b1adc0e0800000000000000
+      internalID: -2247962840430264900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_29
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 871
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fd59c05632a3650800000000000000
+      internalID: 6213317552820838174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_30
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 889
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c175eac259a83b0800000000000000
+      internalID: -5509427174998336388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_31
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 909
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b6bc1a48afc8d60800000000000000
+      internalID: 7893959694430727022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_32
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 911
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a627c006a2caae0800000000000000
+      internalID: -1536806780826129914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_33
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 883
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e0cefb766f20ff0800000000000000
+      internalID: -71223718622523824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_34
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 869
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db6834b63379a0d0800000000000000
+      internalID: -3411068563967415337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_35
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 865
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14caf630289306190800000000000000
+      internalID: -7971308109879595967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_36
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 885
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fdaffe5a6a42000800000000000000
+      internalID: 10316330787594121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_37
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 895
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de07ad6481b1b60800000000000000
+      internalID: 7717789079021088112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_38
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 895
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e05ad8f1b359d50800000000000000
+      internalID: 6743361023763615352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_39
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 887
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ad09ea76b297bd0800000000000000
+      internalID: -2632024782910989680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_40
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 901
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56c7dfe705514720800000000000000
+      internalID: 2828635533542409821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_41
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 900
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5bbe7ef81922500800000000000000
+      internalID: 370018166655137186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_42
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 895
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a36405aad09a000800000000000000
+      internalID: 47584296206482048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_43
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 905
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487f23cd611b6c350800000000000000
+      internalID: 6036707062278453124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_44
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 909
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddee039ad1ad2560800000000000000
+      internalID: 7290661331924872664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_45
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 867
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad35d68338de0530800000000000000
+      internalID: 3823230849501183401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_46
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 913
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97662507ef2f1a40800000000000000
+      internalID: 5341040352355051423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_47
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 891
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfc335926da3a360800000000000000
+      internalID: 7179772869880303577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_48
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 879
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f373a7c4934508810800000000000000
+      internalID: 1765503659002181439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_49
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 887
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04030a0d7ec622b00800000000000000
+      internalID: 802323426518773824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_50
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 847
+        width: 155
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248e8212970c48570800000000000000
+      internalID: 8468104825843279938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_51
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 831
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a25f070347af3070800000000000000
+      internalID: 8088367362103792289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1527
+        height: 816
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15a23c435abbed10800000000000000
+      internalID: 2156021713550353692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_53
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 95
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15dd5aa4297aeef0800000000000000
+      internalID: -78116845141502693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da96e7705c6dbcd0800000000000000
+      internalID: -2540755521902306604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_55
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 53
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9a3127daf0be930800000000000000
+      internalID: 4173446717306546671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_56
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 63
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b77f921655b5b40800000000000000
+      internalID: 5430027651529538439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_57
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 127
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829991bfd4080c1f0800000000000000
+      internalID: -1026679642626877144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_58
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 65
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e1dd320fbd4ac20800000000000000
+      internalID: 3216937858289704504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_59
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 69
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515d75462c6a73af0800000000000000
+      internalID: -416681086671137515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 126
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56939e81ca836fcd0800000000000000
+      internalID: -2524768229291116187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_61
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 65
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4266f4ba66af61840800000000000000
+      internalID: 5194614539086161444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_62
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 138
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646a00f824bb62ea0800000000000000
+      internalID: -5897820767453665722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_63
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 92
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7569257430b2ae70800000000000000
+      internalID: 9125049534356481404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_64
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 133
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a8ca4d9171a6e60800000000000000
+      internalID: 7956197091413101138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_65
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 105
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c2ee5450abdda00800000000000000
+      internalID: 782986442043173940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_66
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 78
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443c39af459251f60800000000000000
+      internalID: 8004349357678904132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_67
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 129
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8a583a1a9247a70800000000000000
+      internalID: 8823723344135563476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_68
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 65
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab045458eadf8b950800000000000000
+      internalID: 6465196191092392122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_69
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 65
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e083552ce4f32250800000000000000
+      internalID: 5918843630370652390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_70
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 94
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e813b7366f9bcc3c0800000000000000
+      internalID: -4337887873182518898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_71
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 115
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b6794759ab220f0800000000000000
+      internalID: -1143146204329710762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_72
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 65
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f344d9cad4165c300800000000000000
+      internalID: 271730338762146879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_73
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 107
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e50b774f129a31c0800000000000000
+      internalID: -4523142212699355673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_74
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 109
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4a85111f64f9cb0800000000000000
+      internalID: -4855083872090020644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_75
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 111
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dea9328d3b3433c0800000000000000
+      internalID: -4380811402160787758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_76
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 59
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7177a7b553a6b310800000000000000
+      internalID: 1420502321030721915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_77
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 77
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fddad7b1833b290800000000000000
+      internalID: -7875889632617046141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_78
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bcb31665c3540f0800000000000000
+      internalID: -1133433389517649086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_79
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 77
+        width: 97
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d052df463b223990800000000000000
+      internalID: -7407810924803632941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_80
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 97
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9716926d94ae4d10800000000000000
+      internalID: 2111806271154165663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_81
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 77
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ff9f48356b718a0800000000000000
+      internalID: -6334393881043796153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_82
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 113
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425f07372df087d90800000000000000
+      internalID: -7099907415995255516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_83
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56f4e6e0563168c0800000000000000
+      internalID: -4007862472283982243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_84
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 78
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2636fdce116cbe690800000000000000
+      internalID: -7571740568202550430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_85
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 69
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdacf6654c47ff30800000000000000
+      internalID: 4609236604601281973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_86
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 111
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67c79b0f999058a0800000000000000
+      internalID: -6318381368827459732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_87
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 71
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7acf17805ebdfa40800000000000000
+      internalID: 5403684380988131965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_88
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 93
+        width: 52
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b5141d1a329e0f0800000000000000
+      internalID: -1087298657125835883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_89
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 63
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d891219ed58889a60800000000000000
+      internalID: 7681039101403994509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_90
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 135
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a299ae2ccb46620800000000000000
+      internalID: 2766543616457910812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_91
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 121
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d346c28af9cacf0800000000000000
+      internalID: -239641135509390015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_02_teal_92
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 95
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917d78312901eda10800000000000000
+      internalID: 1936003109394831129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plate_02_teal_0: 3801096073520494218
+      plate_02_teal_1: 2441599574015731339
+      plate_02_teal_10: -2166984578845006708
+      plate_02_teal_11: -4134102011218028620
+      plate_02_teal_12: -1752350717879404746
+      plate_02_teal_13: 2581851889624885374
+      plate_02_teal_14: 5924322334467816218
+      plate_02_teal_15: 2982857685723055082
+      plate_02_teal_16: 7059300567669185476
+      plate_02_teal_17: 441074830729058484
+      plate_02_teal_18: 7329476017882767236
+      plate_02_teal_19: -6059222070650517971
+      plate_02_teal_2: 4574728317067273255
+      plate_02_teal_20: 6406112578591298030
+      plate_02_teal_21: -2548626126756689116
+      plate_02_teal_22: 833234264001424062
+      plate_02_teal_23: -6666432988958104988
+      plate_02_teal_24: -3177284372205238691
+      plate_02_teal_25: -1771138820041792799
+      plate_02_teal_26: 7523331672106184671
+      plate_02_teal_27: 2425304567105437124
+      plate_02_teal_28: -2247962840430264900
+      plate_02_teal_29: 6213317552820838174
+      plate_02_teal_3: -2181984780998444599
+      plate_02_teal_30: -5509427174998336388
+      plate_02_teal_31: 7893959694430727022
+      plate_02_teal_32: -1536806780826129914
+      plate_02_teal_33: -71223718622523824
+      plate_02_teal_34: -3411068563967415337
+      plate_02_teal_35: -7971308109879595967
+      plate_02_teal_36: 10316330787594121
+      plate_02_teal_37: 7717789079021088112
+      plate_02_teal_38: 6743361023763615352
+      plate_02_teal_39: -2632024782910989680
+      plate_02_teal_4: 3270524477840329629
+      plate_02_teal_40: 2828635533542409821
+      plate_02_teal_41: 370018166655137186
+      plate_02_teal_42: 47584296206482048
+      plate_02_teal_43: 6036707062278453124
+      plate_02_teal_44: 7290661331924872664
+      plate_02_teal_45: 3823230849501183401
+      plate_02_teal_46: 5341040352355051423
+      plate_02_teal_47: 7179772869880303577
+      plate_02_teal_48: 1765503659002181439
+      plate_02_teal_49: 802323426518773824
+      plate_02_teal_5: -3977040459607648264
+      plate_02_teal_50: 8468104825843279938
+      plate_02_teal_51: 8088367362103792289
+      plate_02_teal_52: 2156021713550353692
+      plate_02_teal_53: -78116845141502693
+      plate_02_teal_54: -2540755521902306604
+      plate_02_teal_55: 4173446717306546671
+      plate_02_teal_56: 5430027651529538439
+      plate_02_teal_57: -1026679642626877144
+      plate_02_teal_58: 3216937858289704504
+      plate_02_teal_59: -416681086671137515
+      plate_02_teal_6: -3260009748045749946
+      plate_02_teal_60: -2524768229291116187
+      plate_02_teal_61: 5194614539086161444
+      plate_02_teal_62: -5897820767453665722
+      plate_02_teal_63: 9125049534356481404
+      plate_02_teal_64: 7956197091413101138
+      plate_02_teal_65: 782986442043173940
+      plate_02_teal_66: 8004349357678904132
+      plate_02_teal_67: 8823723344135563476
+      plate_02_teal_68: 6465196191092392122
+      plate_02_teal_69: 5918843630370652390
+      plate_02_teal_7: -2086861305536594482
+      plate_02_teal_70: -4337887873182518898
+      plate_02_teal_71: -1143146204329710762
+      plate_02_teal_72: 271730338762146879
+      plate_02_teal_73: -4523142212699355673
+      plate_02_teal_74: -4855083872090020644
+      plate_02_teal_75: -4380811402160787758
+      plate_02_teal_76: 1420502321030721915
+      plate_02_teal_77: -7875889632617046141
+      plate_02_teal_78: -1133433389517649086
+      plate_02_teal_79: -7407810924803632941
+      plate_02_teal_8: -5277398901198594860
+      plate_02_teal_80: 2111806271154165663
+      plate_02_teal_81: -6334393881043796153
+      plate_02_teal_82: -7099907415995255516
+      plate_02_teal_83: -4007862472283982243
+      plate_02_teal_84: -7571740568202550430
+      plate_02_teal_85: 4609236604601281973
+      plate_02_teal_86: -6318381368827459732
+      plate_02_teal_87: 5403684380988131965
+      plate_02_teal_88: -1087298657125835883
+      plate_02_teal_89: 7681039101403994509
+      plate_02_teal_9: -4385416516340134972
+      plate_02_teal_90: 2766543616457910812
+      plate_02_teal_91: -239641135509390015
+      plate_02_teal_92: 1936003109394831129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

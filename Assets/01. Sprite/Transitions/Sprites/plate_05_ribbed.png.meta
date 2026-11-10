@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: c97ba2d29d997f94aa5a65276c367145
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -829257254473081029
+    second: plate_05_ribbed_0
+  - first:
+      213: 2320917589867835232
+    second: plate_05_ribbed_1
+  - first:
+      213: 3959863602632073018
+    second: plate_05_ribbed_2
+  - first:
+      213: 967333694136991572
+    second: plate_05_ribbed_3
+  - first:
+      213: 5459609359079060537
+    second: plate_05_ribbed_4
+  - first:
+      213: 949823244676890548
+    second: plate_05_ribbed_5
+  - first:
+      213: 4613402849401939808
+    second: plate_05_ribbed_6
+  - first:
+      213: 974758543016631287
+    second: plate_05_ribbed_7
+  - first:
+      213: 6457306469359672943
+    second: plate_05_ribbed_8
+  - first:
+      213: -8687265299594605784
+    second: plate_05_ribbed_9
+  - first:
+      213: -4720363749532282305
+    second: plate_05_ribbed_10
+  - first:
+      213: -976453429025433701
+    second: plate_05_ribbed_11
+  - first:
+      213: -7363458453500114069
+    second: plate_05_ribbed_12
+  - first:
+      213: 3183126974593888643
+    second: plate_05_ribbed_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plate_05_ribbed_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 55
+        width: 1433
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f57bfabe2ed74f0800000000000000
+      internalID: -829257254473081029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 879
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f2701504e853020800000000000000
+      internalID: 2320917589867835232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 862
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f12e167f244f630800000000000000
+      internalID: 3959863602632073018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_3
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 852
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f3d42aed8ac6d00800000000000000
+      internalID: 967333694136991572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 5
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9343e4c29cd64cb40800000000000000
+      internalID: 5459609359079060537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_5
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 183
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bfff5a65337e2d00800000000000000
+      internalID: 949823244676890548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_6
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 161
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067a06cd279160040800000000000000
+      internalID: 4613402849401939808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_7
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 161
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb984afab9078d00800000000000000
+      internalID: 974758543016631287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_8
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 144
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ed3088506fc9950800000000000000
+      internalID: 6457306469359672943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_9
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 151
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b0614bc32a07780800000000000000
+      internalID: -8687265299594605784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_10
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 145
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f325f7aed26ed7eb0800000000000000
+      internalID: -4720363749532282305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_11
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 141
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b971a3f97c0f272f0800000000000000
+      internalID: -976453429025433701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_12
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 143
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b47c0cc8dbfc990800000000000000
+      internalID: -7363458453500114069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_05_ribbed_13
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 149
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381f1a35e1dbc2c20800000000000000
+      internalID: 3183126974593888643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plate_05_ribbed_0: -829257254473081029
+      plate_05_ribbed_1: 2320917589867835232
+      plate_05_ribbed_10: -4720363749532282305
+      plate_05_ribbed_11: -976453429025433701
+      plate_05_ribbed_12: -7363458453500114069
+      plate_05_ribbed_13: 3183126974593888643
+      plate_05_ribbed_2: 3959863602632073018
+      plate_05_ribbed_3: 967333694136991572
+      plate_05_ribbed_4: 5459609359079060537
+      plate_05_ribbed_5: 949823244676890548
+      plate_05_ribbed_6: 4613402849401939808
+      plate_05_ribbed_7: 974758543016631287
+      plate_05_ribbed_8: 6457306469359672943
+      plate_05_ribbed_9: -8687265299594605784
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2095 @@
+fileFormatVersion: 2
+guid: 8844c0c771513f845bb7b8f7b490630f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5715649135087843552
+    second: weld_spark_0
+  - first:
+      213: -5913677581655393418
+    second: weld_spark_1
+  - first:
+      213: 6722934275492304398
+    second: weld_spark_2
+  - first:
+      213: 5891954966917565247
+    second: weld_spark_3
+  - first:
+      213: 8768649806502591906
+    second: weld_spark_4
+  - first:
+      213: 2009217984190506400
+    second: weld_spark_5
+  - first:
+      213: -7542855555503921359
+    second: weld_spark_6
+  - first:
+      213: 2242817638777026789
+    second: weld_spark_7
+  - first:
+      213: 7194926671094643782
+    second: weld_spark_8
+  - first:
+      213: -7699577405177890932
+    second: weld_spark_9
+  - first:
+      213: 8847527839004964070
+    second: weld_spark_10
+  - first:
+      213: -917929517792405835
+    second: weld_spark_11
+  - first:
+      213: -2976535563605374675
+    second: weld_spark_12
+  - first:
+      213: 2504082802870236207
+    second: weld_spark_13
+  - first:
+      213: 1886696107073382144
+    second: weld_spark_14
+  - first:
+      213: 6358796252407550701
+    second: weld_spark_15
+  - first:
+      213: 1070821107486442695
+    second: weld_spark_16
+  - first:
+      213: -1095831846407199434
+    second: weld_spark_17
+  - first:
+      213: 7517115382409897668
+    second: weld_spark_18
+  - first:
+      213: -2759605448803693689
+    second: weld_spark_19
+  - first:
+      213: -2210283163736687478
+    second: weld_spark_20
+  - first:
+      213: -7649790155181414217
+    second: weld_spark_21
+  - first:
+      213: -606352497958815763
+    second: weld_spark_22
+  - first:
+      213: -1876314138372570889
+    second: weld_spark_23
+  - first:
+      213: 7358591452003013226
+    second: weld_spark_24
+  - first:
+      213: 2912897879390136052
+    second: weld_spark_25
+  - first:
+      213: -4153677658685812523
+    second: weld_spark_26
+  - first:
+      213: 7238662245396904673
+    second: weld_spark_27
+  - first:
+      213: 5521045069184790584
+    second: weld_spark_28
+  - first:
+      213: -6398107730675224012
+    second: weld_spark_29
+  - first:
+      213: -4960566100409338157
+    second: weld_spark_30
+  - first:
+      213: -781914838865082095
+    second: weld_spark_31
+  - first:
+      213: -1020894179739563663
+    second: weld_spark_32
+  - first:
+      213: 6313864590011731357
+    second: weld_spark_33
+  - first:
+      213: 7711090477485496279
+    second: weld_spark_34
+  - first:
+      213: 3058097558026858084
+    second: weld_spark_35
+  - first:
+      213: -6175552359034862406
+    second: weld_spark_36
+  - first:
+      213: 7902626160137422343
+    second: weld_spark_37
+  - first:
+      213: 2466243572041551701
+    second: weld_spark_38
+  - first:
+      213: 5640009559294091801
+    second: weld_spark_39
+  - first:
+      213: 1572245521266542651
+    second: weld_spark_40
+  - first:
+      213: -448862171616920093
+    second: weld_spark_41
+  - first:
+      213: 8589391678297480977
+    second: weld_spark_42
+  - first:
+      213: -576596869234473166
+    second: weld_spark_43
+  - first:
+      213: 2489439626362642476
+    second: weld_spark_44
+  - first:
+      213: -3837147069592204271
+    second: weld_spark_45
+  - first:
+      213: -3272351487202392678
+    second: weld_spark_46
+  - first:
+      213: 5048720045398182845
+    second: weld_spark_47
+  - first:
+      213: -4681868033541682147
+    second: weld_spark_48
+  - first:
+      213: 8909039141909967687
+    second: weld_spark_49
+  - first:
+      213: -4129986551301435700
+    second: weld_spark_50
+  - first:
+      213: 4699572270860855574
+    second: weld_spark_51
+  - first:
+      213: 1755104587187097380
+    second: weld_spark_52
+  - first:
+      213: -1765496181092400595
+    second: weld_spark_53
+  - first:
+      213: -6903399782496469241
+    second: weld_spark_54
+  - first:
+      213: 6752850128276383882
+    second: weld_spark_55
+  - first:
+      213: 12950699644315096
+    second: weld_spark_56
+  - first:
+      213: -596940015671988410
+    second: weld_spark_57
+  - first:
+      213: 2066215208826261791
+    second: weld_spark_58
+  - first:
+      213: 133613974928567043
+    second: weld_spark_59
+  - first:
+      213: 5379911995948035217
+    second: weld_spark_60
+  - first:
+      213: 3747879327901056562
+    second: weld_spark_61
+  - first:
+      213: 2304129885517992962
+    second: weld_spark_62
+  - first:
+      213: 5875396318989092425
+    second: weld_spark_63
+  - first:
+      213: -460627383166312561
+    second: weld_spark_64
+  - first:
+      213: -4973555788327560322
+    second: weld_spark_65
+  - first:
+      213: 5145079811109651080
+    second: weld_spark_66
+  - first:
+      213: -8686869607665077166
+    second: weld_spark_67
+  - first:
+      213: 34632974608413160
+    second: weld_spark_68
+  - first:
+      213: -3955218881796283600
+    second: weld_spark_69
+  - first:
+      213: 8682139254488529400
+    second: weld_spark_70
+  - first:
+      213: -5233065885556521209
+    second: weld_spark_71
+  - first:
+      213: -7862950690310764694
+    second: weld_spark_72
+  - first:
+      213: 1762742630405440011
+    second: weld_spark_73
+  - first:
+      213: 6814147668190757383
+    second: weld_spark_74
+  - first:
+      213: -3747935498666655565
+    second: weld_spark_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weld_spark_0
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 999
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8fda50b90125f40800000000000000
+      internalID: 5715649135087843552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_1
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 984
+        width: 93
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b3d3d42956eeda0800000000000000
+      internalID: -5913677581655393418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 949
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06540b9a19ac4d50800000000000000
+      internalID: 6722934275492304398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 1521
+        height: 978
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b48b353dd64c150800000000000000
+      internalID: 5891954966917565247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 983
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad726c6a8080b970800000000000000
+      internalID: 8768649806502591906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_5
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 950
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a560008c1d22eb10800000000000000
+      internalID: 2009217984190506400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 943
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1376b1606d4625790800000000000000
+      internalID: -7542855555503921359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_7
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 937
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8f84f62c6102f10800000000000000
+      internalID: 2242817638777026789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_8
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 929
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c749fdfa389d360800000000000000
+      internalID: 7194926671094643782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 933
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c877fb3e42b952590800000000000000
+      internalID: -7699577405177890932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_10
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 927
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4354081bbb8ca70800000000000000
+      internalID: 8847527839004964070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 930
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6532b87fbd243f0800000000000000
+      internalID: -917929517792405835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 924
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d290cfddca831b6d0800000000000000
+      internalID: -2976535563605374675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_13
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 912
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24be31ca0a40c220800000000000000
+      internalID: 2504082802870236207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 913
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007a83dfc14ee2a10800000000000000
+      internalID: 1886696107073382144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_15
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 913
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de256df408bfe3850800000000000000
+      internalID: 6358796252407550701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_16
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 913
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c448b1bf125cde00800000000000000
+      internalID: 1070821107486442695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_17
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 815
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635a65dddb2dac0f0800000000000000
+      internalID: -1095831846407199434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_18
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 818
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6aa28ec98225860800000000000000
+      internalID: 7517115382409897668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_19
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 784
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bc2df1779e3b9d0800000000000000
+      internalID: -2759605448803693689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 735
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cb2745c2f7351e0800000000000000
+      internalID: -2210283163736687478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_21
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 751
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8a12a526c76d590800000000000000
+      internalID: -7649790155181414217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 689
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de77e7e9d9dc597f0800000000000000
+      internalID: -606352497958815763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_23
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 712
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f082477b3ef5f5e0800000000000000
+      internalID: -1876314138372570889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_24
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 717
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a629dd720f7fe1660800000000000000
+      internalID: 7358591452003013226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_25
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 693
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6a9082031bc6820800000000000000
+      internalID: 2912897879390136052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 647
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d05e823d2c2b56c0800000000000000
+      internalID: -4153677658685812523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_27
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 669
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaf9e9c5f4e47460800000000000000
+      internalID: 7238662245396904673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_28
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 646
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8307ea91d31be9c40800000000000000
+      internalID: 5521045069184790584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_29
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 638
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4323c66eaea5537a0800000000000000
+      internalID: -6398107730675224012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_30
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 616
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6b144f967882bb0800000000000000
+      internalID: -4960566100409338157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_31
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 583
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11907d8c8941625f0800000000000000
+      internalID: -781914838865082095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_32
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 577
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1790c57072e05d1f0800000000000000
+      internalID: -1020894179739563663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_33
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 581
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d019f646a5f9750800000000000000
+      internalID: 6313864590011731357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_34
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 583
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d79b652feb430b60800000000000000
+      internalID: 7711090477485496279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_35
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 565
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e2eaac68b807a20800000000000000
+      internalID: 3058097558026858084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_36
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 529
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4c6e359d70c4aa0800000000000000
+      internalID: -6175552359034862406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_37
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 535
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70643bb6f94cbad60800000000000000
+      internalID: 7902626160137422343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_38
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 511
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f8029467bd93220800000000000000
+      internalID: 2466243572041551701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_39
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 501
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9122887efc6554e40800000000000000
+      internalID: 5640009559294091801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 479
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b388ac2b8fcb1d510800000000000000
+      internalID: 1572245521266542651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_41
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 495
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edb9abab3255c9f0800000000000000
+      internalID: -448862171616920093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_42
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 460
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f1e9d0936a33770800000000000000
+      internalID: 8589391678297480977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_43
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 395
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2374daec3348ff7f0800000000000000
+      internalID: -576596869234473166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_44
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 390
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20602b86244c8220800000000000000
+      internalID: 2489439626362642476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_45
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 383
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c860ef117bfbac0800000000000000
+      internalID: -3837147069592204271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 364
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a958419f8a54692d0800000000000000
+      internalID: -3272351487202392678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_47
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 319
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb4a5cc128a01640800000000000000
+      internalID: 5048720045398182845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_48
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 289
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ccd7f34d9a60fb0800000000000000
+      internalID: -4681868033541682147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_49
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 255
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743389fb5e343ab70800000000000000
+      internalID: 8909039141909967687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_50
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 155
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce898afc175fa6c0800000000000000
+      internalID: -4129986551301435700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_51
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 145
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619efe8b41c383140800000000000000
+      internalID: 4699572270860855574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_52
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 117
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f02f6b2526b5810800000000000000
+      internalID: 1755104587187097380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_53
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 161
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22cda9c392bf77e0800000000000000
+      internalID: -1765496181092400595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 147
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ff9cd39723230a0800000000000000
+      internalID: -6903399782496469241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_55
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 135
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a886d5dd961f6bd50800000000000000
+      internalID: 6752850128276383882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_56
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 129
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d564ebb7920e2000800000000000000
+      internalID: 12950699644315096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_57
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 143
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fa7ade73e37b7f0800000000000000
+      internalID: -596940015671988410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_58
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11599ff8cbacac10800000000000000
+      internalID: 2066215208826261791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_59
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 71
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b25a8c331bad100800000000000000
+      internalID: 133613974928567043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_60
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 117
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c6851d47949aa40800000000000000
+      internalID: 5379911995948035217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_61
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 109
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e72904464230430800000000000000
+      internalID: 3747879327901056562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_62
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 125
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20459ae4ce9e9ff10800000000000000
+      internalID: 2304129885517992962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_63
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 110
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9468bfba2d9998150800000000000000
+      internalID: 5875396318989092425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_64
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 109
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fdd84e5d58b99f0800000000000000
+      internalID: -460627383166312561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_65
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 111
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bd52e8c516afab0800000000000000
+      internalID: -4973555788327560322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_66
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 101
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882893214def66740800000000000000
+      internalID: 5145079811109651080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_67
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 87
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2547cf8ed1a027780800000000000000
+      internalID: -8686869607665077166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_68
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 65
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1bc05c18a0b7000800000000000000
+      internalID: 34632974608413160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_69
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 77
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0336d95f16d3c19c0800000000000000
+      internalID: -3955218881796283600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_70
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 63
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9734ae6a72d7870800000000000000
+      internalID: 8682139254488529400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_71
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 31
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70740359d4a6067b0800000000000000
+      internalID: -5233065885556521209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_72
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a674d91c10031e290800000000000000
+      internalID: -7862950690310764694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_73
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0201cb3515867810800000000000000
+      internalID: 1762742630405440011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_74
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 31
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70201998337b09e50800000000000000
+      internalID: 6814147668190757383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weld_spark_75
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0c5e87588acfbc0800000000000000
+      internalID: -3747935498666655565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      weld_spark_0: 5715649135087843552
+      weld_spark_1: -5913677581655393418
+      weld_spark_10: 8847527839004964070
+      weld_spark_11: -917929517792405835
+      weld_spark_12: -2976535563605374675
+      weld_spark_13: 2504082802870236207
+      weld_spark_14: 1886696107073382144
+      weld_spark_15: 6358796252407550701
+      weld_spark_16: 1070821107486442695
+      weld_spark_17: -1095831846407199434
+      weld_spark_18: 7517115382409897668
+      weld_spark_19: -2759605448803693689
+      weld_spark_2: 6722934275492304398
+      weld_spark_20: -2210283163736687478
+      weld_spark_21: -7649790155181414217
+      weld_spark_22: -606352497958815763
+      weld_spark_23: -1876314138372570889
+      weld_spark_24: 7358591452003013226
+      weld_spark_25: 2912897879390136052
+      weld_spark_26: -4153677658685812523
+      weld_spark_27: 7238662245396904673
+      weld_spark_28: 5521045069184790584
+      weld_spark_29: -6398107730675224012
+      weld_spark_3: 5891954966917565247
+      weld_spark_30: -4960566100409338157
+      weld_spark_31: -781914838865082095
+      weld_spark_32: -1020894179739563663
+      weld_spark_33: 6313864590011731357
+      weld_spark_34: 7711090477485496279
+      weld_spark_35: 3058097558026858084
+      weld_spark_36: -6175552359034862406
+      weld_spark_37: 7902626160137422343
+      weld_spark_38: 2466243572041551701
+      weld_spark_39: 5640009559294091801
+      weld_spark_4: 8768649806502591906
+      weld_spark_40: 1572245521266542651
+      weld_spark_41: -448862171616920093
+      weld_spark_42: 8589391678297480977
+      weld_spark_43: -576596869234473166
+      weld_spark_44: 2489439626362642476
+      weld_spark_45: -3837147069592204271
+      weld_spark_46: -3272351487202392678
+      weld_spark_47: 5048720045398182845
+      weld_spark_48: -4681868033541682147
+      weld_spark_49: 8909039141909967687
+      weld_spark_5: 2009217984190506400
+      weld_spark_50: -4129986551301435700
+      weld_spark_51: 4699572270860855574
+      weld_spark_52: 1755104587187097380
+      weld_spark_53: -1765496181092400595
+      weld_spark_54: -6903399782496469241
+      weld_spark_55: 6752850128276383882
+      weld_spark_56: 12950699644315096
+      weld_spark_57: -596940015671988410
+      weld_spark_58: 2066215208826261791
+      weld_spark_59: 133613974928567043
+      weld_spark_6: -7542855555503921359
+      weld_spark_60: 5379911995948035217
+      weld_spark_61: 3747879327901056562
+      weld_spark_62: 2304129885517992962
+      weld_spark_63: 5875396318989092425
+      weld_spark_64: -460627383166312561
+      weld_spark_65: -4973555788327560322
+      weld_spark_66: 5145079811109651080
+      weld_spark_67: -8686869607665077166
+      weld_spark_68: 34632974608413160
+      weld_spark_69: -3955218881796283600
+      weld_spark_7: 2242817638777026789
+      weld_spark_70: 8682139254488529400
+      weld_spark_71: -5233065885556521209
+      weld_spark_72: -7862950690310764694
+      weld_spark_73: 1762742630405440011
+      weld_spark_74: 6814147668190757383
+      weld_spark_75: -3747935498666655565
+      weld_spark_8: 7194926671094643782
+      weld_spark_9: -7699577405177890932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

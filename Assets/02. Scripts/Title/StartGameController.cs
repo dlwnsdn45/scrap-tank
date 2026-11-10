@@ -7,11 +7,12 @@ public class StartGameController : MonoBehaviour
     [SerializeField] private SaveFilePanelController saveFiles;
 
     [SerializeField, Min(0f)] private float fadeDuration = 0.4f;
+    [SerializeField] private ScrapSceneTransition.Assets transitionAssets = new ScrapSceneTransition.Assets();
 
     // 파일 선택 확인 후 게임 시작
     public void StartGame()
     {
-        if (SceneFadeController.IsTransitioning) return;
+        if (SceneFadeController.IsTransitioning || ScrapSceneTransition.IsTransitioning) return;
         if (!saveFiles.HasSelectedSlot)
         {
             settings.Open();
@@ -20,6 +21,6 @@ public class StartGameController : MonoBehaviour
             return;
         }
 
-        SceneFadeController.LoadScene("Ingame", fadeDuration);
+        ScrapSceneTransition.LoadScene("Ingame", transitionAssets, fadeDuration);
     }
 }

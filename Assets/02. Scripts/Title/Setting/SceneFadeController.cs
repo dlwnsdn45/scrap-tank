@@ -8,7 +8,7 @@ public class SceneFadeController : MonoBehaviour
 {
     private static SceneFadeController instance;
     private CanvasGroup overlay;
-    public static bool IsTransitioning => instance != null;
+    public static bool IsTransitioning => instance != null || ScrapSceneTransition.IsTransitioning;
 
     // 전환 전용 오브젝트 생성
     public static void LoadScene(string sceneName, float duration)

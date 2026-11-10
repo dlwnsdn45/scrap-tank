@@ -1,0 +1,2095 @@
+fileFormatVersion: 2
+guid: e2c82c779c9d42043b39ec431a7a476f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3712478519491902543
+    second: plate_03_hazard_0
+  - first:
+      213: -6373743004262966969
+    second: plate_03_hazard_1
+  - first:
+      213: -3107422984006923314
+    second: plate_03_hazard_2
+  - first:
+      213: -4966871093415420190
+    second: plate_03_hazard_3
+  - first:
+      213: -1595910419216885443
+    second: plate_03_hazard_4
+  - first:
+      213: 3375536995727444521
+    second: plate_03_hazard_5
+  - first:
+      213: 2133730370504443378
+    second: plate_03_hazard_6
+  - first:
+      213: -8128451596805809598
+    second: plate_03_hazard_7
+  - first:
+      213: 1485564444761666788
+    second: plate_03_hazard_8
+  - first:
+      213: -1989121394753202955
+    second: plate_03_hazard_9
+  - first:
+      213: -5075409941353178077
+    second: plate_03_hazard_10
+  - first:
+      213: 3428881460526448837
+    second: plate_03_hazard_11
+  - first:
+      213: -5217848573278799837
+    second: plate_03_hazard_12
+  - first:
+      213: -9223345038984785624
+    second: plate_03_hazard_13
+  - first:
+      213: 1617629708048525672
+    second: plate_03_hazard_14
+  - first:
+      213: -6721746314369601333
+    second: plate_03_hazard_15
+  - first:
+      213: 3286081853406678445
+    second: plate_03_hazard_16
+  - first:
+      213: 8123799694575194299
+    second: plate_03_hazard_17
+  - first:
+      213: -1966039421814428839
+    second: plate_03_hazard_18
+  - first:
+      213: -2854267429609956431
+    second: plate_03_hazard_19
+  - first:
+      213: 5503271958603083421
+    second: plate_03_hazard_20
+  - first:
+      213: 2479274908152046649
+    second: plate_03_hazard_21
+  - first:
+      213: 7397999698693657175
+    second: plate_03_hazard_22
+  - first:
+      213: -6015542284925828535
+    second: plate_03_hazard_23
+  - first:
+      213: -1925990783246769173
+    second: plate_03_hazard_24
+  - first:
+      213: 525333417531269473
+    second: plate_03_hazard_25
+  - first:
+      213: 3839092625901911832
+    second: plate_03_hazard_26
+  - first:
+      213: 8086437627593587062
+    second: plate_03_hazard_27
+  - first:
+      213: 1707715157972174312
+    second: plate_03_hazard_28
+  - first:
+      213: -28230581585499252
+    second: plate_03_hazard_29
+  - first:
+      213: 7800454143323408805
+    second: plate_03_hazard_30
+  - first:
+      213: -4009776353320569067
+    second: plate_03_hazard_31
+  - first:
+      213: 6384277437294319626
+    second: plate_03_hazard_32
+  - first:
+      213: -7916541198197373076
+    second: plate_03_hazard_33
+  - first:
+      213: 2106642470984912164
+    second: plate_03_hazard_34
+  - first:
+      213: 5750243595198958313
+    second: plate_03_hazard_35
+  - first:
+      213: 5829081546421977418
+    second: plate_03_hazard_36
+  - first:
+      213: 6406963789133476116
+    second: plate_03_hazard_37
+  - first:
+      213: -2622300706393246354
+    second: plate_03_hazard_38
+  - first:
+      213: 6162914744015317262
+    second: plate_03_hazard_39
+  - first:
+      213: -7402702237105161538
+    second: plate_03_hazard_40
+  - first:
+      213: -7388306590916744669
+    second: plate_03_hazard_41
+  - first:
+      213: 1664109196118200741
+    second: plate_03_hazard_42
+  - first:
+      213: 4686257926106927172
+    second: plate_03_hazard_43
+  - first:
+      213: -7841982249014851949
+    second: plate_03_hazard_44
+  - first:
+      213: -4178115289243089300
+    second: plate_03_hazard_45
+  - first:
+      213: 1972531924840486166
+    second: plate_03_hazard_46
+  - first:
+      213: 3749014992771901371
+    second: plate_03_hazard_47
+  - first:
+      213: -1996185822452406710
+    second: plate_03_hazard_48
+  - first:
+      213: -7590226487045021980
+    second: plate_03_hazard_49
+  - first:
+      213: 2240191375651146015
+    second: plate_03_hazard_50
+  - first:
+      213: -827699050202335830
+    second: plate_03_hazard_51
+  - first:
+      213: 6399447414194334058
+    second: plate_03_hazard_52
+  - first:
+      213: 1040309402019211169
+    second: plate_03_hazard_53
+  - first:
+      213: 6404282503967046251
+    second: plate_03_hazard_54
+  - first:
+      213: -4065410230579079313
+    second: plate_03_hazard_55
+  - first:
+      213: -7599332135203532491
+    second: plate_03_hazard_56
+  - first:
+      213: 7520360519608758564
+    second: plate_03_hazard_57
+  - first:
+      213: 7487568419195058951
+    second: plate_03_hazard_58
+  - first:
+      213: -1589469650329196243
+    second: plate_03_hazard_59
+  - first:
+      213: -5231265564491370756
+    second: plate_03_hazard_60
+  - first:
+      213: 6588244170695867297
+    second: plate_03_hazard_61
+  - first:
+      213: 828003841552053901
+    second: plate_03_hazard_62
+  - first:
+      213: 1330232194812372946
+    second: plate_03_hazard_63
+  - first:
+      213: 292553523374811452
+    second: plate_03_hazard_64
+  - first:
+      213: 5172504925589762509
+    second: plate_03_hazard_65
+  - first:
+      213: 645251434503879831
+    second: plate_03_hazard_66
+  - first:
+      213: -4679712243413348797
+    second: plate_03_hazard_67
+  - first:
+      213: 351911214605228590
+    second: plate_03_hazard_68
+  - first:
+      213: -6739076700840039622
+    second: plate_03_hazard_69
+  - first:
+      213: -5591627846802680881
+    second: plate_03_hazard_70
+  - first:
+      213: 6197782121069497395
+    second: plate_03_hazard_71
+  - first:
+      213: 4385533821198688559
+    second: plate_03_hazard_72
+  - first:
+      213: 3423524089548279504
+    second: plate_03_hazard_73
+  - first:
+      213: 1888133585300636634
+    second: plate_03_hazard_74
+  - first:
+      213: 8164688816071279135
+    second: plate_03_hazard_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plate_03_hazard_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 956
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3ca61c470aa7cc0800000000000000
+      internalID: -3712478519491902543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 950
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7495645d18aeb87a0800000000000000
+      internalID: -6373743004262966969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 929
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb0267824730e4d0800000000000000
+      internalID: -3107422984006923314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 969
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee51df5e01221bb0800000000000000
+      internalID: -4966871093415420190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 923
+        width: 168
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d399b31edef2ad9e0800000000000000
+      internalID: -1595910419216885443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_5
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 965
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a0684630158de20800000000000000
+      internalID: 3375536995727444521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 917
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5416c87788c9d10800000000000000
+      internalID: 2133730370504443378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_7
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 961
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ade6ec650f13f80800000000000000
+      internalID: -8128451596805809598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_8
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 951
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e438fcddf8cd9410800000000000000
+      internalID: 1485564444761666788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_9
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 957
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f41b9a51a83564e0800000000000000
+      internalID: -1989121394753202955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_10
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 943
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c582c8c858099b0800000000000000
+      internalID: -5075409941353178077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_11
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 917
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c00a977585d59f20800000000000000
+      internalID: 3428881460526448837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_12
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 935
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32830f13e5a7697b0800000000000000
+      internalID: -5217848573278799837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_13
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 927
+        width: 95
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821537eed88100080800000000000000
+      internalID: -9223345038984785624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_14
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 943
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869e95e16a9f27610800000000000000
+      internalID: 1617629708048525672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_15
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 933
+        width: 111
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc075b5275f87b2a0800000000000000
+      internalID: -6721746314369601333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_16
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 965
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad892709028a9d20800000000000000
+      internalID: 3286081853406678445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 943
+        width: 43
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0d49dc7c88db070800000000000000
+      internalID: 8123799694575194299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 943
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b2658ff8937b4e0800000000000000
+      internalID: -1966039421814428839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_19
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 917
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb912435ea9368d0800000000000000
+      internalID: -2854267429609956431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_20
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 935
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ea7e250bc8f5c40800000000000000
+      internalID: 5503271958603083421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_21
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 943
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93421f8a467286220800000000000000
+      internalID: 2479274908152046649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_22
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 939
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75215199789faa660800000000000000
+      internalID: 7397999698693657175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_23
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 927
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94287afd920848ca0800000000000000
+      internalID: -6015542284925828535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_24
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 904
+        width: 124
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be366e346918545e0800000000000000
+      internalID: -1925990783246769173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_25
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 929
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161e79cb5fb5a4700800000000000000
+      internalID: 525333417531269473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_26
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 909
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f74b22762374530800000000000000
+      internalID: 3839092625901911832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_27
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 927
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6797113bd2cc83070800000000000000
+      internalID: 8086437627593587062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_28
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 1540
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e54b7863e503b710800000000000000
+      internalID: 1707715157972174312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_29
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 897
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b2bc48f64bb9ff0800000000000000
+      internalID: -28230581585499252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 33
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9048bf6b7c04c60800000000000000
+      internalID: 7800454143323408805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 81
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517f09fb6a96a58c0800000000000000
+      internalID: -4009776353320569067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_32
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 15
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08187df082899850800000000000000
+      internalID: 6384277437294319626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_33
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 69
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6743bf49bbc22290800000000000000
+      internalID: -7916541198197373076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_34
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 69
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d8ec77a2c4c3d10800000000000000
+      internalID: 2106642470984912164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_35
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 63
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea8ccf6518fccf40800000000000000
+      internalID: 5750243595198958313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_36
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 65
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41444d58ce05e050800000000000000
+      internalID: 5829081546421977418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_37
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 60
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4117714ee9b1ae850800000000000000
+      internalID: 6406963789133476116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_38
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 66
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65bc2da667bb9bd0800000000000000
+      internalID: -2622300706393246354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_39
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 59
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09ec02ae42178550800000000000000
+      internalID: 6162914744015317262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_40
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 63
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba7b5b5981544990800000000000000
+      internalID: -7402702237105161538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_41
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 63
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32aeabcec46777990800000000000000
+      internalID: -7388306590916744669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_42
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 63
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1161e3f7a181710800000000000000
+      internalID: 1664109196118200741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_43
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 63
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440567341cee80140800000000000000
+      internalID: 4686257926106927172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_44
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 61
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3960d8071beab2390800000000000000
+      internalID: -7841982249014851949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_45
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 44
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c668902f74a5406c0800000000000000
+      internalID: -4178115289243089300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_46
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 45
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6151c30b557df5b10800000000000000
+      internalID: 1972531924840486166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_47
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 33
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb768c5d54d270430800000000000000
+      internalID: 3749014992771901371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_48
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 47
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46ad0b129f1c44e0800000000000000
+      internalID: -1996185822452406710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_49
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 31
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee9bea89391aa690800000000000000
+      internalID: -7590226487045021980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_50
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 36
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f198496ef22c61f10800000000000000
+      internalID: 2240191375651146015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_51
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 35
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5f2c3691c6384f0800000000000000
+      internalID: -827699050202335830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_52
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 49
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6968d974876fc850800000000000000
+      internalID: 6399447414194334058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_53
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7aadba3ebef6e00800000000000000
+      internalID: 1040309402019211169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_54
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 31
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a743a810590e850800000000000000
+      internalID: 6404282503967046251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_55
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 43
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67581c4fe2c497c0800000000000000
+      internalID: -4065410230579079313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_56
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 47
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5319bfe9fafb98690800000000000000
+      internalID: -7599332135203532491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_57
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 46
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421f62a4c00bd5860800000000000000
+      internalID: 7520360519608758564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_58
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 29
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bfd817ecf29e760800000000000000
+      internalID: 7487568419195058951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_59
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 33
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d292dde36c111f9e0800000000000000
+      internalID: -1589469650329196243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_60
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 31
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe22ce7fafc667b0800000000000000
+      internalID: -5231265564491370756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_61
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 35
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab7ddfca252e6b50800000000000000
+      internalID: 6588244170695867297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d867e506b19ad7b00800000000000000
+      internalID: 828003841552053901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_63
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 26
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d76490222fe57210800000000000000
+      internalID: 1330232194812372946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_64
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 12
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c396b8621eb5f0400800000000000000
+      internalID: 292553523374811452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_65
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 15
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc17cb023dd68c740800000000000000
+      internalID: 5172504925589762509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_66
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 31
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c3a60d2c464f800800000000000000
+      internalID: 645251434503879831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_67
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 35
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e0d4042825e0fb0800000000000000
+      internalID: -4679712243413348797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_68
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 33
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a550b926d32e400800000000000000
+      internalID: 351911214605228590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_69
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 15
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b615c127df972a0800000000000000
+      internalID: -6739076700840039622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_70
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 17
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3d42b591c8662b0800000000000000
+      internalID: -5591627846802680881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_71
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 15
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c4d997002f20650800000000000000
+      internalID: 6197782121069497395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_72
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 23
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21620b56cb8cdc30800000000000000
+      internalID: 4385533821198688559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_73
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 17
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de8485550dc28f20800000000000000
+      internalID: 3423524089548279504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_74
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 15
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad34458fd7ff33a10800000000000000
+      internalID: 1888133585300636634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_03_hazard_75
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 15
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f128887483dce4170800000000000000
+      internalID: 8164688816071279135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plate_03_hazard_0: -3712478519491902543
+      plate_03_hazard_1: -6373743004262966969
+      plate_03_hazard_10: -5075409941353178077
+      plate_03_hazard_11: 3428881460526448837
+      plate_03_hazard_12: -5217848573278799837
+      plate_03_hazard_13: -9223345038984785624
+      plate_03_hazard_14: 1617629708048525672
+      plate_03_hazard_15: -6721746314369601333
+      plate_03_hazard_16: 3286081853406678445
+      plate_03_hazard_17: 8123799694575194299
+      plate_03_hazard_18: -1966039421814428839
+      plate_03_hazard_19: -2854267429609956431
+      plate_03_hazard_2: -3107422984006923314
+      plate_03_hazard_20: 5503271958603083421
+      plate_03_hazard_21: 2479274908152046649
+      plate_03_hazard_22: 7397999698693657175
+      plate_03_hazard_23: -6015542284925828535
+      plate_03_hazard_24: -1925990783246769173
+      plate_03_hazard_25: 525333417531269473
+      plate_03_hazard_26: 3839092625901911832
+      plate_03_hazard_27: 8086437627593587062
+      plate_03_hazard_28: 1707715157972174312
+      plate_03_hazard_29: -28230581585499252
+      plate_03_hazard_3: -4966871093415420190
+      plate_03_hazard_30: 7800454143323408805
+      plate_03_hazard_31: -4009776353320569067
+      plate_03_hazard_32: 6384277437294319626
+      plate_03_hazard_33: -7916541198197373076
+      plate_03_hazard_34: 2106642470984912164
+      plate_03_hazard_35: 5750243595198958313
+      plate_03_hazard_36: 5829081546421977418
+      plate_03_hazard_37: 6406963789133476116
+      plate_03_hazard_38: -2622300706393246354
+      plate_03_hazard_39: 6162914744015317262
+      plate_03_hazard_4: -1595910419216885443
+      plate_03_hazard_40: -7402702237105161538
+      plate_03_hazard_41: -7388306590916744669
+      plate_03_hazard_42: 1664109196118200741
+      plate_03_hazard_43: 4686257926106927172
+      plate_03_hazard_44: -7841982249014851949
+      plate_03_hazard_45: -4178115289243089300
+      plate_03_hazard_46: 1972531924840486166
+      plate_03_hazard_47: 3749014992771901371
+      plate_03_hazard_48: -1996185822452406710
+      plate_03_hazard_49: -7590226487045021980
+      plate_03_hazard_5: 3375536995727444521
+      plate_03_hazard_50: 2240191375651146015
+      plate_03_hazard_51: -827699050202335830
+      plate_03_hazard_52: 6399447414194334058
+      plate_03_hazard_53: 1040309402019211169
+      plate_03_hazard_54: 6404282503967046251
+      plate_03_hazard_55: -4065410230579079313
+      plate_03_hazard_56: -7599332135203532491
+      plate_03_hazard_57: 7520360519608758564
+      plate_03_hazard_58: 7487568419195058951
+      plate_03_hazard_59: -1589469650329196243
+      plate_03_hazard_6: 2133730370504443378
+      plate_03_hazard_60: -5231265564491370756
+      plate_03_hazard_61: 6588244170695867297
+      plate_03_hazard_62: 828003841552053901
+      plate_03_hazard_63: 1330232194812372946
+      plate_03_hazard_64: 292553523374811452
+      plate_03_hazard_65: 5172504925589762509
+      plate_03_hazard_66: 645251434503879831
+      plate_03_hazard_67: -4679712243413348797
+      plate_03_hazard_68: 351911214605228590
+      plate_03_hazard_69: -6739076700840039622
+      plate_03_hazard_7: -8128451596805809598
+      plate_03_hazard_70: -5591627846802680881
+      plate_03_hazard_71: 6197782121069497395
+      plate_03_hazard_72: 4385533821198688559
+      plate_03_hazard_73: 3423524089548279504
+      plate_03_hazard_74: 1888133585300636634
+      plate_03_hazard_75: 8164688816071279135
+      plate_03_hazard_8: 1485564444761666788
+      plate_03_hazard_9: -1989121394753202955
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

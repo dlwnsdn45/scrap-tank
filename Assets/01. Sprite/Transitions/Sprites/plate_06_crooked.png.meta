@@ -1,0 +1,1731 @@
+fileFormatVersion: 2
+guid: 79cd671e3c558484f98affee54614b6f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2825956555247147043
+    second: plate_06_crooked_0
+  - first:
+      213: 3210261720608144059
+    second: plate_06_crooked_1
+  - first:
+      213: 2570373834932943171
+    second: plate_06_crooked_2
+  - first:
+      213: 2565686540676723754
+    second: plate_06_crooked_3
+  - first:
+      213: 2519236076847108630
+    second: plate_06_crooked_4
+  - first:
+      213: 6974706596648936963
+    second: plate_06_crooked_5
+  - first:
+      213: -3411894232562133346
+    second: plate_06_crooked_6
+  - first:
+      213: 3293045320832368555
+    second: plate_06_crooked_7
+  - first:
+      213: 94699316536954889
+    second: plate_06_crooked_8
+  - first:
+      213: 3565028093782087713
+    second: plate_06_crooked_9
+  - first:
+      213: 1840395279144869170
+    second: plate_06_crooked_10
+  - first:
+      213: 3530843470707757293
+    second: plate_06_crooked_11
+  - first:
+      213: 1972263044520492824
+    second: plate_06_crooked_12
+  - first:
+      213: -3910331690991396797
+    second: plate_06_crooked_13
+  - first:
+      213: 7508448061671689120
+    second: plate_06_crooked_14
+  - first:
+      213: -2803132518545104287
+    second: plate_06_crooked_15
+  - first:
+      213: -4343814101956501537
+    second: plate_06_crooked_16
+  - first:
+      213: 4358631520442843939
+    second: plate_06_crooked_17
+  - first:
+      213: 1654529018870495317
+    second: plate_06_crooked_18
+  - first:
+      213: -4066034865586979867
+    second: plate_06_crooked_19
+  - first:
+      213: -574870204713134290
+    second: plate_06_crooked_20
+  - first:
+      213: 6326555113584067016
+    second: plate_06_crooked_21
+  - first:
+      213: -2145869072085671409
+    second: plate_06_crooked_22
+  - first:
+      213: 2846992051546761942
+    second: plate_06_crooked_23
+  - first:
+      213: -2249385466012919358
+    second: plate_06_crooked_24
+  - first:
+      213: 7025969924706490074
+    second: plate_06_crooked_25
+  - first:
+      213: -5694144779206052224
+    second: plate_06_crooked_26
+  - first:
+      213: 7534552098781004183
+    second: plate_06_crooked_27
+  - first:
+      213: 219382471874851004
+    second: plate_06_crooked_28
+  - first:
+      213: 1727709515283402317
+    second: plate_06_crooked_29
+  - first:
+      213: 6211179244823240753
+    second: plate_06_crooked_30
+  - first:
+      213: -3406422870837057246
+    second: plate_06_crooked_31
+  - first:
+      213: -3667308617967875206
+    second: plate_06_crooked_32
+  - first:
+      213: 1154821353655709974
+    second: plate_06_crooked_33
+  - first:
+      213: 852794493517001476
+    second: plate_06_crooked_34
+  - first:
+      213: -1461070082007915250
+    second: plate_06_crooked_35
+  - first:
+      213: -1116821479806577987
+    second: plate_06_crooked_36
+  - first:
+      213: -4412710242094015520
+    second: plate_06_crooked_37
+  - first:
+      213: -6914661677851272832
+    second: plate_06_crooked_38
+  - first:
+      213: 690894162793536754
+    second: plate_06_crooked_39
+  - first:
+      213: -5903424778778737448
+    second: plate_06_crooked_40
+  - first:
+      213: 4501223419899586069
+    second: plate_06_crooked_41
+  - first:
+      213: 5018455533191400389
+    second: plate_06_crooked_42
+  - first:
+      213: -6504405536834435334
+    second: plate_06_crooked_43
+  - first:
+      213: -2807875254037421773
+    second: plate_06_crooked_44
+  - first:
+      213: 6188896522387149267
+    second: plate_06_crooked_45
+  - first:
+      213: 703936480464194807
+    second: plate_06_crooked_46
+  - first:
+      213: -1176920541187079586
+    second: plate_06_crooked_47
+  - first:
+      213: -6020787818727927599
+    second: plate_06_crooked_48
+  - first:
+      213: -3618007265485412171
+    second: plate_06_crooked_49
+  - first:
+      213: -1418738000958998074
+    second: plate_06_crooked_50
+  - first:
+      213: 9106867696434056840
+    second: plate_06_crooked_51
+  - first:
+      213: 5431903465914359227
+    second: plate_06_crooked_52
+  - first:
+      213: 4965388284349599915
+    second: plate_06_crooked_53
+  - first:
+      213: 1672141797488750506
+    second: plate_06_crooked_54
+  - first:
+      213: -2919140432317208696
+    second: plate_06_crooked_55
+  - first:
+      213: 5445727430995327011
+    second: plate_06_crooked_56
+  - first:
+      213: -2919321230805195649
+    second: plate_06_crooked_57
+  - first:
+      213: -8976106600945556813
+    second: plate_06_crooked_58
+  - first:
+      213: -1255834050474826851
+    second: plate_06_crooked_59
+  - first:
+      213: 8980578142695824090
+    second: plate_06_crooked_60
+  - first:
+      213: 604044460508591165
+    second: plate_06_crooked_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plate_06_crooked_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1524
+        height: 966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3285132b380d73720800000000000000
+      internalID: 2825956555247147043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 969
+        width: 59
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbaf1e4b6042d8c20800000000000000
+      internalID: 3210261720608144059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_2
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 943
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349f22b626dcba320800000000000000
+      internalID: 2570373834932943171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_3
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 943
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24790ea0562b9320800000000000000
+      internalID: 2565686540676723754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_4
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 965
+        width: 124
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61212d94ddf16f220800000000000000
+      internalID: 2519236076847108630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 65
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30665d132b22bc060800000000000000
+      internalID: 6974706596648936963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_6
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 69
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e961ee0c54486a0d0800000000000000
+      internalID: -3411894232562133346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_7
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 65
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafb971a54f33bd20800000000000000
+      internalID: 3293045320832368555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 63
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90058a2d680705100800000000000000
+      internalID: 94699316536954889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_9
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 69
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1285b28b926897130800000000000000
+      internalID: 3565028093782087713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_10
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 73
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d5cbb61c56a8910800000000000000
+      internalID: 1840395279144869170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_11
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 67
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de01b0ded63100130800000000000000
+      internalID: 3530843470707757293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 53
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f364c1ac2ee5b10800000000000000
+      internalID: 1972263044520492824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 53
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348518c7b06bbb9c0800000000000000
+      internalID: -3910331690991396797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab496a0bbd533860800000000000000
+      internalID: 7508448061671689120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_15
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 29
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162e5c573d54919d0800000000000000
+      internalID: -2803132518545104287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_16
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 47
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfdc8ab61ca7b3c0800000000000000
+      internalID: -4343814101956501537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_17
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 45
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32301da5648fc7c30800000000000000
+      internalID: 4358631520442843939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_18
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 31
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558f958606116f610800000000000000
+      internalID: 1654529018870495317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_19
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 53
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebb55025da8297c0800000000000000
+      internalID: -4066034865586979867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_20
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e271e183896a508f0800000000000000
+      internalID: -574870204713134290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_21
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 59
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c10c153b507cc750800000000000000
+      internalID: 6326555113584067016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_22
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 45
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0226dfb2775832e0800000000000000
+      internalID: -2145869072085671409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_23
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 15
+        width: 103
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da2ec6df2c828720800000000000000
+      internalID: 2846992051546761942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_24
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 55
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c99f5f16d398c0e0800000000000000
+      internalID: -2249385466012919358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_25
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 53
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad655bcdb62418160800000000000000
+      internalID: 7025969924706490074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 47
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08637cffd755af0b0800000000000000
+      internalID: -5694144779206052224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 41
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791048dc63b109860800000000000000
+      internalID: 7534552098781004183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 11
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb03c0222376b0300800000000000000
+      internalID: 219382471874851004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_29
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 28
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e878d76ae0af710800000000000000
+      internalID: 1727709515283402317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_30
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 41
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130e7fb6d9a823650800000000000000
+      internalID: 6211179244823240753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_31
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 15
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229adfc6274f9b0d0800000000000000
+      internalID: -3406422870837057246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_32
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 14
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bcb400e3a1b1dc0800000000000000
+      internalID: -3667308617967875206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_33
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 39
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6113fa317efb60010800000000000000
+      internalID: 1154821353655709974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_34
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 49
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4037d74d21cb5db00800000000000000
+      internalID: 852794493517001476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_35
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 47
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05a7f1608c39bbe0800000000000000
+      internalID: -1461070082007915250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 15
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db25a9208c04080f0800000000000000
+      internalID: -1116821479806577987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_37
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 11
+        width: 97
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb12431a67e2c2c0800000000000000
+      internalID: -4412710242094015520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_38
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 0
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0891ba5e6df2a00a0800000000000000
+      internalID: -6914661677851272832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_39
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 31
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc13be949c869900800000000000000
+      internalID: 690894162793536754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_40
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 41
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d487aef072d21ea0800000000000000
+      internalID: -5903424778778737448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_41
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 34
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516a8c51ade877e30800000000000000
+      internalID: 4501223419899586069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_42
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 31
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb87f0f7b225a540800000000000000
+      internalID: 5018455533191400389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_43
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 31
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af646e540a5bbb5a0800000000000000
+      internalID: -6504405536834435334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_44
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 17
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3316d7d455c6809d0800000000000000
+      internalID: -2807875254037421773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_45
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 23
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d15980d89063e550800000000000000
+      internalID: 6188896522387149267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_46
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 31
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcc186df72e4c900800000000000000
+      internalID: 703936480464194807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_47
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e520fadd00dbaafe0800000000000000
+      internalID: -1176920541187079586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_48
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 23
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d019bcd06dd17ca0800000000000000
+      internalID: -6020787818727927599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_49
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 15
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8a5f1af814acdc0800000000000000
+      internalID: -3618007265485412171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_50
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 26
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9bd7f0e41af4ce0800000000000000
+      internalID: -1418738000958998074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_51
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 31
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e8e6e6be7126e70800000000000000
+      internalID: 9106867696434056840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_52
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 29
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdd90c3c6ff16b40800000000000000
+      internalID: 5431903465914359227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_53
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 31
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba05b8c365a98e440800000000000000
+      internalID: 4965388284349599915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_54
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 15
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf666dfa14a43710800000000000000
+      internalID: 1672141797488750506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_55
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887a04a3e312d77d0800000000000000
+      internalID: -2919140432317208696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_56
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328b31cee3c139b40800000000000000
+      internalID: 5445727430995327011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_57
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 17
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74a99ccecc7c77d0800000000000000
+      internalID: -2919321230805195649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_58
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2e9989a967e6380800000000000000
+      internalID: -8976106600945556813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_59
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 8
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93ab94b591629ee0800000000000000
+      internalID: -1255834050474826851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_60
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 17
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada95095d3c61ac70800000000000000
+      internalID: 8980578142695824090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_06_crooked_61
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 9
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3438298c3ff16800800000000000000
+      internalID: 604044460508591165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plate_06_crooked_0: 2825956555247147043
+      plate_06_crooked_1: 3210261720608144059
+      plate_06_crooked_10: 1840395279144869170
+      plate_06_crooked_11: 3530843470707757293
+      plate_06_crooked_12: 1972263044520492824
+      plate_06_crooked_13: -3910331690991396797
+      plate_06_crooked_14: 7508448061671689120
+      plate_06_crooked_15: -2803132518545104287
+      plate_06_crooked_16: -4343814101956501537
+      plate_06_crooked_17: 4358631520442843939
+      plate_06_crooked_18: 1654529018870495317
+      plate_06_crooked_19: -4066034865586979867
+      plate_06_crooked_2: 2570373834932943171
+      plate_06_crooked_20: -574870204713134290
+      plate_06_crooked_21: 6326555113584067016
+      plate_06_crooked_22: -2145869072085671409
+      plate_06_crooked_23: 2846992051546761942
+      plate_06_crooked_24: -2249385466012919358
+      plate_06_crooked_25: 7025969924706490074
+      plate_06_crooked_26: -5694144779206052224
+      plate_06_crooked_27: 7534552098781004183
+      plate_06_crooked_28: 219382471874851004
+      plate_06_crooked_29: 1727709515283402317
+      plate_06_crooked_3: 2565686540676723754
+      plate_06_crooked_30: 6211179244823240753
+      plate_06_crooked_31: -3406422870837057246
+      plate_06_crooked_32: -3667308617967875206
+      plate_06_crooked_33: 1154821353655709974
+      plate_06_crooked_34: 852794493517001476
+      plate_06_crooked_35: -1461070082007915250
+      plate_06_crooked_36: -1116821479806577987
+      plate_06_crooked_37: -4412710242094015520
+      plate_06_crooked_38: -6914661677851272832
+      plate_06_crooked_39: 690894162793536754
+      plate_06_crooked_4: 2519236076847108630
+      plate_06_crooked_40: -5903424778778737448
+      plate_06_crooked_41: 4501223419899586069
+      plate_06_crooked_42: 5018455533191400389
+      plate_06_crooked_43: -6504405536834435334
+      plate_06_crooked_44: -2807875254037421773
+      plate_06_crooked_45: 6188896522387149267
+      plate_06_crooked_46: 703936480464194807
+      plate_06_crooked_47: -1176920541187079586
+      plate_06_crooked_48: -6020787818727927599
+      plate_06_crooked_49: -3618007265485412171
+      plate_06_crooked_5: 6974706596648936963
+      plate_06_crooked_50: -1418738000958998074
+      plate_06_crooked_51: 9106867696434056840
+      plate_06_crooked_52: 5431903465914359227
+      plate_06_crooked_53: 4965388284349599915
+      plate_06_crooked_54: 1672141797488750506
+      plate_06_crooked_55: -2919140432317208696
+      plate_06_crooked_56: 5445727430995327011
+      plate_06_crooked_57: -2919321230805195649
+      plate_06_crooked_58: -8976106600945556813
+      plate_06_crooked_59: -1255834050474826851
+      plate_06_crooked_6: -3411894232562133346
+      plate_06_crooked_60: 8980578142695824090
+      plate_06_crooked_61: 604044460508591165
+      plate_06_crooked_7: 3293045320832368555
+      plate_06_crooked_8: 94699316536954889
+      plate_06_crooked_9: 3565028093782087713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
