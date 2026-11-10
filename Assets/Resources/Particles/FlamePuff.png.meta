@@ -1,0 +1,5813 @@
+fileFormatVersion: 2
+guid: db6d1bb206e3b1a4cbfc70c93b50c447
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -554846516329061411
+    second: FlamePuff_0
+  - first:
+      213: 8442599962692602402
+    second: FlamePuff_1
+  - first:
+      213: -3973904821579823018
+    second: FlamePuff_2
+  - first:
+      213: 3031785551565117779
+    second: FlamePuff_3
+  - first:
+      213: 4428184314163314900
+    second: FlamePuff_4
+  - first:
+      213: 1014235426837898948
+    second: FlamePuff_5
+  - first:
+      213: 7370770331656631219
+    second: FlamePuff_6
+  - first:
+      213: -3431987065472527506
+    second: FlamePuff_7
+  - first:
+      213: 1080494229921440451
+    second: FlamePuff_8
+  - first:
+      213: -1023997674233308113
+    second: FlamePuff_9
+  - first:
+      213: 22086815686429633
+    second: FlamePuff_10
+  - first:
+      213: -2294744628530104605
+    second: FlamePuff_11
+  - first:
+      213: 2706700610937156955
+    second: FlamePuff_12
+  - first:
+      213: 6250477435138914343
+    second: FlamePuff_13
+  - first:
+      213: 9019372907153212827
+    second: FlamePuff_14
+  - first:
+      213: -1564451262344191987
+    second: FlamePuff_15
+  - first:
+      213: 5228703283888700530
+    second: FlamePuff_16
+  - first:
+      213: 7272462037976959619
+    second: FlamePuff_17
+  - first:
+      213: 4402638848889800957
+    second: FlamePuff_18
+  - first:
+      213: -7367486161280978573
+    second: FlamePuff_19
+  - first:
+      213: -5270178831831186211
+    second: FlamePuff_20
+  - first:
+      213: -7064400773028944605
+    second: FlamePuff_21
+  - first:
+      213: -8246568781632149347
+    second: FlamePuff_22
+  - first:
+      213: -7094432691085765192
+    second: FlamePuff_23
+  - first:
+      213: -9105321457176495945
+    second: FlamePuff_24
+  - first:
+      213: 5674170546478800575
+    second: FlamePuff_25
+  - first:
+      213: 5927570601838520086
+    second: FlamePuff_26
+  - first:
+      213: -9150484318597669671
+    second: FlamePuff_27
+  - first:
+      213: -1462899173871327130
+    second: FlamePuff_28
+  - first:
+      213: 1493413562782080562
+    second: FlamePuff_29
+  - first:
+      213: 2787297037452187440
+    second: FlamePuff_30
+  - first:
+      213: -3074247563019703899
+    second: FlamePuff_31
+  - first:
+      213: 2544336513880910429
+    second: FlamePuff_32
+  - first:
+      213: 5020887041619891492
+    second: FlamePuff_33
+  - first:
+      213: -3459495465862876862
+    second: FlamePuff_34
+  - first:
+      213: 4717986513025462052
+    second: FlamePuff_35
+  - first:
+      213: 1216925271753099427
+    second: FlamePuff_36
+  - first:
+      213: -3525406402245440483
+    second: FlamePuff_37
+  - first:
+      213: 7755932837182187328
+    second: FlamePuff_38
+  - first:
+      213: 5841466108133157737
+    second: FlamePuff_39
+  - first:
+      213: -8137182430237337577
+    second: FlamePuff_40
+  - first:
+      213: -3237028950302466933
+    second: FlamePuff_41
+  - first:
+      213: -5619663769415587375
+    second: FlamePuff_42
+  - first:
+      213: 1569081339198891485
+    second: FlamePuff_43
+  - first:
+      213: -5385994334172992687
+    second: FlamePuff_44
+  - first:
+      213: 3168503849789643180
+    second: FlamePuff_45
+  - first:
+      213: 7318704559084233163
+    second: FlamePuff_46
+  - first:
+      213: 3305866600533096623
+    second: FlamePuff_47
+  - first:
+      213: -3860610430908551578
+    second: FlamePuff_48
+  - first:
+      213: -7955571636446056496
+    second: FlamePuff_49
+  - first:
+      213: -2929279623492197430
+    second: FlamePuff_50
+  - first:
+      213: -6455820421938324264
+    second: FlamePuff_51
+  - first:
+      213: 7415989071231924052
+    second: FlamePuff_52
+  - first:
+      213: 8131211793029342060
+    second: FlamePuff_53
+  - first:
+      213: -1999086916399474983
+    second: FlamePuff_54
+  - first:
+      213: -3829482515802281351
+    second: FlamePuff_55
+  - first:
+      213: 5029861923674906956
+    second: FlamePuff_56
+  - first:
+      213: -9106792607350923415
+    second: FlamePuff_57
+  - first:
+      213: -1066002661331405878
+    second: FlamePuff_58
+  - first:
+      213: -1034541069417371123
+    second: FlamePuff_59
+  - first:
+      213: 5911328625420016829
+    second: FlamePuff_60
+  - first:
+      213: 4119682497033735331
+    second: FlamePuff_61
+  - first:
+      213: 3324590849368511084
+    second: FlamePuff_62
+  - first:
+      213: -4687775296200286507
+    second: FlamePuff_63
+  - first:
+      213: 8677335116044221800
+    second: FlamePuff_64
+  - first:
+      213: 1049858405946734122
+    second: FlamePuff_65
+  - first:
+      213: 1950247698418652818
+    second: FlamePuff_66
+  - first:
+      213: -8845323896797786517
+    second: FlamePuff_67
+  - first:
+      213: 1459834516477715711
+    second: FlamePuff_68
+  - first:
+      213: 8022283870365782712
+    second: FlamePuff_69
+  - first:
+      213: 9068475227568361990
+    second: FlamePuff_70
+  - first:
+      213: -6593854632727337083
+    second: FlamePuff_71
+  - first:
+      213: -7616094806311839198
+    second: FlamePuff_72
+  - first:
+      213: 681874192513379305
+    second: FlamePuff_73
+  - first:
+      213: 8274743697666987300
+    second: FlamePuff_74
+  - first:
+      213: -4313686689110697295
+    second: FlamePuff_75
+  - first:
+      213: 7688632733414247745
+    second: FlamePuff_76
+  - first:
+      213: -1245831721470663672
+    second: FlamePuff_77
+  - first:
+      213: 232185671479544450
+    second: FlamePuff_78
+  - first:
+      213: -1560219782367756098
+    second: FlamePuff_79
+  - first:
+      213: -1590980179946845468
+    second: FlamePuff_80
+  - first:
+      213: 4258795451880515320
+    second: FlamePuff_81
+  - first:
+      213: 6232219554905328855
+    second: FlamePuff_82
+  - first:
+      213: 2954693563561880644
+    second: FlamePuff_83
+  - first:
+      213: 5525949887322492725
+    second: FlamePuff_84
+  - first:
+      213: 4097696187814884640
+    second: FlamePuff_85
+  - first:
+      213: 6680808901260338166
+    second: FlamePuff_86
+  - first:
+      213: -1385530430583247546
+    second: FlamePuff_87
+  - first:
+      213: -7187298063664682796
+    second: FlamePuff_88
+  - first:
+      213: 6815266812361456525
+    second: FlamePuff_89
+  - first:
+      213: 4705847519582329869
+    second: FlamePuff_90
+  - first:
+      213: -3094753783929803311
+    second: FlamePuff_91
+  - first:
+      213: 1361185081003077937
+    second: FlamePuff_92
+  - first:
+      213: 5478209753130842841
+    second: FlamePuff_93
+  - first:
+      213: 5613217620367467634
+    second: FlamePuff_94
+  - first:
+      213: 6081086353886295059
+    second: FlamePuff_95
+  - first:
+      213: 2178008764494849911
+    second: FlamePuff_96
+  - first:
+      213: 3929403663668476459
+    second: FlamePuff_97
+  - first:
+      213: -7430276391637340518
+    second: FlamePuff_98
+  - first:
+      213: -2269101412922929070
+    second: FlamePuff_99
+  - first:
+      213: -1689306588016941883
+    second: FlamePuff_100
+  - first:
+      213: 3120958741751799542
+    second: FlamePuff_101
+  - first:
+      213: -2732480119565437698
+    second: FlamePuff_102
+  - first:
+      213: 6322086051171789768
+    second: FlamePuff_103
+  - first:
+      213: -3228032311655408213
+    second: FlamePuff_104
+  - first:
+      213: 2567263882440772485
+    second: FlamePuff_105
+  - first:
+      213: 633481059659343573
+    second: FlamePuff_106
+  - first:
+      213: 3272403467510236642
+    second: FlamePuff_107
+  - first:
+      213: -5686099587948741650
+    second: FlamePuff_108
+  - first:
+      213: 131164439965457771
+    second: FlamePuff_109
+  - first:
+      213: 1833635323720930449
+    second: FlamePuff_110
+  - first:
+      213: -2766770054143370435
+    second: FlamePuff_111
+  - first:
+      213: 6933705593341681166
+    second: FlamePuff_112
+  - first:
+      213: -1384762254663093692
+    second: FlamePuff_113
+  - first:
+      213: -3278336671993421503
+    second: FlamePuff_114
+  - first:
+      213: 5607317876025959390
+    second: FlamePuff_115
+  - first:
+      213: -3149902545629576205
+    second: FlamePuff_116
+  - first:
+      213: 6874187005034445258
+    second: FlamePuff_117
+  - first:
+      213: 1796184747829678152
+    second: FlamePuff_118
+  - first:
+      213: 1322268866061194078
+    second: FlamePuff_119
+  - first:
+      213: -71733050778596455
+    second: FlamePuff_120
+  - first:
+      213: 7732003404943143466
+    second: FlamePuff_121
+  - first:
+      213: -8468687160451163588
+    second: FlamePuff_122
+  - first:
+      213: -3569534099616371476
+    second: FlamePuff_123
+  - first:
+      213: 4394772723230214967
+    second: FlamePuff_124
+  - first:
+      213: -5587184032068474595
+    second: FlamePuff_125
+  - first:
+      213: 3122871644602267920
+    second: FlamePuff_126
+  - first:
+      213: 3553085785274187832
+    second: FlamePuff_127
+  - first:
+      213: -9052388947270980019
+    second: FlamePuff_128
+  - first:
+      213: 6858710675069883376
+    second: FlamePuff_129
+  - first:
+      213: -5669546428171373146
+    second: FlamePuff_130
+  - first:
+      213: -392852338774738581
+    second: FlamePuff_131
+  - first:
+      213: -9142011184640895378
+    second: FlamePuff_132
+  - first:
+      213: -1357780140498021674
+    second: FlamePuff_133
+  - first:
+      213: 5158410427120892341
+    second: FlamePuff_134
+  - first:
+      213: 1330907385961728542
+    second: FlamePuff_135
+  - first:
+      213: -5447727284875548131
+    second: FlamePuff_136
+  - first:
+      213: -7207356322133033554
+    second: FlamePuff_137
+  - first:
+      213: 5704756363264066729
+    second: FlamePuff_138
+  - first:
+      213: 4533698881820089670
+    second: FlamePuff_139
+  - first:
+      213: -4565636472518832580
+    second: FlamePuff_140
+  - first:
+      213: -6183820659962371120
+    second: FlamePuff_141
+  - first:
+      213: -308729626113079572
+    second: FlamePuff_142
+  - first:
+      213: 8119624511484316354
+    second: FlamePuff_143
+  - first:
+      213: 3210124048733710862
+    second: FlamePuff_144
+  - first:
+      213: -75879325436835281
+    second: FlamePuff_145
+  - first:
+      213: -4897980965840674923
+    second: FlamePuff_146
+  - first:
+      213: 7341534242728219164
+    second: FlamePuff_147
+  - first:
+      213: 7385904615873120744
+    second: FlamePuff_148
+  - first:
+      213: 5682712082517554148
+    second: FlamePuff_149
+  - first:
+      213: 8966428301837005073
+    second: FlamePuff_150
+  - first:
+      213: 1084233973169319470
+    second: FlamePuff_151
+  - first:
+      213: 5497600040836506786
+    second: FlamePuff_152
+  - first:
+      213: 5934511765588016163
+    second: FlamePuff_153
+  - first:
+      213: 8205261452695969443
+    second: FlamePuff_154
+  - first:
+      213: -2533389040636257503
+    second: FlamePuff_155
+  - first:
+      213: -3624588247346369328
+    second: FlamePuff_156
+  - first:
+      213: -5469913282321587315
+    second: FlamePuff_157
+  - first:
+      213: 3350745250511300912
+    second: FlamePuff_158
+  - first:
+      213: 2322682945071885957
+    second: FlamePuff_159
+  - first:
+      213: 9019751142290545329
+    second: FlamePuff_160
+  - first:
+      213: 3879113759184632664
+    second: FlamePuff_161
+  - first:
+      213: 4244971989071573691
+    second: FlamePuff_162
+  - first:
+      213: 990404028611139100
+    second: FlamePuff_163
+  - first:
+      213: 6346931278666406851
+    second: FlamePuff_164
+  - first:
+      213: 8071155587302460263
+    second: FlamePuff_165
+  - first:
+      213: -7609019583894428516
+    second: FlamePuff_166
+  - first:
+      213: 4330965284592734950
+    second: FlamePuff_167
+  - first:
+      213: -5202125756579026089
+    second: FlamePuff_168
+  - first:
+      213: 1901154046653501205
+    second: FlamePuff_169
+  - first:
+      213: -1836313872188723812
+    second: FlamePuff_170
+  - first:
+      213: -360888336825455750
+    second: FlamePuff_171
+  - first:
+      213: 8946553907453943717
+    second: FlamePuff_172
+  - first:
+      213: -935356894474837188
+    second: FlamePuff_173
+  - first:
+      213: 2015339924793396199
+    second: FlamePuff_174
+  - first:
+      213: -7895094515425667843
+    second: FlamePuff_175
+  - first:
+      213: -2023815731763072681
+    second: FlamePuff_176
+  - first:
+      213: 1031496472865136445
+    second: FlamePuff_177
+  - first:
+      213: 7578107764430181868
+    second: FlamePuff_178
+  - first:
+      213: -2541825365905912875
+    second: FlamePuff_179
+  - first:
+      213: -8728399434768961153
+    second: FlamePuff_180
+  - first:
+      213: 9167639921566910159
+    second: FlamePuff_181
+  - first:
+      213: 593560441554009838
+    second: FlamePuff_182
+  - first:
+      213: 7847233130765845087
+    second: FlamePuff_183
+  - first:
+      213: -5073871918619946743
+    second: FlamePuff_184
+  - first:
+      213: 8980488927307922100
+    second: FlamePuff_185
+  - first:
+      213: 4605322940623393064
+    second: FlamePuff_186
+  - first:
+      213: 920575354280920680
+    second: FlamePuff_187
+  - first:
+      213: -4888055905031666721
+    second: FlamePuff_188
+  - first:
+      213: 7272860797427435742
+    second: FlamePuff_189
+  - first:
+      213: -7734213449634021499
+    second: FlamePuff_190
+  - first:
+      213: 4647829033317320350
+    second: FlamePuff_191
+  - first:
+      213: 1592953792448772916
+    second: FlamePuff_192
+  - first:
+      213: -2150262124228415159
+    second: FlamePuff_193
+  - first:
+      213: -625368283055633260
+    second: FlamePuff_194
+  - first:
+      213: -3987499212496089844
+    second: FlamePuff_195
+  - first:
+      213: 7048535737988881324
+    second: FlamePuff_196
+  - first:
+      213: -2100693514177764685
+    second: FlamePuff_197
+  - first:
+      213: -4892842035872334613
+    second: FlamePuff_198
+  - first:
+      213: 3599697340450354294
+    second: FlamePuff_199
+  - first:
+      213: -758181687261053161
+    second: FlamePuff_200
+  - first:
+      213: -2050658000377363724
+    second: FlamePuff_201
+  - first:
+      213: -2871122911561056084
+    second: FlamePuff_202
+  - first:
+      213: -8118720095808084435
+    second: FlamePuff_203
+  - first:
+      213: 9172256929507843879
+    second: FlamePuff_204
+  - first:
+      213: -3237905353523242237
+    second: FlamePuff_205
+  - first:
+      213: 2431990611696668499
+    second: FlamePuff_206
+  - first:
+      213: 8566400513422951924
+    second: FlamePuff_207
+  - first:
+      213: 7280908838901122488
+    second: FlamePuff_208
+  - first:
+      213: 9020067379756775596
+    second: FlamePuff_209
+  - first:
+      213: -886242318058469404
+    second: FlamePuff_210
+  - first:
+      213: 9171342954378766026
+    second: FlamePuff_211
+  - first:
+      213: -4236241174733303842
+    second: FlamePuff_212
+  - first:
+      213: 3079099960674748537
+    second: FlamePuff_213
+  - first:
+      213: -4621417921271054127
+    second: FlamePuff_214
+  - first:
+      213: 2823917308347317033
+    second: FlamePuff_215
+  - first:
+      213: 975435005833487812
+    second: FlamePuff_216
+  - first:
+      213: -4691042602119129266
+    second: FlamePuff_217
+  - first:
+      213: -1105331617153333883
+    second: FlamePuff_218
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlamePuff_0
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1084
+        width: 176
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3e759780acc48f0800000000000000
+      internalID: -554846516329061411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_1
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1211
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ac40d6fe32a2570800000000000000
+      internalID: 8442599962692602402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1187
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658c5829e9ad9d8c0800000000000000
+      internalID: -3973904821579823018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_3
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1062
+        width: 132
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359533465e0131a20800000000000000
+      internalID: 3031785551565117779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_4
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1205
+        width: 84
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d049a51c22147d30800000000000000
+      internalID: 4428184314163314900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_5
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 996
+        width: 157
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c62a4f3fb9431e00800000000000000
+      internalID: 1014235426837898948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1229
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3b16b809c3a4660800000000000000
+      internalID: 7370770331656631219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_7
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1107
+        width: 97
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6356c882f12f50d0800000000000000
+      internalID: -3431987065472527506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 368
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2a35407cfaefe00800000000000000
+      internalID: 1080494229921440451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_9
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1183
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c5f786a870ac1f0800000000000000
+      internalID: -1023997674233308113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1207
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb853387d77e4000800000000000000
+      internalID: 22086815686429633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_11
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1201
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e63a3e1bed6720e0800000000000000
+      internalID: -2294744628530104605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1144
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55fd3c6dd1209520800000000000000
+      internalID: 2706700610937156955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_13
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1148
+        width: 57
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728bc0e5c182eb650800000000000000
+      internalID: 6250477435138914343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_14
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1132
+        width: 37
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9546a35fdf3b2d70800000000000000
+      internalID: 9019372907153212827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1154
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00209f9dd3f94ae0800000000000000
+      internalID: -1564451262344191987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_16
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1195
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cba101fe5109840800000000000000
+      internalID: 5228703283888700530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_17
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1156
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a412041b9fce460800000000000000
+      internalID: 7272462037976959619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_18
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1157
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df84966f4b0591d30800000000000000
+      internalID: 4402638848889800957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1156
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371bd35fe5e61c990800000000000000
+      internalID: -7367486161280978573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_20
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1164
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd44be966409cd6b0800000000000000
+      internalID: -5270178831831186211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_21
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1154
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3256d9cfce436fd90800000000000000
+      internalID: -7064400773028944605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_22
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1173
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d986df2a26d4e8d80800000000000000
+      internalID: -8246568781632149347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1148
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b51aec2e038b8d90800000000000000
+      internalID: -7094432691085765192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_24
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1145
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8b043706663a180800000000000000
+      internalID: -9105321457176495945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_25
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 1104
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe5ad98c04bebe40800000000000000
+      internalID: 5674170546478800575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_26
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1124
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61722a78e06f24250800000000000000
+      internalID: 5927570601838520086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_27
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1136
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc143b5ef2f20180800000000000000
+      internalID: -9150484318597669671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_28
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1100
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668ef2fb3fcb2bbe0800000000000000
+      internalID: -1462899173871327130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_29
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1068
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e506019bba9b410800000000000000
+      internalID: 1493413562782080562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1115
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03716d843e77ea620800000000000000
+      internalID: 2787297037452187440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_31
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1076
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9a99621241655d0800000000000000
+      internalID: -3074247563019703899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1108
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a6de2349c4f4320800000000000000
+      internalID: 2544336513880910429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_33
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1123
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4259d1d9926cda540800000000000000
+      internalID: 5020887041619891492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_34
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1114
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2413b27f3376dffc0800000000000000
+      internalID: -3459495465862876862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_35
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1108
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f67f39cb7a97140800000000000000
+      internalID: 4717986513025462052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_36
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1132
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a80a0d461363e010800000000000000
+      internalID: 1216925271753099427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_37
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1090
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cc5493e8d331fc0800000000000000
+      internalID: -3525406402245440483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_38
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1098
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047280e92db92ab60800000000000000
+      internalID: 7755932837182187328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_39
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1060
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ba2c6d97e011150800000000000000
+      internalID: 5841466108133157737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_40
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1110
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718572d31bbe21f80800000000000000
+      internalID: -8137182430237337577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_41
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1011
+        width: 40
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cd099f153c313d0800000000000000
+      internalID: -3237028950302466933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_42
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1095
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9e9d27391f202b0800000000000000
+      internalID: -5619663769415587375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_43
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1091
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5e4a62a2f76c510800000000000000
+      internalID: 1569081339198891485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_44
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1082
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b2a5570ba1145b0800000000000000
+      internalID: -5385994334172992687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_45
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1100
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca95b24c679c8fb20800000000000000
+      internalID: 3168503849789643180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_46
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1074
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc16f343503419560800000000000000
+      internalID: 7318704559084233163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_47
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1082
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa87a9f682cc0ed20800000000000000
+      internalID: 3305866600533096623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_48
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1076
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e2789744b5c6ac0800000000000000
+      internalID: -3860610430908551578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_49
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1076
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dfa5704fb1289190800000000000000
+      internalID: -7955571636446056496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_50
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1044
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac325f1d3bb1957d0800000000000000
+      internalID: -2929279623492197430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_51
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1078
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc57a8d7815866a0800000000000000
+      internalID: -6455820421938324264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_52
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1068
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45735f8c4c2eae660800000000000000
+      internalID: 7415989071231924052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_53
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1060
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c632bf47b0ed7d070800000000000000
+      internalID: 8131211793029342060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 1043
+        height: 1068
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6d0e88a01d144e0800000000000000
+      internalID: -1999086916399474983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_55
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1051
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a290cf0f1fadac0800000000000000
+      internalID: -3829482515802281351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_56
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1050
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41e7ed25c8adc540800000000000000
+      internalID: 5029861923674906956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_57
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1050
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fd1bb9f5c2e9180800000000000000
+      internalID: -9106792607350923415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_58
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1043
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac378b93a3cc431f0800000000000000
+      internalID: -1066002661331405878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_59
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1036
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a23dbe06294a1f0800000000000000
+      internalID: -1034541069417371123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_60
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1002
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc12c4b012490250800000000000000
+      internalID: 5911328625420016829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_61
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 996
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac071f676d0c2930800000000000000
+      internalID: 4119682497033735331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_62
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 787
+        width: 69
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62df1853c1532e20800000000000000
+      internalID: 3324590849368511084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_63
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 962
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de512b743da1feb0800000000000000
+      internalID: -4687775296200286507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_64
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 970
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86db6d440561c6870800000000000000
+      internalID: 8677335116044221800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_65
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 955
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26b9e668a8d19e00800000000000000
+      internalID: 1049858405946734122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_66
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 947
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2965448e2fba01b10800000000000000
+      internalID: 1950247698418652818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_67
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 937
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e0818c7c81f3580800000000000000
+      internalID: -8845323896797786517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_68
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 907
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4228912cf524410800000000000000
+      internalID: 1459834516477715711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_69
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 953
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b29f7c1da0e45f60800000000000000
+      internalID: 8022283870365782712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_70
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 946
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60254a13c22b9dd70800000000000000
+      internalID: 9068475227568361990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_71
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 921
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58729b3b52ced74a0800000000000000
+      internalID: -6593854632727337083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_72
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 875
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ad51e10223e4690800000000000000
+      internalID: -7616094806311839198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_73
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 913
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb244227f0867900800000000000000
+      internalID: 681874192513379305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_74
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 928
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425d7d23d8bc5d270800000000000000
+      internalID: 8274743697666987300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_75
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 863
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bad937afc4b224c0800000000000000
+      internalID: -4313686689110697295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_76
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 907
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14dc8932cb283ba60800000000000000
+      internalID: 7688632733414247745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_77
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 923
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804e3d766aae5bee0800000000000000
+      internalID: -1245831721470663672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 835
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a497653a3e83300800000000000000
+      internalID: 232185671479544450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_79
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 871
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0ce64df5cf85ae0800000000000000
+      internalID: -1560219782367756098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_80
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 883
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eac499a4f3bbe9e0800000000000000
+      internalID: -1590980179946845468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_81
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 868
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6236046e74a1b30800000000000000
+      internalID: 4258795451880515320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_82
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 849
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc006c5aaa4d7650800000000000000
+      internalID: 6232219554905328855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_83
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 852
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c2d34342e210920800000000000000
+      internalID: 2954693563561880644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_84
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 811
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f8770152e10bc40800000000000000
+      internalID: 5525949887322492725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_85
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 857
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025bd28e8f0fdd830800000000000000
+      internalID: 4097696187814884640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_86
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 826
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3e3eb9c4007bc50800000000000000
+      internalID: 6680808901260338166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_87
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 812
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d679b0a6b95cce0800000000000000
+      internalID: -1385530430583247546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_88
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 827
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8e964bd76914c90800000000000000
+      internalID: -7187298063664682796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_89
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 771
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b30589e01b49e50800000000000000
+      internalID: 6815266812361456525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_90
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 829
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c9bdbe2678e4140800000000000000
+      internalID: 4705847519582329869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_91
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 819
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd619984d93d05d0800000000000000
+      internalID: -3094753783929803311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_92
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 827
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131ffba8e96e3e210800000000000000
+      internalID: 1361185081003077937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_93
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 774
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dab174eeb2860c40800000000000000
+      internalID: 5478209753130842841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_94
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 809
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27467f48fa726ed40800000000000000
+      internalID: 5613217620367467634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_95
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 802
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3143ed3e1db546450800000000000000
+      internalID: 6081086353886295059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_96
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 793
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77727658e67d93e10800000000000000
+      internalID: 2178008764494849911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_97
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 763
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2af31030db088630800000000000000
+      internalID: 3929403663668476459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_98
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 793
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e2c753dfa52e890800000000000000
+      internalID: -7430276391637340518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 92
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250546389488280e0800000000000000
+      internalID: -2269101412922929070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_100
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 755
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4e588cb906e88e0800000000000000
+      internalID: -1689306588016941883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_101
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 757
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe14c8a07fdf4b20800000000000000
+      internalID: 3120958741751799542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_102
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 730
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef43c7dfec7441ad0800000000000000
+      internalID: -2732480119565437698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_103
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 730
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbeb8784cf8cb750800000000000000
+      internalID: 6322086051171789768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_104
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 722
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baddb4427b9b333d0800000000000000
+      internalID: -3228032311655408213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_105
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 736
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b829d26e0c0a320800000000000000
+      internalID: 2567263882440772485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_106
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 708
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6eeecdaa39ac800800000000000000
+      internalID: 633481059659343573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_107
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 758
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e544b2ad99e96d20800000000000000
+      internalID: 3272403467510236642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_108
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 740
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebf1de0d8ae611b0800000000000000
+      internalID: -5686099587948741650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_109
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 738
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ddd4bfc5df1d100800000000000000
+      internalID: 131164439965457771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_110
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 724
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1949ef5ac91627910800000000000000
+      internalID: 1833635323720930449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_111
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 736
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b98937b457a99d0800000000000000
+      internalID: -2766770054143370435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_112
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 674
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e15443088793060800000000000000
+      internalID: 6933705593341681166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_113
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 703
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442ff60f01658cce0800000000000000
+      internalID: -1384762254663093692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_114
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 690
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14122bb8a220182d0800000000000000
+      internalID: -3278336671993421503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_115
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 618
+        width: 154
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3a93f36e131dd40800000000000000
+      internalID: 5607317876025959390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_116
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 650
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f386aad25c4944d0800000000000000
+      internalID: -3149902545629576205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_117
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 588
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac93faaf8a4066f50800000000000000
+      internalID: 6874187005034445258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_118
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 656
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840dc55f2845de810800000000000000
+      internalID: 1796184747829678152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_119
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 644
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53d22b2784a95210800000000000000
+      internalID: 1322268866061194078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_120
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 658
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bcfad9b27210ff0800000000000000
+      internalID: -71733050778596455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_121
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 654
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a223fb181289d4b60800000000000000
+      internalID: 7732003404943143466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_122
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 600
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a956785ed297a80800000000000000
+      internalID: -8468687160451163588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_123
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 636
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cece8ba06a7767ec0800000000000000
+      internalID: -3569534099616371476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_124
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 642
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b86bcd18e5dfc30800000000000000
+      internalID: 4394772723230214967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_125
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 626
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19e2d999b55672b0800000000000000
+      internalID: -5587184032068474595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_126
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 533
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01978af073ba65b20800000000000000
+      internalID: 3122871644602267920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_127
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 618
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83002c752b81f4130800000000000000
+      internalID: 3553085785274187832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_128
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 610
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ead3dc6347f5280800000000000000
+      internalID: -9052388947270980019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_129
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 609
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f358bc15090f2f50800000000000000
+      internalID: 6858710675069883376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_130
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 594
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5b247ef89b151b0800000000000000
+      internalID: -5669546428171373146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_131
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 586
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69762a11ee4c8af0800000000000000
+      internalID: -392852338774738581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_132
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 591
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66d4d6934d012180800000000000000
+      internalID: -9142011184640895378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_133
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 580
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d21982f722382de0800000000000000
+      internalID: -1357780140498021674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_134
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 594
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9363af3fa569740800000000000000
+      internalID: 5158410427120892341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_135
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 584
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a41315735587210800000000000000
+      internalID: 1330907385961728542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_136
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 552
+        width: 9
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a2acfc5e8c564b0800000000000000
+      internalID: -5447727284875548131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_137
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 546
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead38997c935afb90800000000000000
+      internalID: -7207356322133033554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_138
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 523
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a40182ffad5b2f40800000000000000
+      internalID: 5704756363264066729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_139
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 584
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64dd879cc1feaee30800000000000000
+      internalID: 4533698881820089670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_140
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 529
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e82f961d993a0c0800000000000000
+      internalID: -4565636472518832580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_141
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 497
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3a8308fd7ae2aa0800000000000000
+      internalID: -6183820659962371120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_142
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 531
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce604ef6a0c27bbf0800000000000000
+      internalID: -308729626113079572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_143
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 521
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cac39c3973bea070800000000000000
+      internalID: 8119624511484316354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_144
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 533
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a26b970d6ac8c20800000000000000
+      internalID: 3210124048733710862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 491
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a8a81d72c62fef0800000000000000
+      internalID: -75879325436835281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_146
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 467
+        width: 76
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f117e1340e60cb0800000000000000
+      internalID: -4897980965840674923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_147
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 513
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c129e242f7e52e560800000000000000
+      internalID: 7341534242728219164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_148
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 513
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9090ead11008660800000000000000
+      internalID: 7385904615873120744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_149
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 465
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3774fd78c0dde40800000000000000
+      internalID: 5682712082517554148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_150
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 479
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111f00bc8072f6c70800000000000000
+      internalID: 8966428301837005073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_151
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 471
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eea28dd09fb0f00800000000000000
+      internalID: 1084233973169319470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_152
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 486
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4ab3f0c166b4c40800000000000000
+      internalID: 5497600040836506786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_153
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 416
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cff37220f9b5250800000000000000
+      internalID: 5934511765588016163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_154
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 472
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae162161d1fed170800000000000000
+      internalID: 8205261452695969443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_155
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 446
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b120b071897dcd0800000000000000
+      internalID: -2533389040636257503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_156
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 455
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc2dd36130e2bdc0800000000000000
+      internalID: -3624588247346369328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_157
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 150
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83e70fb9d6f614b0800000000000000
+      internalID: -5469913282321587315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_158
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 349
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039ad856d0d308e20800000000000000
+      internalID: 3350745250511300912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_159
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 409
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e2eda15d3db3020800000000000000
+      internalID: 2322682945071885957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_160
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 407
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bad6ae00e79c2d70800000000000000
+      internalID: 9019751142290545329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_161
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 401
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bb78b596165d530800000000000000
+      internalID: 3879113759184632664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_162
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 399
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb23812888b29ea30800000000000000
+      internalID: 4244971989071573691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_163
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 369
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c169b75773f9ebd00800000000000000
+      internalID: 990404028611139100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_164
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 373
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb1ab6de54d41850800000000000000
+      internalID: 6346931278666406851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_165
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 343
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b821c6e31820070800000000000000
+      internalID: 8071155587302460263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_166
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 369
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c946bf4b005576690800000000000000
+      internalID: -7609019583894428516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_167
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 339
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2d2badafdaa1c30800000000000000
+      internalID: 4330965284592734950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_168
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 353
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b623abf265ec7b0800000000000000
+      internalID: -5202125756579026089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_169
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 337
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f041e5881426a10800000000000000
+      internalID: 1901154046653501205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_170
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 324
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9da110334a1486e0800000000000000
+      internalID: -1836313872188723812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_171
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 312
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7befef38fdddfaf0800000000000000
+      internalID: -360888336825455750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_172
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 208
+        width: 43
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afdca1c06b882c70800000000000000
+      internalID: 8946553907453943717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_173
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 264
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c336d963cd1f403f0800000000000000
+      internalID: -935356894474837188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_174
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 271
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb09fedbfce7fb10800000000000000
+      internalID: 2015339924793396199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_175
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 274
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df41be34e5dfe6290800000000000000
+      internalID: -7895094515425667843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_176
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 299
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7513a698056f9e3e0800000000000000
+      internalID: -2023815731763072681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_177
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 182
+        width: 74
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fd134b39c905e00800000000000000
+      internalID: 1031496472865136445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_178
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 264
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce59d787cd8da2960800000000000000
+      internalID: 7578107764430181868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_179
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 279
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbc9100c4f99bcd0800000000000000
+      internalID: -2541825365905912875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_180
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 208
+        width: 65
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7130e885fe7ed680800000000000000
+      internalID: -8728399434768961153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_181
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 74
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc68fa9bfeff93f70800000000000000
+      internalID: 9167639921566910159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_182
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 23
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeefc87a310cc3800800000000000000
+      internalID: 593560441554009838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_183
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 208
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5289fcb4f8f6ec60800000000000000
+      internalID: 7847233130765845087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_184
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 174
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90114de5f5cf599b0800000000000000
+      internalID: -5073871918619946743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_185
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 43
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba7485491b11ac70800000000000000
+      internalID: 8980488927307922100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_186
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 226
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82190df70d469ef30800000000000000
+      internalID: 4605322940623393064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_187
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 176
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866c4e4486a86cc00800000000000000
+      internalID: 920575354280920680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_188
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 144
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3465a6d032a2cb0800000000000000
+      internalID: -4888055905031666721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_189
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 38
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8c68bac546ee460800000000000000
+      internalID: 7272860797427435742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_190
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ff38d58dd8aa490800000000000000
+      internalID: -7734213449634021499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_191
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 101
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9640ab61e7608040800000000000000
+      internalID: 4647829033317320350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_192
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 125
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b358ec80f4b1610800000000000000
+      internalID: 1592953792448772916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_193
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 93
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94173679dfbb822e0800000000000000
+      internalID: -2150262124228415159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_194
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 71
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c4ca22cde3257f0800000000000000
+      internalID: -625368283055633260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_195
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 52
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d4509c79e89a8c0800000000000000
+      internalID: -3987499212496089844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_196
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 138
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab1971b8ed61d160800000000000000
+      internalID: 7048535737988881324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_197
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 96
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2a779f066d8d2e0800000000000000
+      internalID: -2100693514177764685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_198
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 113
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becfabd7712291cb0800000000000000
+      internalID: -4892842035872334613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_199
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 83
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674367cb8a1b4f130800000000000000
+      internalID: 3599697340450354294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_200
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 113
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f399fb5c56a75f0800000000000000
+      internalID: -758181687261053161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_201
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 128
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2c1bbd9699a83e0800000000000000
+      internalID: -2050658000377363724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_202
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 128
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca00bed7ce8b728d0800000000000000
+      internalID: -2871122911561056084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_203
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 143
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26a8827613845f80800000000000000
+      internalID: -8118720095808084435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_204
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 158
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f1ee7a4176a4f70800000000000000
+      internalID: 9172256929507843879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_205
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 134
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b59e27c36a013d0800000000000000
+      internalID: -3237905353523242237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_206
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 212
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fc34b739a20c120800000000000000
+      internalID: 2431990611696668499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_207
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 207
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f58c4651e7f1e670800000000000000
+      internalID: 8566400513422951924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_208
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 97
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b504b8530cfa0560800000000000000
+      internalID: 7280908838901122488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_209
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 99
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8bd74dd77bd2d70800000000000000
+      internalID: 9020067379756775596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_210
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 189
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7c437ae4f63b3f0800000000000000
+      internalID: -886242318058469404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_211
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 186
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6270d33d7274f70800000000000000
+      internalID: 9171342954378766026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_212
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 176
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf432d9819d535c0800000000000000
+      internalID: -4236241174733303842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_213
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 232
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97800f7b9192bba20800000000000000
+      internalID: 3079099960674748537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_214
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 126
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0c30cc2ec6ddfb0800000000000000
+      internalID: -4621417921271054127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_215
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 200
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b7e1784d1903720800000000000000
+      internalID: 2823917308347317033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_216
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 203
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5af2048f0798d00800000000000000
+      internalID: 975435005833487812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_217
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 0
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47177a8b9116eeb0800000000000000
+      internalID: -4691042602119129266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePuff_218
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 9
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585419020c219a0f0800000000000000
+      internalID: -1105331617153333883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlamePuff_0: -554846516329061411
+      FlamePuff_1: 8442599962692602402
+      FlamePuff_10: 22086815686429633
+      FlamePuff_100: -1689306588016941883
+      FlamePuff_101: 3120958741751799542
+      FlamePuff_102: -2732480119565437698
+      FlamePuff_103: 6322086051171789768
+      FlamePuff_104: -3228032311655408213
+      FlamePuff_105: 2567263882440772485
+      FlamePuff_106: 633481059659343573
+      FlamePuff_107: 3272403467510236642
+      FlamePuff_108: -5686099587948741650
+      FlamePuff_109: 131164439965457771
+      FlamePuff_11: -2294744628530104605
+      FlamePuff_110: 1833635323720930449
+      FlamePuff_111: -2766770054143370435
+      FlamePuff_112: 6933705593341681166
+      FlamePuff_113: -1384762254663093692
+      FlamePuff_114: -3278336671993421503
+      FlamePuff_115: 5607317876025959390
+      FlamePuff_116: -3149902545629576205
+      FlamePuff_117: 6874187005034445258
+      FlamePuff_118: 1796184747829678152
+      FlamePuff_119: 1322268866061194078
+      FlamePuff_12: 2706700610937156955
+      FlamePuff_120: -71733050778596455
+      FlamePuff_121: 7732003404943143466
+      FlamePuff_122: -8468687160451163588
+      FlamePuff_123: -3569534099616371476
+      FlamePuff_124: 4394772723230214967
+      FlamePuff_125: -5587184032068474595
+      FlamePuff_126: 3122871644602267920
+      FlamePuff_127: 3553085785274187832
+      FlamePuff_128: -9052388947270980019
+      FlamePuff_129: 6858710675069883376
+      FlamePuff_13: 6250477435138914343
+      FlamePuff_130: -5669546428171373146
+      FlamePuff_131: -392852338774738581
+      FlamePuff_132: -9142011184640895378
+      FlamePuff_133: -1357780140498021674
+      FlamePuff_134: 5158410427120892341
+      FlamePuff_135: 1330907385961728542
+      FlamePuff_136: -5447727284875548131
+      FlamePuff_137: -7207356322133033554
+      FlamePuff_138: 5704756363264066729
+      FlamePuff_139: 4533698881820089670
+      FlamePuff_14: 9019372907153212827
+      FlamePuff_140: -4565636472518832580
+      FlamePuff_141: -6183820659962371120
+      FlamePuff_142: -308729626113079572
+      FlamePuff_143: 8119624511484316354
+      FlamePuff_144: 3210124048733710862
+      FlamePuff_145: -75879325436835281
+      FlamePuff_146: -4897980965840674923
+      FlamePuff_147: 7341534242728219164
+      FlamePuff_148: 7385904615873120744
+      FlamePuff_149: 5682712082517554148
+      FlamePuff_15: -1564451262344191987
+      FlamePuff_150: 8966428301837005073
+      FlamePuff_151: 1084233973169319470
+      FlamePuff_152: 5497600040836506786
+      FlamePuff_153: 5934511765588016163
+      FlamePuff_154: 8205261452695969443
+      FlamePuff_155: -2533389040636257503
+      FlamePuff_156: -3624588247346369328
+      FlamePuff_157: -5469913282321587315
+      FlamePuff_158: 3350745250511300912
+      FlamePuff_159: 2322682945071885957
+      FlamePuff_16: 5228703283888700530
+      FlamePuff_160: 9019751142290545329
+      FlamePuff_161: 3879113759184632664
+      FlamePuff_162: 4244971989071573691
+      FlamePuff_163: 990404028611139100
+      FlamePuff_164: 6346931278666406851
+      FlamePuff_165: 8071155587302460263
+      FlamePuff_166: -7609019583894428516
+      FlamePuff_167: 4330965284592734950
+      FlamePuff_168: -5202125756579026089
+      FlamePuff_169: 1901154046653501205
+      FlamePuff_17: 7272462037976959619
+      FlamePuff_170: -1836313872188723812
+      FlamePuff_171: -360888336825455750
+      FlamePuff_172: 8946553907453943717
+      FlamePuff_173: -935356894474837188
+      FlamePuff_174: 2015339924793396199
+      FlamePuff_175: -7895094515425667843
+      FlamePuff_176: -2023815731763072681
+      FlamePuff_177: 1031496472865136445
+      FlamePuff_178: 7578107764430181868
+      FlamePuff_179: -2541825365905912875
+      FlamePuff_18: 4402638848889800957
+      FlamePuff_180: -8728399434768961153
+      FlamePuff_181: 9167639921566910159
+      FlamePuff_182: 593560441554009838
+      FlamePuff_183: 7847233130765845087
+      FlamePuff_184: -5073871918619946743
+      FlamePuff_185: 8980488927307922100
+      FlamePuff_186: 4605322940623393064
+      FlamePuff_187: 920575354280920680
+      FlamePuff_188: -4888055905031666721
+      FlamePuff_189: 7272860797427435742
+      FlamePuff_19: -7367486161280978573
+      FlamePuff_190: -7734213449634021499
+      FlamePuff_191: 4647829033317320350
+      FlamePuff_192: 1592953792448772916
+      FlamePuff_193: -2150262124228415159
+      FlamePuff_194: -625368283055633260
+      FlamePuff_195: -3987499212496089844
+      FlamePuff_196: 7048535737988881324
+      FlamePuff_197: -2100693514177764685
+      FlamePuff_198: -4892842035872334613
+      FlamePuff_199: 3599697340450354294
+      FlamePuff_2: -3973904821579823018
+      FlamePuff_20: -5270178831831186211
+      FlamePuff_200: -758181687261053161
+      FlamePuff_201: -2050658000377363724
+      FlamePuff_202: -2871122911561056084
+      FlamePuff_203: -8118720095808084435
+      FlamePuff_204: 9172256929507843879
+      FlamePuff_205: -3237905353523242237
+      FlamePuff_206: 2431990611696668499
+      FlamePuff_207: 8566400513422951924
+      FlamePuff_208: 7280908838901122488
+      FlamePuff_209: 9020067379756775596
+      FlamePuff_21: -7064400773028944605
+      FlamePuff_210: -886242318058469404
+      FlamePuff_211: 9171342954378766026
+      FlamePuff_212: -4236241174733303842
+      FlamePuff_213: 3079099960674748537
+      FlamePuff_214: -4621417921271054127
+      FlamePuff_215: 2823917308347317033
+      FlamePuff_216: 975435005833487812
+      FlamePuff_217: -4691042602119129266
+      FlamePuff_218: -1105331617153333883
+      FlamePuff_22: -8246568781632149347
+      FlamePuff_23: -7094432691085765192
+      FlamePuff_24: -9105321457176495945
+      FlamePuff_25: 5674170546478800575
+      FlamePuff_26: 5927570601838520086
+      FlamePuff_27: -9150484318597669671
+      FlamePuff_28: -1462899173871327130
+      FlamePuff_29: 1493413562782080562
+      FlamePuff_3: 3031785551565117779
+      FlamePuff_30: 2787297037452187440
+      FlamePuff_31: -3074247563019703899
+      FlamePuff_32: 2544336513880910429
+      FlamePuff_33: 5020887041619891492
+      FlamePuff_34: -3459495465862876862
+      FlamePuff_35: 4717986513025462052
+      FlamePuff_36: 1216925271753099427
+      FlamePuff_37: -3525406402245440483
+      FlamePuff_38: 7755932837182187328
+      FlamePuff_39: 5841466108133157737
+      FlamePuff_4: 4428184314163314900
+      FlamePuff_40: -8137182430237337577
+      FlamePuff_41: -3237028950302466933
+      FlamePuff_42: -5619663769415587375
+      FlamePuff_43: 1569081339198891485
+      FlamePuff_44: -5385994334172992687
+      FlamePuff_45: 3168503849789643180
+      FlamePuff_46: 7318704559084233163
+      FlamePuff_47: 3305866600533096623
+      FlamePuff_48: -3860610430908551578
+      FlamePuff_49: -7955571636446056496
+      FlamePuff_5: 1014235426837898948
+      FlamePuff_50: -2929279623492197430
+      FlamePuff_51: -6455820421938324264
+      FlamePuff_52: 7415989071231924052
+      FlamePuff_53: 8131211793029342060
+      FlamePuff_54: -1999086916399474983
+      FlamePuff_55: -3829482515802281351
+      FlamePuff_56: 5029861923674906956
+      FlamePuff_57: -9106792607350923415
+      FlamePuff_58: -1066002661331405878
+      FlamePuff_59: -1034541069417371123
+      FlamePuff_6: 7370770331656631219
+      FlamePuff_60: 5911328625420016829
+      FlamePuff_61: 4119682497033735331
+      FlamePuff_62: 3324590849368511084
+      FlamePuff_63: -4687775296200286507
+      FlamePuff_64: 8677335116044221800
+      FlamePuff_65: 1049858405946734122
+      FlamePuff_66: 1950247698418652818
+      FlamePuff_67: -8845323896797786517
+      FlamePuff_68: 1459834516477715711
+      FlamePuff_69: 8022283870365782712
+      FlamePuff_7: -3431987065472527506
+      FlamePuff_70: 9068475227568361990
+      FlamePuff_71: -6593854632727337083
+      FlamePuff_72: -7616094806311839198
+      FlamePuff_73: 681874192513379305
+      FlamePuff_74: 8274743697666987300
+      FlamePuff_75: -4313686689110697295
+      FlamePuff_76: 7688632733414247745
+      FlamePuff_77: -1245831721470663672
+      FlamePuff_78: 232185671479544450
+      FlamePuff_79: -1560219782367756098
+      FlamePuff_8: 1080494229921440451
+      FlamePuff_80: -1590980179946845468
+      FlamePuff_81: 4258795451880515320
+      FlamePuff_82: 6232219554905328855
+      FlamePuff_83: 2954693563561880644
+      FlamePuff_84: 5525949887322492725
+      FlamePuff_85: 4097696187814884640
+      FlamePuff_86: 6680808901260338166
+      FlamePuff_87: -1385530430583247546
+      FlamePuff_88: -7187298063664682796
+      FlamePuff_89: 6815266812361456525
+      FlamePuff_9: -1023997674233308113
+      FlamePuff_90: 4705847519582329869
+      FlamePuff_91: -3094753783929803311
+      FlamePuff_92: 1361185081003077937
+      FlamePuff_93: 5478209753130842841
+      FlamePuff_94: 5613217620367467634
+      FlamePuff_95: 6081086353886295059
+      FlamePuff_96: 2178008764494849911
+      FlamePuff_97: 3929403663668476459
+      FlamePuff_98: -7430276391637340518
+      FlamePuff_99: -2269101412922929070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
