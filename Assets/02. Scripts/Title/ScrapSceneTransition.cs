@@ -7,13 +7,14 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-/// <summary>Scene-independent scrap assembly overlay. All animation uses unscaled time.</summary>
+// 게임 시간 배율과 무관하게 재생하는 고철 철판 씬 전환
 public sealed class ScrapSceneTransition : MonoBehaviour
 {
+    // 전환에 사용할 철판, 볼트, 불꽃과 효과음
     [Serializable]
     public sealed class Assets
     {
-        [Tooltip("Six full PNG textures, in assembly order (no sprite slicing required).")]
+        [Tooltip("조립 순서대로 넣는 철판 PNG 6장 (스프라이트 분할 불필요)")]
         public Texture2D[] plates = new Texture2D[6];
         public Texture2D bolt;
         public Texture2D weldSpark;
@@ -36,6 +37,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
     private bool ownsPause;
     private Vector2 viewSize;
 
+    // 씬과 리소스 확인 후 전환 오브젝트 생성 및 게임 일시정지
     public static void LoadScene(string sceneName, Assets art, float duration = 0.4f)
     {
         if (IsTransitioning || SceneFadeController.IsTransitioning) return;
@@ -64,6 +66,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         instance.StartCoroutine(instance.Transition(sceneName, Mathf.Max(0.25f, duration)));
     }
 
+    // 화면을 덮는 캔버스와 연출용 이미지, 오디오 생성
     private void BuildOverlay()
     {
         var canvas = gameObject.AddComponent<Canvas>();
@@ -76,7 +79,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         gameObject.AddComponent<GraphicRaycaster>();
         canvasRect = (RectTransform)transform;
 
-        // Invisible raycast shield stays active even while the plates are offscreen.
+        // 철판이 화면 밖에 있어도 뒤쪽 UI 클릭 차단
         var shield = new GameObject("Input Shield", typeof(RectTransform), typeof(Image));
         shield.transform.SetParent(transform, false);
         Stretch((RectTransform)shield.transform);
@@ -97,7 +100,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         for (int i = 0; i < 6; i++)
         {
             var image = CreateImage("Plate " + (i + 1), assets.plates[i], assembly);
-            // Ignore most transparent padding, without modifying the supplied textures/importers.
+            // 원본 수정 없이 UV 영역으로 이미지의 투명 여백 제외
             image.uvRect = i == 4 ? new Rect(0.04f, 0.20f, 0.92f, 0.58f) :
                 new Rect(0.02f, 0.12f, 0.96f, 0.76f);
             float aspect = assets.plates[i].width * image.uvRect.width /
@@ -131,6 +134,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         audioSource.ignoreListenerPause = true;
     }
 
+    // 부모 영역 전체를 채우도록 UI 크기 설정
     private static void Stretch(RectTransform rect)
     {
         rect.anchorMin = Vector2.zero;
@@ -138,6 +142,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         rect.offsetMin = rect.offsetMax = Vector2.zero;
     }
 
+    // 텍스처를 표시하는 연출용 UI 이미지 생성
     private static RawImage CreateImage(string name, Texture texture, Transform parent)
     {
         var image = new GameObject(name, typeof(RectTransform), typeof(RawImage)).GetComponent<RawImage>();
@@ -148,10 +153,12 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         return image;
     }
 
+    // 철판 조립, 씬 로딩, 철판 분리와 볼트 낙하를 순서대로 재생
     private IEnumerator Transition(string sceneName, float duration)
     {
         try
         {
+            // 철판이 시차를 두고 날아와 부딪힐 때 효과음 재생
             float stagger = duration * 0.13f;
             bool[] landed = new bool[6];
             float travel = duration * 0.68f;
@@ -172,7 +179,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
                     }
                 }
             });
-            // Brief crooked pause followed by a sharp snap into place.
+            // 마지막 철판은 비뚤게 멈췄다가 한 번 덜컹하며 제자리로 보정
             yield return Animate(0.07f, _ => { });
             Play(assets.settle, 0.65f);
             yield return Animate(0.1f, elapsed =>
@@ -180,9 +187,10 @@ public sealed class ScrapSceneTransition : MonoBehaviour
                 float t = elapsed / 0.1f;
                 plates[5].localRotation = Quaternion.Euler(0, 0, Mathf.Lerp(-7f, 0f, 1f - Mathf.Pow(1f - t, 3f)));
             });
-            // The PNGs contain transparent edges and slightly translucent interiors.
+            // 철판의 투명한 부분으로 씬 교체가 보이지 않도록 배경 차단
             cover.enabled = true;
             Play(assets.weld, 0.4f);
+            // 상하좌우 흔들림과 회전을 점차 줄이며 용접 불꽃 표시
             yield return Animate(0.28f, elapsed =>
             {
                 float t = elapsed / 0.28f;
@@ -203,7 +211,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
             assembly.anchoredPosition = Vector2.zero;
             assembly.localRotation = Quaternion.identity;
             foreach (var spark in sparks) spark.enabled = false;
-            // Give the opaque cover a rendered frame before starting the load.
+            // 가림막이 한 프레임 그려진 뒤 다음 씬을 비동기로 로딩
             yield return null;
             var operation = SceneManager.LoadSceneAsync(sceneName);
             if (operation == null) yield break;
@@ -211,6 +219,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
             yield return null;
             SuspendInput();
             Time.timeScale = 0f;
+            // 새 씬이 준비되면 철판을 바깥으로 뜯어내며 화면 공개
             cover.enabled = false;
             Play(assets.release, 0.65f);
             yield return Animate(duration, elapsed =>
@@ -223,6 +232,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
                     plates[i].localRotation = Quaternion.Euler(0, 0, (i % 2 == 0 ? -22f : 22f) * p);
                 }
             });
+            // 철판이 사라진 뒤 볼트 하나가 회전하며 뒤늦게 낙하
             yield return Animate(0.09f, _ => { });
             bolt.enabled = assets.bolt != null;
             Play(assets.ting, 0.45f);
@@ -241,6 +251,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         }
     }
 
+    // 일시정지 중에도 실제 경과 시간으로 애니메이션 갱신
     private static IEnumerator Animate(float seconds, Action<float> update)
     {
         for (float elapsed = 0; elapsed < seconds; elapsed += Time.unscaledDeltaTime)
@@ -251,6 +262,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         update(seconds);
     }
 
+    // 저장된 전체 음량과 효과음 음소거 설정을 반영해 재생
     private void Play(AudioClip clip, float volume)
     {
         if (clip == null) return;
@@ -260,18 +272,21 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         audioSource.PlayOneShot(clip, volume * Mathf.Clamp01(master) * Mathf.Clamp01(sfx));
     }
 
+    // 새 씬에서도 전환이 끝날 때까지 게임 시간과 입력 정지
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Time.timeScale = 0f;
         SuspendInput();
     }
 
+    // 플레이어 조작과 UI 이벤트 입력 차단
     private void SuspendInput()
     {
         foreach (var input in FindObjectsByType<PlayerInput>()) Suspend(input);
         foreach (var events in FindObjectsByType<EventSystem>()) Suspend(events);
     }
 
+    // 활성 컴포넌트만 기록하고 꺼서 종료 후 원래 상태로 복구
     private void Suspend(Behaviour component)
     {
         if (!component.enabled) return;
@@ -279,6 +294,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         component.enabled = false;
     }
 
+    // 씬 로딩 이벤트 해제 및 게임 시간과 입력 상태 복구
     private void RestoreState()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
@@ -289,6 +305,7 @@ public sealed class ScrapSceneTransition : MonoBehaviour
         suspended.Clear();
     }
 
+    // 오브젝트 제거 시 남은 정지 상태와 전환 중 표시 정리
     private void OnDestroy()
     {
         RestoreState();

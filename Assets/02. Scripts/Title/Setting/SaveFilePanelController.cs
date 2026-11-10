@@ -94,7 +94,7 @@ public class SaveFilePanelController : MonoBehaviour
             slot.preview.color = slot.hasData
                 ? new Color(0.35f, 0.6f, 0.75f) : new Color(0.45f, 0.45f, 0.45f);
             slot.info.text = slot.hasData
-                ? $"예시 데이터\n{slot.stage}\n플레이 시간 {slot.playMinutes / 60:00}:{slot.playMinutes % 60:00}"
+                ? $"{slot.stage}\n플레이 시간 {slot.playMinutes / 60:00}:{slot.playMinutes % 60:00}"
                 : "새 게임";
         }
         deleteButton.interactable = HasCandidate && slots[selectedSlot].hasData;

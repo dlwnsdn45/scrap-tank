@@ -1,0 +1,2095 @@
+fileFormatVersion: 2
+guid: ee183efe76515e544a6e6b9216250a09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7559504510411920980
+    second: impact_spark_0
+  - first:
+      213: -697661598115199727
+    second: impact_spark_1
+  - first:
+      213: -895427873151685570
+    second: impact_spark_2
+  - first:
+      213: -5045272728746110556
+    second: impact_spark_3
+  - first:
+      213: 6409283776371408950
+    second: impact_spark_4
+  - first:
+      213: -6510769099795719281
+    second: impact_spark_5
+  - first:
+      213: 7874840090989086269
+    second: impact_spark_6
+  - first:
+      213: -619695389960238263
+    second: impact_spark_7
+  - first:
+      213: 313891239711796011
+    second: impact_spark_8
+  - first:
+      213: 3046541413711479259
+    second: impact_spark_9
+  - first:
+      213: 4929799816544876330
+    second: impact_spark_10
+  - first:
+      213: 1862735166654573648
+    second: impact_spark_11
+  - first:
+      213: 7337586340721967934
+    second: impact_spark_12
+  - first:
+      213: 573341509914495495
+    second: impact_spark_13
+  - first:
+      213: 3242687123517403363
+    second: impact_spark_14
+  - first:
+      213: 5792501664030543205
+    second: impact_spark_15
+  - first:
+      213: 3200428852433827462
+    second: impact_spark_16
+  - first:
+      213: -8665393087278540522
+    second: impact_spark_17
+  - first:
+      213: 6427366712889300746
+    second: impact_spark_18
+  - first:
+      213: -8044482686098120270
+    second: impact_spark_19
+  - first:
+      213: -2044345009733795471
+    second: impact_spark_20
+  - first:
+      213: 4113072642839703885
+    second: impact_spark_21
+  - first:
+      213: 7422717269555182775
+    second: impact_spark_22
+  - first:
+      213: -4762025437796387172
+    second: impact_spark_23
+  - first:
+      213: -3472114396685414284
+    second: impact_spark_24
+  - first:
+      213: 175347375053188530
+    second: impact_spark_25
+  - first:
+      213: 1550718647001981493
+    second: impact_spark_26
+  - first:
+      213: -3265623693854243343
+    second: impact_spark_27
+  - first:
+      213: 4342713956241579459
+    second: impact_spark_28
+  - first:
+      213: -4728521257342299852
+    second: impact_spark_29
+  - first:
+      213: 3104015196789531961
+    second: impact_spark_30
+  - first:
+      213: -4093511763528187931
+    second: impact_spark_31
+  - first:
+      213: -4110603814258310164
+    second: impact_spark_32
+  - first:
+      213: -5108577842622558169
+    second: impact_spark_33
+  - first:
+      213: -3223124509367915524
+    second: impact_spark_34
+  - first:
+      213: -5775524484916100566
+    second: impact_spark_35
+  - first:
+      213: -2632994394173794185
+    second: impact_spark_36
+  - first:
+      213: 1327632660438728822
+    second: impact_spark_37
+  - first:
+      213: 6855117597986070380
+    second: impact_spark_38
+  - first:
+      213: -2161609899505485794
+    second: impact_spark_39
+  - first:
+      213: -6962313422818353278
+    second: impact_spark_40
+  - first:
+      213: -8758200125200193196
+    second: impact_spark_41
+  - first:
+      213: 4466930735077015485
+    second: impact_spark_42
+  - first:
+      213: -9166222704483958578
+    second: impact_spark_43
+  - first:
+      213: -4267571701789104369
+    second: impact_spark_44
+  - first:
+      213: 6417771770701236274
+    second: impact_spark_45
+  - first:
+      213: -7294461537290591990
+    second: impact_spark_46
+  - first:
+      213: 8248888752424897839
+    second: impact_spark_47
+  - first:
+      213: 3101169533217683836
+    second: impact_spark_48
+  - first:
+      213: 2120184011255433147
+    second: impact_spark_49
+  - first:
+      213: 6781967393326512929
+    second: impact_spark_50
+  - first:
+      213: -7952406791604765698
+    second: impact_spark_51
+  - first:
+      213: -3482307453552335419
+    second: impact_spark_52
+  - first:
+      213: -5014632743592157549
+    second: impact_spark_53
+  - first:
+      213: -3382165641128827960
+    second: impact_spark_54
+  - first:
+      213: 6443373788604833250
+    second: impact_spark_55
+  - first:
+      213: 2685421836846361222
+    second: impact_spark_56
+  - first:
+      213: 179216213376814869
+    second: impact_spark_57
+  - first:
+      213: -4343104183635411893
+    second: impact_spark_58
+  - first:
+      213: 8106876041444500070
+    second: impact_spark_59
+  - first:
+      213: 241757394227597874
+    second: impact_spark_60
+  - first:
+      213: 4153015406712788199
+    second: impact_spark_61
+  - first:
+      213: 6210540245321529183
+    second: impact_spark_62
+  - first:
+      213: 8050130370714485051
+    second: impact_spark_63
+  - first:
+      213: 9180822842866028915
+    second: impact_spark_64
+  - first:
+      213: -6484185119036925643
+    second: impact_spark_65
+  - first:
+      213: 257110108315331260
+    second: impact_spark_66
+  - first:
+      213: 138595937045023472
+    second: impact_spark_67
+  - first:
+      213: -3902191606904144581
+    second: impact_spark_68
+  - first:
+      213: 1186913217042081966
+    second: impact_spark_69
+  - first:
+      213: -7497954746142760751
+    second: impact_spark_70
+  - first:
+      213: -254239809749649982
+    second: impact_spark_71
+  - first:
+      213: 136603366854477495
+    second: impact_spark_72
+  - first:
+      213: 8959917737810180416
+    second: impact_spark_73
+  - first:
+      213: 2577124175909988371
+    second: impact_spark_74
+  - first:
+      213: 8393721822653608145
+    second: impact_spark_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: impact_spark_0
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 999
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca92fe223be371790800000000000000
+      internalID: -7559504510411920980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_1
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 984
+        width: 93
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11589ee09786156f0800000000000000
+      internalID: -697661598115199727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 949
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c6fc2f71dc293f0800000000000000
+      internalID: -895427873151685570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 1521
+        height: 978
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a15f182f279bf9b0800000000000000
+      internalID: -5045272728746110556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_4
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 983
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630ca4303a952f850800000000000000
+      internalID: 6409283776371408950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_5
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 950
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b1610dff915a5a0800000000000000
+      internalID: -6510769099795719281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 943
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36c86e075d094d60800000000000000
+      internalID: 7874840090989086269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_7
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 937
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b097c73566667f0800000000000000
+      internalID: -619695389960238263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_8
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 929
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2be0216b6a2b5400800000000000000
+      internalID: 313891239711796011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 933
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd10ac5464d774a20800000000000000
+      internalID: 3046541413711479259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_10
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 927
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2771fe50da2a6440800000000000000
+      internalID: 4929799816544876330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 930
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ce21fc3c3c9d910800000000000000
+      internalID: 1862735166654573648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 924
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33cd7396e754d560800000000000000
+      internalID: 7337586340721967934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_13
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 912
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a8079c01be4f700800000000000000
+      internalID: 573341509914495495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_14
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 913
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0fcf222c6500d20800000000000000
+      internalID: 3242687123517403363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_15
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 913
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d466dc299136050800000000000000
+      internalID: 5792501664030543205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_16
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 913
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686ba3ea5153a6c20800000000000000
+      internalID: 3200428852433827462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_17
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 815
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61913a9f5e65eb780800000000000000
+      internalID: -8665393087278540522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_18
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 818
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07dfe2c8f7923950800000000000000
+      internalID: 6427366712889300746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_19
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 784
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b167555e914c5090800000000000000
+      internalID: -8044482686098120270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 735
+        width: 9
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17189788b0701a3e0800000000000000
+      internalID: -2044345009733795471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_21
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 751
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4176d3d6c1941930800000000000000
+      internalID: 4113072642839703885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_22
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 689
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc7ef7870ac20760800000000000000
+      internalID: 7422717269555182775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_23
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 712
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96b5c83813e9edb0800000000000000
+      internalID: -4762025437796387172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_24
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 717
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470db0e2a5290dfc0800000000000000
+      internalID: -3472114396685414284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_25
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 693
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bda7523285fe6200800000000000000
+      internalID: 175347375053188530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 647
+        width: 11
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532a025b462458510800000000000000
+      internalID: 1550718647001981493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_27
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 669
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f508bd6d8c2ea2d0800000000000000
+      internalID: -3265623693854243343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_28
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 646
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd19e2a55b644c30800000000000000
+      internalID: 4342713956241579459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_29
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 638
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4319a3f18fae06eb0800000000000000
+      internalID: -4728521257342299852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_30
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 616
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935ed0e206da31b20800000000000000
+      internalID: 3104015196789531961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_31
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 583
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eff40b4dbce037c0800000000000000
+      internalID: -4093511763528187931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_32
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 577
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce384ce1c9334f6c0800000000000000
+      internalID: -4110603814258310164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_33
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 581
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7201d0fb48faa19b0800000000000000
+      internalID: -5108577842622558169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_34
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 583
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb2548e5592543d0800000000000000
+      internalID: -3223124509367915524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_35
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 565
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22410db41739dfa0800000000000000
+      internalID: -5775524484916100566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_36
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 529
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7781da77c89b57bd0800000000000000
+      internalID: -2632994394173794185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_37
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 535
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67048added2bc6210800000000000000
+      internalID: 1327632660438728822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_38
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 511
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f1d79a225422f50800000000000000
+      internalID: 6855117597986070380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_39
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 501
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18f105cf3b6002e0800000000000000
+      internalID: -2161609899505485794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_40
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 479
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f5af174d4e06f90800000000000000
+      internalID: -6962313422818353278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_41
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 495
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45929a9936f947680800000000000000
+      internalID: -8758200125200193196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_42
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 460
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf3a8436d9bdfd30800000000000000
+      internalID: 4466930735077015485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_43
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 395
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec00d17d3090bc080800000000000000
+      internalID: -9166222704483958578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_44
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 390
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07e955d52a86c4c0800000000000000
+      internalID: -4267571701789104369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_45
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 383
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2384d223c61801950800000000000000
+      internalID: 6417771770701236274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 364
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a016b0a21edd4ca90800000000000000
+      internalID: -7294461537290591990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_47
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 319
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d4008ad90f97270800000000000000
+      internalID: 8248888752424897839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_48
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 289
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7934bf7241990b20800000000000000
+      internalID: 3101169533217683836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_49
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 255
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7c75100286c6d10800000000000000
+      internalID: 2120184011255433147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_50
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 155
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b328d69636e1e50800000000000000
+      internalID: 6781967393326512929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_51
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 145
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb7efc182063a190800000000000000
+      internalID: -7952406791604765698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_52
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 117
+        width: 73
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5615032db5cafc0800000000000000
+      internalID: -3482307453552335419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_53
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 161
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e952f9612786ab0800000000000000
+      internalID: -5014632743592157549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 147
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c32cf4d4422011d0800000000000000
+      internalID: -3382165641128827960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_55
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 135
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed9ad082567b6950800000000000000
+      internalID: 6443373788604833250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_56
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 129
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68aed41cee8844520800000000000000
+      internalID: 2685421836846361222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_57
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 143
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fc0505234bc7200800000000000000
+      internalID: 179216213376814869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_58
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cf5e771c13ab3c0800000000000000
+      internalID: -4343104183635411893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_59
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 71
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662ac60cec8618070800000000000000
+      internalID: 8106876041444500070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_60
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 117
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23292c4b115ea5300800000000000000
+      internalID: 241757394227597874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_61
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 109
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e417df328972a930800000000000000
+      internalID: 4153015406712788199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_62
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 125
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5738a1c275403650800000000000000
+      internalID: 6210540245321529183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_63
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 110
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b314506bbeec7bf60800000000000000
+      internalID: 8050130370714485051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_64
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 109
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37152d6cbb5d86f70800000000000000
+      internalID: 9180822842866028915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_65
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 111
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5391ee92dfb8306a0800000000000000
+      internalID: -6484185119036925643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_66
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 101
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba2c420840719300800000000000000
+      internalID: 257110108315331260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_67
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 87
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa81ea35446ce100800000000000000
+      internalID: 138595937045023472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_68
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 65
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3db7f08861a8d9c0800000000000000
+      internalID: -3902191606904144581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_69
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 77
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea862094843c87010800000000000000
+      internalID: 1186913217042081966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_70
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 63
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0e43e52e9e1f790800000000000000
+      internalID: -7497954746142760751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_71
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 31
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5fb147d32c87cf0800000000000000
+      internalID: -254239809749649982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_72
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6cb74d90055e100800000000000000
+      internalID: 136603366854477495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_73
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049b5eaf5b5085c70800000000000000
+      internalID: 8959917737810180416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_74
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 31
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318af27a8c8c3c320800000000000000
+      internalID: 2577124175909988371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impact_spark_75
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d076be968d7c7470800000000000000
+      internalID: 8393721822653608145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      impact_spark_0: -7559504510411920980
+      impact_spark_1: -697661598115199727
+      impact_spark_10: 4929799816544876330
+      impact_spark_11: 1862735166654573648
+      impact_spark_12: 7337586340721967934
+      impact_spark_13: 573341509914495495
+      impact_spark_14: 3242687123517403363
+      impact_spark_15: 5792501664030543205
+      impact_spark_16: 3200428852433827462
+      impact_spark_17: -8665393087278540522
+      impact_spark_18: 6427366712889300746
+      impact_spark_19: -8044482686098120270
+      impact_spark_2: -895427873151685570
+      impact_spark_20: -2044345009733795471
+      impact_spark_21: 4113072642839703885
+      impact_spark_22: 7422717269555182775
+      impact_spark_23: -4762025437796387172
+      impact_spark_24: -3472114396685414284
+      impact_spark_25: 175347375053188530
+      impact_spark_26: 1550718647001981493
+      impact_spark_27: -3265623693854243343
+      impact_spark_28: 4342713956241579459
+      impact_spark_29: -4728521257342299852
+      impact_spark_3: -5045272728746110556
+      impact_spark_30: 3104015196789531961
+      impact_spark_31: -4093511763528187931
+      impact_spark_32: -4110603814258310164
+      impact_spark_33: -5108577842622558169
+      impact_spark_34: -3223124509367915524
+      impact_spark_35: -5775524484916100566
+      impact_spark_36: -2632994394173794185
+      impact_spark_37: 1327632660438728822
+      impact_spark_38: 6855117597986070380
+      impact_spark_39: -2161609899505485794
+      impact_spark_4: 6409283776371408950
+      impact_spark_40: -6962313422818353278
+      impact_spark_41: -8758200125200193196
+      impact_spark_42: 4466930735077015485
+      impact_spark_43: -9166222704483958578
+      impact_spark_44: -4267571701789104369
+      impact_spark_45: 6417771770701236274
+      impact_spark_46: -7294461537290591990
+      impact_spark_47: 8248888752424897839
+      impact_spark_48: 3101169533217683836
+      impact_spark_49: 2120184011255433147
+      impact_spark_5: -6510769099795719281
+      impact_spark_50: 6781967393326512929
+      impact_spark_51: -7952406791604765698
+      impact_spark_52: -3482307453552335419
+      impact_spark_53: -5014632743592157549
+      impact_spark_54: -3382165641128827960
+      impact_spark_55: 6443373788604833250
+      impact_spark_56: 2685421836846361222
+      impact_spark_57: 179216213376814869
+      impact_spark_58: -4343104183635411893
+      impact_spark_59: 8106876041444500070
+      impact_spark_6: 7874840090989086269
+      impact_spark_60: 241757394227597874
+      impact_spark_61: 4153015406712788199
+      impact_spark_62: 6210540245321529183
+      impact_spark_63: 8050130370714485051
+      impact_spark_64: 9180822842866028915
+      impact_spark_65: -6484185119036925643
+      impact_spark_66: 257110108315331260
+      impact_spark_67: 138595937045023472
+      impact_spark_68: -3902191606904144581
+      impact_spark_69: 1186913217042081966
+      impact_spark_7: -619695389960238263
+      impact_spark_70: -7497954746142760751
+      impact_spark_71: -254239809749649982
+      impact_spark_72: 136603366854477495
+      impact_spark_73: 8959917737810180416
+      impact_spark_74: 2577124175909988371
+      impact_spark_75: 8393721822653608145
+      impact_spark_8: 313891239711796011
+      impact_spark_9: 3046541413711479259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
