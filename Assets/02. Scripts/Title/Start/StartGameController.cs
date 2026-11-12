@@ -8,6 +8,7 @@ public class StartGameController : MonoBehaviour
 
     [SerializeField, Min(0f)] private float fadeDuration = 0.4f;
     [SerializeField] private ScrapSceneTransition.Assets transitionAssets = new ScrapSceneTransition.Assets();
+    [SerializeField] private string sceneName = "Ingame";
 
     // 파일 선택 확인 후 게임 시작
     public void StartGame()
@@ -21,6 +22,6 @@ public class StartGameController : MonoBehaviour
             return;
         }
 
-        ScrapSceneTransition.LoadScene("Ingame", transitionAssets, fadeDuration);
+        ScrapSceneTransition.LoadScene(sceneName, transitionAssets, fadeDuration);
     }
 }

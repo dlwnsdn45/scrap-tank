@@ -12537,6 +12537,7 @@ MonoBehaviour:
     weld: {fileID: 8300000, guid: dfba13b9d55744f4f9d93f81b05221e2, type: 3}
     release: {fileID: 8300000, guid: 76261266132659c40bdd8543d673bbb4, type: 3}
     ting: {fileID: 8300000, guid: 6ee97708d14756d45b268c5c295175af, type: 3}
+  sceneName: Tutorial
 --- !u!1 &1970000000
 GameObject:
   m_ObjectHideFlags: 0
@@ -12847,6 +12848,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TitleAudioController
   buttonClip: {fileID: 8300000, guid: 0bd278e549c24ccca54eecf1de085c43, type: 3}
   panelOpenClip: {fileID: 8300000, guid: c7d12674c0b94a45a803fdd0c3d211fd, type: 3}
+  fileSelectedClip: {fileID: 8300000, guid: 969650b4d26a4a99911b1332954d721a, type: 3}
+  bgmClip: {fileID: 8300000, guid: a9b2eb1b05ca4dc18a2e17c64d7fa9d1, type: 3}
+  bgmVolume: 0.55
+  fileSelectedVolume: 0.35
   buttonVolume: 0.35
   panelVolume: 0.3
   panels:
@@ -12855,10 +12860,6 @@ MonoBehaviour:
   - {fileID: 1910000500}
   - {fileID: 1910000600}
   - {fileID: 1950005000}
-  fileSelectedClip: {fileID: 8300000, guid: 969650b4d26a4a99911b1332954d721a, type: 3}
-  fileSelectedVolume: 0.35
-  bgmClip: {fileID: 8300000, guid: a9b2eb1b05ca4dc18a2e17c64d7fa9d1, type: 3}
-  bgmVolume: 0.55
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
