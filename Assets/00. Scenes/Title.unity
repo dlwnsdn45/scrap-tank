@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1900000001}
   - component: {fileID: 1960000100}
   - component: {fileID: 1980000100}
+  - component: {fileID: 1980000900}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12366,6 +12367,7 @@ MonoBehaviour:
   koreanFont: {fileID: 11400000, guid: c9ff384c7e834b629720e1b06d728d79, type: 2}
   selectionWarning: {fileID: 1960000002}
   selectButton: {fileID: 1970000002}
+  titleAudio: {fileID: 1980000900}
 --- !u!1 &1960000000
 GameObject:
   m_ObjectHideFlags: 0
@@ -12831,6 +12833,32 @@ MonoBehaviour:
   maxPieces: 60
   spawnCooldown: 2
   maxThrowSpeed: 22
+--- !u!114 &1980000900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109571547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32ab976449945c3b5bde238cda979bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TitleAudioController
+  buttonClip: {fileID: 8300000, guid: 0bd278e549c24ccca54eecf1de085c43, type: 3}
+  panelOpenClip: {fileID: 8300000, guid: c7d12674c0b94a45a803fdd0c3d211fd, type: 3}
+  buttonVolume: 0.35
+  panelVolume: 0.3
+  panels:
+  - {fileID: 1323909296}
+  - {fileID: 1910000400}
+  - {fileID: 1910000500}
+  - {fileID: 1910000600}
+  - {fileID: 1950005000}
+  fileSelectedClip: {fileID: 8300000, guid: 969650b4d26a4a99911b1332954d721a, type: 3}
+  fileSelectedVolume: 0.35
+  bgmClip: {fileID: 8300000, guid: a9b2eb1b05ca4dc18a2e17c64d7fa9d1, type: 3}
+  bgmVolume: 0.55
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

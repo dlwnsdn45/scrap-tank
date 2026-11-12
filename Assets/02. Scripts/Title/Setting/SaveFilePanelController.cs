@@ -28,6 +28,7 @@ public class SaveFilePanelController : MonoBehaviour
     [SerializeField] private TMP_FontAsset koreanFont;
     [SerializeField] private TMP_Text selectionWarning;
     [SerializeField] private Button selectButton;
+    [SerializeField] private TitleAudioController titleAudio;
 
     private readonly List<Selectable> blockedButtons = new();
     private int selectedSlot = -1;
@@ -67,9 +68,10 @@ public class SaveFilePanelController : MonoBehaviour
     // 파일 선택 버튼으로 최종 확정
     public void ConfirmSelection()
     {
-        if (!HasCandidate || deleteConfirmPanel.activeSelf) return;
+        if (!HasCandidate || HasSelectedSlot || deleteConfirmPanel.activeSelf) return;
         confirmedSlot = selectedSlot;
         Refresh();
+        titleAudio?.PlayFileSelected();
     }
 
     // 파일 미선택 경고 표시
