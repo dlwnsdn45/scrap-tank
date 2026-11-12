@@ -25,6 +25,7 @@ public class EnemyManager : MonoBehaviour
     readonly Stack<Enemy> pool = new();     // 비활성 적
     IDamageable playerHp;
     Camera cam;
+    CameraFollow cameraFollow;
     float spawnTimer;
     int spawnCount;
     int loadoutIndex;
@@ -35,6 +36,7 @@ public class EnemyManager : MonoBehaviour
         Instance = this;
         Projectiles = new ProjectilePool(transform, mineSprite);
         cam = Camera.main;
+        if (cam) cameraFollow = cam.GetComponent<CameraFollow>();
         playerHp = player.GetComponent<IDamageable>();
     }
 
@@ -232,6 +234,7 @@ public class EnemyManager : MonoBehaviour
     {
         float r = cam.orthographicSize * Mathf.Sqrt(1f + cam.aspect * cam.aspect) + 2f;
         Vector2 pos = (Vector2)cam.transform.position + Random.insideUnitCircle.normalized * r;
+        if (cameraFollow) pos = cameraFollow.ClampToMap(pos, Vector2.one);
 
         Enemy e;
         if (pool.Count > 0)

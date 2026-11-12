@@ -22,10 +22,24 @@ public class PlayerController : MonoBehaviour, IDamageable
     WeaponLayout weaponLayout;
     Camera cam;
     Vector2 moveInput;
+    bool interactHeld;
     int hp;
+    public int Hp => hp;
+    public int MaxHp => maxHp;
+    public bool NeedsRepair => IsAlive && (hp < maxHp || weaponLayout.HasDamagedParts);
+    internal uint DamageVersion { get; private set; }
     public int Scrap { get; private set; }
     public bool IsAlive => hp > 0;
+    public bool IsInteractHeld => interactHeld;
     public void AddScrap(int amount) => Scrap += Mathf.Max(0, amount);
+    internal bool TryRepair(int cost)
+    {
+        if (cost < 0 || Scrap < cost || !NeedsRepair) return false;
+        Scrap -= cost;
+        hp = maxHp;
+        weaponLayout.RepairParts();
+        return true;
+    }
     public bool TryCollectPart(WeaponKind kind) => IsAlive && weaponLayout.TryEquip(kind);
     float jammedUntil;
     Vector2 pullVelocity;
@@ -61,14 +75,15 @@ public class PlayerController : MonoBehaviour, IDamageable
         }
     }
     void OnMove(InputValue v) => moveInput = v.Get<Vector2>();
-    void Update()
+    void OnInteract(InputValue v) => interactHeld = v.isPressed;
+    void OnSprint(InputValue v)
     {
-        var keyboard = Keyboard.current;
-        if (keyboard != null && keyboard.tabKey.wasPressedThisFrame)
-            weaponLayout.Toggle();
-        if (keyboard != null && keyboard.spaceKey.wasPressedThisFrame &&
-            Time.time >= nextBoostTime && boostRemaining <= 0f)
+        if (v.isPressed && Time.time >= nextBoostTime && boostRemaining <= 0f)
             boostRequested = true;
+    }
+    void OnPrevious(InputValue v)
+    {
+        if (v.isPressed) weaponLayout.Toggle();
     }
 
     void LateUpdate()
@@ -91,6 +106,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (movementDust)
             movementDust.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         moveInput = Vector2.zero;
+        interactHeld = false;
         boostRequested = checkRam = false;
         boostRemaining = 0f;
         if (rb) rb.linearVelocity = Vector2.zero;
@@ -105,6 +121,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void TakeDamage(int dmg, Vector2 source)
     {
         if (dmg <= 0 || hp <= 0) return;
+        DamageVersion++;
         hp = Mathf.Max(0, hp - weaponLayout.AbsorbDamage(dmg, source));
         if (cam && cam.TryGetComponent<CameraFollow>(out var follow))
             follow.Shake();

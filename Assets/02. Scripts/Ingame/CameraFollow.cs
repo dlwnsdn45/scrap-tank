@@ -5,9 +5,21 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] Transform target;
+    [SerializeField] SpriteRenderer mapRenderer;
     [SerializeField, Min(0f)] float smoothTime = 0.12f;
-    Vector3 followPosition, velocity;
+    Camera view;
+    Vector3 followPosition;
     float shakeRemaining, shakeDuration, shakeStrength;
+
+    void Awake()
+    {
+        view = GetComponent<Camera>();
+        if (!mapRenderer)
+        {
+            var map = GameObject.Find("20_0");
+            if (map) mapRenderer = map.GetComponent<SpriteRenderer>();
+        }
+    }
 
     void Start()
     {
@@ -19,10 +31,10 @@ public class CameraFollow : MonoBehaviour
         followPosition = transform.position;
         if (target)
             followPosition = new Vector3(target.position.x, target.position.y, followPosition.z);
-        transform.position = followPosition;
+        transform.position = followPosition = ClampView(followPosition);
     }
 
-    public void Shake(float strength = 0.2f, float duration = 0.2f)
+    public void Shake(float strength = 0.45f, float duration = 0.25f)
     {
         if (strength <= 0f || duration <= 0f) return;
         shakeStrength = Mathf.Max(shakeStrength, strength);
@@ -34,7 +46,8 @@ public class CameraFollow : MonoBehaviour
         if (target)
         {
             var destination = new Vector3(target.position.x, target.position.y, followPosition.z);
-            followPosition = Vector3.SmoothDamp(followPosition, destination, ref velocity, smoothTime);
+            float blend = smoothTime > 0f ? 1f - Mathf.Exp(-Time.deltaTime / smoothTime) : 1f;
+            followPosition = Vector3.Lerp(followPosition, ClampView(destination), blend);
         }
         Vector2 offset = Vector2.zero;
         if (shakeRemaining > 0f)
@@ -43,13 +56,31 @@ public class CameraFollow : MonoBehaviour
             shakeRemaining = Mathf.Max(0f, shakeRemaining - Time.deltaTime);
         }
         else shakeStrength = 0f;
-        transform.position = followPosition + (Vector3)offset;
+        transform.position = ClampView(followPosition + (Vector3)offset);
+    }
+
+    Vector3 ClampView(Vector3 position)
+    {
+        if (!mapRenderer || !view.orthographic) return position;
+        var size = mapRenderer.bounds.extents;
+        view.orthographicSize = Mathf.Min(view.orthographicSize, size.y, size.x / view.aspect);
+        return ClampToMap(position, new Vector2(view.orthographicSize * view.aspect, view.orthographicSize));
+    }
+
+    internal Vector3 ClampToMap(Vector3 position, Vector2 padding)
+    {
+        if (!mapRenderer) return position;
+        var bounds = mapRenderer.bounds;
+        float x = Mathf.Max(0f, bounds.extents.x - padding.x);
+        float y = Mathf.Max(0f, bounds.extents.y - padding.y);
+        position.x = Mathf.Clamp(position.x, bounds.center.x - x, bounds.center.x + x);
+        position.y = Mathf.Clamp(position.y, bounds.center.y - y, bounds.center.y + y);
+        return position;
     }
 
     void OnDisable()
     {
         shakeRemaining = shakeStrength = 0f;
-        velocity = Vector3.zero;
         transform.position = followPosition;
     }
 }

@@ -11,6 +11,21 @@ internal sealed class WeaponLayout
     };
 
     internal WeaponMount[] Mounts { get; }
+    internal bool HasDamagedParts => Array.Exists(Mounts, IsDamaged);
+
+    static bool IsDamaged(WeaponMount mount) =>
+        mount != null && mount.equipped && mount.weapon != null && mount.Hp < mount.MaxHp;
+
+    internal void RepairParts()
+    {
+        for (int i = 0; i < Mounts.Length; i++)
+        {
+            var mount = Mounts[i];
+            if (!IsDamaged(mount)) continue;
+            mount.Initialize();
+            RefreshVisual(i);
+        }
+    }
     readonly Transform owner;
     readonly GameObject[] visuals;
     bool open;
