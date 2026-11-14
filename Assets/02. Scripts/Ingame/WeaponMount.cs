@@ -36,8 +36,22 @@ public sealed class WeaponMount
         WeaponKind.Missile => 50, WeaponKind.Drill => 60,
         WeaponKind.MachineGun => 24, WeaponKind.Harpoon => 35, _ => 30
     };
-    public void Initialize() => Hp = MaxHp;
-    public void Damage(int amount) => Hp = Mathf.Max(0, Hp - amount);
+    public void Initialize() => Initialize(1f);
+
+    internal void Initialize(float durability)
+    {
+        Hp = Mathf.RoundToInt(MaxHp * Mathf.Clamp01(durability));
+    }
+
+    public void Damage(int amount)
+    {
+        Hp = Mathf.Max(0, Hp - amount);
+    }
+
+    internal void Repair(float fraction)
+    {
+        Hp = Mathf.Min(MaxHp, Hp + Mathf.RoundToInt(MaxHp * fraction));
+    }
     float nextShot;
 
     public void Tick(Transform owner, EnemyManager enemies)

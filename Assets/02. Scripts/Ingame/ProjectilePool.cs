@@ -3,6 +3,8 @@ using UnityEngine;
 
 internal sealed class ProjectilePool
 {
+    internal const float MineTriggerRadius = 1f;
+    const float MineArmDelay = 0.45f;
     sealed class Shot
     {
         public LineRenderer Visual;
@@ -23,9 +25,19 @@ internal sealed class ProjectilePool
     readonly List<RaycastHit2D> hits = new();
     readonly Transform parent;
     readonly Material material;
+    readonly MaterialPropertyBlock projectileProperties = new();
+    static readonly int EmissionColor = Shader.PropertyToID("_EmissionColor");
     readonly Sprite mineSprite;
     readonly Sprite fallbackSprite;
     readonly Texture2D fallbackTexture;
+
+    internal void GetArmedHostileMines(List<Vector2> positions)
+    {
+        positions.Clear();
+        foreach (var shot in active)
+            if (shot.Hostile && shot.Kind == WeaponKind.Mine && shot.MineAge >= MineArmDelay)
+                positions.Add(shot.Position);
+    }
 
     public ProjectilePool(Transform parent, Sprite mineSprite = null)
     {
@@ -39,7 +51,7 @@ internal sealed class ProjectilePool
                 new Vector2(0.5f, 0.5f), 1f);
         }
         this.mineSprite = mineSprite ? mineSprite : fallbackSprite;
-        var shader = Shader.Find("Sprites/Default");
+        var shader = Resources.Load<Shader>("ProjectileBloom");
         if (shader) material = new Material(shader);
     }
 
@@ -60,6 +72,13 @@ internal sealed class ProjectilePool
         if (shot.Kind == WeaponKind.Missile) color = new Color(1f, 0.5f, 0f);
         if (shot.Kind == WeaponKind.Harpoon) color = Color.cyan;
         shot.Visual.startColor = shot.Visual.endColor = color;
+        if (material && shot.Kind != WeaponKind.Mine)
+        {
+            var emission = Color.Lerp(color, Color.white, 0.28f) * 4f;
+            emission.a = 1f;
+            projectileProperties.SetColor(EmissionColor, emission);
+            shot.Visual.SetPropertyBlock(projectileProperties);
+        }
         shot.Visual.widthMultiplier = shot.Kind == WeaponKind.Mine || shot.Kind == WeaponKind.Missile
             ? 0.16f : 0.07f;
         bool isMine = shot.Kind == WeaponKind.Mine;
@@ -86,7 +105,7 @@ internal sealed class ProjectilePool
             {
                 shot.MineAge += deltaTime;
                 if (shot.MineAge >= 8f ||
-                    (shot.MineAge >= 0.45f && EnemyManager.Instance.TryDetonateMine(
+                    (shot.MineAge >= MineArmDelay && EnemyManager.Instance.TryDetonateMine(
                         shot.Position, shot.Damage, shot.Hostile)))
                     Recycle(i, shot);
                 continue;
@@ -96,6 +115,9 @@ internal sealed class ProjectilePool
             bool stopped = false;
             foreach (var hit in hits)
             {
+                if (hit.collider.isTrigger &&
+                    (hit.collider.GetComponentInParent<LootPickup>() || hit.collider.GetComponentInParent<RepairZone>()))
+                    continue;
                 IDamageable target = shot.Hostile
                     ? (IDamageable)hit.collider.GetComponentInParent<PlayerController>()
                     : hit.collider.GetComponentInParent<Enemy>();

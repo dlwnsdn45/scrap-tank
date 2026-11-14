@@ -11,7 +11,10 @@ public class Enemy : MonoBehaviour, IDamageable
     internal Vector2 knockbackVelocity;
     internal float knockbackRemaining;
     internal WeaponDefinition weapon;
+    internal float AttackAt { get; set; }
+    internal Vector2 AttackDirection { get; set; }
     int hp;
+    internal float HealthFraction => (float)hp / Mathf.Max(1, maxHp);
     ParticleSystem movementDust;
     Vector2 previousPosition;
 
@@ -64,6 +67,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         hp = maxHp;
         nextAttack = 0f;
+        AttackAt = 0f;
         knockbackRemaining = 0f;
     }
 

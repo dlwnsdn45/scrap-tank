@@ -5,8 +5,6 @@ public class GameTimeManager : MonoBehaviour
     public static GameTimeManager Instance { get; private set; }
 
     public float ElapsedSeconds { get; private set; }
-    public string FormattedTime => Mathf.FloorToInt(ElapsedSeconds / 60f).ToString("00") + ":" +
-        Mathf.FloorToInt(ElapsedSeconds % 60f).ToString("00");
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Create()

@@ -4,13 +4,20 @@ using UnityEngine;
 internal sealed class WeaponLayout
 {
     static readonly string[] Slots = { "FL", "FR", "RF", "RR", "BR", "BL", "LR", "LF" };
+    static readonly int[] AutoOrder = { 0, 1, 2, 7, 3, 6, 4, 5 };
+    static readonly int[] PairOrder = { 0, 2, 6, 4 };
+    static readonly float[] OpenAt = { 0f, 0f, 0f, 90f, 150f, 150f, 90f, 0f };
     static readonly Vector2[] Positions =
     {
         new(-0.27f, 1), new(0.27f, 1), new(0.55f, 0.48f), new(0.55f, -0.48f),
         new(0.27f, -1), new(-0.27f, -1), new(-0.55f, -0.48f), new(-0.55f, 0.48f)
     };
 
-    internal WeaponMount[] Mounts { get; }
+    WeaponMount[] Mounts { get; }
+    internal int SlotCount => Mounts.Length;
+    internal WeaponMount MountAt(int index) => Mounts[index];
+    internal Transform MountVisual(int index) => visuals[index] && visuals[index].gameObject.activeSelf
+        ? visuals[index].transform : null;
     internal bool HasDamagedParts => Array.Exists(Mounts, IsDamaged);
 
     static bool IsDamaged(WeaponMount mount) =>
@@ -21,22 +28,31 @@ internal sealed class WeaponLayout
         for (int i = 0; i < Mounts.Length; i++)
         {
             var mount = Mounts[i];
-            if (!IsDamaged(mount)) continue;
-            mount.Initialize();
+            if (!IsDamaged(mount) || (i > 0 && Mounts[i - 1] == mount)) continue;
+            mount.Repair(0.4f);
             RefreshVisual(i);
         }
     }
     readonly Transform owner;
-    readonly GameObject[] visuals;
-    bool open;
-    int selected;
+    readonly Renderer[] visuals;
+    readonly Renderer visualPrefab;
+    internal void Tick(EnemyManager enemies)
+    {
+        for (int i = 0; i < Mounts.Length; i++)
+        {
+            var mount = Mounts[i];
+            if (mount != null && (i == 0 || Mounts[i - 1] != mount))
+                mount.Tick(owner, enemies);
+        }
+    }
 
-    internal WeaponLayout(Transform owner, WeaponMount[] configured)
+    internal WeaponLayout(Transform owner, WeaponMount[] configured, Renderer visualPrefab)
     {
         this.owner = owner;
+        this.visualPrefab = visualPrefab;
         int count = configured?.Length ?? 0;
         Mounts = new WeaponMount[Mathf.Max(Slots.Length, count)];
-        visuals = new GameObject[Mounts.Length];
+        visuals = new Renderer[Mounts.Length];
         if (count > 0) Array.Copy(configured, Mounts, count);
         for (int i = 0; i < count; i++)
         {
@@ -45,77 +61,102 @@ internal sealed class WeaponLayout
         }
     }
 
-    internal void Toggle() => open = !open;
-
-    internal void Draw()
+    internal int FindEmptySlot(WeaponKind kind)
     {
-        if (GUI.Button(new Rect(12, 12, 128, 26), "Weapons [Tab]")) Toggle();
-        if (!open) return;
-
-        GUILayout.BeginArea(new Rect(12, 46, 390, 248), GUI.skin.box);
-        GUILayout.Label("Weapon layout   /   Front ↑");
-        GUILayout.BeginHorizontal();
-        GUILayout.BeginVertical(GUILayout.Width(180));
-        DrawRow(0, 1);
-        DrawRow(7, 2);
-        DrawRow(6, 3);
-        DrawRow(5, 4);
-        GUILayout.EndVertical();
-        GUILayout.BeginVertical();
-        GUILayout.Label(Slots[selected] + "  /  " + NameAt(selected));
-        GUILayout.Label("Collect dropped parts to equip empty slots.");
-        if (Mounts[selected] != null && GUILayout.Button("Dismantle (+3 scrap)"))
-        {
-            owner.GetComponent<PlayerController>().AddScrap(3);
-            Mounts[selected] = null;
-            RefreshVisual(selected);
-        }
-        GUILayout.EndVertical();
-        GUILayout.EndHorizontal();
-        GUILayout.EndArea();
+        foreach (int i in kind == WeaponKind.Missile ? PairOrder : AutoOrder)
+            if (CanInstall(i, kind) && TargetIsEmpty(kind, i)) return i;
+        return -1;
     }
 
-    void DrawRow(int left, int right)
+    internal bool IsOpenSlot(int index) => index >= Slots.Length || Mounts[index] != null ||
+        (GameTimeManager.Instance ? GameTimeManager.Instance.ElapsedSeconds : 0f) >= OpenAt[index];
+
+    internal static int Partner(WeaponKind kind, int index) =>
+        kind == WeaponKind.Missile && index < Slots.Length ? index ^ 1 : -1;
+
+    internal bool TargetIsEmpty(WeaponKind kind, int index)
     {
-        GUILayout.BeginHorizontal();
-        DrawSlot(left);
-        DrawSlot(right);
-        GUILayout.EndHorizontal();
+        int other = Partner(kind, index);
+        return Mounts[index] == null && (other < 0 || Mounts[other] == null);
     }
 
-    void DrawSlot(int index)
-    {
-        string prefix = index == selected ? "> " : "";
-        if (GUILayout.Button(prefix + Slots[index] + "\n" + NameAt(index), GUILayout.Width(86)))
-            selected = index;
-    }
+    internal static int ScrapValue(WeaponKind kind) => kind == WeaponKind.Missile ? 6 : 3;
 
-    string NameAt(int index)
+    internal bool CanInstall(int index, WeaponKind kind) => index >= 0 && index < Slots.Length && IsOpenSlot(index) && (kind switch
+    {
+        WeaponKind.Missile => IsOpenSlot(index ^ 1),
+        WeaponKind.Drill => index < 2,
+        WeaponKind.Flamethrower => index >= 2,
+        WeaponKind.Mine => index >= 3 && index <= 6,
+        WeaponKind.Harpoon => index != 4 && index != 5,
+        _ => true
+    });
+
+    internal bool HasSwapTarget(WeaponKind kind) => Array.Exists(AutoOrder, index => CanInstall(index, kind));
+
+    internal int UnlockTime(int index) => (int)OpenAt[index];
+
+    internal int Dismantle(int index)
     {
         var mount = Mounts[index];
-        return mount != null && mount.equipped && mount.weapon != null
-            ? mount.weapon.kind + " " + mount.Hp + "/" + mount.MaxHp : "Empty";
+        if (mount?.weapon == null) return 0;
+        RemoveMount(mount);
+        return ScrapValue(mount.weapon.kind);
     }
 
-    internal bool TryEquip(WeaponKind kind)
+    internal bool TryInstall(int index, WeaponKind kind, float durability, out WeaponMount previous,
+        out WeaponMount second)
     {
+        previous = second = null;
+        if (!CanInstall(index, kind)) return false;
+        int other = Partner(kind, index);
+        previous = Mounts[index];
+        if (other >= 0) second = Mounts[other];
+        if (second == previous) second = null;
+        if (previous != null) RemoveMount(previous);
+        if (second != null) RemoveMount(second);
+        int primary = other >= 0 ? Mathf.Min(index, other) : index;
+        var mount = new WeaponMount
+        {
+            localMuzzle = other >= 0 ? (Positions[index] + Positions[other]) * 0.5f : Positions[index],
+            localAngle = -90f * (primary / 2),
+            weapon = WeaponCatalog.PlayerWeapon(kind)
+        };
+        mount.Initialize(durability);
+        Mounts[primary] = mount;
+        if (other >= 0) Mounts[Mathf.Max(index, other)] = mount;
+        RefreshVisual(primary);
+        return true;
+    }
+
+    void RemoveMount(WeaponMount mount)
+    {
+        for (int i = 0; i < Mounts.Length; i++)
+        {
+            if (Mounts[i] != mount) continue;
+            Mounts[i] = null;
+            RefreshVisual(i);
+        }
+    }
+
+    internal Vector3 SlotPosition(int index) => owner.TransformPoint(Positions[index]);
+    internal int FindSwapSlot(WeaponKind kind, Camera camera, Vector2 mouse)
+    {
+        int nearest = -1;
+        Vector2 center = camera.WorldToScreenPoint(owner.position);
+        Vector2 cursor = (mouse - center).normalized;
+        if (cursor == Vector2.zero) return nearest;
+        float best = float.NegativeInfinity;
         for (int i = 0; i < Slots.Length; i++)
         {
-            if (Mounts[i] != null) continue;
-            if (kind == WeaponKind.Drill && i > 1) continue;
-            if (kind == WeaponKind.Flamethrower && i < 2) continue;
-            if (kind == WeaponKind.Mine && i != 3 && i != 4 && i != 5 && i != 6) continue;
-            if (kind == WeaponKind.Harpoon && (i == 4 || i == 5)) continue;
-            Mounts[i] = new WeaponMount
-            {
-                localMuzzle = Positions[i], localAngle = -90f * (i / 2),
-                weapon = WeaponCatalog.PlayerWeapon(kind)
-            };
-            Mounts[i].Initialize();
-            RefreshVisual(i);
-            return true;
+            if (!CanInstall(i, kind)) continue;
+            Vector3 screen = camera.WorldToScreenPoint(SlotPosition(i));
+            float alignment = Vector2.Dot(cursor, ((Vector2)screen - center).normalized);
+            if (screen.z <= 0f || alignment <= best) continue;
+            nearest = i;
+            best = alignment;
         }
-        return false;
+        return nearest;
     }
 
     internal int AbsorbDamage(int damage, Vector2 source)
@@ -144,30 +185,35 @@ internal sealed class WeaponLayout
     void RefreshVisual(int index)
     {
         var mount = Mounts[index];
-        if (mount == null || !mount.equipped || mount.weapon == null)
+        if (mount == null || !mount.equipped || mount.weapon == null ||
+            (index > 0 && Mounts[index - 1] == mount))
         {
-            if (visuals[index]) visuals[index].SetActive(false);
+            if (visuals[index]) visuals[index].gameObject.SetActive(false);
             return;
         }
 
         if (!visuals[index])
         {
-            var box = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            box.transform.SetParent(owner, false);
-            var collider = box.GetComponent<BoxCollider>();
-            collider.enabled = false;
-            UnityEngine.Object.Destroy(collider);
-            box.GetComponent<Renderer>().sortingOrder = 3;
-            visuals[index] = box;
+            if (visualPrefab)
+                visuals[index] = UnityEngine.Object.Instantiate(visualPrefab, owner, false);
+            else
+            {
+                var box = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                box.transform.SetParent(owner, false);
+                box.transform.localScale = new Vector3(0.24f, 0.48f, 0.15f);
+                var collider = box.GetComponent<BoxCollider>();
+                collider.enabled = false;
+                UnityEngine.Object.Destroy(collider);
+                visuals[index] = box.GetComponent<Renderer>();
+                visuals[index].sortingOrder = 3;
+            }
         }
 
-        var visual = visuals[index];
-        visual.name = mount.weapon.kind + " Mount";
-        visual.transform.localPosition = new Vector3(mount.localMuzzle.x, mount.localMuzzle.y, -0.15f);
-        visual.transform.localRotation = Quaternion.Euler(0f, 0f, mount.localAngle);
-        visual.transform.localScale = new Vector3(0.24f, 0.48f, 0.15f);
-        visual.SetActive(true);
-        var renderer = visual.GetComponent<Renderer>();
+        var renderer = visuals[index];
+        renderer.name = mount.weapon.kind + " Mount";
+        renderer.transform.localPosition = new Vector3(mount.localMuzzle.x, mount.localMuzzle.y, -0.15f);
+        renderer.transform.localRotation = Quaternion.Euler(0f, 0f, mount.localAngle);
+        renderer.gameObject.SetActive(true);
         var properties = new MaterialPropertyBlock();
         renderer.GetPropertyBlock(properties);
         properties.SetColor("_Color", mount.Hp > 0 ? Color.white : Color.gray);

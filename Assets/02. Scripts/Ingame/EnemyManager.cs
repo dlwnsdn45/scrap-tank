@@ -12,6 +12,9 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] float attackRange = 1f;
     [SerializeField] float attackCooldown = 1f;
     [SerializeField] int attackDamage = 5;
+    [SerializeField, Min(0.05f)] float attackWarningDuration = 0.35f;
+    internal float AttackWarningDuration => attackWarningDuration;
+    internal float MeleeRange => attackRange;
     [SerializeField, Min(0)] int scrapPerKill = 1;
     [SerializeField, Min(0)] int carrierScrap = 4;
     [SerializeField, Min(0)] int rangedEvery = 4;
@@ -30,6 +33,7 @@ public class EnemyManager : MonoBehaviour
     int spawnCount;
     int loadoutIndex;
     internal ProjectilePool Projectiles { get; private set; }
+    internal IReadOnlyList<Enemy> ActiveEnemies => enemies;
 
     void Awake()
     {
@@ -42,6 +46,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return;
         spawnTimer += Time.deltaTime;
         if (spawnTimer >= spawnInterval && enemies.Count < maxEnemies)
         {
@@ -57,10 +62,9 @@ public class EnemyManager : MonoBehaviour
             var e = enemies[i];
             Vector2 pos = e.transform.position;
             Vector2 to = p - pos;
-            e.Face(to);
-
             if (e.knockbackRemaining > 0f)
             {
+                e.AttackAt = 0f;
                 float step = Mathf.Min(Time.deltaTime, e.knockbackRemaining);
                 e.transform.position = pos + e.knockbackVelocity * step;
                 e.knockbackRemaining -= step;
@@ -71,15 +75,31 @@ public class EnemyManager : MonoBehaviour
             float range = weapon != null ? weapon.range : attackRange;
             float sqrRange = range * range;
 
+            if (e.AttackAt > 0f)
+            {
+                if (Time.time < e.AttackAt) continue;
+                e.AttackAt = 0f;
+                if (weapon != null)
+                    Attack(pos, e.AttackDirection, e.AttackDirection, weapon, true);
+                else if (sqr <= sqrRange)
+                    DamagePlayer(attackDamage, pos);
+                continue;
+            }
+
+            e.Face(to);
             if (sqr > sqrRange)
                 e.transform.position = pos + to / Mathf.Sqrt(sqr) * (e.speed * Time.deltaTime);
             else if (Time.time >= e.nextAttack)
             {
-                e.nextAttack = Time.time + (weapon != null ? weapon.interval : attackCooldown);
-                if (weapon != null)
+                if (weapon?.kind == WeaponKind.Mine)
+                {
+                    e.nextAttack = Time.time + weapon.interval;
                     Attack(pos, to, to, weapon, true);
-                else
-                    DamagePlayer(attackDamage, pos);
+                    continue;
+                }
+                e.AttackDirection = sqr > 0f ? to.normalized : (Vector2)e.transform.up;
+                e.AttackAt = Time.time + attackWarningDuration;
+                e.nextAttack = Time.time + Mathf.Max(attackWarningDuration, weapon != null ? weapon.interval : attackCooldown);
             }
         }
     }
@@ -153,6 +173,7 @@ public class EnemyManager : MonoBehaviour
             if (!weapon.Covers((Vector2)enemy.transform.position - origin, forward)) continue;
             if (weapon.kind == WeaponKind.Emp)
             {
+                enemy.AttackAt = 0f;
                 enemy.nextAttack = Mathf.Max(enemy.nextAttack, Time.time + 2f);
                 CombatParticles.Jam(enemy.transform);
             }
@@ -177,7 +198,7 @@ public class EnemyManager : MonoBehaviour
 
     internal bool TryDetonateMine(Vector2 center, int damage, bool hostile)
     {
-        const float triggerDistanceSquared = 1f;
+        const float triggerDistanceSquared = ProjectilePool.MineTriggerRadius * ProjectilePool.MineTriggerRadius;
         bool triggered = hostile && ((Vector2)player.position - center).sqrMagnitude <= triggerDistanceSquared;
         if (!hostile)
         {
