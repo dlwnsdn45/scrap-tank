@@ -44,6 +44,16 @@ public sealed class TitleScrapController : MonoBehaviour
     private float lastInput, nextSpawn, nextPiece, nextSound, sparkEnd, shakeEnd;
     private int pendingCount, spawnIndex;
     private bool requested, initialized;
+    private bool magnetActive;
+    private Vector2 magnetTarget;
+    private TitleScrapPiece lingeringNut;
+    private float nutReleaseTime;
+    private readonly List<Rigidbody2D> magnetButtons = new List<Rigidbody2D>();
+    public bool MagnetReady => initialized && isActiveAndEnabled;
+    public string MagnetReadinessMessage => !isActiveAndEnabled
+        ? "고철 컨트롤러 또는 해당 오브젝트가 비활성화되어 있습니다."
+        : !initialized ? "고철 물리 초기화가 완료되지 않았습니다. 앞서 발생한 고철 텍스처 경고나 Awake 예외를 확인해주세요."
+        : "고철 컨트롤러가 준비되었습니다.";
 
     private bool Blocked => !Application.isFocused || SceneFadeController.IsTransitioning ||
         (settingsPanel != null && settingsPanel.activeInHierarchy) || TextFieldFocused();
@@ -107,14 +117,14 @@ public sealed class TitleScrapController : MonoBehaviour
 
     private void OnText(char value)
     {
-        if (!initialized || Blocked || KonamiExplosionController.IsPlaying) return;
+        if (!initialized || Blocked || KonamiExplosionController.IsPlaying || TitleMagnetController.IsPlaying) return;
         ExpireInput();
         if (hangul.Feed(value)) RequestDrop();
     }
 
     private void OnComposition(IMECompositionString value)
     {
-        if (!initialized || Blocked || KonamiExplosionController.IsPlaying) return;
+        if (!initialized || Blocked || KonamiExplosionController.IsPlaying || TitleMagnetController.IsPlaying) return;
         ExpireInput();
         if (hangul.MatchesComposition(value.ToString())) RequestDrop();
     }
@@ -122,7 +132,7 @@ public sealed class TitleScrapController : MonoBehaviour
     // 한 프레임에 여러 키가 들어와도 이벤트 순서대로 두벌식 q-k-q-h 인식
     private void OnKeyboardEvent(InputEventPtr inputEvent, InputDevice device)
     {
-        if (!initialized || device != keyboard || Blocked || KonamiExplosionController.IsPlaying ||
+        if (!initialized || device != keyboard || Blocked || KonamiExplosionController.IsPlaying || TitleMagnetController.IsPlaying ||
             (!inputEvent.IsA<StateEvent>() && !inputEvent.IsA<DeltaStateEvent>())) return;
         foreach (var control in inputEvent.GetAllButtonPresses())
         {
@@ -178,7 +188,7 @@ public sealed class TitleScrapController : MonoBehaviour
         canvas.enabled = true;
         Resize();
         // 폭발 중에는 물리 운동을 유지하며 생성과 마우스 조작만 차단
-        if (KonamiExplosionController.IsPlaying)
+        if (KonamiExplosionController.IsPlaying || TitleMagnetController.IsPlaying)
         {
             Release(false); SetHover(null);
             requested = false; pendingCount = 0;
@@ -230,9 +240,73 @@ public sealed class TitleScrapController : MonoBehaviour
     private void FixedUpdate()
     {
         if (!initialized || Blocked) return;
+        if (magnetActive)
+        {
+            for (int i = 0; i < pieces.Count; i++)
+                Attract(pieces[i].Body, new Vector2((i % 5 - 2) * 0.65f, -0.3f - i / 5 * 0.2f));
+            for (int i = 0; i < magnetButtons.Count; i++)
+                Attract(magnetButtons[i], new Vector2((i % 3 - 1) * 2.2f, -1.2f - i / 3));
+        }
+        else if (lingeringNut != null)
+        {
+            if (Time.unscaledTime < nutReleaseTime) Attract(lingeringNut.Body, Vector2.down * 0.3f);
+            else
+            {
+                PlayImpact(lingeringNut, 4f, lingeringNut.Body.position);
+                lingeringNut = null;
+            }
+        }
         foreach (var piece in pieces)
             piece.Body.linearVelocity = Vector2.ClampMagnitude(piece.Body.linearVelocity, maxThrowSpeed);
         physics.Simulate(Time.fixedDeltaTime);
+    }
+
+    // 자력은 무게에 비례한 힘과 감쇠로 물체를 끌어당김
+    private void Attract(Rigidbody2D body, Vector2 offset)
+    {
+        if (body == null) return;
+        Vector2 acceleration = (magnetTarget + offset - body.position) * 45f - body.linearVelocity * 9f;
+        acceleration -= Physics2D.gravity * body.gravityScale;
+        body.AddForce(Vector2.ClampMagnitude(acceleration, 100f) * body.mass);
+        body.linearVelocity = Vector2.ClampMagnitude(body.linearVelocity, maxThrowSpeed);
+        body.WakeUp();
+    }
+
+    // 자석 연출에서 고철과 버튼이 같은 물리 공간을 공유
+    public void BeginMagnet() { Release(false); SetHover(null); lingeringNut = null; magnetActive = true; }
+    public void SetMagnetTarget(Vector2 canvasPoint) => magnetTarget = canvasPoint / PixelsPerUnit;
+    // 해제 시 가까운 너트 하나만 잠깐 늦게 떨어지는 마무리
+    public void EndMagnet(bool delayLastNut = false)
+    {
+        magnetActive = false;
+        lingeringNut = null;
+        if (!delayLastNut) return;
+        foreach (var piece in pieces)
+            if (piece.Kind == 1 && (piece.Body.position - magnetTarget).sqrMagnitude < 9f) lingeringNut = piece;
+        nutReleaseTime = Time.unscaledTime + 0.22f;
+    }
+
+    public Rigidbody2D CreateMagnetButton(Vector2 canvasPoint, Vector2 canvasSize)
+    {
+        var go = NewPhysicsObject("Magnetic Menu Button");
+        var body = go.AddComponent<Rigidbody2D>();
+        body.position = canvasPoint / PixelsPerUnit;
+        body.mass = 2f;
+        body.gravityScale = 1.8f;
+        body.angularDamping = 1.5f;
+        body.linearDamping = 0.4f;
+        body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        var box = go.AddComponent<BoxCollider2D>();
+        box.size = canvasSize / PixelsPerUnit;
+        box.sharedMaterial = material;
+        magnetButtons.Add(body);
+        return body;
+    }
+
+    public void RemoveMagnetButton(Rigidbody2D body)
+    {
+        magnetButtons.Remove(body);
+        if (body != null) Destroy(body.gameObject);
     }
 
     // 물리 좌표를 UI 좌표로 옮기고 화면 밖 고철을 다시 등장시킴

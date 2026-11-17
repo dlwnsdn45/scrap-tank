@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 1980000100}
   - component: {fileID: 1980000900}
   - component: {fileID: 1980001000}
+  - component: {fileID: 1980001100}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12885,6 +12886,32 @@ MonoBehaviour:
   boltClip: {fileID: 8300000, guid: bec34b5dcde718b4b99aea54fe4ae5b4, type: 3}
   settingsPanel: {fileID: 1323909296}
   scrap: {fileID: 1980000100}
+  cooldown: 5
+--- !u!114 &1980001100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109571547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1490a83d3e864e95a54971b97a980fd1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TitleMagnetController
+  magnetTexture: {fileID: 2800000, guid: 3914786168cd48abbf3202137c55208c, type: 3}
+  chainTexture: {fileID: 2800000, guid: 2330e99ffa2c4877b395e222eea0c977, type: 3}
+  fieldTexture: {fileID: 2800000, guid: 3e97f412a133427e89a3a5803d670023, type: 3}
+  sparkTexture: {fileID: 2800000, guid: a0996c1ac6034972a3b33d9c9e9f4088, type: 3}
+  onClip: {fileID: 8300000, guid: b178e7657e024e75b135a9ebaf6a7c03, type: 3}
+  humClip: {fileID: 8300000, guid: 910deeee1ab044019717061797684b14, type: 3}
+  detachClip: {fileID: 8300000, guid: f83de33b98a34b40be72395b780bae7e, type: 3}
+  offClip: {fileID: 8300000, guid: 32fb113478eb444687806795bd9f3832, type: 3}
+  returnClip: {fileID: 8300000, guid: 27ff2e61333d41a58fe2e6eeb7292329, type: 3}
+  scrap: {fileID: 1980000100}
+  buttonRoot: {fileID: 270589774}
+  settingsPanel: {fileID: 1323909296}
+  autoReleaseSeconds: 8
   cooldown: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

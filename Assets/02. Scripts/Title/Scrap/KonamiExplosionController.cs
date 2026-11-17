@@ -34,7 +34,7 @@ public sealed class KonamiExplosionController : MonoBehaviour
     // 텍스트 입력창과 설정창, 씬 전환 중에는 코드 입력 무시
     private bool CanRead()
     {
-        if (!Application.isFocused || IsPlaying || SceneFadeController.IsTransitioning ||
+        if (!Application.isFocused || IsPlaying || TitleMagnetController.IsPlaying || SceneFadeController.IsTransitioning ||
             (settingsPanel != null && settingsPanel.activeInHierarchy)) return false;
         var selected = EventSystem.current != null ? EventSystem.current.currentSelectedGameObject : null;
         return selected == null || (selected.GetComponentInParent<TMP_InputField>() == null &&
