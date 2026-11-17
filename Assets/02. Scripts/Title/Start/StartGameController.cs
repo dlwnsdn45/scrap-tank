@@ -13,7 +13,7 @@ public class StartGameController : MonoBehaviour
     // 파일 선택 확인 후 게임 시작
     public void StartGame()
     {
-        if (SceneFadeController.IsTransitioning || ScrapSceneTransition.IsTransitioning) return;
+        if (SceneFadeController.IsTransitioning || ScrapSceneTransition.IsTransitioning || KonamiExplosionController.IsPlaying) return;
         if (!saveFiles.HasSelectedSlot)
         {
             settings.Open();

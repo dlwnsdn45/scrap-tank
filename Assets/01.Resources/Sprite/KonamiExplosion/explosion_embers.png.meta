@@ -1,0 +1,2797 @@
+fileFormatVersion: 2
+guid: 7a0f57cc38a7c8246ba1f023c2206609
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1619996970960941189
+    second: explosion_embers_0
+  - first:
+      213: -1386770294520470644
+    second: explosion_embers_1
+  - first:
+      213: -8741558488769116360
+    second: explosion_embers_2
+  - first:
+      213: -6139715405249164987
+    second: explosion_embers_3
+  - first:
+      213: 7504975822010289681
+    second: explosion_embers_4
+  - first:
+      213: -6669993603502051004
+    second: explosion_embers_5
+  - first:
+      213: -6942145530825133922
+    second: explosion_embers_6
+  - first:
+      213: -6863683340557127670
+    second: explosion_embers_7
+  - first:
+      213: 7696739347006487872
+    second: explosion_embers_8
+  - first:
+      213: -1363183297715171953
+    second: explosion_embers_9
+  - first:
+      213: 764164249289415610
+    second: explosion_embers_10
+  - first:
+      213: 2373107019210606593
+    second: explosion_embers_11
+  - first:
+      213: -322683220221957913
+    second: explosion_embers_12
+  - first:
+      213: 4762884202595468389
+    second: explosion_embers_13
+  - first:
+      213: 4850232137165213846
+    second: explosion_embers_14
+  - first:
+      213: -2016686952482811836
+    second: explosion_embers_15
+  - first:
+      213: -2950202047035878100
+    second: explosion_embers_16
+  - first:
+      213: 5524942593975816191
+    second: explosion_embers_17
+  - first:
+      213: 8117022397222969839
+    second: explosion_embers_18
+  - first:
+      213: -892682435805240534
+    second: explosion_embers_19
+  - first:
+      213: 4688962146974222505
+    second: explosion_embers_20
+  - first:
+      213: -3076831204875224702
+    second: explosion_embers_21
+  - first:
+      213: 3298124361526622711
+    second: explosion_embers_22
+  - first:
+      213: -1143197014152848324
+    second: explosion_embers_23
+  - first:
+      213: -2263499400412800692
+    second: explosion_embers_24
+  - first:
+      213: -6285946735802340693
+    second: explosion_embers_25
+  - first:
+      213: -2684186410463556268
+    second: explosion_embers_26
+  - first:
+      213: 7445422530229443359
+    second: explosion_embers_27
+  - first:
+      213: -8070200540595435491
+    second: explosion_embers_28
+  - first:
+      213: 5470715469440411123
+    second: explosion_embers_29
+  - first:
+      213: -7818390471414060230
+    second: explosion_embers_30
+  - first:
+      213: 3762476875151002869
+    second: explosion_embers_31
+  - first:
+      213: -5036975113751661737
+    second: explosion_embers_32
+  - first:
+      213: -2360416278063157639
+    second: explosion_embers_33
+  - first:
+      213: -8570661125302422294
+    second: explosion_embers_34
+  - first:
+      213: 8821006944557828252
+    second: explosion_embers_35
+  - first:
+      213: 8960656872068417814
+    second: explosion_embers_36
+  - first:
+      213: -8442199246537968551
+    second: explosion_embers_37
+  - first:
+      213: -3426251632640919679
+    second: explosion_embers_38
+  - first:
+      213: 8769460289058322492
+    second: explosion_embers_39
+  - first:
+      213: 5788816629027098107
+    second: explosion_embers_40
+  - first:
+      213: 4827973031019597843
+    second: explosion_embers_41
+  - first:
+      213: -9049854557448356674
+    second: explosion_embers_42
+  - first:
+      213: -5882453776126479922
+    second: explosion_embers_43
+  - first:
+      213: -3561876431343706155
+    second: explosion_embers_44
+  - first:
+      213: -4155090127136423421
+    second: explosion_embers_45
+  - first:
+      213: -3275244369090241067
+    second: explosion_embers_46
+  - first:
+      213: -2252042799722155526
+    second: explosion_embers_47
+  - first:
+      213: -4265061399974511448
+    second: explosion_embers_48
+  - first:
+      213: 8540636450004606175
+    second: explosion_embers_49
+  - first:
+      213: 7176669567987166758
+    second: explosion_embers_50
+  - first:
+      213: 2444638130087547798
+    second: explosion_embers_51
+  - first:
+      213: -171755487822955445
+    second: explosion_embers_52
+  - first:
+      213: -959124223012086229
+    second: explosion_embers_53
+  - first:
+      213: -4286071451423881909
+    second: explosion_embers_54
+  - first:
+      213: -4668480361224093640
+    second: explosion_embers_55
+  - first:
+      213: 1320323262770661677
+    second: explosion_embers_56
+  - first:
+      213: -67033089438060163
+    second: explosion_embers_57
+  - first:
+      213: 5642181679578573059
+    second: explosion_embers_58
+  - first:
+      213: -7874799927216230543
+    second: explosion_embers_59
+  - first:
+      213: -4808788978192670246
+    second: explosion_embers_60
+  - first:
+      213: -8696439468984259937
+    second: explosion_embers_61
+  - first:
+      213: 7783964338768437343
+    second: explosion_embers_62
+  - first:
+      213: 1055362838231594934
+    second: explosion_embers_63
+  - first:
+      213: 7733640693169233469
+    second: explosion_embers_64
+  - first:
+      213: 3426380933727801628
+    second: explosion_embers_65
+  - first:
+      213: -7431621136317918016
+    second: explosion_embers_66
+  - first:
+      213: 6273147722117028922
+    second: explosion_embers_67
+  - first:
+      213: 206110399035002184
+    second: explosion_embers_68
+  - first:
+      213: -8213912246533225332
+    second: explosion_embers_69
+  - first:
+      213: 3145877399882193435
+    second: explosion_embers_70
+  - first:
+      213: -1419372200416785085
+    second: explosion_embers_71
+  - first:
+      213: -1842801099955654487
+    second: explosion_embers_72
+  - first:
+      213: 2473236244298028938
+    second: explosion_embers_73
+  - first:
+      213: 2061906899873765001
+    second: explosion_embers_74
+  - first:
+      213: 3625990242995215919
+    second: explosion_embers_75
+  - first:
+      213: -2304125135124651468
+    second: explosion_embers_76
+  - first:
+      213: 5613886369852689427
+    second: explosion_embers_77
+  - first:
+      213: 5446939141243318104
+    second: explosion_embers_78
+  - first:
+      213: 2101137689352492383
+    second: explosion_embers_79
+  - first:
+      213: 6157294984432427871
+    second: explosion_embers_80
+  - first:
+      213: -323828012202959
+    second: explosion_embers_81
+  - first:
+      213: 4436531591714742534
+    second: explosion_embers_82
+  - first:
+      213: -8634178966455931294
+    second: explosion_embers_83
+  - first:
+      213: -4560058922899229275
+    second: explosion_embers_84
+  - first:
+      213: -303881030826408751
+    second: explosion_embers_85
+  - first:
+      213: -7847967569206844372
+    second: explosion_embers_86
+  - first:
+      213: -4541057993051310153
+    second: explosion_embers_87
+  - first:
+      213: -5757432849209063069
+    second: explosion_embers_88
+  - first:
+      213: -5905035272559136818
+    second: explosion_embers_89
+  - first:
+      213: 3641090802199119265
+    second: explosion_embers_90
+  - first:
+      213: -2917439923217780975
+    second: explosion_embers_91
+  - first:
+      213: -8256170892370930626
+    second: explosion_embers_92
+  - first:
+      213: -5085604589753151035
+    second: explosion_embers_93
+  - first:
+      213: 8020994550442136859
+    second: explosion_embers_94
+  - first:
+      213: -2933121787312538290
+    second: explosion_embers_95
+  - first:
+      213: 8985760858081930229
+    second: explosion_embers_96
+  - first:
+      213: 4376427426062962334
+    second: explosion_embers_97
+  - first:
+      213: 5436830681492189620
+    second: explosion_embers_98
+  - first:
+      213: -4031011404673309845
+    second: explosion_embers_99
+  - first:
+      213: -7798522439677102748
+    second: explosion_embers_100
+  - first:
+      213: 4428692035879792625
+    second: explosion_embers_101
+  - first:
+      213: -3543760277643358704
+    second: explosion_embers_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: explosion_embers_0
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 711
+        width: 408
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580f55779a26b7610800000000000000
+      internalID: 1619996970960941189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1067
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c832b0ab3c331cce0800000000000000
+      internalID: -1386770294520470644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_2
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1037
+        width: 78
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837cd958edebfa680800000000000000
+      internalID: -8741558488769116360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1073
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54941285e595bcaa0800000000000000
+      internalID: -6139715405249164987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_4
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1083
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e81de3fb7072860800000000000000
+      internalID: 7504975822010289681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_5
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1089
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441f121282c6f63a0800000000000000
+      internalID: -6669993603502051004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_6
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1075
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e903a18bb6b88af90800000000000000
+      internalID: -6942145530825133922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_7
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 39
+        width: 372
+        height: 1088
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00735bfd5c4fb0a0800000000000000
+      internalID: -6863683340557127670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_8
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1053
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04df71338af40da60800000000000000
+      internalID: 7696739347006487872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_9
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1059
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d01ff5300051de0800000000000000
+      internalID: -1363183297715171953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_10
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1050
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbd2f4065bda9a00800000000000000
+      internalID: 764164249289415610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 915
+        width: 69
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108c80eb248fee020800000000000000
+      internalID: 2373107019210606593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_12
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1018
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8e0b32259958bf0800000000000000
+      internalID: -322683220221957913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_13
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 950
+        width: 104
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564c50a82f9291240800000000000000
+      internalID: 4762884202595468389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_14
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1024
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6909aed5e6c7f4340800000000000000
+      internalID: 4850232137165213846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_15
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1002
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440d81ec6e94304e0800000000000000
+      internalID: -2016686952482811836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_16
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 959
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25dbca7ed6ce07d0800000000000000
+      internalID: -2950202047035878100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_17
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 946
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff8a5e440a8cac40800000000000000
+      internalID: 5524942593975816191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_18
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 927
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe16d5c4dd475a070800000000000000
+      internalID: 8117022397222969839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 288
+        height: 748
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a232994ed0e8c93f0800000000000000
+      internalID: -892682435805240534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_20
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 838
+        width: 108
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8c6afba3a821140800000000000000
+      internalID: 4688962146974222505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 800
+        width: 82
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28933972256ec45d0800000000000000
+      internalID: -3076831204875224702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_22
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 933
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f93bd1f1aa45cd20800000000000000
+      internalID: 3298124361526622711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_23
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 927
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cd12f5f5c8220f0800000000000000
+      internalID: -1143197014152848324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_24
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 873
+        width: 35
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49d511b94f6690e0800000000000000
+      internalID: -2263499400412800692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_25
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 897
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaa9778fb4d3c8a0800000000000000
+      internalID: -6285946735802340693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_26
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 935
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d836d5eaadfbad0800000000000000
+      internalID: -2684186410463556268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_27
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 911
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b140df754735760800000000000000
+      internalID: 7445422530229443359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_28
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 869
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18c4a7bd53e00090800000000000000
+      internalID: -8070200540595435491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_29
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 899
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5ea3ffbb2ebeb40800000000000000
+      internalID: 5470715469440411123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_30
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 854
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3be0143a4f7f7390800000000000000
+      internalID: -7818390471414060230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_31
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 853
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc4ff298c0073430800000000000000
+      internalID: 3762476875151002869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_32
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 768
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753795232d1191ab0800000000000000
+      internalID: -5036975113751661737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_33
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 792
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97eeeffa6ed1e3fd0800000000000000
+      internalID: -2360416278063157639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_34
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 834
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae47918ad15ee0980800000000000000
+      internalID: -8570661125302422294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_35
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 768
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c988f9394138a6a70800000000000000
+      internalID: 8821006944557828252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_36
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 784
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6190dc513f5aa5c70800000000000000
+      internalID: 8960656872068417814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_37
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 774
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954b803938847da80800000000000000
+      internalID: -8442199246537968551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_38
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 776
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187f55d0b428370d0800000000000000
+      internalID: -3426251632640919679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_39
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 778
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3837399ba163b970800000000000000
+      internalID: 8769460289058322492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_40
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 745
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdc80bbd02065050800000000000000
+      internalID: 5788816629027098107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_41
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 789
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310d61b54e7600340800000000000000
+      internalID: 4827973031019597843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_42
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 791
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc375a6a35786280800000000000000
+      internalID: -9049854557448356674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_43
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 788
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1735a05735d5ea0800000000000000
+      internalID: -5882453776126479922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_44
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 719
+        width: 133
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df1cefd14ca19ec0800000000000000
+      internalID: -3561876431343706155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_45
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 770
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3020d424b872656c0800000000000000
+      internalID: -4155090127136423421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_46
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 776
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd17cb699efb82d0800000000000000
+      internalID: -3275244369090241067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_47
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 733
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1b59761032fb0e0800000000000000
+      internalID: -2252042799722155526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_48
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 774
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acf94501457fc4c0800000000000000
+      internalID: -4265061399974511448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_49
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 741
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc174ed99f668670800000000000000
+      internalID: 8540636450004606175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_50
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 766
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e2b3ec2f6a89360800000000000000
+      internalID: 7176669567987166758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_51
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 749
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6935e345d691de120800000000000000
+      internalID: 2444638130087547798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_52
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 763
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cb6183b4dcd9df0800000000000000
+      internalID: -171755487822955445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_53
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 703
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e54efc99180b2f0800000000000000
+      internalID: -959124223012086229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_54
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 701
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45cfe739b0d484c0800000000000000
+      internalID: -4286071451423881909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_55
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 743
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830c95c98d9363fb0800000000000000
+      internalID: -4668480361224093640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_56
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 719
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29412a130bb25210800000000000000
+      internalID: 1320323262770661677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_57
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 727
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71f8d3a2c9d11ff0800000000000000
+      internalID: -67033089438060163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_58
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 695
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3096f71185e0d4e40800000000000000
+      internalID: 5642181679578573059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_59
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 701
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f210d403717b290800000000000000
+      internalID: -7874799927216230543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_60
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 551
+        width: 107
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1230307efb34db0800000000000000
+      internalID: -4808788978192670246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_61
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 662
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aa180f06a005780800000000000000
+      internalID: -8696439468984259937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_62
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 614
+        width: 70
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50e99c2352360c60800000000000000
+      internalID: 7783964338768437343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_63
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 662
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b731f9e8e665ae00800000000000000
+      internalID: 1055362838231594934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_64
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 408
+        width: 283
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e9bd06c39635b60800000000000000
+      internalID: 7733640693169233469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_65
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 595
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1154043e43fc8f20800000000000000
+      internalID: 3426380933727801628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 422
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c45c7073f39dd890800000000000000
+      internalID: -7431621136317918016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_67
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 387
+        width: 61
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c1650ed92be0750800000000000000
+      internalID: 6273147722117028922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_68
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 476
+        width: 127
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dcefed0504cd200800000000000000
+      internalID: 206110399035002184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_69
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 308
+        width: 161
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c840829b452520e80800000000000000
+      internalID: -8213912246533225332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_70
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 501
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a58eed3d668ab20800000000000000
+      internalID: 3145877399882193435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_71
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 314
+        width: 102
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34dc71ef0806d4ce0800000000000000
+      internalID: -1419372200416785085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_72
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 443
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0b175c92e0d66e0800000000000000
+      internalID: -1842801099955654487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_73
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 452
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87510ba243b25220800000000000000
+      internalID: 2473236244298028938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_74
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 434
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98617e6a66d5d9c10800000000000000
+      internalID: 2061906899873765001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_75
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 455
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e13c82aea125230800000000000000
+      internalID: 3625990242995215919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_76
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 442
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432a8dab56a1600e0800000000000000
+      internalID: -2304125135124651468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_77
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 396
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c0a74e8e788ed40800000000000000
+      internalID: 5613886369852689427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_78
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 355
+        width: 29
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85faaf23a4a679b40800000000000000
+      internalID: 5446939141243318104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_79
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 403
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f555a0e989db82d10800000000000000
+      internalID: 2101137689352492383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_80
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 31
+        width: 380
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53a3646a2b137550800000000000000
+      internalID: 6157294984432427871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_81
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 153
+        width: 133
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1344d5aea79defff0800000000000000
+      internalID: -323828012202959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_82
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 363
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601a4f61af9b19d30800000000000000
+      internalID: 4436531591714742534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_83
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 312
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26eae31d9fb3d2880800000000000000
+      internalID: -8634178966455931294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_84
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 242
+        width: 105
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5bdb1e19a67b0c0800000000000000
+      internalID: -4560058922899229275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_85
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 326
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4cc9fffc568cbf0800000000000000
+      internalID: -303881030826408751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_86
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 292
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24e3ac731b661390800000000000000
+      internalID: -7847967569206844372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_87
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 323
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b77abb90dbeaf0c0800000000000000
+      internalID: -4541057993051310153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_88
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 323
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3698abce35d7910b0800000000000000
+      internalID: -5757432849209063069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_89
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 306
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfe5f0b4b91d0ea0800000000000000
+      internalID: -5905035272559136818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_90
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 246
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a545041bc0c78230800000000000000
+      internalID: 3641090802199119265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_91
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 209
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11faf0bd8db2387d0800000000000000
+      internalID: -2917439923217780975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_92
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 136
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e349f4301503c6d80800000000000000
+      internalID: -8256170892370930626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_93
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 199
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1daaff19d4c69b0800000000000000
+      internalID: -5085604589753151035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_94
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 207
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15927ceb0c405f60800000000000000
+      internalID: 8020994550442136859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_95
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 202
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4df64856457b47d0800000000000000
+      internalID: -2933121787312538290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_96
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 189
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb259e44e5d3bc70800000000000000
+      internalID: 8985760858081930229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_97
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 49
+        width: 55
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e82c38e813cbc30800000000000000
+      internalID: 4376427426062962334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_98
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 246
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1794203b0837b40800000000000000
+      internalID: 5436830681492189620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_99
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 225
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6326e21c78fe08c0800000000000000
+      internalID: -4031011404673309845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_100
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 234
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4653222d82516c390800000000000000
+      internalID: -7798522439677102748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_101
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 252
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff673241ffd57d30800000000000000
+      internalID: 4428692035879792625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion_embers_102
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 173
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e8de99dc802dec0800000000000000
+      internalID: -3543760277643358704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      explosion_embers_0: 1619996970960941189
+      explosion_embers_1: -1386770294520470644
+      explosion_embers_10: 764164249289415610
+      explosion_embers_100: -7798522439677102748
+      explosion_embers_101: 4428692035879792625
+      explosion_embers_102: -3543760277643358704
+      explosion_embers_11: 2373107019210606593
+      explosion_embers_12: -322683220221957913
+      explosion_embers_13: 4762884202595468389
+      explosion_embers_14: 4850232137165213846
+      explosion_embers_15: -2016686952482811836
+      explosion_embers_16: -2950202047035878100
+      explosion_embers_17: 5524942593975816191
+      explosion_embers_18: 8117022397222969839
+      explosion_embers_19: -892682435805240534
+      explosion_embers_2: -8741558488769116360
+      explosion_embers_20: 4688962146974222505
+      explosion_embers_21: -3076831204875224702
+      explosion_embers_22: 3298124361526622711
+      explosion_embers_23: -1143197014152848324
+      explosion_embers_24: -2263499400412800692
+      explosion_embers_25: -6285946735802340693
+      explosion_embers_26: -2684186410463556268
+      explosion_embers_27: 7445422530229443359
+      explosion_embers_28: -8070200540595435491
+      explosion_embers_29: 5470715469440411123
+      explosion_embers_3: -6139715405249164987
+      explosion_embers_30: -7818390471414060230
+      explosion_embers_31: 3762476875151002869
+      explosion_embers_32: -5036975113751661737
+      explosion_embers_33: -2360416278063157639
+      explosion_embers_34: -8570661125302422294
+      explosion_embers_35: 8821006944557828252
+      explosion_embers_36: 8960656872068417814
+      explosion_embers_37: -8442199246537968551
+      explosion_embers_38: -3426251632640919679
+      explosion_embers_39: 8769460289058322492
+      explosion_embers_4: 7504975822010289681
+      explosion_embers_40: 5788816629027098107
+      explosion_embers_41: 4827973031019597843
+      explosion_embers_42: -9049854557448356674
+      explosion_embers_43: -5882453776126479922
+      explosion_embers_44: -3561876431343706155
+      explosion_embers_45: -4155090127136423421
+      explosion_embers_46: -3275244369090241067
+      explosion_embers_47: -2252042799722155526
+      explosion_embers_48: -4265061399974511448
+      explosion_embers_49: 8540636450004606175
+      explosion_embers_5: -6669993603502051004
+      explosion_embers_50: 7176669567987166758
+      explosion_embers_51: 2444638130087547798
+      explosion_embers_52: -171755487822955445
+      explosion_embers_53: -959124223012086229
+      explosion_embers_54: -4286071451423881909
+      explosion_embers_55: -4668480361224093640
+      explosion_embers_56: 1320323262770661677
+      explosion_embers_57: -67033089438060163
+      explosion_embers_58: 5642181679578573059
+      explosion_embers_59: -7874799927216230543
+      explosion_embers_6: -6942145530825133922
+      explosion_embers_60: -4808788978192670246
+      explosion_embers_61: -8696439468984259937
+      explosion_embers_62: 7783964338768437343
+      explosion_embers_63: 1055362838231594934
+      explosion_embers_64: 7733640693169233469
+      explosion_embers_65: 3426380933727801628
+      explosion_embers_66: -7431621136317918016
+      explosion_embers_67: 6273147722117028922
+      explosion_embers_68: 206110399035002184
+      explosion_embers_69: -8213912246533225332
+      explosion_embers_7: -6863683340557127670
+      explosion_embers_70: 3145877399882193435
+      explosion_embers_71: -1419372200416785085
+      explosion_embers_72: -1842801099955654487
+      explosion_embers_73: 2473236244298028938
+      explosion_embers_74: 2061906899873765001
+      explosion_embers_75: 3625990242995215919
+      explosion_embers_76: -2304125135124651468
+      explosion_embers_77: 5613886369852689427
+      explosion_embers_78: 5446939141243318104
+      explosion_embers_79: 2101137689352492383
+      explosion_embers_8: 7696739347006487872
+      explosion_embers_80: 6157294984432427871
+      explosion_embers_81: -323828012202959
+      explosion_embers_82: 4436531591714742534
+      explosion_embers_83: -8634178966455931294
+      explosion_embers_84: -4560058922899229275
+      explosion_embers_85: -303881030826408751
+      explosion_embers_86: -7847967569206844372
+      explosion_embers_87: -4541057993051310153
+      explosion_embers_88: -5757432849209063069
+      explosion_embers_89: -5905035272559136818
+      explosion_embers_9: -1363183297715171953
+      explosion_embers_90: 3641090802199119265
+      explosion_embers_91: -2917439923217780975
+      explosion_embers_92: -8256170892370930626
+      explosion_embers_93: -5085604589753151035
+      explosion_embers_94: 8020994550442136859
+      explosion_embers_95: -2933121787312538290
+      explosion_embers_96: 8985760858081930229
+      explosion_embers_97: 4376427426062962334
+      explosion_embers_98: 5436830681492189620
+      explosion_embers_99: -4031011404673309845
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

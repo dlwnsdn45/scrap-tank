@@ -107,14 +107,14 @@ public sealed class TitleScrapController : MonoBehaviour
 
     private void OnText(char value)
     {
-        if (!initialized || Blocked) return;
+        if (!initialized || Blocked || KonamiExplosionController.IsPlaying) return;
         ExpireInput();
         if (hangul.Feed(value)) RequestDrop();
     }
 
     private void OnComposition(IMECompositionString value)
     {
-        if (!initialized || Blocked) return;
+        if (!initialized || Blocked || KonamiExplosionController.IsPlaying) return;
         ExpireInput();
         if (hangul.MatchesComposition(value.ToString())) RequestDrop();
     }
@@ -122,7 +122,7 @@ public sealed class TitleScrapController : MonoBehaviour
     // 한 프레임에 여러 키가 들어와도 이벤트 순서대로 두벌식 q-k-q-h 인식
     private void OnKeyboardEvent(InputEventPtr inputEvent, InputDevice device)
     {
-        if (!initialized || device != keyboard || Blocked ||
+        if (!initialized || device != keyboard || Blocked || KonamiExplosionController.IsPlaying ||
             (!inputEvent.IsA<StateEvent>() && !inputEvent.IsA<DeltaStateEvent>())) return;
         foreach (var control in inputEvent.GetAllButtonPresses())
         {
@@ -177,6 +177,14 @@ public sealed class TitleScrapController : MonoBehaviour
         }
         canvas.enabled = true;
         Resize();
+        // 폭발 중에는 물리 운동을 유지하며 생성과 마우스 조작만 차단
+        if (KonamiExplosionController.IsPlaying)
+        {
+            Release(false); SetHover(null);
+            requested = false; pendingCount = 0;
+            hangul.Clear(); latin.Clear();
+            return;
+        }
         if (requested)
         {
             requested = false;
@@ -451,6 +459,21 @@ public sealed class TitleScrapController : MonoBehaviour
         spark.transform.SetAsLastSibling();
         sparkEnd = Time.unscaledTime + 0.12f;
         if (speed > 12f) shakeEnd = Time.unscaledTime + 0.12f;
+    }
+
+    // 폭발 중심에서 고철을 밀어내되 전용 물리 시뮬레이션은 유지
+    public void ApplyExplosion()
+    {
+        if (!initialized) return;
+        Release(false);
+        foreach (var piece in pieces)
+        {
+            Vector2 direction = piece.Body.position;
+            if (direction.sqrMagnitude < 0.01f) direction = Vector2.up;
+            piece.Body.linearVelocity = Vector2.ClampMagnitude(direction.normalized * 15f + Vector2.up * 9f, maxThrowSpeed);
+            piece.Body.angularVelocity = Random.Range(-450f, 450f);
+            piece.Body.WakeUp();
+        }
     }
 
     // 포커스를 잃거나 종료할 때 잡은 고철과 입력 구독 해제

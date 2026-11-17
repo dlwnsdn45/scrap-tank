@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1960000100}
   - component: {fileID: 1980000100}
   - component: {fileID: 1980000900}
+  - component: {fileID: 1980001000}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12860,6 +12861,31 @@ MonoBehaviour:
   - {fileID: 1910000500}
   - {fileID: 1910000600}
   - {fileID: 1950005000}
+--- !u!114 &1980001000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109571547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4feb102a13ecda4f818ee0c6fca0561, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::KonamiExplosionController
+  ignition: {fileID: 2800000, guid: 8069ccdcecec1c6488db324bd6fa2291, type: 3}
+  fireball: {fileID: 2800000, guid: 0360b13630c95974abb5b90a13063749, type: 3}
+  smoke: {fileID: 2800000, guid: 7be5c409c5fcb6647a2ee91daab4dffb, type: 3}
+  embers: {fileID: 2800000, guid: 7a0f57cc38a7c8246ba1f023c2206609, type: 3}
+  bolt: {fileID: 2800000, guid: 959eeab5c3459a2428a54055cb90d4d4, type: 3}
+  successClip: {fileID: 8300000, guid: 9e4951add6a52434da2da2728721abe8, type: 3}
+  smallClip: {fileID: 8300000, guid: 40009efebd55a734eae0deda3ece6d3a, type: 3}
+  bigClip: {fileID: 8300000, guid: c299e7134146efb46bea681069cef4c3, type: 3}
+  tailClip: {fileID: 8300000, guid: a9966f6a4e58019418e7b72f399d3c60, type: 3}
+  boltClip: {fileID: 8300000, guid: bec34b5dcde718b4b99aea54fe4ae5b4, type: 3}
+  settingsPanel: {fileID: 1323909296}
+  scrap: {fileID: 1980000100}
+  cooldown: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
