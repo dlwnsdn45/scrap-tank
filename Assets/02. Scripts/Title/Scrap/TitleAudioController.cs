@@ -7,6 +7,9 @@ public class TitleAudioController : MonoBehaviour
     [SerializeField] private AudioClip panelOpenClip;
     [SerializeField] private AudioClip fileSelectedClip;
     [SerializeField] private AudioClip bgmClip;
+    [SerializeField] private AudioClip engineClip;
+    [SerializeField] private AudioClip sandClip;
+    [SerializeField, Range(0f, 1f)] private float drivingVolume = 0.45f;
     [SerializeField, Range(0f, 1f)] private float bgmVolume = 0.55f;
     [SerializeField, Range(0f, 1f)] private float fileSelectedVolume = 0.35f;
     [SerializeField, Range(0f, 1f)] private float buttonVolume = 0.35f;
@@ -16,6 +19,7 @@ public class TitleAudioController : MonoBehaviour
     private const string SoundKey = "Title.Sound.";
     private AudioSource source;
     private AudioSource music;
+    private AudioSource engine, sand;
     private float musicFade;
     private Button[] buttons;
     private bool[] panelStates;
@@ -36,6 +40,8 @@ public class TitleAudioController : MonoBehaviour
         music.volume = 0f;
         music.clip = bgmClip;
         if (bgmClip != null) music.Play();
+        engine = DrivingSource(engineClip);
+        sand = DrivingSource(sandClip);
         buttons = GetComponentsInChildren<Button>(true);
         foreach (Button button in buttons) button.onClick.AddListener(QueueClick);
 
@@ -45,6 +51,19 @@ public class TitleAudioController : MonoBehaviour
     }
 
     private void QueueClick() => clicked = true;
+
+    // 주행음 반복 재생
+    private AudioSource DrivingSource(AudioClip clip)
+    {
+        var loop = gameObject.AddComponent<AudioSource>();
+        loop.playOnAwake = false;
+        loop.loop = true;
+        loop.spatialBlend = 0f;
+        loop.volume = 0f;
+        loop.clip = clip;
+        if (clip != null) loop.Play();
+        return loop;
+    }
 
     // 파일 선택 확정음 예약
     public void PlayFileSelected() => fileSelected = true;
@@ -57,6 +76,7 @@ public class TitleAudioController : MonoBehaviour
         float target = ScrapSceneTransition.IsTransitioning || SceneFadeController.IsTransitioning ? 0f : 1f;
         musicFade = Mathf.MoveTowards(musicFade, target, Time.unscaledDeltaTime / 0.8f);
         music.volume = bgmVolume * ChannelVolume(1) * musicFade;
+        engine.volume = sand.volume = drivingVolume * ChannelVolume(2) * musicFade;
         bool opened = false;
         for (int i = 0; i < panels.Length; i++)
         {
@@ -89,12 +109,16 @@ public class TitleAudioController : MonoBehaviour
         fileSelected = false;
         if (source != null) source.Stop();
         if (music != null) music.Pause();
+        if (engine != null) engine.Pause();
+        if (sand != null) sand.Pause();
     }
 
     private void OnEnable()
     {
         musicFade = 0f;
         if (music != null) music.UnPause();
+        if (engine != null) engine.UnPause();
+        if (sand != null) sand.UnPause();
     }
 
     private void OnDestroy()
@@ -104,5 +128,7 @@ public class TitleAudioController : MonoBehaviour
                 if (button != null) button.onClick.RemoveListener(QueueClick);
         if (source != null) Destroy(source);
         if (music != null) Destroy(music);
+        if (engine != null) Destroy(engine);
+        if (sand != null) Destroy(sand);
     }
 }

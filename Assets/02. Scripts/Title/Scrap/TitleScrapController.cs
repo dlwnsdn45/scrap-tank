@@ -19,7 +19,6 @@ public sealed class TitleScrapController : MonoBehaviour
     [Header("등장과 던지기")]
     [SerializeField, Range(1, 6)] private int spawnCount = 6;
     [SerializeField, Range(1, 100)] private int maxPieces = 100;
-    [SerializeField, Min(0.5f)] private float spawnCooldown = 2f;
     [SerializeField, Min(1f)] private float maxThrowSpeed = 22f;
 
     private const float PixelsPerUnit = 100f;

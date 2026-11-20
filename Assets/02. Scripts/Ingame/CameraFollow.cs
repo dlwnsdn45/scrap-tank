@@ -25,7 +25,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (!target)
         {
-            var player = FindFirstObjectByType<PlayerController>();
+            var player = FindAnyObjectByType<PlayerController>();
             if (player) target = player.transform;
         }
         followPosition = transform.position;

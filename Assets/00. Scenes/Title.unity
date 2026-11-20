@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1960000100}
   - component: {fileID: 1980000100}
   - component: {fileID: 1980000900}
+  - component: {fileID: 1980001200}
   - component: {fileID: 1980001000}
   - component: {fileID: 1980001100}
   m_Layer: 5
@@ -12834,7 +12835,6 @@ MonoBehaviour:
   settingsPanel: {fileID: 1323909296}
   spawnCount: 6
   maxPieces: 60
-  spawnCooldown: 2
   maxThrowSpeed: 22
 --- !u!114 &1980000900
 MonoBehaviour:
@@ -12852,6 +12852,9 @@ MonoBehaviour:
   panelOpenClip: {fileID: 8300000, guid: c7d12674c0b94a45a803fdd0c3d211fd, type: 3}
   fileSelectedClip: {fileID: 8300000, guid: 969650b4d26a4a99911b1332954d721a, type: 3}
   bgmClip: {fileID: 8300000, guid: a9b2eb1b05ca4dc18a2e17c64d7fa9d1, type: 3}
+  engineClip: {fileID: 8300000, guid: 20af228ac760480e939b5d369883a0a1, type: 3}
+  sandClip: {fileID: 8300000, guid: d5ded3ebe0044026a8d3084edeb2f287, type: 3}
+  drivingVolume: 0.45
   bgmVolume: 0.55
   fileSelectedVolume: 0.35
   buttonVolume: 0.35
@@ -12913,6 +12916,24 @@ MonoBehaviour:
   settingsPanel: {fileID: 1323909296}
   autoReleaseSeconds: 8
   cooldown: 5
+--- !u!114 &1980001200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109571547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e43c23fec304402b4aac2252387eae9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::TitleBackgroundController
+  groundTexture: {fileID: 2800000, guid: 8592f6b1e28e462a9485d67b71603d6b, type: 3}
+  tankSprite: {fileID: 7727865131416500628, guid: ccfbead0c0a2d924dbc4d08a190fe543, type: 3}
+  dustTexture: {fileID: 2800000, guid: feaa58dc1f484f208a63ba25580d53d3, type: 3}
+  trackTexture: {fileID: 2800000, guid: c31fc1dad0c0451aaf3f6b578a76f13d, type: 3}
+  scrollSpeed: 95
+  shakeAmount: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

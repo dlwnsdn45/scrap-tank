@@ -24,7 +24,7 @@ public class RepairZone : MonoBehaviour
 
     void Start()
     {
-        if (!player) player = FindFirstObjectByType<PlayerController>();
+        if (!player) player = FindAnyObjectByType<PlayerController>();
         if (player) lastDamageVersion = player.DamageVersion;
     }
 
