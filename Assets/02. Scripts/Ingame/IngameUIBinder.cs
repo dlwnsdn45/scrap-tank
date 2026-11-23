@@ -17,16 +17,19 @@ internal sealed class IngameUIBinder : MonoBehaviour
     readonly List<Vector2> armedMines = new();
     bool hadAttackWarnings;
     Camera view;
-    Label healthLabel, timer, scrap, prompt, assemblyText;
-    Label itemTag, stationTag, confirmText;
-    VisualElement swapCard, swapProgress, repairTrack, repairProgress, confirmation;
-    Button install, dismantle;
-    readonly Button[] slots = new Button[8];
+    Label healthLabel, timer, scrap, prompt;
+    Label itemTag, stationTag;
+    VisualElement swapCard, swapProgress, repairTrack, repairProgress;
+    AssemblyScreen assemblyScreen;
+    ResultScreen resultScreen;
+    PauseScreen pauseScreen;
+    Label fieldRepairLabel;
+    VisualElement fieldRepairFill;
     readonly VisualElement[] swapMarkers = new VisualElement[2];
-    int selected;
-    LootPickup pendingPart;
-    string assemblyResult;
     HealthBar core;
+    HealthBar bossHealth;
+    VisualElement bossPanel;
+    Label bossName, bossNotice, exitHint;
     HealthBar[] weapons;
     readonly List<HealthBar> enemies = new();
     readonly List<Enemy> enemyOwners = new();
@@ -60,22 +63,141 @@ internal sealed class IngameUIBinder : MonoBehaviour
         prompt = root.Q<Label>("interaction");
         flash = root.Q("damage-flash");
         assembly = root.Q("assembly");
-        assemblyText = root.Q<Label>("assembly-text");
         world = root.Q("world-bars");
         world.Clear();
         attackWarnings = new VisualElement { name = "attack-warnings", pickingMode = PickingMode.Ignore };
         attackWarnings.StretchToParentSize();
         attackWarnings.generateVisualContent += DrawAttackWarnings;
         world.Add(attackWarnings);
+        BindBossHud();
         BindControls();
+        BindFieldRepairHud();
+        pauseScreen = new PauseScreen(root);
+        resultScreen = new ResultScreen(root);
         assembly.style.display = DisplayStyle.None;
         player.SetAssemblyOpen(false);
+        player.SetPauseOpen(false);
         core = new HealthBar(root.Q("health-bar"), root.Q("health-trail"), root.Q("health-fill"), 13);
         core.Reset(player, player.Hp / (float)Mathf.Max(1, player.MaxHp));
         weapons = new HealthBar[player.Layout.SlotCount];
         enemies.Clear();
         enemyOwners.Clear();
         lastHp = lastScrap = lastSecond = -1;
+    }
+
+    void BindBossHud()
+    {
+        bossPanel = root.Q("boss-panel");
+        bossPanel?.RemoveFromHierarchy();
+        root.Q("boss-notice")?.RemoveFromHierarchy();
+        root.Q("exit-hint")?.RemoveFromHierarchy();
+        bossPanel = new VisualElement { name = "boss-panel", pickingMode = PickingMode.Ignore };
+        bossPanel.style.position = Position.Absolute;
+        bossPanel.style.left = Length.Percent(27f);
+        bossPanel.style.width = Length.Percent(46f);
+        bossPanel.style.top = 76;
+        bossPanel.style.height = 56;
+        bossPanel.style.backgroundColor = Panel;
+        bossName = new Label { pickingMode = PickingMode.Ignore };
+        bossName.style.color = Color.white;
+        bossName.style.fontSize = 18;
+        bossName.style.unityTextAlign = TextAnchor.MiddleCenter;
+        bossPanel.Add(bossName);
+        bossHealth = new HealthBar(bossPanel, 400f, 12f, Red);
+        bossHealth.Root.style.left = 8;
+        bossHealth.Root.style.right = 8;
+        bossHealth.Root.style.width = StyleKeyword.Auto;
+        bossHealth.Root.style.marginLeft = 0;
+        bossHealth.Root.style.top = 34;
+        root.Add(bossPanel);
+        bossNotice = BossLabel("boss-notice", 22, 34f);
+        exitHint = BossLabel("exit-hint", 18, 82f);
+        bossPanel.style.display = bossNotice.style.display = exitHint.style.display = DisplayStyle.None;
+    }
+
+    Label BossLabel(string name, int fontSize, float top)
+    {
+        var label = new Label { name = name, pickingMode = PickingMode.Ignore };
+        label.style.position = Position.Absolute;
+        label.style.left = Length.Percent(15f);
+        label.style.width = Length.Percent(70f);
+        label.style.top = Length.Percent(top);
+        label.style.color = Amber;
+        label.style.fontSize = fontSize;
+        label.style.whiteSpace = WhiteSpace.Normal;
+        label.style.unityTextAlign = TextAnchor.MiddleCenter;
+        root.Add(label);
+        return label;
+    }
+
+    void BindFieldRepairHud()
+    {
+        root.Q("field-repair-hud")?.RemoveFromHierarchy();
+        root.Q("game-key-hints")?.RemoveFromHierarchy();
+        fieldRepairLabel = BossLabel("field-repair-hud", 17, 70f);
+        fieldRepairLabel.style.backgroundColor = Panel;
+        fieldRepairLabel.style.height = 64;
+        fieldRepairLabel.style.whiteSpace = WhiteSpace.Normal;
+        fieldRepairLabel.style.display = DisplayStyle.None;
+        fieldRepairFill = new VisualElement { pickingMode = PickingMode.Ignore };
+        fieldRepairFill.style.position = Position.Absolute;
+        fieldRepairFill.style.left = 0;
+        fieldRepairFill.style.bottom = 0;
+        fieldRepairFill.style.height = 4;
+        fieldRepairFill.style.backgroundColor = Teal;
+        fieldRepairLabel.Add(fieldRepairFill);
+        var hints = BossLabel("game-key-hints", 14, 94f);
+        hints.text = "Tab 조립  ·  R 현장 수리  ·  Esc 일시정지";
+        hints.style.color = Color.white;
+    }
+
+    void DrawFieldRepair()
+    {
+        string message = player.IsFieldRepairing ? $"현장 수리 중 · R 유지 · 고철 {player.FieldRepairCost}\n이동 불가 · 피격 시 취소" : player.FieldRepairNotice;
+        bool show = message != null && !player.AssemblyOpen && !player.PauseOpen && player.IsAlive;
+        fieldRepairLabel.style.display = show ? DisplayStyle.Flex : DisplayStyle.None;
+        fieldRepairLabel.text = message ?? "";
+        fieldRepairFill.style.width = Length.Percent(player.FieldRepairProgress * 100f);
+    }
+
+    void DrawBossHud()
+    {
+        var encounter = BossEncounterController.Instance;
+        var boss = encounter ? encounter.Boss : null;
+        bool active = boss && boss.State != CrusherBossController.BossState.Dead;
+        bossPanel.style.display = active ? DisplayStyle.Flex : DisplayStyle.None;
+        if (active)
+        {
+            string action = boss.State switch
+            {
+                CrusherBossController.BossState.ChargeReady => "돌진 준비",
+                CrusherBossController.BossState.Charge => "돌진",
+                CrusherBossController.BossState.EruptReady => "고철 낙하 예고",
+                CrusherBossController.BossState.Erupt => "고철 낙하",
+                CrusherBossController.BossState.SuctionReady => "흡입 준비",
+                CrusherBossController.BossState.Suction => "흡입 · 부스터로 탈출",
+                CrusherBossController.BossState.Groggy => "그로기 · 빛나는 장갑을 공격",
+                _ => "분쇄차"
+            };
+            bossName.text = $"분쇄차 · {(boss.PhaseTwo ? "2페이즈" : "1페이즈")} · {action}";
+            bossHealth.Update(boss, boss.HealthFraction);
+        }
+        string notice = null;
+        if (encounter && encounter.Result == BossEncounterController.EncounterResult.Playing)
+        {
+            if (encounter.WarningActive) notice = "경고 · 분쇄차 접근 중";
+            else if (boss && boss.State == CrusherBossController.BossState.Idle) notice = "분쇄차 등장";
+        }
+        bossNotice.style.display = notice != null ? DisplayStyle.Flex : DisplayStyle.None;
+        bossNotice.text = notice ?? "";
+        bool escaping = encounter && encounter.ExitOpen && encounter.Result == BossEncounterController.EncounterResult.Playing;
+        exitHint.style.display = escaping ? DisplayStyle.Flex : DisplayStyle.None;
+        if (escaping)
+        {
+            float distance = Vector2.Distance(player.transform.position, encounter.ExitPosition);
+            float remaining = Mathf.Max(0f, encounter.Deadline - GameTimeManager.Instance.ElapsedSeconds);
+            exitHint.text = $"출구로 이동 · {distance:0}m · 남은 시간 {remaining:0}초";
+        }
     }
 
     void BindControls()
@@ -86,11 +208,6 @@ internal sealed class IngameUIBinder : MonoBehaviour
         swapProgress = root.Q("swap-progress");
         repairTrack = root.Q("repair-track");
         repairProgress = root.Q("repair-progress");
-        confirmation = root.Q("assembly-confirm");
-        confirmText = root.Q<Label>("assembly-confirm-text");
-        install = root.Q<Button>("assembly-install");
-        dismantle = root.Q<Button>("assembly-dismantle");
-        if (install == null) return;
         swapCard.BringToFront();
         assembly.BringToFront();
         swapCard.style.backgroundColor = new Color(.09f, .12f, .14f);
@@ -98,47 +215,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
         swapCard.style.borderTopColor = Amber;
         prompt.style.fontSize = 17;
         prompt.style.unityFontStyleAndWeight = FontStyle.Bold;
-        confirmText.style.whiteSpace = WhiteSpace.Normal;
-        confirmText.style.paddingTop = confirmText.style.paddingBottom = 8;
-        confirmText.style.paddingLeft = confirmText.style.paddingRight = 8;
-        confirmation.style.justifyContent = Justify.FlexEnd;
-        var accept = root.Q<Button>("assembly-accept");
-        accept.style.backgroundColor = Amber;
-        accept.style.color = Panel;
-        accept.style.minWidth = 76;
-        root.Q<Button>("assembly-close").clicked += () => SetAssembly(false);
-        root.Q<Button>("assembly-cancel").clicked += () =>
-        {
-            pendingPart = null;
-            assemblyResult = "교체를 취소했습니다";
-        };
-        accept.clicked += () =>
-        {
-            assemblyResult = pendingPart && player.InstallFromAssembly(selected, pendingPart)
-                ? "교체 완료" : "교체할 부품을 다시 선택하세요";
-            pendingPart = null;
-        };
-        install.clicked += () =>
-        {
-            var part = player.AssemblyPart;
-            if (!part || !player.Layout.CanInstall(selected, part.Kind)) return;
-            assemblyResult = null;
-            if (player.Layout.TargetIsEmpty(part.Kind, selected))
-                assemblyResult = player.InstallFromAssembly(selected, part) ? "장착 완료" : "장착할 수 없습니다";
-            else pendingPart = part;
-        };
-        dismantle.clicked += () =>
-        {
-            player.DismantleFromAssembly(selected);
-            pendingPart = null;
-            assemblyResult = "분해 완료";
-        };
-        for (int i = 0; i < slots.Length; i++)
-        {
-            int index = i;
-            slots[i] = root.Q<Button>($"slot-{i}");
-            slots[i].clicked += () => { selected = index; pendingPart = null; assemblyResult = null; };
-        }
+        assemblyScreen = new AssemblyScreen(assembly, player, () => SetAssembly(false));
         for (int i = 0; i < swapMarkers.Length; i++)
         {
             var marker = new VisualElement { pickingMode = PickingMode.Ignore };
@@ -156,9 +233,14 @@ internal sealed class IngameUIBinder : MonoBehaviour
     void SetAssembly(bool open)
     {
         player.SetAssemblyOpen(open);
+        if (assembly == null || assembly.panel == null)
+        {
+            assemblyScreen?.Close(false);
+            return;
+        }
         assembly.style.display = player.AssemblyOpen ? DisplayStyle.Flex : DisplayStyle.None;
-        pendingPart = null;
-        assemblyResult = null;
+        if (player.AssemblyOpen) assemblyScreen?.Reset();
+        else assemblyScreen?.Close();
     }
 
     void LateUpdate()
@@ -166,9 +248,18 @@ internal sealed class IngameUIBinder : MonoBehaviour
         if (!player || root == null) return;
         root.style.display = player.isActiveAndEnabled ? DisplayStyle.Flex : DisplayStyle.None;
         if (!player.isActiveAndEnabled) return;
-        if (Keyboard.current?.tabKey.wasPressedThisFrame == true) SetAssembly(!AssemblyOpen);
-        if (Keyboard.current?.escapeKey.wasPressedThisFrame == true || (AssemblyOpen && !player.IsAlive))
+        var encounter = BossEncounterController.Instance;
+        bool finished = encounter && encounter.Result != BossEncounterController.EncounterResult.Playing;
+        if (!finished && Keyboard.current?.escapeKey.wasPressedThisFrame == true)
+        {
+            if (AssemblyOpen) SetAssembly(false);
+            else player.SetPauseOpen(!player.PauseOpen);
+        }
+        else if (!finished && !player.PauseOpen && Keyboard.current?.tabKey.wasPressedThisFrame == true)
+            SetAssembly(!AssemblyOpen);
+        if (AssemblyOpen && (!player.IsAlive || !player.AssemblyOpen))
             SetAssembly(false);
+        pauseScreen.SetVisible(player.PauseOpen);
         if (lastHp != player.Hp)
         {
             lastHp = player.Hp;
@@ -193,9 +284,13 @@ internal sealed class IngameUIBinder : MonoBehaviour
         flash.style.opacity = .36f * Mathf.Clamp01(1f - (Time.unscaledTime - flashAt) / .35f);
         core.Update(player, player.Hp / (float)Mathf.Max(1, player.MaxHp));
         DrawWorld();
+        DrawBossHud();
         UpdateAttackWarnings();
         DrawInteraction();
-        if (AssemblyOpen) DrawAssembly();
+        DrawFieldRepair();
+        if (AssemblyOpen) assemblyScreen.Refresh();
+        if (encounter && encounter.Result != BossEncounterController.EncounterResult.Playing)
+            resultScreen.Show(encounter.Summary);
     }
 
     void UpdateAttackWarnings()
@@ -215,6 +310,8 @@ internal sealed class IngameUIBinder : MonoBehaviour
                 }
         }
         else armedMines.Clear();
+        var encounter = BossEncounterController.Instance;
+        if (encounter && (encounter.Boss || encounter.ExitOpen)) visible = true;
         if (visible || hadAttackWarnings) attackWarnings.MarkDirtyRepaint();
         hadAttackWarnings = visible;
     }
@@ -222,8 +319,10 @@ internal sealed class IngameUIBinder : MonoBehaviour
     void DrawAttackWarnings(MeshGenerationContext context)
     {
         var manager = EnemyManager.Instance;
-        if (!manager || !view || attackWarnings.panel == null) return;
+        if (!view || attackWarnings.panel == null) return;
         var painter = context.painter2D;
+        DrawBossWarnings(painter);
+        if (!manager) return;
         painter.strokeColor = new Color(1f, .22f, .16f, .8f);
         painter.fillColor = new Color(1f, .16f, .11f, .12f);
         painter.lineWidth = 2f;
@@ -258,6 +357,68 @@ internal sealed class IngameUIBinder : MonoBehaviour
             painter.LineTo(WarningPoint(origin + enemy.AttackDirection * weapon.range));
             painter.Stroke();
         }
+    }
+
+    void DrawBossWarnings(Painter2D painter)
+    {
+        var encounter = BossEncounterController.Instance;
+        if (!encounter) return;
+        var boss = encounter.Boss;
+        painter.strokeColor = new Color(1f, .22f, .16f, .9f);
+        painter.fillColor = new Color(1f, .16f, .11f, .2f);
+        painter.lineWidth = 2f;
+        if (boss && boss.State == CrusherBossController.BossState.EruptReady)
+        {
+            foreach (var area in boss.EruptionAreas)
+            {
+                painter.BeginPath();
+                painter.MoveTo(WarningPoint(area.min));
+                painter.LineTo(WarningPoint(new Vector2(area.xMax, area.yMin)));
+                painter.LineTo(WarningPoint(area.max));
+                painter.LineTo(WarningPoint(new Vector2(area.xMin, area.yMax)));
+                painter.ClosePath();
+                painter.Fill();
+                painter.Stroke();
+            }
+        }
+        if (boss && boss.State is CrusherBossController.BossState.SuctionReady or CrusherBossController.BossState.Suction)
+            WarningArea(painter, boss.transform.position, boss.transform.up, boss.SuctionRange, boss.SuctionArc);
+        if (boss && boss.State == CrusherBossController.BossState.ChargeReady)
+        {
+            Vector2 start = boss.transform.position;
+            Vector2 right = boss.transform.right * (boss.BodySize.x * .5f);
+            Vector2 end = start + (Vector2)boss.transform.up * boss.ChargeDistance;
+            painter.BeginPath();
+            painter.MoveTo(WarningPoint(start - right));
+            painter.LineTo(WarningPoint(end - right));
+            painter.LineTo(WarningPoint(end + right));
+            painter.LineTo(WarningPoint(start + right));
+            painter.ClosePath();
+            painter.Fill();
+            painter.Stroke();
+        }
+        if (!encounter.ExitOpen || encounter.Result != BossEncounterController.EncounterResult.Playing) return;
+        painter.strokeColor = Teal;
+        painter.fillColor = new Color(Teal.r, Teal.g, Teal.b, .2f);
+        WarningArea(painter, encounter.ExitPosition, Vector2.up, encounter.ExitRadius, 360f);
+        Vector2 point = WarningPoint(encounter.ExitPosition);
+        Vector2 size = attackWarnings.layout.size;
+        if (size.x <= 64f || size.y <= 64f) return;
+        if (point.x >= 24f && point.x <= size.x - 24f && point.y >= 24f && point.y <= size.y - 24f) return;
+        Vector2 center = size * .5f;
+        Vector2 offset = point - center;
+        Vector2 direction = offset.normalized;
+        float scale = Mathf.Min((center.x - 24f) / Mathf.Max(.001f, Mathf.Abs(offset.x)),
+            (center.y - 24f) / Mathf.Max(.001f, Mathf.Abs(offset.y)));
+        Vector2 tip = center + offset * scale;
+        Vector2 side = new(-direction.y, direction.x);
+        painter.fillColor = Teal;
+        painter.BeginPath();
+        painter.MoveTo(tip);
+        painter.LineTo(tip - direction * 24f + side * 12f);
+        painter.LineTo(tip - direction * 24f - side * 12f);
+        painter.ClosePath();
+        painter.Fill();
     }
 
     void WarningArea(Painter2D painter, Vector2 origin, Vector2 direction, float radius, float arc)
@@ -348,7 +509,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
         string message = null;
         itemTag.style.display = stationTag.style.display = repairTrack.style.display = DisplayStyle.None;
         foreach (var marker in swapMarkers) marker.style.display = DisplayStyle.None;
-        if (player.IsAlive && !AssemblyOpen)
+        if (player.IsAlive && !AssemblyOpen && !player.PauseOpen && !player.IsFieldRepairing)
         {
             var part = player.HudPart;
             var zone = RepairZone.FindNearest(player);
@@ -417,43 +578,6 @@ internal sealed class IngameUIBinder : MonoBehaviour
         element.style.display = DisplayStyle.Flex;
     }
 
-    void DrawAssembly()
-    {
-        if (install == null) return;
-        var layout = player.Layout;
-        var part = player.AssemblyPart;
-        for (int i = 0; i < slots.Length; i++)
-        {
-            slots[i].text = $"{SlotLabels[i]}\n{SlotState(i)}";
-            slots[i].style.backgroundColor = i == selected ? new Color(.18f, .48f, .42f) : new Color(.19f, .24f, .26f);
-            slots[i].style.color = layout.IsOpenSlot(i) ? Color.white : new Color(.72f, .72f, .69f);
-        }
-        bool compatible = part && layout.CanInstall(selected, part.Kind);
-        var mounted = layout.MountAt(selected);
-        assemblyText.text = $"{SlotLabels[selected]} · {SlotState(selected)}\n\n고철 {player.Scrap}\n" +
-            (part ? $"주변 부품: {NameOf(part.Kind)} · {part.Durability:P0}" +
-                (compatible ? "" : "\n이 슬롯에는 장착할 수 없습니다") : "주변 부품 없음");
-        bool confirming = compatible && pendingPart && pendingPart == part;
-        confirmation.style.display = confirming ? DisplayStyle.Flex : DisplayStyle.None;
-        confirmText.style.display = confirming || assemblyResult != null ? DisplayStyle.Flex : DisplayStyle.None;
-        confirmText.style.backgroundColor = confirming ? new Color(.25f, .20f, .11f) : StyleKeyword.Null;
-        confirmText.text = confirming
-            ? $"{TargetName(part.Kind, selected)}에 {NameOf(part.Kind)} 장착\n{Displaced(part.Kind, selected)}"
-            : assemblyResult ?? "";
-        install.style.display = compatible && !confirming ? DisplayStyle.Flex : DisplayStyle.None;
-        install.text = compatible && layout.TargetIsEmpty(part.Kind, selected) ? "장착" : "교체";
-        dismantle.style.display = mounted?.weapon != null && !confirming ? DisplayStyle.Flex : DisplayStyle.None;
-        if (mounted?.weapon != null) dismantle.text = $"분해 · 고철 +{WeaponLayout.ScrapValue(mounted.weapon.kind)}";
-    }
-
-    string SlotState(int index)
-    {
-        var layout = player.Layout;
-        if (!layout.IsOpenSlot(index)) return $"{layout.UnlockTime(index)}초에 열림";
-        var mount = layout.MountAt(index);
-        return mount?.weapon == null ? "빈 슬롯" : $"{NameOf(mount.weapon.kind)} {mount.Hp}/{mount.MaxHp}";
-    }
-
     static string TargetName(WeaponKind kind, int slot)
     {
         int other = WeaponLayout.Partner(kind, slot);
@@ -471,7 +595,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
         return name.Length > 0 ? $"떨어짐: {name}" : "빈 슬롯";
     }
 
-    static string NameOf(WeaponKind kind) => kind switch
+    internal static string NameOf(WeaponKind kind) => kind switch
     {
         WeaponKind.MachineGun => "기관총", WeaponKind.Shotgun => "산탄총",
         WeaponKind.Flamethrower => "화염방사기", WeaponKind.Missile => "미사일 발사대",
@@ -481,7 +605,10 @@ internal sealed class IngameUIBinder : MonoBehaviour
 
     void OnDisable()
     {
-        if (player && assembly != null) SetAssembly(false);
+        // Restore gameplay state without reading/redrawing a UI tree that is being destroyed.
+        if (player) player.SetAssemblyOpen(false);
+        if (player) player.SetPauseOpen(false);
+        assemblyScreen?.Close(false);
     }
 
     void OnDestroy()

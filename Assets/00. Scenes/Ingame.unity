@@ -272,6 +272,10 @@ MonoBehaviour:
   target: {fileID: 1052045972}
   mapRenderer: {fileID: 791987769}
   smoothTime: 0.2
+  swapZoomScale: 0.55
+  swapZoomInDuration: 0.22
+  swapZoomOutDuration: 0.22
+  swapZoomInPower: 3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,11 +1078,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
   player: {fileID: 1052045972}
   prefab: {fileID: 719738471822787785, guid: 597d4c3882a6325469ed60f972408b57, type: 3}
-  spawnInterval: 0.5
+  spawnInterval: 20
+  enemiesPerSpawn: 30
   maxEnemies: 300
-  attackRange: 5
+  attackRange: 1.5
   attackCooldown: 1
-  attackDamage: 0
+  attackDamage: 5
   attackWarningDuration: 0.35
   scrapPerKill: 1
   carrierScrap: 4

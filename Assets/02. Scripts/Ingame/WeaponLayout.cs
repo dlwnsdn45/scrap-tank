@@ -96,6 +96,62 @@ internal sealed class WeaponLayout
 
     internal int UnlockTime(int index) => (int)OpenAt[index];
 
+    internal int FindBrokenSlot(Vector2 point)
+    {
+        int nearest = -1;
+        float best = float.PositiveInfinity;
+        for (int i = 0; i < Mounts.Length; i++)
+        {
+            var mount = Mounts[i];
+            if (mount?.weapon == null || !mount.equipped || mount.Hp > 0) continue;
+            float distance = ((Vector2)SlotPosition(i) - point).sqrMagnitude;
+            if (distance >= best) continue;
+            nearest = i;
+            best = distance;
+        }
+        return nearest;
+    }
+
+    internal bool RepairBroken(int index, float fraction)
+    {
+        if (index < 0 || index >= Mounts.Length) return false;
+        var mount = Mounts[index];
+        if (mount?.weapon == null || !mount.equipped || mount.Hp > 0) return false;
+        mount.Repair(fraction);
+        for (int i = 0; i < Mounts.Length; i++) if (Mounts[i] == mount) RefreshVisual(i);
+        return mount.Hp > 0;
+    }
+
+    internal bool TryMove(int from, int to)
+    {
+        if (from < 0 || from >= Slots.Length || to < 0 || to >= Slots.Length) return false;
+        var moving = Mounts[from];
+        if (moving?.weapon == null || !CanInstall(to, moving.weapon.kind)) return false;
+        var displaced = Mounts[to];
+        if (moving == displaced) return true;
+        int partner = Partner(moving.weapon.kind, to);
+        if (partner >= 0 && (displaced != null || Mounts[partner] != null)) return false;
+        if (displaced != null && (displaced.weapon == null || displaced.weapon.kind == WeaponKind.Missile ||
+            !CanInstall(from, displaced.weapon.kind))) return false;
+
+        for (int i = 0; i < Mounts.Length; i++)
+            if (Mounts[i] == moving || (displaced != null && Mounts[i] == displaced)) Mounts[i] = null;
+        PlaceMount(moving, to);
+        if (displaced != null) PlaceMount(displaced, from);
+        for (int i = 0; i < Mounts.Length; i++) RefreshVisual(i);
+        return true;
+    }
+
+    void PlaceMount(WeaponMount mount, int index)
+    {
+        int other = Partner(mount.weapon.kind, index);
+        int primary = other >= 0 ? Mathf.Min(index, other) : index;
+        mount.localMuzzle = other >= 0 ? (Positions[index] + Positions[other]) * .5f : Positions[index];
+        mount.localAngle = -90f * (primary / 2);
+        Mounts[primary] = mount;
+        if (other >= 0) Mounts[Mathf.Max(index, other)] = mount;
+    }
+
     internal int Dismantle(int index)
     {
         var mount = Mounts[index];
@@ -176,7 +232,8 @@ internal sealed class WeaponLayout
         }
         if (index < 0) return damage;
         var part = Mounts[index];
-        // Broken parts still occupy their slot but only transfer 30% to the core.
+        // Disabled parts stay attached, but no longer protect the chassis.
+        if (part.Hp <= 0) return damage;
         part.Damage(damage);
         RefreshVisual(index);
         return Mathf.CeilToInt(damage * 0.3f);

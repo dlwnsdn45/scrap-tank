@@ -14,14 +14,24 @@ public class PlayerController : MonoBehaviour, IDamageable
     [SerializeField, Min(0f)] float boostCooldown = 3f;
     [SerializeField, Min(0f)] float ramRadius = 1f;
     [SerializeField, Min(0)] int ramDamage = 10;
-    readonly HashSet<Enemy> ramHits = new();
+    readonly HashSet<CombatTarget> ramHits = new();
     Vector2 boostDirection, previousBoostPosition;
     float boostRemaining, nextBoostTime;
     bool boostRequested, checkRam;
+    bool encounterFinished;
     [SerializeField] WeaponMount[] weapons = { new WeaponMount() };
     [SerializeField] LootPickup scrapPickupPrefab, weaponPickupPrefab;
     [SerializeField] Renderer weaponMountVisualPrefab;
     [SerializeField] bool enableQuickSwap = true;
+    [Header("Field repair")]
+    [SerializeField, Min(0.1f)] float fieldRepairDuration = 2f;
+    [SerializeField, Min(0)] int fieldRepairCost = 8;
+    [SerializeField, Range(0.05f, 1f)] float fieldRepairFraction = 0.4f;
+    WeaponMount fieldRepairPart;
+    int fieldRepairSlot = -1;
+    float fieldRepairElapsed, fieldNoticeUntil;
+    string fieldNotice;
+    uint fieldRepairDamageVersion;
     WeaponLayout weaponLayout;
     Camera cam;
     CameraFollow cameraFollow;
@@ -40,17 +50,29 @@ public class PlayerController : MonoBehaviour, IDamageable
     public bool NeedsRepair => IsAlive && (hp < maxHp || weaponLayout.HasDamagedParts);
     internal uint DamageVersion { get; private set; }
     public int Scrap { get; private set; }
+    public int KillCount { get; private set; }
+    internal void RecordKill() => KillCount++;
     public bool IsAlive => hp > 0;
+    internal float MoveSpeed => speed;
+    internal float BoostSpeed => speed * boostMultiplier;
+    internal float BaseBoostCooldown => boostCooldown;
+    internal Collider2D BodyCollider => playerCollider;
     internal WeaponLayout Layout => weaponLayout;
     internal LootPickup HudPart => swapPart ? swapPart : IsAlive ? FindNearbyPart(false, out _) : null;
     internal bool QuickSwapEnabled => enableQuickSwap;
     internal LootPickup AssemblyPart => IsAlive ? FindNearbyPart() : null;
     internal bool AssemblyOpen { get; private set; }
+    internal bool PauseOpen { get; private set; }
+    float timeScaleBeforePause;
+    internal bool IsFieldRepairing => fieldRepairPart != null;
+    internal float FieldRepairProgress => IsFieldRepairing ? Mathf.Clamp01(fieldRepairElapsed / fieldRepairDuration) : 0f;
+    internal int FieldRepairCost => fieldRepairCost;
+    internal string FieldRepairNotice => Time.unscaledTime < fieldNoticeUntil ? fieldNotice : null;
     float timeScaleBeforeAssembly;
     internal int HudSwapSlot => swapPart && cam && Mouse.current != null
         ? weaponLayout.FindSwapSlot(swapPart.Kind, cam, Mouse.current.position.ReadValue()) : -1;
     internal float SwapRemaining => swapPart ? Mathf.Max(0f, swapUntil - Time.unscaledTime) : 0f;
-    public bool IsInteractHeld => IsAlive && interactHeld && !wasPartInteraction && !AssemblyOpen;
+    public bool IsInteractHeld => IsAlive && interactHeld && !wasPartInteraction && !AssemblyOpen && !PauseOpen && !IsFieldRepairing;
     internal int RepairCost => 12 << Mathf.Min(repairCount, 3);
     int repairCount;
     bool wasPartInteraction;
@@ -121,7 +143,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     void OnMove(InputValue v) => moveInput = v.Get<Vector2>();
     void OnSprint(InputValue v)
     {
-        if (!AssemblyOpen && v.isPressed && Time.time >= nextBoostTime && boostRemaining <= 0f)
+        if (IsAlive && !encounterFinished && !AssemblyOpen && !PauseOpen && !IsFieldRepairing && v.isPressed && Time.time >= nextBoostTime && boostRemaining <= 0f)
             boostRequested = true;
     }
     void Update()
@@ -130,9 +152,21 @@ public class PlayerController : MonoBehaviour, IDamageable
         bool started = interactAction?.WasPressedThisFrame() == true;
         if (!interactHeld) wasPartInteraction = false;
         bool cancel = Keyboard.current?.escapeKey.wasPressedThisFrame == true;
-        if (!IsAlive || cancel || AssemblyOpen)
+        if (!IsAlive || encounterFinished || cancel || AssemblyOpen || PauseOpen)
         {
             ClearSwap();
+            StopFieldRepair();
+            return;
+        }
+
+        if (IsFieldRepairing)
+        {
+            TickFieldRepair();
+            return;
+        }
+        if (Keyboard.current?.rKey.wasPressedThisFrame == true)
+        {
+            BeginFieldRepair();
             return;
         }
 
@@ -156,6 +190,7 @@ public class PlayerController : MonoBehaviour, IDamageable
                 previousTimeScale = Time.timeScale;
                 Time.timeScale *= 0.4f;
                 swapSlowedTime = true;
+                if (cameraFollow) cameraFollow.SetSwapFocus(true);
                 if (!interactHeld) FinishSwap();
                 return;
             }
@@ -173,6 +208,65 @@ public class PlayerController : MonoBehaviour, IDamageable
             if (slot >= 0) InstallPart(slot, swapPart);
         }
         ClearSwap();
+    }
+
+    void FieldNotice(string message)
+    {
+        fieldNotice = message;
+        fieldNoticeUntil = Time.unscaledTime + 2f;
+    }
+
+    void BeginFieldRepair()
+    {
+        if (!IsAlive || encounterFinished || AssemblyOpen || PauseOpen) return;
+        ClearSwap();
+        if (boostRemaining > 0f || boostRequested) { FieldNotice("부스터가 끝난 뒤 수리할 수 있습니다"); return; }
+        Vector2 point = cam && Mouse.current != null
+            ? (Vector2)cam.ScreenToWorldPoint(Mouse.current.position.ReadValue()) : (Vector2)transform.position;
+        int slot = weaponLayout.FindBrokenSlot(point);
+        if (slot < 0) { FieldNotice("꺼진 부품이 없습니다"); return; }
+        if (Scrap < fieldRepairCost) { FieldNotice($"고철 부족 · 필요 {fieldRepairCost}"); return; }
+        fieldRepairSlot = slot;
+        fieldRepairPart = weaponLayout.MountAt(slot);
+        fieldRepairElapsed = 0f;
+        fieldRepairDamageVersion = DamageVersion;
+        checkRam = boostRequested = false;
+        rb.linearVelocity = Vector2.zero;
+        if (cameraFollow) cameraFollow.SetSwapFocus(true);
+    }
+
+    void TickFieldRepair()
+        => AdvanceFieldRepair(Keyboard.current?.rKey.isPressed == true, Time.deltaTime);
+
+    void AdvanceFieldRepair(bool held, float deltaTime)
+    {
+        if (!IsFieldRepairing) return;
+        if (!held) { StopFieldRepair(); return; }
+        if (DamageVersion != fieldRepairDamageVersion)
+        {
+            StopFieldRepair();
+            FieldNotice("피격으로 현장 수리가 취소되었습니다");
+            return;
+        }
+        if (fieldRepairSlot < 0 || weaponLayout.MountAt(fieldRepairSlot) != fieldRepairPart || fieldRepairPart.Hp > 0)
+        {
+            StopFieldRepair();
+            return;
+        }
+        fieldRepairElapsed += deltaTime;
+        if (fieldRepairElapsed < fieldRepairDuration) return;
+        bool repaired = Scrap >= fieldRepairCost && weaponLayout.RepairBroken(fieldRepairSlot, fieldRepairFraction);
+        if (repaired) Scrap -= fieldRepairCost;
+        StopFieldRepair();
+        FieldNotice(repaired ? "현장 수리 완료 · 부품이 다시 켜졌습니다" : "수리할 수 없습니다");
+    }
+
+    void StopFieldRepair()
+    {
+        if (fieldRepairPart != null && cameraFollow) cameraFollow.SetSwapFocus(false);
+        fieldRepairPart = null;
+        fieldRepairSlot = -1;
+        fieldRepairElapsed = 0f;
     }
 
     LootPickup FindNearbyPart(bool autoEquip, out int slot)
@@ -212,17 +306,37 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     internal void SetAssemblyOpen(bool open)
     {
-        open = open && IsAlive;
+        open = open && IsAlive && !encounterFinished && !PauseOpen;
         if (open == AssemblyOpen) return;
         if (open)
         {
             ClearSwap();
+            StopFieldRepair();
+            if (cameraFollow) cameraFollow.StopShake();
             timeScaleBeforeAssembly = Time.timeScale;
             Time.timeScale = 0f;
         }
         else
             Time.timeScale = timeScaleBeforeAssembly;
         AssemblyOpen = open;
+    }
+
+    internal void SetPauseOpen(bool open)
+    {
+        open = open && IsAlive && !encounterFinished;
+        if (open == PauseOpen) return;
+        if (open)
+        {
+            SetAssemblyOpen(false);
+            ClearSwap();
+            StopFieldRepair();
+            boostRequested = false;
+            if (cameraFollow) cameraFollow.StopShake();
+            timeScaleBeforePause = Time.timeScale;
+            Time.timeScale = 0f;
+        }
+        else Time.timeScale = timeScaleBeforePause;
+        PauseOpen = open;
     }
 
     internal bool InstallFromAssembly(int slot, LootPickup part) =>
@@ -233,12 +347,33 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (AssemblyOpen && IsAlive) AddScrap(weaponLayout.Dismantle(slot));
     }
 
+    internal bool MoveFromAssembly(int from, int to) =>
+        AssemblyOpen && IsAlive && weaponLayout.TryMove(from, to);
+
     void ClearSwap()
     {
-        if (swapSlowedTime) Time.timeScale = previousTimeScale;
+        if (swapSlowedTime)
+        {
+            Time.timeScale = previousTimeScale;
+            if (cameraFollow) cameraFollow.SetSwapFocus(false);
+        }
         swapSlowedTime = false;
         swapPart = null;
         swapUntil = 0f;
+    }
+
+    internal void FinishEncounter()
+    {
+        SetPauseOpen(false);
+        SetAssemblyOpen(false);
+        ClearSwap();
+        StopFieldRepair();
+        encounterFinished = true;
+        if (cameraFollow) cameraFollow.StopShake();
+        boostRequested = checkRam = false;
+        boostRemaining = 0f;
+        moveInput = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
     }
 
     bool InstallPart(int slot, LootPickup part)
@@ -264,18 +399,20 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         if (Time.timeScale == 0f) return;
         var enemies = EnemyManager.Instance;
-        if (hp <= 0 || Time.time < jammedUntil || !enemies || !enemies.isActiveAndEnabled) return;
+        if (hp <= 0 || encounterFinished || Time.time < jammedUntil || !enemies || !enemies.isActiveAndEnabled) return;
         weaponLayout.Tick(enemies);
     }
 
     void OnApplicationFocus(bool focused)
     {
-        if (!focused) ClearSwap();
+        if (!focused) { ClearSwap(); StopFieldRepair(); }
     }
 
     void OnDisable()
     {
+        SetPauseOpen(false);
         SetAssemblyOpen(false);
+        StopFieldRepair();
         CombatParticles.ClearJam(transform);
         if (movementDust)
             movementDust.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
@@ -294,7 +431,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void TakeDamage(int dmg, Vector2 source)
     {
-        if (dmg <= 0 || hp <= 0) return;
+        if (dmg <= 0 || hp <= 0 || encounterFinished) return;
         DamageVersion++;
         hp = Mathf.Max(0, hp - weaponLayout.AbsorbDamage(dmg, source));
         if (cameraFollow) cameraFollow.Shake();
@@ -303,6 +440,16 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void FixedUpdate()
     {
+        if (!IsAlive || encounterFinished || IsFieldRepairing || PauseOpen || AssemblyOpen)
+        {
+            rb.linearVelocity = Vector2.zero;
+            if (movementDust)
+            {
+                var emission = movementDust.emission;
+                emission.enabled = false;
+            }
+            return;
+        }
         Vector2 position = ClampToMap(rb.position);
         if (position != rb.position) rb.position = position;
         if (checkRam && EnemyManager.Instance)
@@ -345,6 +492,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
         if (Time.fixedTime < pulledUntil)
             rb.linearVelocity += pullVelocity;
+        var boss = BossEncounterController.Instance ? BossEncounterController.Instance.Boss : null;
+        if (boss) rb.linearVelocity += boss.SuctionVelocity(position);
         ConstrainVelocityToMap(position);
         if (movementDust)
         {
