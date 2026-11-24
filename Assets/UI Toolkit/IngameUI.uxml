@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="hud" picking-mode="Ignore" style="flex-grow: 1;">
+        <ui:VisualElement name="damage-flash" picking-mode="Ignore" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(230, 10, 8); opacity: 0;" />
+        <ui:VisualElement name="world-bars" picking-mode="Ignore" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0;" />
+        <ui:VisualElement picking-mode="Ignore" style="flex-direction: row; align-items: flex-start; justify-content: space-between; margin: 18px;">
+            <ui:VisualElement picking-mode="Ignore" style="width: 244px; padding: 12px; background-color: rgb(13, 26, 31);">
+                <ui:Label name="health-label" text="HP" style="color: white; margin-bottom: 6px; -unity-font-style: bold;" />
+                <ui:VisualElement name="health-bar" picking-mode="Ignore" style="height: 13px; background-color: rgb(33, 51, 57);">
+                    <ui:VisualElement name="health-trail" picking-mode="Ignore" style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background-color: white;" />
+                    <ui:VisualElement name="health-fill" picking-mode="Ignore" style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background-color: rgb(31, 219, 189);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="scrap" text="고철 0" style="width: 130px; height: 44px; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 19px; color: white; background-color: rgb(13, 26, 31);" />
+        </ui:VisualElement>
+        <ui:Label name="timer" text="00:00" style="position: absolute; align-self: center; top: 18px; width: 110px; height: 44px; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 22px; color: white; background-color: rgb(13, 26, 31);" />
+        <ui:Label name="item-tag" picking-mode="Ignore" style="display: none; position: absolute; width: 190px; margin-left: -95px; margin-top: -26px; -unity-text-align: middle-center; color: white; background-color: rgb(34, 41, 46);" />
+        <ui:Label name="station-tag" picking-mode="Ignore" style="display: none; position: absolute; width: 250px; margin-left: -125px; margin-top: -28px; -unity-text-align: middle-center; color: white; background-color: rgb(47, 122, 90);" />
+        <ui:VisualElement name="swap-card" picking-mode="Ignore" style="display: none; position: absolute; align-self: center; bottom: 44px; width: 430px; max-width: 94%; padding: 10px; background-color: rgb(34, 41, 46);">
+            <ui:Label name="interaction" picking-mode="Ignore" style="white-space: normal; -unity-text-align: middle-center; color: rgb(255, 210, 63);" />
+            <ui:VisualElement name="swap-track" picking-mode="Ignore" style="height: 4px; margin-top: 5px; background-color: rgb(72, 77, 77);">
+                <ui:VisualElement name="swap-progress" picking-mode="Ignore" style="height: 4px; background-color: rgb(255, 210, 63);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="repair-track" picking-mode="Ignore" style="display: none; position: absolute; width: 112px; margin-left: -56px; height: 4px; background-color: rgb(34, 41, 46);">
+            <ui:VisualElement name="repair-progress" picking-mode="Ignore" style="height: 4px; background-color: rgb(255, 210, 63);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="assembly" picking-mode="Ignore" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; align-items: center; justify-content: center; background-color: rgba(5, 10, 13, 0.72);">
+            <ui:VisualElement style="width: 620px; max-width: 96%; padding: 16px; background-color: rgb(34, 41, 46);">
+                <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
+                    <ui:Label text="무기 조립" style="color: rgb(255, 210, 63); font-size: 22px; -unity-font-style: bold;" />
+                    <ui:Button name="assembly-close" text="닫기 [Tab]" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 1; flex-basis: 0; padding: 8px; background-color: rgb(47, 57, 59);">
+                        <ui:Label text="전방 ↑" style="color: white; -unity-text-align: middle-center;" />
+                        <ui:VisualElement style="flex-direction: row; justify-content: center;">
+                            <ui:Button name="slot-0" style="width: 42%; height: 46px; white-space: normal;" />
+                            <ui:Button name="slot-1" style="width: 42%; height: 46px; white-space: normal;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 4px;">
+                            <ui:Button name="slot-7" style="width: 40%; height: 46px; white-space: normal;" />
+                            <ui:Button name="slot-2" style="width: 40%; height: 46px; white-space: normal;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between;">
+                            <ui:Button name="slot-6" style="width: 40%; height: 46px; white-space: normal;" />
+                            <ui:Button name="slot-3" style="width: 40%; height: 46px; white-space: normal;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement style="flex-direction: row; justify-content: center; margin-top: 4px;">
+                            <ui:Button name="slot-5" style="width: 42%; height: 46px; white-space: normal;" />
+                            <ui:Button name="slot-4" style="width: 42%; height: 46px; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; flex-basis: 0; margin-left: 10px; padding: 10px; background-color: rgb(26, 34, 37);">
+                        <ui:Label name="assembly-text" style="white-space: normal; color: white; margin-bottom: 12px;" />
+                        <ui:Button name="assembly-install" text="장착" />
+                        <ui:Button name="assembly-dismantle" text="분해" />
+                        <ui:Label name="assembly-confirm-text" style="white-space: normal; color: rgb(255, 210, 63); margin-top: 9px;" />
+                        <ui:VisualElement name="assembly-confirm" style="flex-direction: row;">
+                            <ui:Button name="assembly-accept" text="교체" />
+                            <ui:Button name="assembly-cancel" text="취소" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

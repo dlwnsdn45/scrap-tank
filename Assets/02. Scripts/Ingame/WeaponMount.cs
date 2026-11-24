@@ -14,6 +14,14 @@ public sealed class WeaponDefinition
     [Min(0.01f)] public float projectileSpeed = 22f;
     [Min(1)] public int pellets = 6;
     [Range(0f, 180f)] public float spread = 30f;
+    [Min(0f)] public float homingTurnSpeed = 240f;
+
+    internal WeaponDefinition WithDamageMultiplier(float multiplier) => new()
+    {
+        kind = kind, damage = Mathf.CeilToInt(damage * multiplier), interval = interval,
+        range = range, arc = arc, projectileSpeed = projectileSpeed, pellets = pellets,
+        spread = spread, homingTurnSpeed = homingTurnSpeed
+    };
 
     public bool Covers(Vector2 offset, Vector2 forward)
     {
@@ -36,8 +44,22 @@ public sealed class WeaponMount
         WeaponKind.Missile => 50, WeaponKind.Drill => 60,
         WeaponKind.MachineGun => 24, WeaponKind.Harpoon => 35, _ => 30
     };
-    public void Initialize() => Hp = MaxHp;
-    public void Damage(int amount) => Hp = Mathf.Max(0, Hp - amount);
+    public void Initialize() => Initialize(1f);
+
+    internal void Initialize(float durability)
+    {
+        Hp = Mathf.RoundToInt(MaxHp * Mathf.Clamp01(durability));
+    }
+
+    public void Damage(int amount)
+    {
+        Hp = Mathf.Max(0, Hp - amount);
+    }
+
+    internal void Repair(float fraction)
+    {
+        Hp = Mathf.Min(MaxHp, Hp + Mathf.RoundToInt(MaxHp * fraction));
+    }
     float nextShot;
 
     public void Tick(Transform owner, EnemyManager enemies)
@@ -46,10 +68,10 @@ public sealed class WeaponMount
 
         Vector2 origin = owner.TransformPoint(localMuzzle);
         Vector2 forward = owner.rotation * Quaternion.Euler(0f, 0f, localAngle) * Vector3.up;
-        Enemy target = enemies.FindWeaponTarget(origin, forward, weapon);
+        CombatTarget target = enemies.FindWeaponTarget(origin, forward, weapon);
         if (!target) return;
 
         nextShot = Time.time + Mathf.Max(0.01f, weapon.interval);
-        enemies.Attack(origin, forward, (Vector2)target.transform.position - origin, weapon, false);
+        enemies.Attack(origin, forward, target.AimPoint(origin) - origin, weapon, false);
     }
 }

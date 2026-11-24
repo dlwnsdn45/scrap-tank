@@ -1,15 +1,15 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-200)]
 public class GameTimeManager : MonoBehaviour
 {
     public static GameTimeManager Instance { get; private set; }
 
+    [field: SerializeField, Min(0f)]
     public float ElapsedSeconds { get; private set; }
-    public string FormattedTime => Mathf.FloorToInt(ElapsedSeconds / 60f).ToString("00") + ":" +
-        Mathf.FloorToInt(ElapsedSeconds % 60f).ToString("00");
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
-    static void Create()
+    internal static void EnsureCreated()
     {
         if (Instance) return;
         new GameObject(nameof(GameTimeManager)).AddComponent<GameTimeManager>();

@@ -3,6 +3,8 @@ using UnityEngine;
 
 internal sealed class ProjectilePool
 {
+    internal const float MineTriggerRadius = 1f;
+    const float MineArmDelay = 0.45f;
     sealed class Shot
     {
         public LineRenderer Visual;
@@ -16,6 +18,9 @@ internal sealed class ProjectilePool
         public WeaponKind Kind;
         public Vector2 Origin;
         public float MineAge;
+        public float HomingTurnSpeed;
+        public CombatTarget Target;
+        public uint TargetVersion;
     }
 
     readonly List<Shot> active = new();
@@ -23,9 +28,19 @@ internal sealed class ProjectilePool
     readonly List<RaycastHit2D> hits = new();
     readonly Transform parent;
     readonly Material material;
+    readonly MaterialPropertyBlock projectileProperties = new();
+    static readonly int EmissionColor = Shader.PropertyToID("_EmissionColor");
     readonly Sprite mineSprite;
     readonly Sprite fallbackSprite;
     readonly Texture2D fallbackTexture;
+
+    internal void GetArmedHostileMines(List<Vector2> positions)
+    {
+        positions.Clear();
+        foreach (var shot in active)
+            if (shot.Hostile && shot.Kind == WeaponKind.Mine && shot.MineAge >= MineArmDelay)
+                positions.Add(shot.Position);
+    }
 
     public ProjectilePool(Transform parent, Sprite mineSprite = null)
     {
@@ -39,7 +54,7 @@ internal sealed class ProjectilePool
                 new Vector2(0.5f, 0.5f), 1f);
         }
         this.mineSprite = mineSprite ? mineSprite : fallbackSprite;
-        var shader = Shader.Find("Sprites/Default");
+        var shader = Resources.Load<Shader>("ProjectileBloom");
         if (shader) material = new Material(shader);
     }
 
@@ -56,10 +71,22 @@ internal sealed class ProjectilePool
         shot.Kind = weapon.kind;
         shot.Origin = origin;
         shot.MineAge = 0f;
+        shot.HomingTurnSpeed = weapon.homingTurnSpeed;
+        shot.Target = null;
+        shot.TargetVersion = 0;
+        if (shot.Kind == WeaponKind.Missile && !hostile)
+            AcquireTarget(shot);
         Color color = hostile ? Color.red : Color.yellow;
         if (shot.Kind == WeaponKind.Missile) color = new Color(1f, 0.5f, 0f);
         if (shot.Kind == WeaponKind.Harpoon) color = Color.cyan;
         shot.Visual.startColor = shot.Visual.endColor = color;
+        if (material && shot.Kind != WeaponKind.Mine)
+        {
+            var emission = Color.Lerp(color, Color.white, 0.28f) * 4f;
+            emission.a = 1f;
+            projectileProperties.SetColor(EmissionColor, emission);
+            shot.Visual.SetPropertyBlock(projectileProperties);
+        }
         shot.Visual.widthMultiplier = shot.Kind == WeaponKind.Mine || shot.Kind == WeaponKind.Missile
             ? 0.16f : 0.07f;
         bool isMine = shot.Kind == WeaponKind.Mine;
@@ -86,27 +113,34 @@ internal sealed class ProjectilePool
             {
                 shot.MineAge += deltaTime;
                 if (shot.MineAge >= 8f ||
-                    (shot.MineAge >= 0.45f && EnemyManager.Instance.TryDetonateMine(
+                    (shot.MineAge >= MineArmDelay && EnemyManager.Instance.TryDetonateMine(
                         shot.Position, shot.Damage, shot.Hostile)))
                     Recycle(i, shot);
                 continue;
             }
+            if (shot.Kind == WeaponKind.Missile) SteerMissile(shot, deltaTime);
             float step = Mathf.Min(shot.Remaining, shot.Speed * deltaTime);
             Physics2D.Raycast(shot.Position, shot.Direction, filter, hits, step);
             bool stopped = false;
             foreach (var hit in hits)
             {
+                if (hit.collider.isTrigger &&
+                    (hit.collider.GetComponentInParent<LootPickup>() || hit.collider.GetComponentInParent<RepairZone>() ||
+                     (BossEncounterController.Instance && BossEncounterController.Instance.IsExitCollider(hit.collider))))
+                    continue;
                 IDamageable target = shot.Hostile
                     ? (IDamageable)hit.collider.GetComponentInParent<PlayerController>()
-                    : hit.collider.GetComponentInParent<Enemy>();
+                    : hit.collider.GetComponentInParent<CombatTarget>();
                 if (target != null)
                 {
                     CombatParticles.Play("Impact", hit.point, -shot.Direction);
                     if (shot.Kind == WeaponKind.Missile)
                         EnemyManager.Instance.Blast(
-                            (Vector2)hit.collider.transform.position, 1.6f, shot.Damage, shot.Hostile);
+                            hit.point, 1.6f, shot.Damage, shot.Hostile);
                     else if (target is PlayerController controller)
                         controller.TakeDamage(shot.Damage, shot.Position - shot.Direction);
+                    else if (target is CombatTarget combatTarget)
+                        combatTarget.TakeDamage(new DamageHit(shot.Damage, shot.Origin, hit.point));
                     else
                         target.TakeDamage(shot.Damage);
                     if (shot.Kind == WeaponKind.Harpoon)
@@ -116,7 +150,7 @@ internal sealed class ProjectilePool
                 }
                 if ((obstacles.value & (1 << hit.collider.gameObject.layer)) != 0 &&
                     !hit.collider.GetComponentInParent<PlayerController>() &&
-                    !hit.collider.GetComponentInParent<Enemy>())
+                    !hit.collider.GetComponentInParent<CombatTarget>())
                 {
                     CombatParticles.Play("Impact", hit.point, -shot.Direction);
                     if (shot.Kind == WeaponKind.Missile)
@@ -138,9 +172,41 @@ internal sealed class ProjectilePool
 
     void Recycle(int index, Shot shot)
     {
+        shot.Target = null;
         active.RemoveAt(index);
         shot.Visual.gameObject.SetActive(false);
         free.Push(shot);
+    }
+
+    void AcquireTarget(Shot shot)
+    {
+        var manager = EnemyManager.Instance;
+        shot.Target = manager ? manager.FindMissileTarget(shot.Position, shot.Direction, shot.Remaining) : null;
+        shot.TargetVersion = shot.Target ? shot.Target.ActivationVersion : 0;
+    }
+
+    void SteerMissile(Shot shot, float deltaTime)
+    {
+        Vector2 aim;
+        if (shot.Hostile)
+        {
+            var player = EnemyManager.Instance ? EnemyManager.Instance.Player : null;
+            if (!player || !player.IsAlive) return;
+            aim = player.transform.position;
+        }
+        else
+        {
+            if (!shot.Target || !shot.Target.IsTargetable || shot.Target.ActivationVersion != shot.TargetVersion)
+                AcquireTarget(shot);
+            if (!shot.Target) return;
+            aim = shot.Target.AimPoint(shot.Position);
+        }
+        Vector2 offset = aim - shot.Position;
+        if (offset.sqrMagnitude < 0.0001f) return;
+        float turn = Mathf.Clamp(Vector2.SignedAngle(shot.Direction, offset),
+            -shot.HomingTurnSpeed * deltaTime, shot.HomingTurnSpeed * deltaTime);
+        shot.Direction = (Vector2)(Quaternion.Euler(0f, 0f, turn) * shot.Direction);
+        shot.Direction.Normalize();
     }
 
     Shot Create()

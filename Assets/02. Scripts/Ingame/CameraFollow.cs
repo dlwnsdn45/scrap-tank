@@ -7,13 +7,21 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] SpriteRenderer mapRenderer;
     [SerializeField, Min(0f)] float smoothTime = 0.12f;
+    [Header("Quick swap zoom")]
+    [SerializeField, Range(0.1f, 1f)] float swapZoomScale = 0.55f;
+    [SerializeField, Min(0.01f)] float swapZoomInDuration = 0.85f;
+    [SerializeField, Min(0.01f)] float swapZoomOutDuration = 0.22f;
+    [SerializeField, Range(1f, 6f)] float swapZoomInPower = 3f;
     Camera view;
     Vector3 followPosition;
     float shakeRemaining, shakeDuration, shakeStrength;
+    float normalOrthographicSize, zoomWeight, zoomStartWeight, zoomElapsed;
+    bool swapFocused;
 
     void Awake()
     {
         view = GetComponent<Camera>();
+        normalOrthographicSize = view.orthographicSize;
         if (!mapRenderer)
         {
             var map = GameObject.Find("20_0");
@@ -31,18 +39,57 @@ public class CameraFollow : MonoBehaviour
         followPosition = transform.position;
         if (target)
             followPosition = new Vector3(target.position.x, target.position.y, followPosition.z);
+        normalOrthographicSize = FitZoomToMap(normalOrthographicSize);
+        if (view.orthographic) view.orthographicSize = normalOrthographicSize;
         transform.position = followPosition = ClampView(followPosition);
+    }
+
+    public void SetSwapFocus(bool focused)
+    {
+        if (swapFocused == focused || !view || !view.orthographic) return;
+        if (focused && zoomWeight <= 0f) normalOrthographicSize = view.orthographicSize;
+        swapFocused = focused;
+        zoomStartWeight = zoomWeight;
+        zoomElapsed = 0f;
+    }
+
+    void UpdateSwapZoom()
+    {
+        if (!view.orthographic) return;
+        if (!swapFocused && zoomWeight <= 0f)
+        {
+            normalOrthographicSize = FitZoomToMap(view.orthographicSize);
+            view.orthographicSize = normalOrthographicSize;
+            return;
+        }
+        zoomElapsed += Time.unscaledDeltaTime;
+        float duration = swapFocused ? swapZoomInDuration : swapZoomOutDuration;
+        float t = Mathf.Clamp01(zoomElapsed / Mathf.Max(0.01f, duration));
+        float eased = swapFocused ? Mathf.Pow(t, swapZoomInPower) : 1f - Mathf.Pow(1f - t, 3f);
+        zoomWeight = Mathf.Lerp(zoomStartWeight, swapFocused ? 1f : 0f, eased);
+        view.orthographicSize = FitZoomToMap(Mathf.Lerp(normalOrthographicSize,
+            normalOrthographicSize * swapZoomScale, zoomWeight));
+    }
+
+    float FitZoomToMap(float size)
+    {
+        if (!mapRenderer) return size;
+        var extents = mapRenderer.bounds.extents;
+        return Mathf.Max(0.01f, Mathf.Min(size, extents.y, extents.x / Mathf.Max(0.01f, view.aspect)));
     }
 
     public void Shake(float strength = 0.45f, float duration = 0.25f)
     {
-        if (strength <= 0f || duration <= 0f) return;
+        if (Time.timeScale <= 0f || strength <= 0f || duration <= 0f) return;
         shakeStrength = Mathf.Max(shakeStrength, strength);
         shakeRemaining = shakeDuration = Mathf.Max(shakeRemaining, duration);
     }
 
+    public void StopShake() => shakeRemaining = shakeDuration = shakeStrength = 0f;
+
     void LateUpdate()
     {
+        UpdateSwapZoom();
         if (target)
         {
             var destination = new Vector3(target.position.x, target.position.y, followPosition.z);
@@ -50,10 +97,11 @@ public class CameraFollow : MonoBehaviour
             followPosition = Vector3.Lerp(followPosition, ClampView(destination), blend);
         }
         Vector2 offset = Vector2.zero;
+        if (Time.timeScale <= 0f) StopShake();
         if (shakeRemaining > 0f)
         {
             offset = Random.insideUnitCircle * (shakeStrength * shakeRemaining / shakeDuration);
-            shakeRemaining = Mathf.Max(0f, shakeRemaining - Time.deltaTime);
+            shakeRemaining = Mathf.Max(0f, shakeRemaining - Time.unscaledDeltaTime);
         }
         else shakeStrength = 0f;
         transform.position = ClampView(followPosition + (Vector3)offset);
@@ -62,8 +110,6 @@ public class CameraFollow : MonoBehaviour
     Vector3 ClampView(Vector3 position)
     {
         if (!mapRenderer || !view.orthographic) return position;
-        var size = mapRenderer.bounds.extents;
-        view.orthographicSize = Mathf.Min(view.orthographicSize, size.y, size.x / view.aspect);
         return ClampToMap(position, new Vector2(view.orthographicSize * view.aspect, view.orthographicSize));
     }
 
@@ -78,9 +124,18 @@ public class CameraFollow : MonoBehaviour
         return position;
     }
 
+    internal bool TryGetMapBounds(out Bounds bounds)
+    {
+        bounds = mapRenderer ? mapRenderer.bounds : default;
+        return mapRenderer;
+    }
+
     void OnDisable()
     {
-        shakeRemaining = shakeStrength = 0f;
-        transform.position = followPosition;
+        StopShake();
+        swapFocused = false;
+        zoomWeight = zoomStartWeight = zoomElapsed = 0f;
+        if (view && view.orthographic) view.orthographicSize = FitZoomToMap(normalOrthographicSize);
+        transform.position = ClampView(followPosition);
     }
 }

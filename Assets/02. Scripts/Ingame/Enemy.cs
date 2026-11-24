@@ -2,7 +2,7 @@ using UnityEngine;
 
 public interface IDamageable { void TakeDamage(int dmg); }
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : CombatTarget
 {
     public int maxHp = 10;
     public float speed = 2f;
@@ -11,7 +11,13 @@ public class Enemy : MonoBehaviour, IDamageable
     internal Vector2 knockbackVelocity;
     internal float knockbackRemaining;
     internal WeaponDefinition weapon;
+    internal float AttackAt { get; set; }
+    internal Vector2 AttackDirection { get; set; }
     int hp;
+    int spawnMaxHp;
+    internal float DamageMultiplier { get; private set; } = 1f;
+    public override bool IsTargetable => isActiveAndEnabled && hp > 0;
+    internal float HealthFraction => (float)hp / Mathf.Max(1, spawnMaxHp);
     ParticleSystem movementDust;
     Vector2 previousPosition;
 
@@ -24,8 +30,9 @@ public class Enemy : MonoBehaviour, IDamageable
         movementDust.Play();
     }
 
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         previousPosition = transform.position;
         if (!movementDust) return;
         movementDust.Clear();
@@ -45,8 +52,9 @@ public class Enemy : MonoBehaviour, IDamageable
         previousPosition = position;
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         CombatParticles.ClearJam(transform);
         if (movementDust)
             movementDust.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
@@ -61,13 +69,19 @@ public class Enemy : MonoBehaviour, IDamageable
     }
 
     public void Init()
+        => InitScaled(1f, 1f);
+
+    internal void InitScaled(float healthMultiplier, float damageMultiplier)
     {
-        hp = maxHp;
+        spawnMaxHp = Mathf.Max(1, Mathf.CeilToInt(maxHp * healthMultiplier));
+        hp = spawnMaxHp;
+        DamageMultiplier = damageMultiplier;
         nextAttack = 0f;
+        AttackAt = 0f;
         knockbackRemaining = 0f;
     }
 
-    public void TakeDamage(int dmg)
+    public override void TakeDamage(int dmg)
     {
         if (hp <= 0 || dmg <= 0) return;
         hp -= dmg;
