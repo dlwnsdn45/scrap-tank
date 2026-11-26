@@ -12865,6 +12865,8 @@ MonoBehaviour:
   - {fileID: 1910000500}
   - {fileID: 1910000600}
   - {fileID: 1950005000}
+  tankFireClip: {fileID: 8300000, guid: 08dedc1031634778acf6c1193b174479, type: 3}
+  tankFireVolume: 0.5
 --- !u!114 &1980001000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12934,6 +12936,11 @@ MonoBehaviour:
   trackTexture: {fileID: 2800000, guid: c31fc1dad0c0451aaf3f6b578a76f13d, type: 3}
   scrollSpeed: 95
   shakeAmount: 1.5
+  muzzleTexture: {fileID: 2800000, guid: e1f130af5ab8453cbdb448c1d0d1eba3, type: 3}
+  settingsPanel: {fileID: 1323909296}
+  titleAudio: {fileID: 1980000900}
+  fireInterval: 0.5
+  recoilDistance: 14
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

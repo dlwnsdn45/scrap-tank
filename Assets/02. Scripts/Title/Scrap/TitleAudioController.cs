@@ -9,6 +9,8 @@ public class TitleAudioController : MonoBehaviour
     [SerializeField] private AudioClip bgmClip;
     [SerializeField] private AudioClip engineClip;
     [SerializeField] private AudioClip sandClip;
+    [SerializeField] private AudioClip tankFireClip;
+    [SerializeField, Range(0f, 1f)] private float tankFireVolume = 0.5f;
     [SerializeField, Range(0f, 1f)] private float drivingVolume = 0.45f;
     [SerializeField, Range(0f, 1f)] private float bgmVolume = 0.55f;
     [SerializeField, Range(0f, 1f)] private float fileSelectedVolume = 0.35f;
@@ -67,6 +69,14 @@ public class TitleAudioController : MonoBehaviour
 
     // 파일 선택 확정음 예약
     public void PlayFileSelected() => fileSelected = true;
+
+    // 전체 음향과 효과음 설정을 반영한 발사음
+    public void PlayTankFire()
+    {
+        if (!isActiveAndEnabled || source == null || tankFireClip == null) return;
+        source.volume = ChannelVolume(2);
+        source.PlayOneShot(tankFireClip, tankFireVolume);
+    }
 
     // 같은 클릭의 패널 열림음과 버튼음 중복 방지
     private void LateUpdate()

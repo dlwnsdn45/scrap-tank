@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public sealed class TitleBackgroundController : MonoBehaviour
@@ -8,6 +9,12 @@ public sealed class TitleBackgroundController : MonoBehaviour
     [SerializeField] private Sprite tankSprite;
     [SerializeField] private Texture2D dustTexture;
     [SerializeField] private Texture2D trackTexture;
+    [Header("클릭 발사")]
+    [SerializeField] private Texture2D muzzleTexture;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private TitleAudioController titleAudio;
+    [SerializeField, Min(0.1f)] private float fireInterval = 0.5f;
+    [SerializeField, Min(0f)] private float recoilDistance = 14f;
     [Header("주행 연출")]
     [SerializeField, Min(0f)] private float scrollSpeed = 95f;
     [SerializeField, Range(0f, 5f)] private float shakeAmount = 1.5f;
@@ -18,6 +25,8 @@ public sealed class TitleBackgroundController : MonoBehaviour
     private readonly RawImage[] tracks = new RawImage[16];
     private Vector2 previousSize;
     private float distance, elapsed;
+    private RawImage muzzle;
+    private float lastShot = -100f;
 
     // 기존 메뉴 뒤에 배경과 주행 오브젝트 구성
     private void Awake()
@@ -45,9 +54,32 @@ public sealed class TitleBackgroundController : MonoBehaviour
         tank.sizeDelta = new Vector2(310, 645);
         tankImage.sprite = tankSprite;
         tankImage.preserveAspect = true;
-        tankImage.raycastTarget = false;
+        tankImage.raycastTarget = true;
+        var trigger = tank.gameObject.AddComponent<EventTrigger>();
+        var click = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
+        click.callback.AddListener(data =>
+        {
+            if (data is PointerEventData pointer && pointer.button == PointerEventData.InputButton.Left) Fire();
+        });
+        trigger.triggers.Add(click);
+        muzzle = Picture("Muzzle Flash", tank, muzzleTexture);
+        muzzle.rectTransform.pivot = new Vector2(0.5f, 0.2f);
+        muzzle.rectTransform.anchoredPosition = new Vector2(0, tank.sizeDelta.y * 0.5f - 13f);
+        muzzle.rectTransform.sizeDelta = Vector2.one * 110f;
+        muzzle.enabled = false;
 
         Layout();
+    }
+
+    // 패널과 씬 전환 중 발사 차단
+    private void Fire()
+    {
+        if (!isActiveAndEnabled || !Application.isFocused ||
+            (settingsPanel != null && settingsPanel.activeInHierarchy) ||
+            ScrapSceneTransition.IsTransitioning || SceneFadeController.IsTransitioning ||
+            Time.unscaledTime - lastShot < fireInterval) return;
+        lastShot = Time.unscaledTime;
+        if (titleAudio != null) titleAudio.PlayTankFire();
     }
 
     private static RawImage Picture(string label, Transform parent, Texture texture)
@@ -84,6 +116,13 @@ public sealed class TitleBackgroundController : MonoBehaviour
         }
         tank.anchoredPosition = new Vector2(Mathf.Sin(elapsed * 2.1f) * shakeAmount, 80 + Mathf.Sin(elapsed * 18) * shakeAmount);
         tank.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(elapsed * 2.4f) * shakeAmount * 0.35f);
+        // 짧은 섬광과 주행 흔들림에 더하는 반동
+        float shotAge = Time.unscaledTime - lastShot;
+        float recoil = shotAge < 0.06f ? Mathf.Clamp01(shotAge / 0.06f)
+            : 1f - Mathf.SmoothStep(0f, 1f, (shotAge - 0.06f) / 0.24f);
+        tank.anchoredPosition += Vector2.down * (recoil * recoilDistance);
+        muzzle.enabled = muzzleTexture != null && shotAge < 0.1f;
+        if (muzzle.enabled) muzzle.color = new Color(1f, 1f, 1f, 1f - shotAge / 0.1f);
         for (int i = 0; i < tracks.Length; i++)
         {
             float age = Mathf.Repeat(distance / 380f + i / 2 * 0.125f, 1f);
