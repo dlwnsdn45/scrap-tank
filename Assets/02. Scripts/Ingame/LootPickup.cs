@@ -12,6 +12,7 @@ public class LootPickup : MonoBehaviour
     internal float Durability { get; private set; }
     internal bool IsAvailable => isActiveAndEnabled && Time.time < expires;
     internal bool CanAutoEquip => IsAvailable && Time.time >= availableAt;
+    internal bool TutorialPickup { get; private set; }
 
     internal bool IsInReach(bool swapping = false) =>
         IsAvailable && player && player.Overlaps(swapping ? outerTrigger : pickupTrigger);
@@ -22,7 +23,7 @@ public class LootPickup : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public static void Drop(Vector2 position, PlayerController player, int scrap, WeaponKind? part = null,
+    public static LootPickup Drop(Vector2 position, PlayerController player, int scrap, WeaponKind? part = null,
         float durability = 1f, bool ejected = false)
     {
         Vector3 spawnPosition = new(position.x, position.y, -0.2f);
@@ -31,14 +32,17 @@ public class LootPickup : MonoBehaviour
             : CreateDefault(spawnPosition, part.HasValue);
         pickup.name = part.HasValue ? part.Value + " Pickup" : "Scrap Pickup";
         pickup.player = player;
+        pickup.TutorialPickup = SaveTutorialSession.Active;
         pickup.part = part;
         pickup.Durability = Mathf.Clamp01(durability);
         pickup.scrap = part.HasValue ? WeaponLayout.ScrapValue(part.Value) : scrap;
         pickup.availableAt = Time.time + (ejected ? 1.5f : 0f);
-        pickup.expires = Time.time + (part.HasValue ? 30f : 60f);
+        // Practice items must not expire while the player is reading a lesson.
+        pickup.expires = SaveTutorialSession.Active ? float.PositiveInfinity : Time.time + (part.HasValue ? 30f : 60f);
         if (!pickup.pickupTrigger) pickup.pickupTrigger = pickup.CreateTrigger(part.HasValue ? 2f : 0.6f);
         if (!pickup.outerTrigger) pickup.outerTrigger = pickup.CreateTrigger(part.HasValue ? 2.6f : 3f);
         if (part.HasValue && player) player.TrackPart(pickup);
+        return pickup;
     }
 
     static LootPickup CreateDefault(Vector3 position, bool isWeapon)
@@ -76,7 +80,7 @@ public class LootPickup : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        if (part.HasValue || !player || !player.IsAlive) return;
+        if (part.HasValue || !player || !player.IsAlive || !IngameTutorial.Allows(TutorialAction.Collect)) return;
         if (player.Overlaps(pickupTrigger))
         {
             player.AddScrap(scrap);

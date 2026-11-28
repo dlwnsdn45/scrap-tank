@@ -12540,7 +12540,7 @@ MonoBehaviour:
     weld: {fileID: 8300000, guid: dfba13b9d55744f4f9d93f81b05221e2, type: 3}
     release: {fileID: 8300000, guid: 76261266132659c40bdd8543d673bbb4, type: 3}
     ting: {fileID: 8300000, guid: 6ee97708d14756d45b268c5c295175af, type: 3}
-  sceneName: Tutorial
+  sceneName: Ingame
 --- !u!1 &1970000000
 GameObject:
   m_ObjectHideFlags: 0

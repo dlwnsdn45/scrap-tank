@@ -1,67 +1,89 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using static IngameUIStyle;
 
 internal sealed class PauseScreen
 {
-    readonly VisualElement overlay, card;
-    bool visible;
+    readonly VisualElement overlay, card, menu, settings;
+    readonly PlayerController player;
+    bool visible, settingsOpen;
 
-    internal PauseScreen(VisualElement parent)
+    internal PauseScreen(VisualElement parent, PlayerController player)
     {
-        parent.Q("pause-menu")?.RemoveFromHierarchy();
-        overlay = new VisualElement { name = "pause-menu", pickingMode = PickingMode.Position };
-        overlay.style.position = Position.Absolute;
-        overlay.StretchToParentSize();
-        overlay.style.alignItems = Align.Center;
-        overlay.style.justifyContent = Justify.Center;
-        overlay.style.backgroundColor = new Color(.02f, .03f, .04f, .8f);
-        parent.Add(overlay);
-        card = new VisualElement();
-        card.style.width = 360;
-        card.style.height = 370;
-        card.style.flexShrink = 0;
-        card.style.paddingLeft = card.style.paddingRight = 32;
-        card.style.paddingTop = card.style.paddingBottom = 24;
-        card.style.backgroundColor = new Color(.13f, .15f, .16f);
-        overlay.Add(card);
-        var title = new Label("일시정지");
-        title.style.color = new Color(.15f, .72f, .65f);
-        title.style.fontSize = 34;
-        title.style.unityFontStyleAndWeight = FontStyle.Bold;
-        title.style.unityTextAlign = TextAnchor.MiddleCenter;
-        title.style.marginBottom = 24;
-        card.Add(title);
-        foreach (string label in new[] { "설정", "다시 시작", "나가기" })
-        {
-            // Menu contents are presentation only, as requested. Escape handles dismissal.
-            var button = new Button { text = label, focusable = false };
-            button.style.height = 46;
-            button.style.marginBottom = 10;
-            button.style.backgroundColor = new Color(.22f, .25f, .27f);
-            button.style.color = Color.white;
-            button.style.fontSize = 20;
-            card.Add(button);
-        }
-        var hint = new Label("Esc를 눌러 계속하기");
-        hint.style.color = new Color(.76f, .75f, .72f);
-        hint.style.unityTextAlign = TextAnchor.MiddleCenter;
-        hint.style.marginTop = 12;
-        card.Add(hint);
-        overlay.RegisterCallback<GeometryChangedEvent>(_ =>
-        {
-            if (overlay.panel == null) return;
-            float scale = Mathf.Min((overlay.layout.width - 24f) / 360f, (overlay.layout.height - 24f) / 370f);
-            card.style.scale = new Scale(Vector3.one * Mathf.Clamp(scale, .1f, 1f));
-        });
+        this.player = player;
+        overlay = parent.Q("pause-menu");
+        card = overlay.Q("pause-card");
+        menu = overlay.Q("pause-actions");
+        settings = overlay.Q("settings-panel");
+        overlay.Q<Button>("pause-close").clicked += Resume;
+        overlay.Q<Button>("pause-resume").clicked += Resume;
+        overlay.Q<Button>("pause-restart").clicked += () => Navigate(player.gameObject.scene.path);
+        overlay.Q<Button>("pause-settings").clicked += () => ShowSettings(true);
+        overlay.Q<Button>("pause-quit").clicked += () => Navigate("Assets/00. Scenes/Title.unity");
+        overlay.Q<Button>("settings-close").clicked += CloseSettingsButton;
+        overlay.Q<Button>("settings-back").clicked += CloseSettingsButton;
+        var volume = overlay.Q<Slider>("settings-volume");
+        var volumeValue = overlay.Q<Label>("settings-volume-value");
+        volume.SetValueWithoutNotify(AudioListener.volume);
+        volumeValue.text = $"{AudioListener.volume:P0}";
+        volume.RegisterValueChangedCallback(e => { AudioListener.volume = e.newValue; volumeValue.text = $"{e.newValue:P0}"; });
+        var shake = overlay.Q<Slider>("settings-shake");
+        var shakeValue = overlay.Q<Label>("settings-shake-value");
+        shake.SetValueWithoutNotify(IngamePreferences.Shake);
+        shakeValue.text = $"{IngamePreferences.Shake:P0}";
+        shake.RegisterValueChangedCallback(e => { IngamePreferences.SetShake(e.newValue); shakeValue.text = $"{e.newValue:P0}"; });
+        var lowFlash = overlay.Q<Toggle>("settings-low-flash");
+        lowFlash.SetValueWithoutNotify(IngamePreferences.LowFlash);
+        lowFlash.RegisterValueChangedCallback(e => IngamePreferences.SetLowFlash(e.newValue));
+        ShowSettings(false);
+        overlay.RegisterCallback<GeometryChangedEvent>(_ => Fit(overlay, card, 580, 350));
         overlay.style.display = DisplayStyle.None;
+    }
+
+    void Navigate(string path)
+    {
+        if (SaveTutorialSession.Active) return;
+        if (!Application.CanStreamedLevelBeLoaded(path)) { Debug.LogWarning("Scene is not in the build list: " + path); return; }
+        player.SetPauseOpen(false);
+        LoadScene(path);
+    }
+
+    void Resume()
+    {
+        if (IngameTutorial.Allows(TutorialAction.PauseClose)) player.SetPauseOpen(false);
+    }
+
+    void CloseSettingsButton() => CloseSettings();
+    void ShowSettings(bool show)
+    {
+        if (show && !IngameTutorial.Allows(TutorialAction.SettingsOpen)) return;
+        settingsOpen = show;
+        menu.style.display = show ? DisplayStyle.None : DisplayStyle.Flex;
+        settings.style.display = show ? DisplayStyle.Flex : DisplayStyle.None;
+    }
+
+    internal bool CloseSettings()
+    {
+        if (!settingsOpen) return false;
+        if (IngameTutorial.Allows(TutorialAction.SettingsClose)) ShowSettings(false);
+        return true;
     }
 
     internal void SetVisible(bool show)
     {
+        bool practice = SaveTutorialSession.Active;
+        overlay.Q<Button>("pause-restart").SetEnabled(!practice);
+        overlay.Q<Button>("pause-quit").SetEnabled(!practice);
+        overlay.Q<Button>("pause-resume").SetEnabled(IngameTutorial.Allows(TutorialAction.PauseClose));
+        overlay.Q<Button>("pause-close").SetEnabled(IngameTutorial.Allows(TutorialAction.PauseClose));
+        overlay.Q<Button>("pause-settings").SetEnabled(IngameTutorial.Allows(TutorialAction.SettingsOpen));
+        overlay.Q<Button>("settings-back").SetEnabled(IngameTutorial.Allows(TutorialAction.SettingsClose));
+        overlay.Q<Button>("settings-close").SetEnabled(IngameTutorial.Allows(TutorialAction.SettingsClose));
         if (visible == show) return;
         visible = show;
         if (overlay.panel == null) return;
+        ShowSettings(false);
         overlay.style.display = show ? DisplayStyle.Flex : DisplayStyle.None;
-        if (show) overlay.BringToFront();
+        if (show) { overlay.BringToFront(); Fit(overlay, card, 580, 350); }
     }
 }

@@ -4,11 +4,11 @@ using UnityEngine.UIElements;
 
 internal sealed class AssemblyScreen
 {
-    static readonly Color Ink = new(.13f, .15f, .16f);
-    static readonly Color Muted = new(.43f, .44f, .45f);
-    static readonly Color Paper = new(.94f, .91f, .85f);
-    static readonly Color Gold = new(.96f, .77f, .15f);
-    static readonly Color Teal = new(.15f, .62f, .56f);
+    static readonly Color Ink = IngameUIStyle.Ink;
+    static readonly Color Muted = IngameUIStyle.Muted;
+    static readonly Color Paper = new Color32(220, 207, 178, 255);
+    static readonly Color Gold = IngameUIStyle.Gold;
+    static readonly Color Teal = IngameUIStyle.Teal;
     static readonly Vector2[] SlotPositions =
     {
         new(240, 60), new(306, 60), new(374, 140), new(374, 222),
@@ -31,43 +31,32 @@ internal sealed class AssemblyScreen
     {
         this.overlay = overlay;
         this.player = player;
-        overlay.Clear();
-        overlay.pickingMode = PickingMode.Position;
-        overlay.style.backgroundColor = new Color(.03f, .05f, .06f, .78f);
-        panel = new VisualElement { name = "assembly-panel" };
-        panel.style.width = 960;
-        panel.style.height = 540;
-        panel.style.flexShrink = 0;
-        panel.style.backgroundColor = Paper;
-        Border(panel, Ink, 2, 0);
-        overlay.Add(panel);
+        panel = overlay.Q("assembly-panel");
+        board = overlay.Q("assembly-board");
+        healthFill = overlay.Q("assembly-health-fill");
+        confirm = overlay.Q("assembly-confirm");
+        scrap = overlay.Q<Label>("assembly-scrap");
+        title = overlay.Q<Label>("assembly-title");
+        side = overlay.Q<Label>("assembly-side");
+        condition = overlay.Q<Label>("assembly-condition");
+        health = overlay.Q<Label>("assembly-health");
+        damage = overlay.Q<Label>("assembly-damage");
+        interval = overlay.Q<Label>("assembly-interval");
+        range = overlay.Q<Label>("assembly-range");
+        nearby = overlay.Q<Label>("assembly-nearby");
+        footer = overlay.Q<Label>("assembly-footer");
+        confirmText = overlay.Q<Label>("assembly-confirm-text");
+        ghost = overlay.Q<Label>("assembly-ghost");
+        pairing = overlay.Q<Label>("assembly-pairing");
+        install = overlay.Q<Button>("assembly-install");
+        dismantle = overlay.Q<Button>("assembly-dismantle");
+        overlay.Q<Button>("assembly-close").clicked += close;
         overlay.RegisterCallback<GeometryChangedEvent>(_ => Resize());
-
-        var header = Box(panel, 0, 0, 956, 60, Ink);
-        Text(header, "조립", 30, 12, 100, 36, 25, Color.white, true);
-        var pause = Text(header, "전투 정지 중", 388, 12, 176, 36, 17, Ink);
-        pause.style.backgroundColor = Gold;
-        pause.style.unityTextAlign = TextAnchor.MiddleCenter;
-        Round(pause, 20);
-        scrap = Text(header, "", 730, 12, 155, 36, 21, Gold, true);
-        scrap.style.unityTextAlign = TextAnchor.MiddleRight;
-        var closeButton = ActionButton(header, "×", 900, 10, 40, 40, Ink, Color.white);
-        closeButton.clicked += close;
-        closeButton.tooltip = "닫기 [Tab / Esc]";
-
-        board = Box(panel, 0, 60, 624, 424, Color.clear);
         board.generateVisualContent += DrawBoard;
-        pairing = Text(board, "", 28, 18, 340, 28, 16, Teal);
-        var body = Box(board, 242, 126, 120, 170, Teal);
-        Border(body, new Color(.12f, .48f, .44f), 2, 12);
-        Text(board, "▲ 앞", 380, 82, 75, 24, 15, Muted);
         for (int i = 0; i < slots.Length; i++)
         {
             int index = i;
-            Vector2 p = SlotPositions[i];
-            var slot = ActionButton(board, "", p.x, p.y, 58, 58, Color.white, Ink);
-            slot.style.fontSize = 13;
-            slot.style.whiteSpace = WhiteSpace.Normal;
+            var slot = overlay.Q<Button>($"slot-{i}");
             slot.RegisterCallback<PointerDownEvent>(e => BeginDrag(e, index), TrickleDown.TrickleDown);
             slot.RegisterCallback<PointerMoveEvent>(MoveDrag, TrickleDown.TrickleDown);
             slot.RegisterCallback<PointerUpEvent>(EndDrag, TrickleDown.TrickleDown);
@@ -75,26 +64,6 @@ internal sealed class AssemblyScreen
             slot.clicked += () => Select(index);
             slots[i] = slot;
         }
-        footer = Text(panel, "", 30, 490, 890, 32, 15, Muted);
-
-        var details = Box(panel, 650, 84, 284, 438, Color.white);
-        Border(details, new Color(.85f, .77f, .59f), 2, 9);
-        title = Text(details, "", 20, 14, 240, 34, 25, Ink, true);
-        side = Text(details, "", 20, 52, 240, 24, 16, Muted);
-        condition = Text(details, "", 170, 82, 90, 22, 13, Muted);
-        condition.style.unityTextAlign = TextAnchor.MiddleRight;
-        var healthTrack = Box(details, 20, 88, 140, 14, Paper);
-        Round(healthTrack, 8);
-        healthFill = Box(healthTrack, 0, 0, 140, 14, Teal);
-        Round(healthFill, 8);
-        health = Text(details, "", 20, 110, 240, 24, 14, Muted);
-        damage = Stat(details, "피해", 150);
-        interval = Stat(details, "연사", 192);
-        range = Stat(details, "사거리", 234);
-        nearby = Text(details, "", 20, 274, 240, 54, 14, Muted);
-        nearby.style.whiteSpace = WhiteSpace.Normal;
-        install = ActionButton(details, "", 20, 340, 240, 40, Gold, Ink);
-        dismantle = ActionButton(details, "", 20, 388, 240, 40, Color.white, Ink);
         install.clicked += Install;
         dismantle.clicked += () =>
         {
@@ -103,28 +72,16 @@ internal sealed class AssemblyScreen
             notice = "분해 완료 · 고철을 회수했습니다";
             Refresh();
         };
-
-        confirm = Box(details, 10, 266, 260, 164, Paper);
-        Border(confirm, Gold, 2, 8);
-        confirmText = Text(confirm, "", 12, 10, 236, 88, 15, Ink);
-        confirmText.style.whiteSpace = WhiteSpace.Normal;
-        var accept = ActionButton(confirm, "교체", 12, 110, 112, 40, Gold, Ink);
-        var cancel = ActionButton(confirm, "취소", 134, 110, 112, 40, Color.white, Ink);
-        accept.clicked += () =>
+        overlay.Q<Button>("assembly-accept").clicked += () =>
         {
             notice = pendingPart && player.InstallFromAssembly(pendingSlot, pendingPart) ? "교체 완료" : "교체할 부품을 다시 선택하세요";
             pendingPart = null;
             Refresh();
         };
-        cancel.clicked += () => { pendingPart = null; Refresh(); };
+        overlay.Q<Button>("assembly-cancel").clicked += () => { pendingPart = null; Refresh(); };
         confirm.style.display = DisplayStyle.None;
-        ghost = Text(panel, "", 0, 0, 110, 46, 15, Ink, true);
-        ghost.style.backgroundColor = Gold;
-        ghost.style.unityTextAlign = TextAnchor.MiddleCenter;
-        Border(ghost, Ink, 2, 7);
         ghost.style.display = DisplayStyle.None;
     }
-
     internal void Reset()
     {
         CancelDrag();
@@ -152,12 +109,13 @@ internal sealed class AssemblyScreen
         float width = overlay.layout.width;
         float height = overlay.layout.height;
         if (float.IsNaN(width) || float.IsNaN(height) || width <= 0 || height <= 0) return;
-        float scale = Mathf.Min(1f, (width - 24f) / 960f, (height - 24f) / 540f);
+        float scale = Mathf.Min((width - 24f) / 960f, (height - 24f) / 540f);
         panel.style.scale = new Scale(Vector3.one * Mathf.Max(.1f, scale));
     }
 
     void Select(int slot)
     {
+        if (SaveTutorialSession.Active && (IngameTutorial.CurrentStep != TutorialStep.AssemblyMove || player.Layout.MountAt(slot)?.weapon == null)) return;
         selected = slot;
         pendingPart = null;
         notice = null;
@@ -174,12 +132,14 @@ internal sealed class AssemblyScreen
         for (int i = 0; i < slots.Length; i++)
         {
             var item = layout.MountAt(i);
+            slots[i].SetEnabled(!SaveTutorialSession.Active ||
+                (IngameTutorial.CurrentStep == TutorialStep.AssemblyMove && item?.weapon != null));
             bool open = layout.IsOpenSlot(i);
             int unlock = layout.UnlockTime(i);
             slots[i].text = !open ? $"{unlock / 60}:{unlock % 60:00}" : item?.weapon == null ? "+" :
                 ShortName(item.weapon.kind) + (item.Hp <= 0 ? "\n꺼짐" : "");
-            slots[i].style.backgroundColor = !open ? Color.clear : item?.Hp <= 0 ? new Color(.79f, .78f, .74f) : Color.white;
-            slots[i].style.color = open ? Ink : Muted;
+            slots[i].style.backgroundColor = !open ? Color.clear : item?.Hp <= 0 ? new Color(.45f, .3f, .25f) : IngameUIStyle.Raised;
+            slots[i].style.color = open ? Color.white : new Color(.35f, .35f, .35f);
             bool highlight = i == selected || i == partner;
             Border(slots[i], i == hover && dragging ? Teal : highlight ? Gold : Ink, open ? highlight ? 4 : 2 : 0, 7);
             slots[i].tooltip = open ? $"{SideNames[i]} · 클릭: 선택 / 드래그: 이동" : $"{unlock / 60}:{unlock % 60:00}에 열림";
@@ -200,9 +160,10 @@ internal sealed class AssemblyScreen
         nearby.text = part ? $"주변 부품: {IngameUIBinder.NameOf(part.Kind)} · {part.Durability:P0}\n" +
             (compatible ? "선택한 슬롯에 장착할 수 있습니다" : "이 슬롯에는 장착할 수 없습니다") : "장착할 부품이 주변에 없습니다";
         install.text = part ? layout.TargetIsEmpty(part.Kind, selected) ? "장착" : "교체" : "주변 부품 없음";
-        install.SetEnabled(compatible);
+        install.SetEnabled(compatible && IngameTutorial.Allows(TutorialAction.AssemblyInstall));
         dismantle.text = occupied ? $"분해  (고철 +{WeaponLayout.ScrapValue(mount.weapon.kind)})" : "분해";
-        dismantle.SetEnabled(occupied);
+        dismantle.SetEnabled(occupied && IngameTutorial.Allows(TutorialAction.AssemblyDismantle));
+        overlay.Q<Button>("assembly-close").SetEnabled(IngameTutorial.Allows(TutorialAction.AssemblyClose));
         if (pendingPart && (pendingPart != part || !pendingPart.IsInReach())) pendingPart = null;
         confirm.style.display = pendingPart ? DisplayStyle.Flex : DisplayStyle.None;
         footer.text = notice ?? "클릭: 선택   ·   드래그: 칸 이동   ·   Tab / Esc: 닫기";
@@ -212,6 +173,7 @@ internal sealed class AssemblyScreen
 
     void Install()
     {
+        if (!IngameTutorial.Allows(TutorialAction.AssemblyInstall)) return;
         var part = player.AssemblyPart;
         if (!part || !player.Layout.CanInstall(selected, part.Kind)) return;
         if (player.Layout.TargetIsEmpty(part.Kind, selected))
@@ -234,6 +196,7 @@ internal sealed class AssemblyScreen
     {
         if (e.button != 0) return;
         Select(slot);
+        if (!IngameTutorial.Allows(TutorialAction.AssemblyMove)) return;
         capturedSlot = slot;
         pointerId = e.pointerId;
         dragSource = player.Layout.MountAt(slot)?.weapon != null ? slot : -1;
@@ -361,60 +324,6 @@ internal sealed class AssemblyScreen
         WeaponKind.Flamethrower => "화염", WeaponKind.Missile => "미사일", WeaponKind.Mine => "지뢰",
         _ => IngameUIBinder.NameOf(kind)
     };
-
-    static Label Stat(VisualElement parent, string name, float top)
-    {
-        Text(parent, name, 20, top, 115, 28, 19, Muted);
-        var value = Text(parent, "", 136, top, 124, 28, 19, Ink, true);
-        value.style.unityTextAlign = TextAnchor.MiddleRight;
-        return value;
-    }
-
-    static VisualElement Box(VisualElement parent, float x, float y, float width, float height, Color color)
-    {
-        var element = new VisualElement { pickingMode = PickingMode.Ignore };
-        Place(element, x, y, width, height);
-        element.style.backgroundColor = color;
-        parent.Add(element);
-        return element;
-    }
-
-    static Label Text(VisualElement parent, string text, float x, float y, float width, float height, int size, Color color, bool bold = false)
-    {
-        var label = new Label(text) { pickingMode = PickingMode.Ignore };
-        Place(label, x, y, width, height);
-        label.style.fontSize = size;
-        label.style.color = color;
-        label.style.unityTextAlign = TextAnchor.MiddleLeft;
-        if (bold) label.style.unityFontStyleAndWeight = FontStyle.Bold;
-        parent.Add(label);
-        return label;
-    }
-
-    static Button ActionButton(VisualElement parent, string text, float x, float y, float width, float height, Color background, Color color)
-    {
-        var button = new Button { text = text };
-        Place(button, x, y, width, height);
-        button.style.backgroundColor = background;
-        button.style.color = color;
-        button.style.fontSize = 18;
-        button.style.unityFontStyleAndWeight = FontStyle.Bold;
-        button.style.unityTextAlign = TextAnchor.MiddleCenter;
-        Border(button, Ink, 2, 8);
-        parent.Add(button);
-        return button;
-    }
-
-    static void Place(VisualElement element, float x, float y, float width, float height)
-    {
-        element.style.position = Position.Absolute;
-        element.style.left = x;
-        element.style.top = y;
-        element.style.width = width;
-        element.style.height = height;
-        element.style.marginLeft = element.style.marginRight = element.style.marginTop = element.style.marginBottom = 0;
-        element.style.paddingLeft = element.style.paddingRight = element.style.paddingTop = element.style.paddingBottom = 0;
-    }
 
     static void Border(VisualElement element, Color color, float width, float radius)
     {

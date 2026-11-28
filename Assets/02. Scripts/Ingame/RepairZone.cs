@@ -24,6 +24,7 @@ public class RepairZone : MonoBehaviour
     [SerializeField] CircleCollider2D outerTrigger, innerTrigger;
 
     public int ScrapCost => player ? player.RepairCost : 12;
+    internal bool TutorialZone { get; set; }
     internal float Progress => Mathf.Clamp01(heldTime / HoldDuration);
     internal string Notice => Time.unscaledTime < noticeUntil ? notice : null;
     public float CooldownRemaining => Mathf.Max(0f, readyAt - Time.time);
@@ -77,6 +78,7 @@ public class RepairZone : MonoBehaviour
         float best = float.PositiveInfinity;
         foreach (var zone in ActiveZones)
         {
+            if (SaveTutorialSession.Active && !zone.TutorialZone) continue;
             if (zone.player != controller || !controller.Overlaps(zone.outerTrigger)) continue;
             float distance = zone.DistanceSquared(controller.transform.position);
             if (distance > best || (nearest && distance == best)) continue;
@@ -88,6 +90,7 @@ public class RepairZone : MonoBehaviour
 
     void LateUpdate()
     {
+        if (SaveTutorialSession.Active && !TutorialZone) return;
         if (readyAt > 0f && CooldownRemaining <= 0f)
         {
             Relocate();

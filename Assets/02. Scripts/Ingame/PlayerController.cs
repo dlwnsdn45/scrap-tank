@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     Collider2D playerCollider;
     Vector2 moveInput;
     bool interactHeld;
+    PlayerInput playerInput;
     InputAction interactAction;
     readonly HashSet<LootPickup> parts = new();
     internal const float SwapDuration = 2f;
@@ -56,6 +57,14 @@ public class PlayerController : MonoBehaviour, IDamageable
     internal float MoveSpeed => speed;
     internal float BoostSpeed => speed * boostMultiplier;
     internal float BaseBoostCooldown => boostCooldown;
+    internal uint BoostVersion { get; private set; }
+    internal uint InstallVersion { get; private set; }
+    internal uint AssemblyMoveVersion { get; private set; }
+    internal uint DismantleVersion { get; private set; }
+    internal uint FieldRepairVersion { get; private set; }
+    internal uint StationRepairVersion { get; private set; }
+    internal bool MovementPressed => moveInput.sqrMagnitude > .01f;
+    internal float BoostReadyFraction => boostCooldown <= 0f ? 1f : Mathf.Clamp01(1f - (nextBoostTime - Time.time) / boostCooldown);
     internal Collider2D BodyCollider => playerCollider;
     internal WeaponLayout Layout => weaponLayout;
     internal LootPickup HudPart => swapPart ? swapPart : IsAlive ? FindNearbyPart(false, out _) : null;
@@ -72,7 +81,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     internal int HudSwapSlot => swapPart && cam && Mouse.current != null
         ? weaponLayout.FindSwapSlot(swapPart.Kind, cam, Mouse.current.position.ReadValue()) : -1;
     internal float SwapRemaining => swapPart ? Mathf.Max(0f, swapUntil - Time.unscaledTime) : 0f;
-    public bool IsInteractHeld => IsAlive && interactHeld && !wasPartInteraction && !AssemblyOpen && !PauseOpen && !IsFieldRepairing;
+    public bool IsInteractHeld => IsAlive && interactHeld && !wasPartInteraction && !AssemblyOpen && !PauseOpen && !IsFieldRepairing && IngameTutorial.Allows(TutorialAction.StationRepair);
     internal int RepairCost => 12 << Mathf.Min(repairCount, 3);
     int repairCount;
     bool wasPartInteraction;
@@ -84,7 +93,31 @@ public class PlayerController : MonoBehaviour, IDamageable
         repairCount++;
         hp = Mathf.Min(maxHp, hp + 35);
         weaponLayout.RepairParts();
+        StationRepairVersion++;
         return true;
+    }
+
+    internal void PrepareTutorialLoadout(bool fill = false)
+    {
+        if (!SaveTutorialSession.Active) return;
+        ClearSwap();
+        StopFieldRepair();
+        weaponLayout.ClearForTutorial();
+        if (fill)
+        {
+            enableQuickSwap = true;
+            for (int i = 0; i < weaponLayout.SlotCount; i++)
+                if (weaponLayout.IsOpenSlot(i)) weaponLayout.TryInstall(i, WeaponKind.MachineGun, 1f, out _, out _);
+        }
+    }
+
+    internal void PrepareTutorialRepair(bool station)
+    {
+        if (!SaveTutorialSession.Active) return;
+        PrepareTutorialLoadout();
+        weaponLayout.TryInstall(0, WeaponKind.MachineGun, station ? .4f : 0f, out _, out _);
+        Scrap = Mathf.Max(Scrap, station ? RepairCost : fieldRepairCost);
+        if (station) hp = Mathf.Max(1, maxHp - 35);
     }
     internal void TrackPart(LootPickup part) => parts.Add(part);
     internal void ForgetPart(LootPickup part) => parts.Remove(part);
@@ -116,6 +149,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Awake()
     {
+        playerInput = GetComponent<PlayerInput>();
         cam = Camera.main;
         if (cam) cameraFollow = cam.GetComponent<CameraFollow>();
         if (!rb) rb = GetComponent<Rigidbody2D>();
@@ -132,23 +166,44 @@ public class PlayerController : MonoBehaviour, IDamageable
             movementDust.Play();
         }
     }
-    void Start()
+    void Start() => TryInitializeInput();
+
+    bool TryInitializeInput()
     {
-        var input = GetComponent<PlayerInput>();
-        if (input.currentActionMap == null && input.actions?.FindActionMap("Player") != null)
-            input.SwitchCurrentActionMap("Player");
-        interactAction = input.actions?.FindAction("Player/Interact");
+        // Scene transitions temporarily disable PlayerInput before this Start runs.
+        // Let the transition restore it; retry on Update instead of enabling it here.
+        if (!playerInput || !playerInput.isActiveAndEnabled || !playerInput.inputIsActive)
+        {
+            interactAction = null;
+            return false;
+        }
+        if (playerInput.currentActionMap == null)
+        {
+            if (playerInput.actions?.FindActionMap("Player") == null) return false;
+            playerInput.SwitchCurrentActionMap("Player");
+        }
+        if (interactAction == null) interactAction = playerInput.actions?.FindAction("Player/Interact");
+        return true;
     }
 
     void OnMove(InputValue v) => moveInput = v.Get<Vector2>();
-    void OnSprint(InputValue v)
+    void OnJump(InputValue v)
     {
-        if (IsAlive && !encounterFinished && !AssemblyOpen && !PauseOpen && !IsFieldRepairing && v.isPressed && Time.time >= nextBoostTime && boostRemaining <= 0f)
+        if (IngameTutorial.Allows(TutorialAction.Boost) && IsAlive && !encounterFinished && !AssemblyOpen && !PauseOpen && !IsFieldRepairing && v.isPressed && Time.time >= nextBoostTime && boostRemaining <= 0f)
             boostRequested = true;
     }
     void Update()
     {
-        interactHeld = interactAction?.IsPressed() == true;
+        if (!TryInitializeInput())
+        {
+            interactHeld = false;
+            moveInput = Vector2.zero;
+            boostRequested = false;
+            ClearSwap();
+            StopFieldRepair();
+            return;
+        }
+        interactHeld = (IngameTutorial.Allows(TutorialAction.Swap) || IngameTutorial.Allows(TutorialAction.StationRepair)) && interactAction?.IsPressed() == true;
         bool started = interactAction?.WasPressedThisFrame() == true;
         if (!interactHeld) wasPartInteraction = false;
         bool cancel = Keyboard.current?.escapeKey.wasPressedThisFrame == true;
@@ -164,7 +219,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             TickFieldRepair();
             return;
         }
-        if (Keyboard.current?.rKey.wasPressedThisFrame == true)
+        if (IngameTutorial.Allows(TutorialAction.FieldRepair) && Keyboard.current?.rKey.wasPressedThisFrame == true)
         {
             BeginFieldRepair();
             return;
@@ -179,7 +234,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             return;
         }
 
-        if (started && enableQuickSwap && cam && Mouse.current != null)
+        if (IngameTutorial.Allows(TutorialAction.Swap) && started && enableQuickSwap && cam && Mouse.current != null)
         {
             var nearbyPart = FindNearbyPart(false, out _);
             if (nearbyPart)
@@ -196,8 +251,11 @@ public class PlayerController : MonoBehaviour, IDamageable
             }
         }
 
-        var autoPart = FindNearbyPart(true, out int slot);
-        if (autoPart) InstallPart(slot, autoPart);
+        if (IngameTutorial.Allows(TutorialAction.Collect))
+        {
+            var autoPart = FindNearbyPart(true, out int slot);
+            if (autoPart) InstallPart(slot, autoPart);
+        }
     }
 
     void FinishSwap()
@@ -256,7 +314,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         fieldRepairElapsed += deltaTime;
         if (fieldRepairElapsed < fieldRepairDuration) return;
         bool repaired = Scrap >= fieldRepairCost && weaponLayout.RepairBroken(fieldRepairSlot, fieldRepairFraction);
-        if (repaired) Scrap -= fieldRepairCost;
+        if (repaired) { Scrap -= fieldRepairCost; FieldRepairVersion++; }
         StopFieldRepair();
         FieldNotice(repaired ? "현장 수리 완료 · 부품이 다시 켜졌습니다" : "수리할 수 없습니다");
     }
@@ -340,15 +398,22 @@ public class PlayerController : MonoBehaviour, IDamageable
     }
 
     internal bool InstallFromAssembly(int slot, LootPickup part) =>
-        AssemblyOpen && IsAlive && part && part.IsInReach() && InstallPart(slot, part);
+        IngameTutorial.Allows(TutorialAction.AssemblyInstall) && AssemblyOpen && IsAlive && part && part.IsInReach() && InstallPart(slot, part);
 
     internal void DismantleFromAssembly(int slot)
     {
-        if (AssemblyOpen && IsAlive) AddScrap(weaponLayout.Dismantle(slot));
+        if (!IngameTutorial.Allows(TutorialAction.AssemblyDismantle) || !AssemblyOpen || !IsAlive) return;
+        int value = weaponLayout.Dismantle(slot);
+        if (value > 0) { AddScrap(value); DismantleVersion++; }
     }
 
-    internal bool MoveFromAssembly(int from, int to) =>
-        AssemblyOpen && IsAlive && weaponLayout.TryMove(from, to);
+    internal bool MoveFromAssembly(int from, int to)
+    {
+        if (!IngameTutorial.Allows(TutorialAction.AssemblyMove) || !AssemblyOpen || !IsAlive || from == to) return false;
+        if (!weaponLayout.TryMove(from, to)) return false;
+        AssemblyMoveVersion++;
+        return true;
+    }
 
     void ClearSwap()
     {
@@ -383,6 +448,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         DropRemoved(removed, drop);
         DropRemoved(second, drop + (Vector2)transform.right * 0.5f);
         part.Collect();
+        InstallVersion++;
         ClearSwap();
         return true;
     }
@@ -397,7 +463,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void LateUpdate()
     {
-        if (Time.timeScale == 0f) return;
+        if (Time.timeScale == 0f || !IngameTutorial.Allows(TutorialAction.Fire)) return;
         var enemies = EnemyManager.Instance;
         if (hp <= 0 || encounterFinished || Time.time < jammedUntil || !enemies || !enemies.isActiveAndEnabled) return;
         weaponLayout.Tick(enemies);
@@ -431,7 +497,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void TakeDamage(int dmg, Vector2 source)
     {
-        if (dmg <= 0 || hp <= 0 || encounterFinished) return;
+        if (dmg <= 0 || hp <= 0 || encounterFinished || SaveTutorialSession.Active) return;
         DamageVersion++;
         hp = Mathf.Max(0, hp - weaponLayout.AbsorbDamage(dmg, source));
         if (cameraFollow) cameraFollow.Shake();
@@ -440,7 +506,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void FixedUpdate()
     {
-        if (!IsAlive || encounterFinished || IsFieldRepairing || PauseOpen || AssemblyOpen)
+        if (!IsAlive || encounterFinished || IsFieldRepairing || PauseOpen || AssemblyOpen ||
+            !playerInput || !playerInput.isActiveAndEnabled || !playerInput.inputIsActive)
         {
             rb.linearVelocity = Vector2.zero;
             if (movementDust)
@@ -457,11 +524,11 @@ public class PlayerController : MonoBehaviour, IDamageable
                 ramRadius, ramDamage, ramHits);
         checkRam = false;
 
-        Vector2 move = Vector2.ClampMagnitude(moveInput, 1f);
+        Vector2 move = IngameTutorial.Allows(TutorialAction.Move) ? Vector2.ClampMagnitude(moveInput, 1f) : Vector2.zero;
         Vector2 aim = Vector2.zero;
         if (cam && Mouse.current != null)
             aim = (Vector2)cam.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - position;
-        if (!swapSlowedTime && aim.sqrMagnitude > 0.0001f)
+        if (IngameTutorial.Allows(TutorialAction.Aim) && !swapSlowedTime && aim.sqrMagnitude > 0.0001f)
         {
             float angle = Mathf.Atan2(aim.y, aim.x) * Mathf.Rad2Deg - 90f;
             rb.MoveRotation(Mathf.MoveTowardsAngle(rb.rotation, angle, turnSpeed * Time.fixedDeltaTime));
@@ -470,6 +537,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (boostRequested)
         {
             boostRequested = false;
+            BoostVersion++;
             boostDirection = move.sqrMagnitude > 0.01f ? move.normalized :
                 (Vector2)(Quaternion.Euler(0f, 0f, rb.rotation) * Vector3.up);
             boostRemaining = boostDuration;
@@ -488,7 +556,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             checkRam = true;
         }
         else
-            rb.linearVelocity = move * speed;
+            rb.linearVelocity = move * speed * IngameTutorial.MovementSpeedScale;
 
         if (Time.fixedTime < pulledUntil)
             rb.linearVelocity += pullVelocity;

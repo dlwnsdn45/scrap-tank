@@ -1,68 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ui:UXML xmlns:ui="UnityEngine.UIElements">
-    <ui:VisualElement name="hud" picking-mode="Ignore" style="flex-grow: 1;">
-        <ui:VisualElement name="damage-flash" picking-mode="Ignore" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(230, 10, 8); opacity: 0;" />
-        <ui:VisualElement name="world-bars" picking-mode="Ignore" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0;" />
-        <ui:VisualElement picking-mode="Ignore" style="flex-direction: row; align-items: flex-start; justify-content: space-between; margin: 18px;">
-            <ui:VisualElement picking-mode="Ignore" style="width: 244px; padding: 12px; background-color: rgb(13, 26, 31);">
-                <ui:Label name="health-label" text="HP" style="color: white; margin-bottom: 6px; -unity-font-style: bold;" />
-                <ui:VisualElement name="health-bar" picking-mode="Ignore" style="height: 13px; background-color: rgb(33, 51, 57);">
-                    <ui:VisualElement name="health-trail" picking-mode="Ignore" style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background-color: white;" />
-                    <ui:VisualElement name="health-fill" picking-mode="Ignore" style="position: absolute; top: 0; bottom: 0; left: 0; width: 100%; background-color: rgb(31, 219, 189);" />
-                </ui:VisualElement>
-            </ui:VisualElement>
-            <ui:Label name="scrap" text="고철 0" style="width: 130px; height: 44px; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 19px; color: white; background-color: rgb(13, 26, 31);" />
+  <ui:VisualElement name="hud" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; color: #f4f1ea; -unity-font-style: bold;" picking-mode="Ignore">
+    <ui:VisualElement name="damage-flash" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgb(230,10,8); opacity: 0;" picking-mode="Ignore" />
+    <ui:VisualElement name="world-bars" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0;" picking-mode="Ignore" />
+    <ui:VisualElement name="v6-hud" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; transform-origin: 0% 0%;" picking-mode="Ignore">
+      <ui:VisualElement name="health-panel" style="position: absolute; width: 460px; height: 72px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px; left: 24px; top: 20px;" picking-mode="Ignore">
+        <ui:Label style="position: absolute; left: 20px; top: 0px; width: 68px; height: 64px; margin: 0; padding: 0;font-size: 26px; color: #f4f1ea; -unity-text-align: middle-left;" text="차체" picking-mode="Ignore" />
+        <ui:VisualElement name="health-bar" style="position: absolute; left: 88px; top: 20px; width: 220px; height: 30px; margin: 0; padding: 0;background-color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 16px;" picking-mode="Ignore">
+          <ui:VisualElement name="health-trail" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: white;" picking-mode="Ignore" />
+          <ui:VisualElement name="health-fill" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: #2f9b94;" picking-mode="Ignore" />
         </ui:VisualElement>
-        <ui:Label name="timer" text="00:00" style="position: absolute; align-self: center; top: 18px; width: 110px; height: 44px; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 22px; color: white; background-color: rgb(13, 26, 31);" />
-        <ui:Label name="item-tag" picking-mode="Ignore" style="display: none; position: absolute; width: 190px; margin-left: -95px; margin-top: -26px; -unity-text-align: middle-center; color: white; background-color: rgb(34, 41, 46);" />
-        <ui:Label name="station-tag" picking-mode="Ignore" style="display: none; position: absolute; width: 250px; margin-left: -125px; margin-top: -28px; -unity-text-align: middle-center; color: white; background-color: rgb(47, 122, 90);" />
-        <ui:VisualElement name="swap-card" picking-mode="Ignore" style="display: none; position: absolute; align-self: center; bottom: 44px; width: 430px; max-width: 94%; padding: 10px; background-color: rgb(34, 41, 46);">
-            <ui:Label name="interaction" picking-mode="Ignore" style="white-space: normal; -unity-text-align: middle-center; color: rgb(255, 210, 63);" />
-            <ui:VisualElement name="swap-track" picking-mode="Ignore" style="height: 4px; margin-top: 5px; background-color: rgb(72, 77, 77);">
-                <ui:VisualElement name="swap-progress" picking-mode="Ignore" style="height: 4px; background-color: rgb(255, 210, 63);" />
-            </ui:VisualElement>
+        <ui:Label name="health-label" style="position: absolute; left: 316px; top: 0px; width: 124px; height: 64px; margin: 0; padding: 0;font-size: 24px; color: #f4f1ea; -unity-text-align: middle-right;" text="100/100" picking-mode="Ignore" />
+      </ui:VisualElement>
+      <ui:VisualElement name="clock-panel" style="position: absolute; width: 240px; height: 88px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px; left: 50%; margin-left: -120px; top: 16px;" picking-mode="Ignore">
+        <ui:Label name="timer" style="position: absolute; left: 0px; top: 0px; width: 232px; height: 58px; margin: 0; padding: 0;font-size: 46px; color: #f4f1ea; -unity-text-align: middle-center;" text="00:00" picking-mode="Ignore" />
+        <ui:Label name="next-event" style="position: absolute; left: 4px; top: 54px; width: 224px; height: 24px; margin: 0; padding: 0;font-size: 18px; color: #c9ced3; -unity-text-align: middle-center;" text="칸 열림 · 90초 후" picking-mode="Ignore" />
+      </ui:VisualElement>
+      <ui:VisualElement name="scrap-panel" style="position: absolute; width: 220px; height: 72px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px; right: 104px; top: 20px;" picking-mode="Ignore">
+        <ui:Label style="position: absolute; left: 20px; top: 0px; width: 56px; height: 64px; margin: 0; padding: 0;font-size: 44px; color: #f2c230; -unity-text-align: middle-left;" text="⚙" picking-mode="Ignore" />
+        <ui:Label name="scrap" style="position: absolute; left: 76px; top: 0px; width: 128px; height: 64px; margin: 0; padding: 0;font-size: 36px; color: #f2c230; -unity-text-align: middle-left;" text="0" picking-mode="Ignore" />
+      </ui:VisualElement>
+      <ui:Button name="hud-pause" style="position: absolute; width: 64px; height: 64px; margin: 0; padding: 0;background-color: #59616a; border-width: 4px; border-color: #1f2124; border-radius: 14px;font-size: 38px; color: #f4f1ea; -unity-text-align: middle-center; right: 24px; top: 24px;" text="Ⅱ" picking-mode="Position" tooltip="일시정지 [Esc]" />
+      <ui:VisualElement name="minimap" style="position: absolute; width: 260px; height: 260px; margin: 0; padding: 0;background-color: #9b8a6a; border-width: 4px; border-color: #1f2124; border-radius: 18px; right: 24px; top: 108px;" picking-mode="Ignore">
+        <ui:Label name="minimap-preview" style="position: absolute; left: 104px; top: 100px; width: 48px; height: 48px; margin: 0; padding: 0;font-size: 32px; color: #f4f1ea; -unity-text-align: middle-center;" text="▲" picking-mode="Ignore" />
+      </ui:VisualElement>
+      <ui:VisualElement name="loadout-panel" style="position: absolute; width: 300px; height: 300px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px; left: 24px; bottom: 24px;" picking-mode="Ignore">
+        <ui:Label style="position: absolute; left: 16px; top: 8px; width: 260px; height: 36px; margin: 0; padding: 0;font-size: 20px; color: #c9ced3; -unity-text-align: middle-left;" text="내 차 (앞 ↑)" picking-mode="Ignore" />
+        <ui:VisualElement style="position: absolute; left: 114px; top: 114px; width: 68px; height: 104px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 4px; border-color: #1f2124; border-radius: 12px;" picking-mode="Ignore" />
+        <ui:Label name="hud-slot-0" style="position: absolute; left: 96px; top: 58px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-0" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-1" style="position: absolute; left: 160px; top: 58px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-1" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-2" style="position: absolute; left: 216px; top: 118px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-2" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-3" style="position: absolute; left: 216px; top: 182px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-3" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-4" style="position: absolute; left: 160px; top: 242px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-4" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-5" style="position: absolute; left: 96px; top: 242px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-5" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-6" style="position: absolute; left: 26px; top: 182px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-6" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+        <ui:Label name="hud-slot-7" style="position: absolute; left: 26px; top: 118px; width: 56px; height: 46px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 6px;" text="+" picking-mode="Ignore">
+          <ui:VisualElement name="hud-durability-7" style="position: absolute; left: 2px; top: 36px; width: 48px; height: 4px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore" />
+        </ui:Label>
+      </ui:VisualElement>
+      <ui:VisualElement name="boost-panel" style="position: absolute; width: 260px; height: 80px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px; left: 340px; bottom: 24px;" picking-mode="Ignore">
+        <ui:Label name="boost-state" style="position: absolute; left: 18px; top: 0px; width: 236px; height: 40px; margin: 0; padding: 0;font-size: 22px; color: #f4f1ea; -unity-text-align: middle-left;" text="부스터  [Space]" picking-mode="Ignore" />
+        <ui:VisualElement name="boost-track" style="position: absolute; left: 18px; top: 46px; width: 220px; height: 22px; margin: 0; padding: 0;background-color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 16px;" picking-mode="Ignore">
+          <ui:VisualElement name="boost-fill" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: #f2c230;" picking-mode="Ignore" />
         </ui:VisualElement>
-        <ui:VisualElement name="repair-track" picking-mode="Ignore" style="display: none; position: absolute; width: 112px; margin-left: -56px; height: 4px; background-color: rgb(34, 41, 46);">
-            <ui:VisualElement name="repair-progress" picking-mode="Ignore" style="height: 4px; background-color: rgb(255, 210, 63);" />
+      </ui:VisualElement>
+      <ui:VisualElement name="game-key-hints" style="position: absolute; width: 562px; height: 52px; margin: 0; padding: 0;background-color: #2b3035; border-width: 4px; border-color: #1f2124; border-radius: 18px; right: 24px; bottom: 24px;" picking-mode="Ignore">
+        <ui:Label style="position: absolute; left: 20px; top: 0px; width: 520px; height: 44px; margin: 0; padding: 0;font-size: 22px; color: #f4f1ea; -unity-text-align: middle-left;" text="[Tab] 조립     [R] 수리     [Esc] 일시정지" picking-mode="Ignore" />
+      </ui:VisualElement>
+      <ui:VisualElement name="boss-panel" style="position: absolute; width: 820px; height: 92px; margin: 0; padding: 0;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px;display: none; left: 50%; margin-left: -410px; top: 124px;" picking-mode="Ignore">
+        <ui:Label name="boss-name" style="position: absolute; left: 0px; top: 0px; width: 812px; height: 54px; margin: 0; padding: 0;font-size: 26px; color: #f4f1ea; -unity-text-align: middle-center;" text="분쇄차" picking-mode="Ignore" />
+        <ui:VisualElement name="boss-health" style="position: absolute; left: 16px; top: 60px; width: 780px; height: 20px; margin: 0; padding: 0;background-color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 16px;" picking-mode="Ignore">
+          <ui:VisualElement name="boss-trail" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: white;" picking-mode="Ignore" />
+          <ui:VisualElement name="boss-fill" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: #e04b3a;" picking-mode="Ignore" />
         </ui:VisualElement>
-        <ui:VisualElement name="assembly" picking-mode="Ignore" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; align-items: center; justify-content: center; background-color: rgba(5, 10, 13, 0.72);">
-            <ui:VisualElement style="width: 620px; max-width: 96%; padding: 16px; background-color: rgb(34, 41, 46);">
-                <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
-                    <ui:Label text="무기 조립" style="color: rgb(255, 210, 63); font-size: 22px; -unity-font-style: bold;" />
-                    <ui:Button name="assembly-close" text="닫기 [Tab]" />
-                </ui:VisualElement>
-                <ui:VisualElement style="flex-direction: row;">
-                    <ui:VisualElement style="flex-grow: 1; flex-basis: 0; padding: 8px; background-color: rgb(47, 57, 59);">
-                        <ui:Label text="전방 ↑" style="color: white; -unity-text-align: middle-center;" />
-                        <ui:VisualElement style="flex-direction: row; justify-content: center;">
-                            <ui:Button name="slot-0" style="width: 42%; height: 46px; white-space: normal;" />
-                            <ui:Button name="slot-1" style="width: 42%; height: 46px; white-space: normal;" />
-                        </ui:VisualElement>
-                        <ui:VisualElement style="flex-direction: row; justify-content: space-between; margin-top: 4px;">
-                            <ui:Button name="slot-7" style="width: 40%; height: 46px; white-space: normal;" />
-                            <ui:Button name="slot-2" style="width: 40%; height: 46px; white-space: normal;" />
-                        </ui:VisualElement>
-                        <ui:VisualElement style="flex-direction: row; justify-content: space-between;">
-                            <ui:Button name="slot-6" style="width: 40%; height: 46px; white-space: normal;" />
-                            <ui:Button name="slot-3" style="width: 40%; height: 46px; white-space: normal;" />
-                        </ui:VisualElement>
-                        <ui:VisualElement style="flex-direction: row; justify-content: center; margin-top: 4px;">
-                            <ui:Button name="slot-5" style="width: 42%; height: 46px; white-space: normal;" />
-                            <ui:Button name="slot-4" style="width: 42%; height: 46px; white-space: normal;" />
-                        </ui:VisualElement>
-                    </ui:VisualElement>
-                    <ui:VisualElement style="flex-grow: 1; flex-basis: 0; margin-left: 10px; padding: 10px; background-color: rgb(26, 34, 37);">
-                        <ui:Label name="assembly-text" style="white-space: normal; color: white; margin-bottom: 12px;" />
-                        <ui:Button name="assembly-install" text="장착" />
-                        <ui:Button name="assembly-dismantle" text="분해" />
-                        <ui:Label name="assembly-confirm-text" style="white-space: normal; color: rgb(255, 210, 63); margin-top: 9px;" />
-                        <ui:VisualElement name="assembly-confirm" style="flex-direction: row;">
-                            <ui:Button name="assembly-accept" text="교체" />
-                            <ui:Button name="assembly-cancel" text="취소" />
-                        </ui:VisualElement>
-                    </ui:VisualElement>
-                </ui:VisualElement>
-            </ui:VisualElement>
-        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:Label name="boss-notice" style="position: absolute; width: 1000px; height: 64px; margin: 0; padding: 0;font-size: 34px; color: #f2c230; -unity-text-align: middle-center;display: none; left: 50%; margin-left: -500px; top: 232px;" text="경고 · 분쇄차 접근 중" picking-mode="Ignore" />
+      <ui:Label name="exit-hint" style="position: absolute; width: 900px; height: 64px; margin: 0; padding: 0;font-size: 30px; color: #f2c230; -unity-text-align: middle-center;display: none; left: 50%; margin-left: -450px; bottom: 156px;" text="출구로 이동" picking-mode="Ignore" />
+      <ui:Label name="field-repair-hud" style="position: absolute; width: 1000px; height: 96px; margin: 0; padding: 0;font-size: 26px; color: #f2c230; -unity-text-align: middle-center;background-color: #3a4147; border-width: 4px; border-color: #1f2124; border-radius: 18px;display: none; white-space: normal; left: 50%; margin-left: -500px; bottom: 260px;" text="" picking-mode="Ignore">
+        <ui:VisualElement name="field-repair-fill" style="position: absolute; left: 0; bottom: 0; height: 8px; width: 0; background-color: #2f9b94;" picking-mode="Ignore" />
+      </ui:Label>
     </ui:VisualElement>
+    <ui:Label name="item-tag" style="position: absolute; left: 0px; top: 0px; width: 190px; height: 26px; margin: 0; padding: 0;font-size: 14px; color: #f4f1ea; -unity-text-align: middle-center;display: none; margin-left: -95px; margin-top: -26px; background-color: #22292e;" text="" picking-mode="Ignore" />
+    <ui:Label name="station-tag" style="position: absolute; left: 0px; top: 0px; width: 250px; height: 28px; margin: 0; padding: 0;font-size: 14px; color: #f4f1ea; -unity-text-align: middle-center;display: none; margin-left: -125px; margin-top: -28px; background-color: #2f7a5a;" text="" picking-mode="Ignore" />
+    <ui:VisualElement name="swap-card" style="display: none; position: absolute; align-self: center; bottom: 44px; width: 430px; max-width: 94%; padding: 10px;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+      <ui:Label name="interaction" style="white-space: normal; -unity-text-align: middle-center; color: #f2c230; font-size: 17px;" text="" picking-mode="Ignore" />
+      <ui:VisualElement name="swap-track" style="height: 4px; margin-top: 5px; background-color: #484d4d;" picking-mode="Ignore">
+        <ui:VisualElement name="swap-progress" style="height: 4px; width: 0; background-color: #f2c230;" picking-mode="Ignore" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="repair-track" style="display: none; position: absolute; width: 112px; margin-left: -56px; height: 4px; background-color: #2b3035;" picking-mode="Ignore">
+      <ui:VisualElement name="repair-progress" style="height: 4px; width: 0; background-color: #f2c230;" picking-mode="Ignore" />
+    </ui:VisualElement>
+    <ui:VisualElement name="assembly" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; align-items: center; justify-content: center; background-color: rgba(15,17,19,0.72);" picking-mode="Position">
+      <ui:VisualElement name="assembly-panel" style="width: 960px; height: 540px; flex-shrink: 0;background-color: #dccfb2; border-width: 3px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+        <ui:VisualElement name="assembly-header" style="position: absolute; left: 0px; top: 0px; width: 954px; height: 60px; margin: 0; padding: 0;background-color: #3a4147; border-width: 2px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+          <ui:Label style="position: absolute; left: 30px; top: 12px; width: 100px; height: 36px; margin: 0; padding: 0;font-size: 25px; color: #f4f1ea; -unity-text-align: middle-left;" text="조립" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 388px; top: 12px; width: 176px; height: 36px; margin: 0; padding: 0;font-size: 17px; color: #1f2124; -unity-text-align: middle-center;background-color: #f2c230; border-width: 0px; border-color: #1f2124; border-radius: 20px;" text="전투 정지 중" picking-mode="Ignore" />
+          <ui:Label name="assembly-scrap" style="position: absolute; left: 730px; top: 12px; width: 155px; height: 36px; margin: 0; padding: 0;font-size: 21px; color: #f2c230; -unity-text-align: middle-right;" text="고철 0" picking-mode="Ignore" />
+          <ui:Button name="assembly-close" style="position: absolute; left: 900px; top: 10px; width: 40px; height: 40px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="×" picking-mode="Position" />
+        </ui:VisualElement>
+        <ui:VisualElement name="assembly-board" style="position: absolute; left: 0px; top: 60px; width: 624px; height: 424px; margin: 0; padding: 0;background-color: transparent; border-width: 0px; border-color: #1f2124; border-radius: 0px;" picking-mode="Ignore">
+          <ui:Label name="assembly-pairing" style="position: absolute; left: 28px; top: 18px; width: 340px; height: 28px; margin: 0; padding: 0;font-size: 16px; color: #334d4d; -unity-text-align: middle-left;" text="차체 배치" picking-mode="Ignore" />
+          <ui:VisualElement name="assembly-body" style="position: absolute; left: 242px; top: 126px; width: 120px; height: 170px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 2px; border-color: #1f2124; border-radius: 12px;" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 380px; top: 82px; width: 75px; height: 24px; margin: 0; padding: 0;font-size: 15px; color: #1f2124; -unity-text-align: middle-left;" text="▲ 앞" picking-mode="Ignore" />
+          <ui:Button name="slot-0" style="position: absolute; left: 240px; top: 60px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-1" style="position: absolute; left: 306px; top: 60px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-2" style="position: absolute; left: 374px; top: 140px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-3" style="position: absolute; left: 374px; top: 222px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-4" style="position: absolute; left: 306px; top: 304px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-5" style="position: absolute; left: 240px; top: 304px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-6" style="position: absolute; left: 174px; top: 222px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+          <ui:Button name="slot-7" style="position: absolute; left: 174px; top: 140px; width: 58px; height: 58px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;font-size: 13px; white-space: normal;" text="+" picking-mode="Position" />
+        </ui:VisualElement>
+        <ui:Label name="assembly-footer" style="position: absolute; left: 30px; top: 490px; width: 890px; height: 32px; margin: 0; padding: 0;font-size: 15px; color: #1f2124; -unity-text-align: middle-left;" text="클릭: 선택   ·   드래그: 칸 이동   ·   Tab / Esc: 닫기" picking-mode="Ignore" />
+        <ui:VisualElement name="assembly-details" style="position: absolute; left: 650px; top: 84px; width: 284px; height: 438px; margin: 0; padding: 0;background-color: #3a4147; border-width: 3px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+          <ui:Label name="assembly-title" style="position: absolute; left: 20px; top: 14px; width: 240px; height: 34px; margin: 0; padding: 0;font-size: 25px; color: #f4f1ea; -unity-text-align: middle-left;" text="빈 슬롯" picking-mode="Ignore" />
+          <ui:Label name="assembly-side" style="position: absolute; left: 20px; top: 52px; width: 240px; height: 24px; margin: 0; padding: 0;font-size: 16px; color: #c9ced3; -unity-text-align: middle-left;" text="전방 왼쪽" picking-mode="Ignore" />
+          <ui:Label name="assembly-condition" style="position: absolute; left: 170px; top: 82px; width: 90px; height: 22px; margin: 0; padding: 0;font-size: 13px; color: #c9ced3; -unity-text-align: middle-right;" text="작동 중" picking-mode="Ignore" />
+          <ui:VisualElement name="assembly-health-track" style="position: absolute; left: 20px; top: 88px; width: 140px; height: 14px; margin: 0; padding: 0;background-color: #1f2124; border-width: 1px; border-color: #1f2124; border-radius: 8px;" picking-mode="Ignore">
+            <ui:VisualElement name="assembly-health-fill" style="position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background-color: #2f9b94;" picking-mode="Ignore" />
+          </ui:VisualElement>
+          <ui:Label name="assembly-health" style="position: absolute; left: 20px; top: 110px; width: 240px; height: 24px; margin: 0; padding: 0;font-size: 14px; color: #c9ced3; -unity-text-align: middle-left;" text="부품을 장착할 수 있습니다" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 20px; top: 150px; width: 115px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #c9ced3; -unity-text-align: middle-left;" text="피해" picking-mode="Ignore" />
+          <ui:Label name="assembly-damage" style="position: absolute; left: 136px; top: 150px; width: 124px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-right;" text="—" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 20px; top: 192px; width: 115px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #c9ced3; -unity-text-align: middle-left;" text="연사" picking-mode="Ignore" />
+          <ui:Label name="assembly-interval" style="position: absolute; left: 136px; top: 192px; width: 124px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-right;" text="—" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 20px; top: 234px; width: 115px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #c9ced3; -unity-text-align: middle-left;" text="사거리" picking-mode="Ignore" />
+          <ui:Label name="assembly-range" style="position: absolute; left: 136px; top: 234px; width: 124px; height: 28px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-right;" text="—" picking-mode="Ignore" />
+          <ui:Label name="assembly-nearby" style="position: absolute; left: 20px; top: 274px; width: 240px; height: 54px; margin: 0; padding: 0;font-size: 14px; color: #c9ced3; -unity-text-align: middle-left;white-space: normal;" text="장착할 부품이 주변에 없습니다" picking-mode="Ignore" />
+          <ui:Button name="assembly-install" style="position: absolute; left: 20px; top: 340px; width: 240px; height: 40px; margin: 0; padding: 0;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #1f2124; -unity-text-align: middle-center;" text="장착" picking-mode="Position" />
+          <ui:Button name="assembly-dismantle" style="position: absolute; left: 20px; top: 388px; width: 240px; height: 40px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="분해" picking-mode="Position" />
+          <ui:VisualElement name="assembly-confirm" style="position: absolute; left: 10px; top: 266px; width: 260px; height: 164px; margin: 0; padding: 0;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 8px;display: none; border-color: #f2c230;" picking-mode="Ignore">
+            <ui:Label name="assembly-confirm-text" style="position: absolute; left: 12px; top: 10px; width: 236px; height: 88px; margin: 0; padding: 0;font-size: 15px; color: #f4f1ea; -unity-text-align: middle-left;white-space: normal;" text="기존 부품을 교체할까요?" picking-mode="Ignore" />
+            <ui:Button name="assembly-accept" style="position: absolute; left: 12px; top: 110px; width: 112px; height: 40px; margin: 0; padding: 0;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #1f2124; -unity-text-align: middle-center;" text="교체" picking-mode="Position" />
+            <ui:Button name="assembly-cancel" style="position: absolute; left: 134px; top: 110px; width: 112px; height: 40px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="취소" picking-mode="Position" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="assembly-ghost" style="position: absolute; left: 0px; top: 0px; width: 110px; height: 46px; margin: 0; padding: 0;font-size: 15px; color: #1f2124; -unity-text-align: middle-center;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;display: none;" text="" picking-mode="Ignore" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="pause-menu" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; align-items: center; justify-content: center; background-color: rgba(15,17,19,0.72);" picking-mode="Position">
+      <ui:VisualElement name="pause-card" style="width: 580px; height: 350px; flex-shrink: 0;" picking-mode="Ignore">
+        <ui:VisualElement name="pause-actions" style="position: absolute; left: 130px; top: 5px; width: 320px; height: 340px; margin: 0; padding: 0;background-color: #3a4147; border-width: 2px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+          <ui:Label style="position: absolute; left: 36px; top: 16px; width: 250px; height: 50px; margin: 0; padding: 0;font-size: 29px; color: #f4f1ea; -unity-text-align: middle-left;" text="일시정지" picking-mode="Ignore" />
+          <ui:Button name="pause-close" style="position: absolute; left: 270px; top: 12px; width: 32px; height: 32px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="×" picking-mode="Position" />
+          <ui:Button name="pause-resume" style="position: absolute; left: 44px; top: 82px; width: 230px; height: 42px; margin: 0; padding: 0;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #1f2124; -unity-text-align: middle-center;" text="계속하기" picking-mode="Position" />
+          <ui:Button name="pause-restart" style="position: absolute; left: 44px; top: 138px; width: 230px; height: 42px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="다시 시작" picking-mode="Position" />
+          <ui:Button name="pause-settings" style="position: absolute; left: 44px; top: 194px; width: 230px; height: 42px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="설정" picking-mode="Position" />
+          <ui:Button name="pause-quit" style="position: absolute; left: 44px; top: 250px; width: 230px; height: 42px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;background-color: #e04b3a;" text="나가기" picking-mode="Position" />
+          <ui:Label style="position: absolute; left: 80px; top: 300px; width: 200px; height: 24px; margin: 0; padding: 0;font-size: 12px; color: #c9ced3; -unity-text-align: middle-left;" text="Esc  계속하기" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement name="settings-panel" style="position: absolute; left: 0px; top: 0px; width: 580px; height: 350px; margin: 0; padding: 0;background-color: #3a4147; border-width: 2px; border-color: #1f2124; border-radius: 9px;display: none;" picking-mode="Ignore">
+          <ui:Label style="position: absolute; left: 30px; top: 16px; width: 300px; height: 50px; margin: 0; padding: 0;font-size: 29px; color: #f4f1ea; -unity-text-align: middle-left;" text="설정" picking-mode="Ignore" />
+          <ui:Button name="settings-close" style="position: absolute; left: 530px; top: 15px; width: 32px; height: 32px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="×" picking-mode="Position" />
+          <ui:Label style="position: absolute; left: 32px; top: 95px; width: 160px; height: 32px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-left;" text="음량" picking-mode="Ignore" />
+          <ui:Slider name="settings-volume" style="position: absolute; left: 225px; top: 99px; width: 250px; height: 28px; margin: 0; padding: 0;" picking-mode="Position" low-value="0" high-value="1" value="1" />
+          <ui:Label name="settings-volume-value" style="position: absolute; left: 490px; top: 95px; width: 65px; height: 32px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-left;" text="100%" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 32px; top: 155px; width: 180px; height: 32px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-left;" text="화면 흔들림" picking-mode="Ignore" />
+          <ui:Slider name="settings-shake" style="position: absolute; left: 225px; top: 159px; width: 250px; height: 28px; margin: 0; padding: 0;" picking-mode="Position" low-value="0" high-value="1" value="1" />
+          <ui:Label name="settings-shake-value" style="position: absolute; left: 490px; top: 155px; width: 65px; height: 32px; margin: 0; padding: 0;font-size: 16px; color: #f4f1ea; -unity-text-align: middle-left;" text="100%" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 32px; top: 215px; width: 220px; height: 32px; margin: 0; padding: 0;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-left;" text="섬광 낮추기" picking-mode="Ignore" />
+          <ui:Toggle name="settings-low-flash" style="position: absolute; left: 445px; top: 218px; width: 45px; height: 32px; margin: 0; padding: 0;" picking-mode="Position" />
+          <ui:Button name="settings-back" style="position: absolute; left: 400px; top: 285px; width: 145px; height: 40px; margin: 0; padding: 0;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #1f2124; -unity-text-align: middle-center;" text="돌아가기" picking-mode="Position" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="run-result" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; align-items: center; justify-content: center; background-color: rgba(15,17,19,0.72);" picking-mode="Position" focusable="true">
+      <ui:VisualElement name="result-card" style="width: 720px; height: 480px; flex-shrink: 0;background-color: #3a4147; border-width: 3px; border-color: #1f2124; border-radius: 9px;" picking-mode="Ignore">
+        <ui:Label name="result-heading" style="position: absolute; left: 48px; top: 30px; width: 340px; height: 66px; margin: 0; padding: 0;font-size: 58px; color: #f2c230; -unity-text-align: middle-left;" text="승리" picking-mode="Ignore" />
+        <ui:Label name="result-description" style="position: absolute; left: 48px; top: 106px; width: 340px; height: 48px; margin: 0; padding: 0;font-size: 16px; color: #c9ced3; -unity-text-align: middle-left;white-space: normal;" text="분쇄차를 부수고 녹슨 무덤을 빠져나갔다" picking-mode="Ignore" />
+        <ui:Label style="position: absolute; left: 48px; top: 174px; width: 130px; height: 30px; margin: 0; padding: 0;font-size: 20px; color: #c9ced3; -unity-text-align: middle-left;" text="버틴 시간" picking-mode="Ignore" />
+        <ui:Label name="result-elapsed" style="position: absolute; left: 190px; top: 174px; width: 196px; height: 30px; margin: 0; padding: 0;font-size: 22px; color: #f4f1ea; -unity-text-align: middle-left;" text="0" picking-mode="Ignore" />
+        <ui:Label style="position: absolute; left: 48px; top: 224px; width: 130px; height: 30px; margin: 0; padding: 0;font-size: 20px; color: #c9ced3; -unity-text-align: middle-left;" text="처치 수" picking-mode="Ignore" />
+        <ui:Label name="result-kills" style="position: absolute; left: 190px; top: 224px; width: 196px; height: 30px; margin: 0; padding: 0;font-size: 22px; color: #f4f1ea; -unity-text-align: middle-left;" text="0" picking-mode="Ignore" />
+        <ui:Label style="position: absolute; left: 48px; top: 274px; width: 130px; height: 30px; margin: 0; padding: 0;font-size: 20px; color: #c9ced3; -unity-text-align: middle-left;" text="붙인 무기" picking-mode="Ignore" />
+        <ui:Label name="result-weapons" style="position: absolute; left: 190px; top: 274px; width: 196px; height: 30px; margin: 0; padding: 0;font-size: 22px; color: #f4f1ea; -unity-text-align: middle-left;" text="0" picking-mode="Ignore" />
+        <ui:VisualElement name="result-preview" style="position: absolute; left: 428px; top: 42px; width: 244px; height: 260px; margin: 0; padding: 0;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 8px;" picking-mode="Ignore">
+          <ui:VisualElement style="position: absolute; left: 86px; top: 68px; width: 72px; height: 106px; margin: 0; padding: 0;background-color: #2f9b94; border-width: 2px; border-color: #1f2124; border-radius: 8px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-0" style="position: absolute; left: 86px; top: 38px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-1" style="position: absolute; left: 132px; top: 38px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-2" style="position: absolute; left: 164px; top: 70px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-3" style="position: absolute; left: 164px; top: 118px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-4" style="position: absolute; left: 132px; top: 180px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-5" style="position: absolute; left: 86px; top: 180px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-6" style="position: absolute; left: 60px; top: 118px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:VisualElement name="result-mount-7" style="position: absolute; left: 60px; top: 70px; width: 24px; height: 24px; margin: 0; padding: 0;background-color: #59616a; border-width: 0px; border-color: #1f2124; border-radius: 3px;" picking-mode="Ignore" />
+          <ui:Label style="position: absolute; left: 12px; top: 216px; width: 216px; height: 28px; margin: 0; padding: 0;font-size: 15px; color: #c9ced3; -unity-text-align: middle-center;" text="마지막 내 차 모습" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement style="position: absolute; left: 48px; top: 322px; width: 624px; height: 66px; margin: 0; padding: 0;background-color: #2b3035; border-width: 2px; border-color: #1f2124; border-radius: 8px;" picking-mode="Ignore">
+          <ui:Label style="position: absolute; left: 18px; top: 8px; width: 180px; height: 24px; margin: 0; padding: 0;font-size: 15px; color: #c9ced3; -unity-text-align: middle-left;" text="남은 고철" picking-mode="Ignore" />
+          <ui:Label name="result-salvage" style="position: absolute; left: 18px; top: 30px; width: 580px; height: 28px; margin: 0; padding: 0;font-size: 22px; color: #f2c230; -unity-text-align: middle-left;" text="0 · 장착 부품 0개" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Button name="result-retry" style="position: absolute; left: 48px; top: 414px; width: 172px; height: 46px; margin: 0; padding: 0;background-color: #f2c230; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #1f2124; -unity-text-align: middle-center;" text="다시 하기" picking-mode="Position" />
+        <ui:Button name="result-title" style="position: absolute; left: 236px; top: 414px; width: 172px; height: 46px; margin: 0; padding: 0;background-color: #59616a; border-width: 2px; border-color: #1f2124; border-radius: 7px;font-size: 19px; color: #f4f1ea; -unity-text-align: middle-center;" text="시작 화면" picking-mode="Position" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="tutorial-layer" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0;" picking-mode="Ignore">
+      <ui:VisualElement name="tutorial-canvas" style="position: absolute; left: 0; top: 0; width: 1200px; height: 700px; transform-origin: 0% 0%;" picking-mode="Ignore">
+        <ui:VisualElement name="tutorial-dim" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0;" picking-mode="Ignore">
+          <ui:VisualElement name="tutorial-dim-top" style="position: absolute; background-color: rgba(75,78,82,0.68);" picking-mode="Position" />
+          <ui:VisualElement name="tutorial-dim-bottom" style="position: absolute; background-color: rgba(75,78,82,0.68);" picking-mode="Position" />
+          <ui:VisualElement name="tutorial-dim-left" style="position: absolute; background-color: rgba(75,78,82,0.68);" picking-mode="Position" />
+          <ui:VisualElement name="tutorial-dim-right" style="position: absolute; background-color: rgba(75,78,82,0.68);" picking-mode="Position" />
+        </ui:VisualElement>
+        <ui:VisualElement name="tutorial-focus" style="display: none; position: absolute; border-width: 4px; border-color: #f2c230; border-radius: 12px; background-color: rgba(242,194,48,0.06);" picking-mode="Ignore" />
+        <ui:VisualElement name="tutorial-strip" style="display: none; position: absolute; top: 14px; left: 50%; width: 680px; height: 90px; margin-left: -340px; background-color: rgba(31,33,36,0.95); border-radius: 12px; border-left-width: 6px; border-left-color: #f2c230;" picking-mode="Ignore">
+          <ui:Label name="tutorial-strip-title" style="position: absolute; left: 18px; top: 8px; right: 14px; height: 28px; color: #f2c230; font-size: 19px;" picking-mode="Ignore" text="01 직접 움직여 보세요   [ W A S D ]" />
+          <ui:Label name="tutorial-strip-body" style="position: absolute; left: 18px; top: 42px; right: 14px; height: 34px; color: #f4f1ea; font-size: 14px; white-space: normal;" picking-mode="Ignore" text="직접 이동하면 자동으로 다음 단계로 넘어갑니다." />
+          <ui:VisualElement name="tutorial-strip-track" style="position: absolute; left: 18px; right: 18px; bottom: 4px; height: 4px; background-color: #59616a;" picking-mode="Ignore">
+            <ui:VisualElement name="tutorial-strip-fill" style="height: 4px; width: 0; background-color: #4cc38a;" picking-mode="Ignore" />
+          </ui:VisualElement>
+          <ui:VisualElement name="tutorial-movement-keys" style="position: absolute; left: 18px; top: 82px; height: 36px; flex-direction: row; display: none;">
+            <ui:Label name="tutorial-key-w" text="W" style="width: 72px; height: 34px; margin-right: 10px; background-color: rgb(41, 51, 54); color: white; -unity-text-align: middle-center; font-size: 18px; border-radius: 5px;" />
+            <ui:Label name="tutorial-key-a" text="A" style="width: 72px; height: 34px; margin-right: 10px; background-color: rgb(41, 51, 54); color: white; -unity-text-align: middle-center; font-size: 18px; border-radius: 5px;" />
+            <ui:Label name="tutorial-key-s" text="S" style="width: 72px; height: 34px; margin-right: 10px; background-color: rgb(41, 51, 54); color: white; -unity-text-align: middle-center; font-size: 18px; border-radius: 5px;" />
+            <ui:Label name="tutorial-key-d" text="D" style="width: 72px; height: 34px; margin-right: 10px; background-color: rgb(41, 51, 54); color: white; -unity-text-align: middle-center; font-size: 18px; border-radius: 5px;" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="tutorial-guide" style="position: absolute; left: 16px; top: 100px; width: 340px; min-height: 200px; padding: 12px 16px 26px 16px; flex-direction: column; background-color: rgba(43,48,53,0.97); border-width: 2px; border-color: #f2c230; border-radius: 12px;" picking-mode="Ignore">
+          <ui:Label name="tutorial-progress" style="height: 18px; flex-shrink: 0; margin: 0; padding: 0; color: #c9ced3; font-size: 11px; white-space: nowrap;" picking-mode="Ignore" text="조작 연습  1 / 24" />
+          <ui:Label name="tutorial-heading" style="height: 28px; flex-shrink: 0; margin: 6px 0 0 0; padding: 0; color: #f4f1ea; font-size: 20px; white-space: nowrap;" picking-mode="Ignore" text="체력" />
+          <ui:Label name="tutorial-instruction" style="flex-shrink: 0; margin: 8px 0 0 0; padding: 0; white-space: normal; color: #f4f1ea; font-size: 14px;" picking-mode="Ignore" text="차체 체력입니다.&#xA;0이 되면 죽죠;;" />
+          <ui:VisualElement name="tutorial-guide-track" style="position: absolute; left: 16px; right: 16px; bottom: 10px; height: 5px; background-color: #59616a;" picking-mode="Ignore">
+            <ui:VisualElement name="tutorial-guide-fill" style="height: 5px; width: 0; background-color: #4cc38a;" picking-mode="Ignore" />
+          </ui:VisualElement>
+          <ui:Button name="tutorial-next" style="height: 34px; flex-shrink: 0; margin: 14px 0 0 0; background-color: #f2c230; color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 7px; font-size: 15px; -unity-text-align: middle-center;" picking-mode="Position" text="다음" focusable="false" />
+        </ui:VisualElement>
+        <ui:Label name="tutorial-marker" style="display: none; position: absolute; width: 240px; height: 64px; background-color: rgba(31,33,36,0.9); border-width: 2px; border-color: #2f9b94; border-radius: 16px; color: #f4f1ea; font-size: 16px; white-space: normal; -unity-text-align: middle-center;" picking-mode="Ignore" text="▼ 연습 대상" />
+        <ui:VisualElement name="tutorial-modal" style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(15,17,19,0.75);" picking-mode="Position">
+          <ui:VisualElement name="tutorial-welcome-card" style="position: absolute; left: 50%; top: 50%; width: 540px; height: 330px; margin-left: -270px; margin-top: -165px; background-color: #3a4147; border-width: 3px; border-color: #f2c230; border-radius: 16px;" picking-mode="Ignore">
+            <ui:Label name="tutorial-modal-title" style="position: absolute; left: 24px; top: 22px; right: 24px; height: 42px; color: #f2c230; font-size: 27px;" picking-mode="Ignore" text="고물전차에 오신 것을 환영합니다" />
+            <ui:Label name="tutorial-modal-body" style="position: absolute; left: 24px; top: 86px; right: 24px; height: 164px; white-space: normal; color: #f4f1ea; font-size: 16px;" picking-mode="Ignore" text="UI와 조작을 같이 배워 볼까요?" />
+            <ui:Button name="tutorial-modal-next" style="position: absolute; left: 24px; bottom: 20px; width: 236px; height: 44px; margin: 0; background-color: #f2c230; color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 7px; font-size: 15px; -unity-text-align: middle-center;" picking-mode="Position" text="좋아요" focusable="false" />
+            <ui:Button name="tutorial-modal-no" text="싫어요" focusable="false" picking-mode="Position" style="position: absolute; right: 24px; bottom: 20px; width: 236px; height: 44px; margin: 0; background-color: #59616a; color: #f4f1ea; border-width: 2px; border-color: #1f2124; border-radius: 7px; font-size: 15px; -unity-text-align: middle-center;" />
+          </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="tutorial-toast" style="display: none; position: absolute; left: 50%; top: 112px; width: 420px; height: 40px; margin-left: -210px; background-color: #2f7a5a; border-radius: 20px; color: white; font-size: 16px; -unity-text-align: middle-center;" picking-mode="Ignore" text="✓ 연습 완료" />
+        <ui:Button name="tutorial-skip" style="position: absolute; right: 14px; top: 14px; width: 150px; height: 32px; font-size: 12px;margin: 0; background-color: #f2c230; color: #1f2124; border-width: 2px; border-color: #1f2124; border-radius: 7px; font-size: 15px; -unity-text-align: middle-center; display: none;" picking-mode="Position" text="건너뛰고 초기화" focusable="false" />
+      </ui:VisualElement>
+    </ui:VisualElement>
+  </ui:VisualElement>
 </ui:UXML>

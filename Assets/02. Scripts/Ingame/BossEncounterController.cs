@@ -69,7 +69,7 @@ public sealed class BossEncounterController : MonoBehaviour
 
     void Update()
     {
-        if (Result != EncounterResult.Playing || !player || !GameTimeManager.Instance) return;
+        if (SaveTutorialSession.Active || Result != EncounterResult.Playing || !player || !GameTimeManager.Instance) return;
         float elapsed = GameTimeManager.Instance.ElapsedSeconds;
         // Deadline has priority even after the boss has died or an exit overlap occurs this frame.
         if (!player.IsAlive || elapsed >= deadline)

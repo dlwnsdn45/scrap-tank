@@ -20,6 +20,13 @@ internal sealed class WeaponLayout
         ? visuals[index].transform : null;
     internal bool HasDamagedParts => Array.Exists(Mounts, IsDamaged);
 
+    internal void ClearForTutorial()
+    {
+        if (!SaveTutorialSession.Active) return;
+        Array.Clear(Mounts, 0, Mounts.Length);
+        for (int i = 0; i < Mounts.Length; i++) RefreshVisual(i);
+    }
+
     static bool IsDamaged(WeaponMount mount) =>
         mount != null && mount.equipped && mount.weapon != null && mount.Hp < mount.MaxHp;
 

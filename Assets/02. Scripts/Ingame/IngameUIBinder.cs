@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 [DefaultExecutionOrder(110)]
 internal sealed class IngameUIBinder : MonoBehaviour
 {
-    static readonly Color Panel = new(0.05f, 0.10f, 0.12f, 0.94f);
-    static readonly Color Teal = new(0.12f, 0.86f, 0.74f);
+    static readonly Color Panel = IngameUIStyle.Panel;
+    static readonly Color Teal = IngameUIStyle.Teal;
     static readonly Color Red = new(1f, 0.27f, 0.23f);
     static readonly Color Amber = new(1f, .82f, .25f);
     PlayerController player;
@@ -23,6 +23,8 @@ internal sealed class IngameUIBinder : MonoBehaviour
     AssemblyScreen assemblyScreen;
     ResultScreen resultScreen;
     PauseScreen pauseScreen;
+    IngameHud hudPresentation;
+    IngameTutorial tutorial;
     Label fieldRepairLabel;
     VisualElement fieldRepairFill;
     readonly VisualElement[] swapMarkers = new VisualElement[2];
@@ -56,6 +58,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
     {
         var hud = tree?.Q("hud");
         if (hud == null || hud == root) return;
+        tutorial?.Dispose();
         root = hud;
         healthLabel = root.Q<Label>("health-label");
         timer = root.Q<Label>("timer");
@@ -72,8 +75,10 @@ internal sealed class IngameUIBinder : MonoBehaviour
         BindBossHud();
         BindControls();
         BindFieldRepairHud();
-        pauseScreen = new PauseScreen(root);
+        pauseScreen = new PauseScreen(root, player);
         resultScreen = new ResultScreen(root);
+        hudPresentation = new IngameHud(root, player);
+        tutorial = new IngameTutorial(root, player);
         assembly.style.display = DisplayStyle.None;
         player.SetAssemblyOpen(false);
         player.SetPauseOpen(false);
@@ -88,69 +93,20 @@ internal sealed class IngameUIBinder : MonoBehaviour
     void BindBossHud()
     {
         bossPanel = root.Q("boss-panel");
-        bossPanel?.RemoveFromHierarchy();
-        root.Q("boss-notice")?.RemoveFromHierarchy();
-        root.Q("exit-hint")?.RemoveFromHierarchy();
-        bossPanel = new VisualElement { name = "boss-panel", pickingMode = PickingMode.Ignore };
-        bossPanel.style.position = Position.Absolute;
-        bossPanel.style.left = Length.Percent(27f);
-        bossPanel.style.width = Length.Percent(46f);
-        bossPanel.style.top = 76;
-        bossPanel.style.height = 56;
-        bossPanel.style.backgroundColor = Panel;
-        bossName = new Label { pickingMode = PickingMode.Ignore };
-        bossName.style.color = Color.white;
-        bossName.style.fontSize = 18;
-        bossName.style.unityTextAlign = TextAnchor.MiddleCenter;
-        bossPanel.Add(bossName);
-        bossHealth = new HealthBar(bossPanel, 400f, 12f, Red);
-        bossHealth.Root.style.left = 8;
-        bossHealth.Root.style.right = 8;
-        bossHealth.Root.style.width = StyleKeyword.Auto;
-        bossHealth.Root.style.marginLeft = 0;
-        bossHealth.Root.style.top = 34;
-        root.Add(bossPanel);
-        bossNotice = BossLabel("boss-notice", 22, 34f);
-        exitHint = BossLabel("exit-hint", 18, 82f);
+        bossName = root.Q<Label>("boss-name");
+        bossHealth = new HealthBar(root.Q("boss-health"), root.Q("boss-trail"), root.Q("boss-fill"), 10);
+        bossHealth.SetColor(Red);
+        bossNotice = root.Q<Label>("boss-notice");
+        exitHint = root.Q<Label>("exit-hint");
         bossPanel.style.display = bossNotice.style.display = exitHint.style.display = DisplayStyle.None;
-    }
-
-    Label BossLabel(string name, int fontSize, float top)
-    {
-        var label = new Label { name = name, pickingMode = PickingMode.Ignore };
-        label.style.position = Position.Absolute;
-        label.style.left = Length.Percent(15f);
-        label.style.width = Length.Percent(70f);
-        label.style.top = Length.Percent(top);
-        label.style.color = Amber;
-        label.style.fontSize = fontSize;
-        label.style.whiteSpace = WhiteSpace.Normal;
-        label.style.unityTextAlign = TextAnchor.MiddleCenter;
-        root.Add(label);
-        return label;
     }
 
     void BindFieldRepairHud()
     {
-        root.Q("field-repair-hud")?.RemoveFromHierarchy();
-        root.Q("game-key-hints")?.RemoveFromHierarchy();
-        fieldRepairLabel = BossLabel("field-repair-hud", 17, 70f);
-        fieldRepairLabel.style.backgroundColor = Panel;
-        fieldRepairLabel.style.height = 64;
-        fieldRepairLabel.style.whiteSpace = WhiteSpace.Normal;
+        fieldRepairLabel = root.Q<Label>("field-repair-hud");
+        fieldRepairFill = root.Q("field-repair-fill");
         fieldRepairLabel.style.display = DisplayStyle.None;
-        fieldRepairFill = new VisualElement { pickingMode = PickingMode.Ignore };
-        fieldRepairFill.style.position = Position.Absolute;
-        fieldRepairFill.style.left = 0;
-        fieldRepairFill.style.bottom = 0;
-        fieldRepairFill.style.height = 4;
-        fieldRepairFill.style.backgroundColor = Teal;
-        fieldRepairLabel.Add(fieldRepairFill);
-        var hints = BossLabel("game-key-hints", 14, 94f);
-        hints.text = "Tab 조립  ·  R 현장 수리  ·  Esc 일시정지";
-        hints.style.color = Color.white;
     }
-
     void DrawFieldRepair()
     {
         string message = player.IsFieldRepairing ? $"현장 수리 중 · R 유지 · 고철 {player.FieldRepairCost}\n이동 불가 · 피격 시 취소" : player.FieldRepairNotice;
@@ -210,11 +166,6 @@ internal sealed class IngameUIBinder : MonoBehaviour
         repairProgress = root.Q("repair-progress");
         swapCard.BringToFront();
         assembly.BringToFront();
-        swapCard.style.backgroundColor = new Color(.09f, .12f, .14f);
-        swapCard.style.borderTopWidth = 3;
-        swapCard.style.borderTopColor = Amber;
-        prompt.style.fontSize = 17;
-        prompt.style.unityFontStyleAndWeight = FontStyle.Bold;
         assemblyScreen = new AssemblyScreen(assembly, player, () => SetAssembly(false));
         for (int i = 0; i < swapMarkers.Length; i++)
         {
@@ -232,6 +183,8 @@ internal sealed class IngameUIBinder : MonoBehaviour
 
     void SetAssembly(bool open)
     {
+        if (open && !IngameTutorial.Allows(TutorialAction.AssemblyOpen)) return;
+        if (!open && !IngameTutorial.Allows(TutorialAction.AssemblyClose) && player.IsAlive && player.isActiveAndEnabled) return;
         player.SetAssemblyOpen(open);
         if (assembly == null || assembly.panel == null)
         {
@@ -253,7 +206,11 @@ internal sealed class IngameUIBinder : MonoBehaviour
         if (!finished && Keyboard.current?.escapeKey.wasPressedThisFrame == true)
         {
             if (AssemblyOpen) SetAssembly(false);
-            else player.SetPauseOpen(!player.PauseOpen);
+            else if (player.PauseOpen)
+            {
+                if (!pauseScreen.CloseSettings() && IngameTutorial.Allows(TutorialAction.PauseClose)) player.SetPauseOpen(false);
+            }
+            else if (IngameTutorial.Allows(TutorialAction.PauseOpen)) player.SetPauseOpen(true);
         }
         else if (!finished && !player.PauseOpen && Keyboard.current?.tabKey.wasPressedThisFrame == true)
             SetAssembly(!AssemblyOpen);
@@ -263,12 +220,12 @@ internal sealed class IngameUIBinder : MonoBehaviour
         if (lastHp != player.Hp)
         {
             lastHp = player.Hp;
-            healthLabel.text = $"HP    {lastHp} / {player.MaxHp}";
+            healthLabel.text = $"{lastHp}/{player.MaxHp}";
         }
         if (lastScrap != player.Scrap)
         {
             lastScrap = player.Scrap;
-            scrap.text = $"고철  {lastScrap}";
+            scrap.text = $"{lastScrap}";
         }
         int seconds = GameTimeManager.Instance ? (int)GameTimeManager.Instance.ElapsedSeconds : 0;
         if (lastSecond != seconds)
@@ -281,7 +238,8 @@ internal sealed class IngameUIBinder : MonoBehaviour
             damageVersion = player.DamageVersion;
             flashAt = Time.unscaledTime;
         }
-        flash.style.opacity = .36f * Mathf.Clamp01(1f - (Time.unscaledTime - flashAt) / .35f);
+        flash.style.opacity = (IngamePreferences.LowFlash ? .08f : .36f) * Mathf.Clamp01(1f - (Time.unscaledTime - flashAt) / .35f);
+        hudPresentation.Refresh();
         core.Update(player, player.Hp / (float)Mathf.Max(1, player.MaxHp));
         DrawWorld();
         DrawBossHud();
@@ -289,6 +247,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
         DrawInteraction();
         DrawFieldRepair();
         if (AssemblyOpen) assemblyScreen.Refresh();
+        tutorial.Refresh();
         if (encounter && encounter.Result != BossEncounterController.EncounterResult.Playing)
             resultScreen.Show(encounter.Summary);
     }
@@ -605,6 +564,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
 
     void OnDisable()
     {
+        tutorial?.Dispose();
         // Restore gameplay state without reading/redrawing a UI tree that is being destroyed.
         if (player) player.SetAssemblyOpen(false);
         if (player) player.SetPauseOpen(false);
@@ -659,7 +619,7 @@ internal sealed class IngameUIBinder : MonoBehaviour
             }
         }
 
-        void SetColor(Color color)
+        internal void SetColor(Color color)
         {
             fillColor = color;
             fill.style.backgroundColor = color;

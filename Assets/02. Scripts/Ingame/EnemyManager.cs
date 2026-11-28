@@ -66,12 +66,12 @@ public class EnemyManager : MonoBehaviour
         if (!FindAnyObjectByType<BossEncounterController>())
             gameObject.AddComponent<BossEncounterController>();
         BeginSpawnCycle(true);
-        TickSpawning(0f);
+        if (!SaveTutorialSession.Active) TickSpawning(0f);
     }
 
     void Update()
     {
-        if (Time.timeScale == 0f) return;
+        if (Time.timeScale == 0f || SaveTutorialSession.Active) return;
         TickSpawning(Time.deltaTime);
 
         Vector2 p = player.position;

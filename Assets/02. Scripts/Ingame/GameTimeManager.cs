@@ -25,7 +25,10 @@ public class GameTimeManager : MonoBehaviour
         Instance = this;
     }
 
-    void Update() => ElapsedSeconds += Time.deltaTime;
+    void Update()
+    {
+        if (!SaveTutorialSession.Active) ElapsedSeconds += Time.deltaTime;
+    }
 
     void OnDestroy()
     {

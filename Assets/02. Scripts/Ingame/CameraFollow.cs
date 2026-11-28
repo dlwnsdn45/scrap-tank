@@ -100,7 +100,7 @@ public class CameraFollow : MonoBehaviour
         if (Time.timeScale <= 0f) StopShake();
         if (shakeRemaining > 0f)
         {
-            offset = Random.insideUnitCircle * (shakeStrength * shakeRemaining / shakeDuration);
+            offset = Random.insideUnitCircle * (shakeStrength * shakeRemaining / shakeDuration) * IngamePreferences.Shake;
             shakeRemaining = Mathf.Max(0f, shakeRemaining - Time.unscaledDeltaTime);
         }
         else shakeStrength = 0f;
