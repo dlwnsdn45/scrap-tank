@@ -120,6 +120,7 @@ public class RepairZone : MonoBehaviour
         if (!IsInRange) return;
         lastDamageVersion = player.DamageVersion;
         heldTime += Time.deltaTime;
+        player.RefreshRepairSound();
         if (heldTime < HoldDuration) return;
         StopHolding();
         if (player.Scrap < ScrapCost) ShowNotice($"고철 부족 · 필요 {ScrapCost}");
@@ -127,18 +128,20 @@ public class RepairZone : MonoBehaviour
         else if (CanRepair && player.TryRepair(ScrapCost))
         {
             readyAt = Time.time + RelocationDelay;
-            ShowNotice($"수리 완료 · 다음 비용 {ScrapCost}");
+            ShowNotice($"수리 완료 · 다음 비용 {ScrapCost}", true);
         }
     }
 
-    void ShowNotice(string message)
+    void ShowNotice(string message, bool success = false)
     {
+        if (!success && player) player.PlayWorkshopSound("ActionDenied");
         notice = message;
         noticeUntil = Time.unscaledTime + 2f;
     }
 
     void StopHolding()
     {
+        if (holding && player) player.StopRepairSound();
         holding = false;
         heldTime = 0f;
     }

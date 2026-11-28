@@ -118,7 +118,10 @@ public class SoundSettingsController : MonoBehaviour
 
     private void OnDisable()
     {
+        bool changed = savePending;
         SaveSettings();
+        if (changed && gameObject.scene.isLoaded)
+            GetComponentInParent<TitleAudioController>()?.PlayNotice("UI/Complete");
         previewPending = false;
         if (previewSource != null) previewSource.Stop();
     }

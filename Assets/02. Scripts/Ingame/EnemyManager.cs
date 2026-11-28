@@ -50,6 +50,91 @@ public class EnemyManager : MonoBehaviour
     int loadoutIndex;
     internal ProjectilePool Projectiles { get; private set; }
     internal IReadOnlyList<Enemy> ActiveEnemies => enemies;
+    readonly AudioSource[] weaponAudio = new AudioSource[13];
+    readonly float[] nextSound = new float[13];
+    readonly float[] soundGain = new float[13];
+    readonly float[] loopUntil = new float[8];
+
+    // 무기별 음원은 한 번만 불러오고 재생 채널 재사용
+    void PrepareWeaponAudio()
+    {
+        string[] names = { "MachineGun", "Shotgun", "Flamethrower", "Missile", "Drill", "Mine", "Emp", "Harpoon",
+            "BulletHit", "Explosion", "FlameStart", "FlameEnd", "DrillHit" };
+        for (int i = 0; i < names.Length; i++)
+        {
+            var source = gameObject.AddComponent<AudioSource>();
+            source.playOnAwake = false;
+            source.spatialBlend = 0f;
+            source.loop = i == 2 || i == 4;
+            source.clip = Resources.Load<AudioClip>("Weapons/" + names[i]);
+            weaponAudio[i] = source;
+        }
+    }
+
+    float WeaponVolume()
+    {
+        if (PlayerPrefs.GetInt("Title.Sound.0.Muted", 0) == 1 || PlayerPrefs.GetInt("Title.Sound.2.Muted", 0) == 1) return 0f;
+        return Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.0.Volume", 1f))
+            * Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.2.Volume", 0.7f));
+    }
+
+    // 거리와 재생 간격으로 대량 교전의 소리 중첩 제한
+    void WeaponSound(int index, Vector2 position, float gain = 0.35f)
+    {
+        var source = weaponAudio[index];
+        if (!source || !source.clip || Time.timeScale == 0f || Time.unscaledTime < nextSound[index]) return;
+        float distance = player ? Vector2.Distance(player.position, position) : 0f;
+        if (distance >= 32f) return;
+        soundGain[index] = gain * Mathf.Clamp01(1f - distance / 32f);
+        source.volume = soundGain[index] * WeaponVolume();
+        nextSound[index] = Time.unscaledTime + (index == 9 ? 0.16f : 0.08f);
+        source.Play();
+    }
+
+    void WeaponFire(WeaponDefinition weapon, Vector2 origin, bool hostile)
+    {
+        int index = (int)weapon.kind;
+        if (player && Vector2.Distance(player.position, origin) >= 32f) return;
+        if (index == 2 || index == 4)
+        {
+            loopUntil[index] = Time.time + Mathf.Max(0.12f, weapon.interval + 0.08f);
+            if (!weaponAudio[index].isPlaying)
+            {
+                if (index == 2) WeaponSound(10, origin, 0.22f);
+                WeaponSound(index, origin, 0.20f);
+            }
+        }
+        else WeaponSound(index, origin, hostile ? 0.20f : 0.38f);
+    }
+
+    internal void WeaponImpact(WeaponKind kind, Vector2 position)
+    {
+        if (kind == WeaponKind.Missile || kind == WeaponKind.Mine) return;
+        WeaponSound(kind == WeaponKind.Drill ? 12 : 8, position, 0.22f);
+    }
+
+    // 일시정지·전투 종료 시 반복음을 끄고 음량 설정 즉시 반영
+    void UpdateWeaponAudio()
+    {
+        bool stopped = Time.timeScale == 0f || (Player != null && !Player.IsAlive);
+        for (int i = 0; i < weaponAudio.Length; i++)
+        {
+            var source = weaponAudio[i];
+            if (!source) continue;
+            source.volume = soundGain[i] * WeaponVolume();
+            if (stopped) { source.Stop(); continue; }
+            if (source.loop && source.isPlaying && Time.time > loopUntil[i])
+            {
+                source.Stop();
+                if (i == 2) WeaponSound(11, player ? (Vector2)player.position : Vector2.zero, 0.15f);
+            }
+        }
+    }
+
+    void OnDisable()
+    {
+        foreach (var source in weaponAudio) if (source) source.Stop();
+    }
 
     void Awake()
     {
@@ -59,6 +144,7 @@ public class EnemyManager : MonoBehaviour
         cam = Camera.main;
         if (cam) cameraFollow = cam.GetComponent<CameraFollow>();
         playerHp = player.GetComponent<IDamageable>();
+        PrepareWeaponAudio();
     }
 
     void Start()
@@ -71,6 +157,7 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
+        UpdateWeaponAudio();
         if (Time.timeScale == 0f || SaveTutorialSession.Active) return;
         TickSpawning(Time.deltaTime);
 
@@ -177,6 +264,7 @@ public class EnemyManager : MonoBehaviour
 
     void OnDestroy()
     {
+        foreach (var source in weaponAudio) if (source) Destroy(source);
         if (Instance == this) Instance = null;
         Projectiles?.Dispose();
     }
@@ -215,6 +303,7 @@ public class EnemyManager : MonoBehaviour
 
     internal void Attack(Vector2 origin, Vector2 forward, Vector2 aim, WeaponDefinition weapon, bool hostile)
     {
+        WeaponFire(weapon, origin, hostile);
         if (weapon.kind == WeaponKind.Flamethrower)
             CombatParticles.Play("Flame", origin, forward, range: weapon.range, arc: weapon.arc);
         else if (weapon.kind == WeaponKind.Drill)
@@ -254,6 +343,7 @@ public class EnemyManager : MonoBehaviour
             var target = CombatTarget.Active[i];
             Vector2 point = target.AimPoint(origin);
             if (!target.IsTargetable || !weapon.Covers(point - origin, forward)) continue;
+            if (weapon.kind == WeaponKind.Drill) WeaponImpact(weapon.kind, point);
             if (weapon.kind == WeaponKind.Emp && target is Enemy enemy)
             {
                 enemy.AttackAt = 0f;
@@ -266,6 +356,7 @@ public class EnemyManager : MonoBehaviour
 
     internal void Blast(Vector2 center, float radius, int damage, bool hostile)
     {
+        WeaponSound(9, center, 0.42f);
         CombatParticles.Play("Explosion", center, Vector2.up);
         float limit = radius * radius;
         if (hostile)

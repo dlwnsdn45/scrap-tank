@@ -64,6 +64,87 @@ public sealed class CrusherBossController : CombatTarget
     Pattern lastPattern;
     Vector2 chargeDirection;
     bool initialized;
+    readonly AudioSource[] bossSounds = new AudioSource[12];
+    readonly float[] nextSound = new float[12];
+    bool soundsPaused;
+
+    // 공격 예고와 타격음을 분리해 재생 채널 재사용
+    void PrepareSounds()
+    {
+        string[] names = { "Intro", "ChargeReady", "ChargeLoop", "ChargeImpact", "EruptReady", "Eruption",
+            "SuctionReady", "SuctionLoop", "Groggy", "WeakHit", "PhaseTwo", "Destroyed" };
+        for (int i = 0; i < names.Length; i++)
+        {
+            var source = gameObject.AddComponent<AudioSource>();
+            source.playOnAwake = false;
+            source.spatialBlend = 0f;
+            source.loop = i == 2 || i == 7;
+            source.clip = Resources.Load<AudioClip>("Crusher/" + names[i]);
+            bossSounds[i] = source;
+        }
+    }
+
+    float SoundVolume(int index)
+    {
+        if (PlayerPrefs.GetInt("Title.Sound.0.Muted", 0) == 1 || PlayerPrefs.GetInt("Title.Sound.2.Muted", 0) == 1) return 0f;
+        return Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.0.Volume", 1f))
+            * Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.2.Volume", 0.7f))
+            * (index == 2 || index == 7 ? 0.22f : index == 9 ? 0.25f : 0.45f);
+    }
+
+    void PlaySound(int index)
+    {
+        var source = bossSounds[index];
+        if (!source || !source.clip || Time.unscaledTime < nextSound[index]) return;
+        nextSound[index] = Time.unscaledTime + 0.12f;
+        source.volume = SoundVolume(index);
+        source.Play();
+        if (Time.timeScale == 0f) { source.Pause(); soundsPaused = true; }
+    }
+
+    void StateSound(BossState next)
+    {
+        foreach (int index in new[] { 1, 2, 4, 6, 7 }) bossSounds[index].Stop();
+        if (next == BossState.Dead)
+            foreach (var source in bossSounds) source.Stop();
+        int sound = next switch
+        {
+            BossState.Idle => 0, BossState.ChargeReady => 1, BossState.Charge => 2,
+            BossState.EruptReady => 4, BossState.Erupt => 5, BossState.SuctionReady => 6,
+            BossState.Suction => 7, BossState.Groggy => 8, BossState.Dead => 11, _ => -1
+        };
+        if (sound >= 0) PlaySound(sound);
+    }
+
+    // 일시정지는 재생 위치 유지, 전투 종료는 모든 효과음 정지
+    void Update()
+    {
+        bool finished = (player && !player.IsAlive) || (BossEncounterController.Instance &&
+            BossEncounterController.Instance.Result != BossEncounterController.EncounterResult.Playing);
+        bool paused = Time.timeScale == 0f;
+        for (int i = 0; i < bossSounds.Length; i++)
+        {
+            var source = bossSounds[i];
+            if (!source) continue;
+            source.volume = SoundVolume(i);
+            if (finished) source.Stop();
+            else if (paused && !soundsPaused) source.Pause();
+            else if (!paused && soundsPaused) source.UnPause();
+        }
+        soundsPaused = paused;
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        foreach (var source in bossSounds) if (source) source.Stop();
+        soundsPaused = false;
+    }
+
+    void OnDestroy()
+    {
+        foreach (var source in bossSounds) if (source) Destroy(source);
+    }
 
     public BossState State { get; private set; } = BossState.Idle;
     public ArmorSide WeakSide { get; private set; }
@@ -98,6 +179,7 @@ public sealed class CrusherBossController : CombatTarget
         // The boss passes through its victims; contact damage is handled explicitly below.
         hitbox.isTrigger = true;
         hp = maxHp;
+        PrepareSounds();
     }
 
     public void Initialize(PlayerController target, Rect battleArea)
@@ -177,6 +259,7 @@ public sealed class CrusherBossController : CombatTarget
     void EnterState(BossState next)
     {
         State = next;
+        StateSound(next);
         stateElapsed = 0f;
         if (animator) animator.SetInteger("State", (int)next);
         if (next == BossState.Charge)
@@ -266,12 +349,17 @@ public sealed class CrusherBossController : CombatTarget
             if (!chargeHitPlayer && hit.collider.GetComponentInParent<PlayerController>() == player)
                 HitPlayerWithCharge();
             var obstacle = hit.collider.GetComponentInParent<CrusherObstacle>();
-            if (obstacle) obstacle.Crush(player);
+            if (obstacle && obstacle.isActiveAndEnabled)
+            {
+                PlaySound(3);
+                obstacle.Crush(player);
+            }
         }
         body.position = to;
         travelled += distance;
         if (boundary || travelled >= chargeDistance - 0.001f)
         {
+            if (boundary) PlaySound(3);
             repetitions++;
             EnterState(repetitions < 2 ? BossState.ChargeWait : BossState.Delay);
         }
@@ -281,6 +369,7 @@ public sealed class CrusherBossController : CombatTarget
     {
         if (!player || !player.IsAlive) return;
         chargeHitPlayer = true;
+        PlaySound(3);
         nextContactAt = Time.fixedTime + contactInterval;
         player.TakeDamage(chargeDamage, body.position);
     }
@@ -354,12 +443,16 @@ public sealed class CrusherBossController : CombatTarget
         if (!IsTargetable || hit.Damage <= 0) return;
         int damage = hit.Damage;
         if (State == BossState.Groggy && HitsWeakSide(hit))
+        {
+            PlaySound(9);
             damage = Mathf.CeilToInt(damage * weakPointMultiplier);
+        }
         hp = Mathf.Max(0, hp - damage);
         if (hp == 0) { EnterState(BossState.Dead); return; }
         if (!PhaseTwo && hp <= maxHp * 0.5f)
         {
             PhaseTwo = true;
+            PlaySound(10);
             if (animator) animator.SetBool("PhaseTwo", true);
             onPhaseTwo.Invoke();
         }

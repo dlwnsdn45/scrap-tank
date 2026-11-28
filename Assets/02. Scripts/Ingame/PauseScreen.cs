@@ -57,6 +57,7 @@ internal sealed class PauseScreen
     void ShowSettings(bool show)
     {
         if (show && !IngameTutorial.Allows(TutorialAction.SettingsOpen)) return;
+        if (settingsOpen != show) player.PlayWorkshopSound(show ? "UI/Open" : "UI/Close");
         settingsOpen = show;
         menu.style.display = show ? DisplayStyle.None : DisplayStyle.Flex;
         settings.style.display = show ? DisplayStyle.Flex : DisplayStyle.None;
@@ -80,6 +81,7 @@ internal sealed class PauseScreen
         overlay.Q<Button>("settings-back").SetEnabled(IngameTutorial.Allows(TutorialAction.SettingsClose));
         overlay.Q<Button>("settings-close").SetEnabled(IngameTutorial.Allows(TutorialAction.SettingsClose));
         if (visible == show) return;
+        player.PlayWorkshopSound(show ? "UI/Open" : "UI/Close");
         visible = show;
         if (overlay.panel == null) return;
         ShowSettings(false);

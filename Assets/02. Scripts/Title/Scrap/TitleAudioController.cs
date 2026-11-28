@@ -27,10 +27,16 @@ public class TitleAudioController : MonoBehaviour
     private bool[] panelStates;
     private bool clicked;
     private bool fileSelected;
+    private AudioClip noticeClip;
+    private AudioClip closeClip;
+
+    // 완료·경고 알림은 같은 클릭의 일반 버튼음보다 우선
+    public void PlayNotice(string resource) => noticeClip = Resources.Load<AudioClip>(resource);
 
     // 비활성 패널의 버튼까지 클릭음 연결
     private void Start()
     {
+        closeClip = Resources.Load<AudioClip>("UI/Close");
         source = gameObject.AddComponent<AudioSource>();
         source.playOnAwake = false;
         source.spatialBlend = 0f;
@@ -88,16 +94,19 @@ public class TitleAudioController : MonoBehaviour
         music.volume = bgmVolume * ChannelVolume(1) * musicFade;
         engine.volume = sand.volume = drivingVolume * ChannelVolume(2) * musicFade;
         bool opened = false;
+        bool closed = false;
         for (int i = 0; i < panels.Length; i++)
         {
             bool active = panels[i] != null && panels[i].activeInHierarchy;
             if (active && !panelStates[i]) opened = true;
+            if (!active && panelStates[i]) closed = true;
             panelStates[i] = active;
         }
 
-        AudioClip clip = fileSelected ? fileSelectedClip : opened ? panelOpenClip : clicked ? buttonClip : null;
+        AudioClip clip = noticeClip != null ? noticeClip : fileSelected ? fileSelectedClip : opened ? panelOpenClip : closed ? closeClip : clicked ? buttonClip : null;
         if (clip != null && source.volume > 0f)
-            source.PlayOneShot(clip, fileSelected ? fileSelectedVolume : opened ? panelVolume : buttonVolume);
+            source.PlayOneShot(clip, noticeClip != null ? 0.4f : fileSelected ? fileSelectedVolume : opened ? panelVolume : buttonVolume);
+        noticeClip = null;
         clicked = false;
         fileSelected = false;
     }
@@ -115,6 +124,7 @@ public class TitleAudioController : MonoBehaviour
     // 패널 입력과 재생 자원 정리
     private void OnDisable()
     {
+        noticeClip = null;
         clicked = false;
         fileSelected = false;
         if (source != null) source.Stop();

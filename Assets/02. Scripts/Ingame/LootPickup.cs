@@ -19,6 +19,7 @@ public class LootPickup : MonoBehaviour
 
     internal void Collect()
     {
+        if (player) player.PlayWorkshopSound(part.HasValue ? "PartPickup" : "ScrapPickup");
         gameObject.SetActive(false);
         Destroy(gameObject);
     }

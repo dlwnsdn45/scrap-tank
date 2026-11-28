@@ -133,6 +133,7 @@ internal sealed class ProjectilePool
                     : hit.collider.GetComponentInParent<CombatTarget>();
                 if (target != null)
                 {
+                    EnemyManager.Instance.WeaponImpact(shot.Kind, hit.point);
                     CombatParticles.Play("Impact", hit.point, -shot.Direction);
                     if (shot.Kind == WeaponKind.Missile)
                         EnemyManager.Instance.Blast(
@@ -155,6 +156,7 @@ internal sealed class ProjectilePool
                     CombatParticles.Play("Impact", hit.point, -shot.Direction);
                     if (shot.Kind == WeaponKind.Missile)
                         EnemyManager.Instance.Blast(hit.point, 1.6f, shot.Damage, shot.Hostile);
+                    else EnemyManager.Instance.WeaponImpact(shot.Kind, hit.point);
                     stopped = true;
                     break;
                 }

@@ -77,6 +77,7 @@ public class SaveFilePanelController : MonoBehaviour
     // 파일 미선택 경고 표시
     public void ShowSelectionWarning()
     {
+        if (titleAudio != null) titleAudio.PlayNotice("Workshop/ActionDenied");
         selectionWarning.text = "파일 선택이 확정되지 않았습니다. 슬롯을 누른 뒤 [파일 선택]을 눌러 주세요.";
         selectionWarning.color = new Color(0.65f, 0.08f, 0.04f);
         selectionWarning.gameObject.SetActive(true);
@@ -129,6 +130,7 @@ public class SaveFilePanelController : MonoBehaviour
     public void ConfirmDelete()
     {
         if (!deleteConfirmPanel.activeSelf) return;
+        if (titleAudio != null) titleAudio.PlayNotice("UI/Complete");
         slots[selectedSlot].hasData = false;
         slots[selectedSlot].stage = "";
         slots[selectedSlot].playMinutes = 0;

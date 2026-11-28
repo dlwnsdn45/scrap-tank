@@ -86,6 +86,87 @@ public class PlayerController : MonoBehaviour, IDamageable
     int repairCount;
     bool wasPartInteraction;
     public void AddScrap(int amount) => Scrap += Mathf.Max(0, amount);
+
+    readonly Dictionary<string, AudioClip> workshopClips = new();
+    AudioSource workshopSound, pickupSound, repairSound;
+    float nextWorkshopSound, nextPickupSound, repairSoundUntil;
+    readonly HashSet<int> announcedSlots = new();
+    bool slotsObserved;
+
+    // 조립 중에도 재생 가능한 효과음 채널 재사용
+    AudioSource WorkshopSource(ref AudioSource source)
+    {
+        if (source) return source;
+        source = gameObject.AddComponent<AudioSource>();
+        source.playOnAwake = false;
+        source.spatialBlend = 0f;
+        return source;
+    }
+
+    AudioClip WorkshopClip(string name)
+    {
+        if (!workshopClips.TryGetValue(name, out var clip))
+            workshopClips[name] = clip = Resources.Load<AudioClip>(name.StartsWith("UI/") ? name : "Workshop/" + name);
+        return clip;
+    }
+
+    float WorkshopVolume()
+    {
+        if (PlayerPrefs.GetInt("Title.Sound.0.Muted", 0) == 1 || PlayerPrefs.GetInt("Title.Sound.2.Muted", 0) == 1) return 0f;
+        return Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.0.Volume", 1f))
+            * Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.2.Volume", 0.7f)) * 0.45f;
+    }
+
+    internal void PlayWorkshopSound(string name)
+    {
+        if (!isActiveAndEnabled) return;
+        bool pickup = name == "ScrapPickup" || name == "PartPickup";
+        if (Time.unscaledTime < (pickup ? nextPickupSound : nextWorkshopSound)) return;
+        var clip = WorkshopClip(name);
+        if (!clip) return;
+        var source = pickup ? WorkshopSource(ref pickupSound) : WorkshopSource(ref workshopSound);
+        if (pickup) nextPickupSound = Time.unscaledTime + 0.06f;
+        else nextWorkshopSound = Time.unscaledTime + 0.06f;
+        source.volume = WorkshopVolume();
+        source.clip = clip;
+        source.Play();
+    }
+
+    // 수리하는 동안만 반복음을 유지
+    internal void RefreshRepairSound()
+    {
+        if (!IsAlive || PauseOpen || Time.timeScale == 0f) return;
+        repairSoundUntil = Time.unscaledTime + 0.12f;
+        var source = WorkshopSource(ref repairSound);
+        source.loop = true;
+        if (!source.clip) source.clip = WorkshopClip("RepairLoop");
+        source.volume = WorkshopVolume() * 0.5f;
+        if (source.clip && !source.isPlaying) source.Play();
+    }
+
+    internal void StopRepairSound()
+    {
+        repairSoundUntil = 0f;
+        if (repairSound) repairSound.Stop();
+    }
+
+    void UpdateWorkshopAudio()
+    {
+        if (workshopSound) workshopSound.volume = WorkshopVolume();
+        if (pickupSound) pickupSound.volume = WorkshopVolume();
+        if (repairSound)
+        {
+            repairSound.volume = WorkshopVolume() * 0.5f;
+            if (!IsAlive || PauseOpen || Time.timeScale == 0f || Time.unscaledTime > repairSoundUntil) repairSound.Stop();
+        }
+        // 처음부터 열린 칸은 알리지 않고 새로 해금된 칸만 알림
+        if (weaponLayout == null || SaveTutorialSession.Active) return;
+        bool unlocked = false;
+        for (int i = 0; i < weaponLayout.SlotCount; i++)
+            if (weaponLayout.IsOpenSlot(i) && announcedSlots.Add(i)) unlocked = true;
+        if (slotsObserved && unlocked) PlayWorkshopSound("SlotUnlock");
+        slotsObserved = true;
+    }
     internal bool TryRepair(int cost)
     {
         if (cost < 0 || Scrap < cost || !NeedsRepair) return false;
@@ -94,6 +175,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         hp = Mathf.Min(maxHp, hp + 35);
         weaponLayout.RepairParts();
         StationRepairVersion++;
+        PlayWorkshopSound("RepairComplete");
         return true;
     }
 
@@ -268,8 +350,9 @@ public class PlayerController : MonoBehaviour, IDamageable
         ClearSwap();
     }
 
-    void FieldNotice(string message)
+    void FieldNotice(string message, bool success = false)
     {
+        PlayWorkshopSound(success ? "RepairComplete" : "ActionDenied");
         fieldNotice = message;
         fieldNoticeUntil = Time.unscaledTime + 2f;
     }
@@ -312,15 +395,17 @@ public class PlayerController : MonoBehaviour, IDamageable
             return;
         }
         fieldRepairElapsed += deltaTime;
+        RefreshRepairSound();
         if (fieldRepairElapsed < fieldRepairDuration) return;
         bool repaired = Scrap >= fieldRepairCost && weaponLayout.RepairBroken(fieldRepairSlot, fieldRepairFraction);
         if (repaired) { Scrap -= fieldRepairCost; FieldRepairVersion++; }
         StopFieldRepair();
-        FieldNotice(repaired ? "현장 수리 완료 · 부품이 다시 켜졌습니다" : "수리할 수 없습니다");
+        FieldNotice(repaired ? "현장 수리 완료 · 부품이 다시 켜졌습니다" : "수리할 수 없습니다", repaired);
     }
 
     void StopFieldRepair()
     {
+        if (fieldRepairPart != null) StopRepairSound();
         if (fieldRepairPart != null && cameraFollow) cameraFollow.SetSwapFocus(false);
         fieldRepairPart = null;
         fieldRepairSlot = -1;
@@ -366,6 +451,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         open = open && IsAlive && !encounterFinished && !PauseOpen;
         if (open == AssemblyOpen) return;
+        PlayWorkshopSound(open ? "UI/Open" : "UI/Close");
         if (open)
         {
             ClearSwap();
@@ -397,21 +483,26 @@ public class PlayerController : MonoBehaviour, IDamageable
         PauseOpen = open;
     }
 
-    internal bool InstallFromAssembly(int slot, LootPickup part) =>
-        IngameTutorial.Allows(TutorialAction.AssemblyInstall) && AssemblyOpen && IsAlive && part && part.IsInReach() && InstallPart(slot, part);
+    internal bool InstallFromAssembly(int slot, LootPickup part)
+    {
+        if (!IngameTutorial.Allows(TutorialAction.AssemblyInstall) || !AssemblyOpen || !IsAlive) return false;
+        if (!part || !part.IsInReach()) { PlayWorkshopSound("ActionDenied"); return false; }
+        return InstallPart(slot, part);
+    }
 
     internal void DismantleFromAssembly(int slot)
     {
         if (!IngameTutorial.Allows(TutorialAction.AssemblyDismantle) || !AssemblyOpen || !IsAlive) return;
         int value = weaponLayout.Dismantle(slot);
-        if (value > 0) { AddScrap(value); DismantleVersion++; }
+        if (value > 0) { AddScrap(value); DismantleVersion++; PlayWorkshopSound("PartDismantle"); }
     }
 
     internal bool MoveFromAssembly(int from, int to)
     {
         if (!IngameTutorial.Allows(TutorialAction.AssemblyMove) || !AssemblyOpen || !IsAlive || from == to) return false;
-        if (!weaponLayout.TryMove(from, to)) return false;
+        if (!weaponLayout.TryMove(from, to)) { PlayWorkshopSound("ActionDenied"); return false; }
         AssemblyMoveVersion++;
+        PlayWorkshopSound("SlotMove");
         return true;
     }
 
@@ -443,12 +534,14 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     bool InstallPart(int slot, LootPickup part)
     {
-        if (!weaponLayout.TryInstall(slot, part.Kind, part.Durability, out var removed, out var second)) return false;
+        if (!weaponLayout.TryInstall(slot, part.Kind, part.Durability, out var removed, out var second))
+        { PlayWorkshopSound("ActionDenied"); return false; }
         Vector2 drop = transform.position - transform.up * 1.8f;
         DropRemoved(removed, drop);
         DropRemoved(second, drop + (Vector2)transform.right * 0.5f);
         part.Collect();
         InstallVersion++;
+        PlayWorkshopSound("PartInstall");
         ClearSwap();
         return true;
     }
@@ -463,6 +556,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void LateUpdate()
     {
+        UpdateWorkshopAudio();
         if (Time.timeScale == 0f || !IngameTutorial.Allows(TutorialAction.Fire)) return;
         var enemies = EnemyManager.Instance;
         if (hp <= 0 || encounterFinished || Time.time < jammedUntil || !enemies || !enemies.isActiveAndEnabled) return;
@@ -476,6 +570,9 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void OnDisable()
     {
+        if (workshopSound) workshopSound.Stop();
+        if (pickupSound) pickupSound.Stop();
+        if (repairSound) repairSound.Stop();
         SetPauseOpen(false);
         SetAssemblyOpen(false);
         StopFieldRepair();

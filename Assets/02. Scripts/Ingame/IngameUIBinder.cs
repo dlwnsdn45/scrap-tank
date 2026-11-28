@@ -88,6 +88,12 @@ internal sealed class IngameUIBinder : MonoBehaviour
         enemies.Clear();
         enemyOwners.Clear();
         lastHp = lastScrap = lastSecond = -1;
+        // 버튼 활성화 경로를 통해 마우스·키보드 입력 모두 처리
+        root.Query<Button>().ForEach(button => button.clicked += () =>
+        {
+            if (button.enabledInHierarchy)
+                player.PlayWorkshopSound(button.name.Contains("accept") ? "UI/Confirm" : "UI/Click");
+        });
     }
 
     void BindBossHud()

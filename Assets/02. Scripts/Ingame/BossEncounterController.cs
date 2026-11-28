@@ -41,6 +41,10 @@ public sealed class BossEncounterController : MonoBehaviour
     CircleCollider2D exitTrigger;
     GameObject exitObject;
     float timeScaleBeforeFinish = 1f;
+    AudioSource battleMusic, bossMusic;
+    AudioSource resultMusic;
+    float nextTimeWarning;
+    float musicBlend, musicFade;
 
     void Awake()
     {
@@ -52,6 +56,43 @@ public sealed class BossEncounterController : MonoBehaviour
     {
         if (!player) player = FindAnyObjectByType<PlayerController>();
         Arena = ResolveArena();
+        battleMusic = CreateMusic("BGM_Scrap_Battle_Loop");
+        bossMusic = CreateMusic("BGM_Crusher_Boss_Loop");
+        if (battleMusic.clip) battleMusic.Play();
+    }
+
+    // 씬 수명에 맞춰 전투 음악 준비
+    AudioSource CreateMusic(string resource)
+    {
+        var source = gameObject.AddComponent<AudioSource>();
+        source.playOnAwake = false;
+        source.loop = true;
+        source.spatialBlend = 0f;
+        source.volume = 0f;
+        source.clip = Resources.Load<AudioClip>(resource);
+        return source;
+    }
+
+    // 보스 등장 시 전환, 결과 화면에서는 페이드아웃
+    void LateUpdate()
+    {
+        if (resultMusic)
+        {
+            bool silent = PlayerPrefs.GetInt("Title.Sound.0.Muted", 0) == 1 || PlayerPrefs.GetInt("Title.Sound.1.Muted", 0) == 1;
+            resultMusic.volume = silent ? 0f : Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.0.Volume", 1f))
+                * Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.1.Volume", 0.7f)) * 0.6f;
+        }
+        if (!battleMusic || !bossMusic) return;
+        bool bossActive = spawned && !ExitOpen;
+        if (bossActive && !bossMusic.isPlaying && bossMusic.clip) bossMusic.Play();
+        musicBlend = Mathf.MoveTowards(musicBlend, bossActive ? 1f : 0f, Time.unscaledDeltaTime);
+        float target = Result != EncounterResult.Playing ? 0f : player && player.PauseOpen ? 0.35f : 1f;
+        musicFade = Mathf.MoveTowards(musicFade, target, Time.unscaledDeltaTime);
+        bool muted = PlayerPrefs.GetInt("Title.Sound.0.Muted", 0) == 1 || PlayerPrefs.GetInt("Title.Sound.1.Muted", 0) == 1;
+        float volume = muted ? 0f : Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.0.Volume", 1f))
+            * Mathf.Clamp01(PlayerPrefs.GetFloat("Title.Sound.1.Volume", 0.7f)) * 0.6f * musicFade;
+        battleMusic.volume = volume * (1f - musicBlend);
+        bossMusic.volume = volume * musicBlend;
     }
 
     Rect ResolveArena()
@@ -71,6 +112,13 @@ public sealed class BossEncounterController : MonoBehaviour
     {
         if (SaveTutorialSession.Active || Result != EncounterResult.Playing || !player || !GameTimeManager.Instance) return;
         float elapsed = GameTimeManager.Instance.ElapsedSeconds;
+        // 마지막 30초에만 간헐적으로 경고
+        float remaining = deadline - elapsed;
+        if (remaining > 0f && remaining <= 30f && player.IsAlive && Time.timeScale > 0f && Time.time >= nextTimeWarning)
+        {
+            nextTimeWarning = Time.time + (remaining <= 10f ? 3f : 10f);
+            player.PlayWorkshopSound("UI/TimeWarning");
+        }
         // Deadline has priority even after the boss has died or an exit overlap occurs this frame.
         if (!player.IsAlive || elapsed >= deadline)
         {
@@ -126,6 +174,7 @@ public sealed class BossEncounterController : MonoBehaviour
         exitTrigger.isTrigger = true;
         exitTrigger.radius = exitRadius;
         onExitOpened.Invoke();
+        if (player) player.PlayWorkshopSound("UI/ExitOpen");
     }
 
     public void TryEscape()
@@ -145,6 +194,10 @@ public sealed class BossEncounterController : MonoBehaviour
         Summary = new RunSummary(result, GameTimeManager.Instance ? GameTimeManager.Instance.ElapsedSeconds : 0f, player);
         timeScaleBeforeFinish = Time.timeScale;
         Time.timeScale = 0f;
+        // 결과 음악은 시간이 멈춘 상태에서도 한 번 재생
+        resultMusic = CreateMusic(result == EncounterResult.Victory ? "UI/Victory" : "UI/Defeat");
+        resultMusic.loop = false;
+        if (resultMusic.clip) resultMusic.Play();
         if (result == EncounterResult.Victory) onVictory.Invoke();
         else onDefeat.Invoke();
     }
@@ -168,6 +221,9 @@ public sealed class BossEncounterController : MonoBehaviour
 
     void OnDestroy()
     {
+        if (resultMusic) Destroy(resultMusic);
+        if (battleMusic) Destroy(battleMusic);
+        if (bossMusic) Destroy(bossMusic);
         if (Boss) Boss.DestructionFinished -= OpenExit;
         if (exitObject) Destroy(exitObject);
         if (Instance != this) return;
